@@ -1,0 +1,22 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../a1.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'sam-admin' on host 'sampaths-lappie' (Linux_x86_64 version 5.19.0-35-generic) on Wed Mar 15 10:52:15 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/sam-admin/Desktop/iith/Module-2/sampractrice/verilog/practice/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_sam-admin/62681678857735647218
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+1*3=3
+2*4=8
+3*5=15
+4*6=24
+5*7=35
+6*8=48
+7*9=63
+8*10=80
+9*11=99
+10*12=120
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

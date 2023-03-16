@@ -1,0 +1,6 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'sam-admin' on host 'sampaths-lappie' (Linux_x86_64 version 5.19.0-35-generic) on Wed Mar 15 10:52:15 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/sam-admin/Desktop/iith/Module-2/sampractrice/verilog/practice/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_sam-admin/62681678857735647218
+INFO: [APCC 202-1] APCC is done.

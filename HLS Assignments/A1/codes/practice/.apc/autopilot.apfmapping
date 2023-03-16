@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="a1.c" path="/home/sam-admin/Desktop/iith/Module-2/sampractrice/verilog/a1.c"/>
+  </source>
+  <testbench>
+    <originFiles name="a1_tb.c" path="/home/sam-admin/Desktop/iith/Module-2/sampractrice/verilog/a1_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
