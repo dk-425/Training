@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="a2_1.c" path="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2/2.1/a2_1.c"/>
+    <originFiles name="a2_1.c" path="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2/2.1/a2_1.c"/>
+  </source>
+  <testbench>
+    <originFiles name="a2_1_tb.c" path="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2/2.1/a2_1_tb.c"/>
+    <originFiles name="a2_1_tb.c" path="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2/2.1/a2_1_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

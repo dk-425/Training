@@ -1,0 +1,4 @@
+<annotationInfo>
+<item  id="13" filename="2.1/a2_1.c" linenumber="6" name="tmp" contextFuncName="mul" moduleName="mul" rtlName="tmp_fu_43_p2" latency="0" BRAM="-1" DSP="3" FF="0" LUT="20" fileDirectory="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2"><\/item>
+<item  id="14" filename="2.1/a2_1.c" linenumber="6" name="tmp_1" contextFuncName="mul" moduleName="mul" rtlName="c" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2"><\/item>
+</annotationInfo>

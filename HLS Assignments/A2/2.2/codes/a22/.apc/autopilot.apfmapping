@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="a2_2.cpp" path="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2/2.2/a2_2.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="a2_2_tb.cpp" path="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2/2.2/a2_2_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

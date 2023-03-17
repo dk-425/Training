@@ -1,0 +1,3 @@
+<annotationInfo>
+<item  id="15" filename="2.2/a2_2.cpp" linenumber="9" name="r_V_1" contextFuncName="mul" moduleName="mul" rtlName="c_V" latency="0" BRAM="-1" DSP="4" FF="0" LUT="36" fileDirectory="/home/sam-admin/Xilinx-Vivado/HLS/Assignment2"><\/item>
+</annotationInfo>
