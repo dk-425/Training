@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Problem Statement}{1}{}%
+\contentsline {section}{\numberline {2}Design Code}{2}{}%
+\contentsline {section}{\numberline {3}Test Bench Code}{3}{}%
+\contentsline {section}{\numberline {4}C Simulation Output}{4}{}%
+\contentsline {section}{\numberline {5}HLS Resource Consumption}{6}{}%
+\contentsline {section}{\numberline {6}HLS Timing Report}{7}{}%
+\contentsline {section}{\numberline {7}Interfaces Report}{8}{}%
+\contentsline {section}{\numberline {8}C/RTL Cosimulation Output}{9}{}%
+\contentsline {section}{\numberline {9}C/RTL Cosimulation Report}{15}{}%
+\contentsline {section}{\numberline {10}Comparsion Report}{16}{}%
