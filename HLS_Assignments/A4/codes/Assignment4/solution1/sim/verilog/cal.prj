@@ -1,0 +1,10 @@
+sv work "glbl.v"
+sv xil_defaultlib "cal_sdiv_9s_8s_9_13_1.v"
+sv xil_defaultlib "cal.autotb.v"
+sv xil_defaultlib "AESL_axi_s_c_V.v"
+sv xil_defaultlib "AESL_axi_s_b_V.v"
+sv xil_defaultlib "AESL_axi_s_a_V.v"
+sv xil_defaultlib "AESL_axi_s_d_V.v"
+sv xil_defaultlib "AESL_fifo.v"
+sv xil_defaultlib "cal.v"
+

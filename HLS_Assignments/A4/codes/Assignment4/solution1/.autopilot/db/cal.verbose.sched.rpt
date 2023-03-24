@@ -1,0 +1,303 @@
+
+
+================================================================
+== Vivado HLS Report for 'cal'
+================================================================
+* Date:           Fri Mar 24 16:52:37 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Assignment4
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     4.170|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |   13|   13|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 14
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 14, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.74>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%c_V_read = call i8 @_ssdm_op_Read.axis.i8(i8 %c_V)" [a4.cpp:3]   --->   Operation 15 'read' 'c_V_read' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%b_V_read = call i8 @_ssdm_op_Read.axis.i8(i8 %b_V)" [a4.cpp:3]   --->   Operation 16 'read' 'b_V_read' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%a_V_read = call i8 @_ssdm_op_Read.axis.i8(i8 %a_V)" [a4.cpp:3]   --->   Operation 17 'read' 'a_V_read' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp = trunc i8 %c_V_read to i3" [a4.cpp:3]   --->   Operation 18 'trunc' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.36ns)   --->   "switch i3 %tmp, label %._crit_edge [
+    i3 0, label %1
+    i3 1, label %2
+    i3 2, label %3
+    i3 3, label %4
+    i3 -4, label %5
+    i3 -3, label %6
+    i3 -2, label %7
+  ]" [a4.cpp:11]   --->   Operation 19 'switch' <Predicate = true> <Delay = 1.36>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_7_tr = sext i8 %a_V_read to i9" [a4.cpp:15]   --->   Operation 20 'sext' 'tmp_7_tr' <Predicate = (tmp == 3)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_8_tr = sext i8 %b_V_read to i9" [a4.cpp:15]   --->   Operation 21 'sext' 'tmp_8_tr' <Predicate = (tmp == 3)> <Delay = 0.00>
+ST_1 : Operation 22 [13/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 22 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 3.74>
+ST_2 : Operation 23 [12/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 23 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 3.74>
+ST_3 : Operation 24 [11/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 24 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 3.74>
+ST_4 : Operation 25 [10/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 25 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 3.74>
+ST_5 : Operation 26 [9/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 26 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 3.74>
+ST_6 : Operation 27 [8/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 27 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 3.74>
+ST_7 : Operation 28 [7/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 28 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 3.74>
+ST_8 : Operation 29 [6/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 29 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 3.74>
+ST_9 : Operation 30 [5/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 30 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 3.74>
+ST_10 : Operation 31 [4/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 31 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 3.74>
+ST_11 : Operation 32 [3/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 32 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 3.74>
+ST_12 : Operation 33 [2/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 33 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 4.17>
+ST_13 : Operation 34 [1/1] (0.99ns)   --->   "%ret_V_6 = xor i8 %b_V_read, %a_V_read" [a4.cpp:18]   --->   Operation 34 'xor' 'ret_V_6' <Predicate = (tmp == 6)> <Delay = 0.99> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 35 [1/1] (0.00ns)   --->   "%p_5 = sext i8 %ret_V_6 to i16" [a4.cpp:18]   --->   Operation 35 'sext' 'p_5' <Predicate = (tmp == 6)> <Delay = 0.00>
+ST_13 : Operation 36 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_5)" [a4.cpp:18]   --->   Operation 36 'write' <Predicate = (tmp == 6)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 37 [1/1] (0.00ns)   --->   "br label %._crit_edge" [a4.cpp:18]   --->   Operation 37 'br' <Predicate = (tmp == 6)> <Delay = 0.00>
+ST_13 : Operation 38 [1/1] (0.99ns)   --->   "%ret_V_5 = or i8 %b_V_read, %a_V_read" [a4.cpp:17]   --->   Operation 38 'or' 'ret_V_5' <Predicate = (tmp == 5)> <Delay = 0.99> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 39 [1/1] (0.00ns)   --->   "%p_4 = sext i8 %ret_V_5 to i16" [a4.cpp:17]   --->   Operation 39 'sext' 'p_4' <Predicate = (tmp == 5)> <Delay = 0.00>
+ST_13 : Operation 40 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_4)" [a4.cpp:17]   --->   Operation 40 'write' <Predicate = (tmp == 5)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 41 [1/1] (0.00ns)   --->   "br label %._crit_edge" [a4.cpp:17]   --->   Operation 41 'br' <Predicate = (tmp == 5)> <Delay = 0.00>
+ST_13 : Operation 42 [1/1] (0.99ns)   --->   "%ret_V_4 = and i8 %b_V_read, %a_V_read" [a4.cpp:16]   --->   Operation 42 'and' 'ret_V_4' <Predicate = (tmp == 4)> <Delay = 0.99> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 43 [1/1] (0.00ns)   --->   "%p_3 = sext i8 %ret_V_4 to i16" [a4.cpp:16]   --->   Operation 43 'sext' 'p_3' <Predicate = (tmp == 4)> <Delay = 0.00>
+ST_13 : Operation 44 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_3)" [a4.cpp:16]   --->   Operation 44 'write' <Predicate = (tmp == 4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 45 [1/1] (0.00ns)   --->   "br label %._crit_edge" [a4.cpp:16]   --->   Operation 45 'br' <Predicate = (tmp == 4)> <Delay = 0.00>
+ST_13 : Operation 46 [1/13] (3.74ns)   --->   "%ret_V_3 = sdiv i9 %tmp_7_tr, %tmp_8_tr" [a4.cpp:15]   --->   Operation 46 'sdiv' 'ret_V_3' <Predicate = (tmp == 3)> <Delay = 3.74> <Core = "DivnS">   --->   Core 23 'DivnS' <Latency = 12> <II = 1> <Delay = 3.74> <FuncUnit> <Opcode : 'sdiv' 'srem' 'udiv' 'urem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 47 [1/1] (0.00ns)   --->   "%p_2 = sext i9 %ret_V_3 to i16" [a4.cpp:15]   --->   Operation 47 'sext' 'p_2' <Predicate = (tmp == 3)> <Delay = 0.00>
+ST_13 : Operation 48 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_2)" [a4.cpp:15]   --->   Operation 48 'write' <Predicate = (tmp == 3)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 49 [1/1] (0.00ns)   --->   "br label %._crit_edge" [a4.cpp:15]   --->   Operation 49 'br' <Predicate = (tmp == 3)> <Delay = 0.00>
+ST_13 : Operation 50 [1/1] (0.00ns)   --->   "%lhs_V_2 = sext i8 %a_V_read to i16" [a4.cpp:14]   --->   Operation 50 'sext' 'lhs_V_2' <Predicate = (tmp == 2)> <Delay = 0.00>
+ST_13 : Operation 51 [1/1] (0.00ns)   --->   "%rhs_V_2 = sext i8 %b_V_read to i16" [a4.cpp:14]   --->   Operation 51 'sext' 'rhs_V_2' <Predicate = (tmp == 2)> <Delay = 0.00>
+ST_13 : Operation 52 [1/1] (4.17ns)   --->   "%ret_V_2 = mul i16 %rhs_V_2, %lhs_V_2" [a4.cpp:14]   --->   Operation 52 'mul' 'ret_V_2' <Predicate = (tmp == 2)> <Delay = 4.17> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 53 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %ret_V_2)" [a4.cpp:14]   --->   Operation 53 'write' <Predicate = (tmp == 2)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 54 [1/1] (0.00ns)   --->   "br label %._crit_edge" [a4.cpp:14]   --->   Operation 54 'br' <Predicate = (tmp == 2)> <Delay = 0.00>
+ST_13 : Operation 55 [1/1] (0.00ns)   --->   "%lhs_V_1 = sext i8 %a_V_read to i9" [a4.cpp:13]   --->   Operation 55 'sext' 'lhs_V_1' <Predicate = (tmp == 1)> <Delay = 0.00>
+ST_13 : Operation 56 [1/1] (0.00ns)   --->   "%rhs_V_1 = sext i8 %b_V_read to i9" [a4.cpp:13]   --->   Operation 56 'sext' 'rhs_V_1' <Predicate = (tmp == 1)> <Delay = 0.00>
+ST_13 : Operation 57 [1/1] (1.91ns)   --->   "%ret_V_1 = sub i9 %lhs_V_1, %rhs_V_1" [a4.cpp:13]   --->   Operation 57 'sub' 'ret_V_1' <Predicate = (tmp == 1)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 58 [1/1] (0.00ns)   --->   "%p_1 = sext i9 %ret_V_1 to i16" [a4.cpp:13]   --->   Operation 58 'sext' 'p_1' <Predicate = (tmp == 1)> <Delay = 0.00>
+ST_13 : Operation 59 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_1)" [a4.cpp:13]   --->   Operation 59 'write' <Predicate = (tmp == 1)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 60 [1/1] (0.00ns)   --->   "br label %._crit_edge" [a4.cpp:13]   --->   Operation 60 'br' <Predicate = (tmp == 1)> <Delay = 0.00>
+ST_13 : Operation 61 [1/1] (0.00ns)   --->   "%lhs_V = sext i8 %a_V_read to i9" [a4.cpp:12]   --->   Operation 61 'sext' 'lhs_V' <Predicate = (tmp == 0)> <Delay = 0.00>
+ST_13 : Operation 62 [1/1] (0.00ns)   --->   "%rhs_V = sext i8 %b_V_read to i9" [a4.cpp:12]   --->   Operation 62 'sext' 'rhs_V' <Predicate = (tmp == 0)> <Delay = 0.00>
+ST_13 : Operation 63 [1/1] (1.91ns)   --->   "%ret_V = add nsw i9 %rhs_V, %lhs_V" [a4.cpp:12]   --->   Operation 63 'add' 'ret_V' <Predicate = (tmp == 0)> <Delay = 1.91> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 64 [1/1] (0.00ns)   --->   "%p_s = sext i9 %ret_V to i16" [a4.cpp:12]   --->   Operation 64 'sext' 'p_s' <Predicate = (tmp == 0)> <Delay = 0.00>
+ST_13 : Operation 65 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_s)" [a4.cpp:12]   --->   Operation 65 'write' <Predicate = (tmp == 0)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 66 [1/1] (0.00ns)   --->   "br label %._crit_edge" [a4.cpp:12]   --->   Operation 66 'br' <Predicate = (tmp == 0)> <Delay = 0.00>
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %a_V), !map !43"   --->   Operation 67 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 68 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %b_V), !map !49"   --->   Operation 68 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %c_V), !map !53"   --->   Operation 69 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 70 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_V), !map !57"   --->   Operation 70 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @cal_str) nounwind"   --->   Operation 71 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %a_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [a4.cpp:5]   --->   Operation 72 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %b_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [a4.cpp:6]   --->   Operation 73 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 74 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %c_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 74 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %d_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [a4.cpp:8]   --->   Operation 75 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [a4.cpp:9]   --->   Operation 76 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 77 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_5)" [a4.cpp:18]   --->   Operation 77 'write' <Predicate = (tmp == 6)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 78 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_4)" [a4.cpp:17]   --->   Operation 78 'write' <Predicate = (tmp == 5)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 79 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_3)" [a4.cpp:16]   --->   Operation 79 'write' <Predicate = (tmp == 4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 80 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_2)" [a4.cpp:15]   --->   Operation 80 'write' <Predicate = (tmp == 3)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 81 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %ret_V_2)" [a4.cpp:14]   --->   Operation 81 'write' <Predicate = (tmp == 2)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 82 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_1)" [a4.cpp:13]   --->   Operation 82 'write' <Predicate = (tmp == 1)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 83 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i16P(i16* %d_V, i16 %p_s)" [a4.cpp:12]   --->   Operation 83 'write' <Predicate = (tmp == 0)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 84 [1/1] (0.00ns)   --->   "ret void" [a4.cpp:22]   --->   Operation 84 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.74ns
+The critical path consists of the following:
+	axis read on port 'b_V' (a4.cpp:3) [11]  (0 ns)
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 2>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 3>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 4>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 5>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 6>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 7>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 8>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 9>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 10>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 11>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 12>: 3.74ns
+The critical path consists of the following:
+	'sdiv' operation ('ret.V', a4.cpp:15) [38]  (3.74 ns)
+
+ <State 13>: 4.17ns
+The critical path consists of the following:
+	'mul' operation ('ret.V', a4.cpp:14) [45]  (4.17 ns)
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
