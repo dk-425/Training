@@ -1,0 +1,4 @@
+sv work "glbl.v"
+sv xil_defaultlib "a6.v"
+sv xil_defaultlib "a6.autotb.v"
+

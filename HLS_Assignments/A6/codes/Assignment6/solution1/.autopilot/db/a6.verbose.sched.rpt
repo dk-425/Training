@@ -1,0 +1,147 @@
+
+
+================================================================
+== Vivado HLS Report for 'a6'
+================================================================
+* Date:           Tue Apr  4 21:40:13 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Assignment6
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     2.432|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |    0|    0|         1|          -|          -|     0|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	2  / (!exitcond)
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.07>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16 %a_V), !map !48"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16 %b_V), !map !54"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %s), !map !58"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %out_V), !map !62"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([3 x i8]* @a6_str) nounwind"   --->   Operation 7 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%s_read = call i1 @_ssdm_op_Read.ap_auto.i1(i1 %s)" [a6.cpp:7]   --->   Operation 8 'read' 's_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%b_V_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %b_V)" [a6.cpp:7]   --->   Operation 9 'read' 'b_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%a_V_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %a_V)" [a6.cpp:7]   --->   Operation 10 'read' 'a_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_cast = zext i16 %b_V_read to i17" [a6.cpp:8]   --->   Operation 11 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (2.07ns)   --->   "%tmp_1 = add i17 %tmp_cast, 1" [a6.cpp:8]   --->   Operation 12 'add' 'tmp_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %1" [a6.cpp:8]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 2.43>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%a_V_buf = phi i16 [ %a_V_read, %0 ], [ %storemerge, %2 ]" [a6.cpp:7]   --->   Operation 14 'phi' 'a_V_buf' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%i_op_assign = phi i17 [ 1, %0 ], [ %i, %2 ]"   --->   Operation 15 'phi' 'i_op_assign' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (2.43ns)   --->   "%exitcond = icmp eq i17 %i_op_assign, %tmp_1" [a6.cpp:8]   --->   Operation 16 'icmp' 'exitcond' <Predicate = true> <Delay = 2.43> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [a6.cpp:8]   --->   Operation 17 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_4 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str)" [a6.cpp:8]   --->   Operation 18 'specregionbegin' 'tmp_4' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind" [a6.cpp:10]   --->   Operation 19 'speclooptripcount' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns) (grouped into LUT with out node storemerge)   --->   "%tmp = shl i16 %a_V_buf, 1" [a6.cpp:12]   --->   Operation 20 'shl' 'tmp' <Predicate = (!exitcond & !s_read)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns) (grouped into LUT with out node storemerge)   --->   "%tmp_2 = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %a_V_buf, i32 1, i32 15)" [a6.cpp:16]   --->   Operation 21 'partselect' 'tmp_2' <Predicate = (!exitcond & s_read)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns) (grouped into LUT with out node storemerge)   --->   "%tmp_5 = zext i15 %tmp_2 to i16" [a6.cpp:16]   --->   Operation 22 'zext' 'tmp_5' <Predicate = (!exitcond & s_read)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.80ns) (out node of the LUT)   --->   "%storemerge = select i1 %s_read, i16 %tmp_5, i16 %tmp" [a6.cpp:11]   --->   Operation 23 'select' 'storemerge' <Predicate = (!exitcond)> <Delay = 0.80> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i16P(i16* %out_V, i16 %storemerge)" [a6.cpp:18]   --->   Operation 24 'write' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str, i32 %tmp_4)" [a6.cpp:19]   --->   Operation 25 'specregionend' 'empty' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (2.10ns)   --->   "%i = add i17 1, %i_op_assign" [a6.cpp:8]   --->   Operation 26 'add' 'i' <Predicate = (!exitcond)> <Delay = 2.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "br label %1" [a6.cpp:8]   --->   Operation 27 'br' <Predicate = (!exitcond)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "ret void" [a6.cpp:20]   --->   Operation 28 'ret' <Predicate = (exitcond)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.08ns
+The critical path consists of the following:
+	wire read on port 'b_V' (a6.cpp:7) [11]  (0 ns)
+	'add' operation ('tmp_1', a6.cpp:8) [14]  (2.08 ns)
+
+ <State 2>: 2.43ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', a6.cpp:8) [18]  (0 ns)
+	'icmp' operation ('exitcond', a6.cpp:8) [19]  (2.43 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

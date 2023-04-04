@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="a6.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A6/codes/a6.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="out.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A6/codes/out.dat"/>
+    <originFiles name="in.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A6/codes/in.dat"/>
+    <originFiles name="a6_tb.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A6/codes/a6_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
