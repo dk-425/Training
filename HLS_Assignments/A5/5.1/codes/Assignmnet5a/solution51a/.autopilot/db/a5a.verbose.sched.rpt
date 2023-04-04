@@ -1,0 +1,512 @@
+
+
+================================================================
+== Vivado HLS Report for 'a5a'
+================================================================
+* Date:           Mon Apr  3 12:39:16 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Assignmnet5a
+* Solution:       solution51a
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.806|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    9|    9|    9|    9|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.25>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%index_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %index)"   --->   Operation 11 'read' 'index_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = trunc i32 %index_read to i3" [a51a.cpp:22]   --->   Operation 12 'trunc' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%newIndex = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %index_read, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 13 'partselect' 'newIndex' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%newIndex1 = zext i29 %newIndex to i64" [a51a.cpp:22]   --->   Operation 14 'zext' 'newIndex1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%bram_0_addr = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 15 'getelementptr' 'bram_0_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (3.25ns)   --->   "%bram_0_load = load i6* %bram_0_addr, align 1" [a51a.cpp:22]   --->   Operation 16 'load' 'bram_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%bram_1_addr = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 17 'getelementptr' 'bram_1_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (3.25ns)   --->   "%bram_1_load = load i6* %bram_1_addr, align 1" [a51a.cpp:22]   --->   Operation 18 'load' 'bram_1_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%bram_2_addr = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 19 'getelementptr' 'bram_2_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (3.25ns)   --->   "%bram_2_load = load i6* %bram_2_addr, align 1" [a51a.cpp:22]   --->   Operation 20 'load' 'bram_2_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%bram_3_addr = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 21 'getelementptr' 'bram_3_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (3.25ns)   --->   "%bram_3_load = load i6* %bram_3_addr, align 1" [a51a.cpp:22]   --->   Operation 22 'load' 'bram_3_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%bram_4_addr = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 23 'getelementptr' 'bram_4_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [2/2] (3.25ns)   --->   "%bram_4_load = load i6* %bram_4_addr, align 1" [a51a.cpp:22]   --->   Operation 24 'load' 'bram_4_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%bram_5_addr = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 25 'getelementptr' 'bram_5_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [2/2] (3.25ns)   --->   "%bram_5_load = load i6* %bram_5_addr, align 1" [a51a.cpp:22]   --->   Operation 26 'load' 'bram_5_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%bram_6_addr = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 27 'getelementptr' 'bram_6_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [2/2] (3.25ns)   --->   "%bram_6_load = load i6* %bram_6_addr, align 1" [a51a.cpp:22]   --->   Operation 28 'load' 'bram_6_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%bram_7_addr = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex1" [a51a.cpp:22]   --->   Operation 29 'getelementptr' 'bram_7_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [2/2] (3.25ns)   --->   "%bram_7_load = load i6* %bram_7_addr, align 1" [a51a.cpp:22]   --->   Operation 30 'load' 'bram_7_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+
+State 2 <SV = 1> <Delay = 5.80>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%arrayNo = zext i3 %tmp to i32" [a51a.cpp:22]   --->   Operation 31 'zext' 'arrayNo' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/2] (3.25ns)   --->   "%bram_0_load = load i6* %bram_0_addr, align 1" [a51a.cpp:22]   --->   Operation 32 'load' 'bram_0_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%p_cast63 = zext i6 %bram_0_load to i8" [a51a.cpp:22]   --->   Operation 33 'zext' 'p_cast63' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/2] (3.25ns)   --->   "%bram_1_load = load i6* %bram_1_addr, align 1" [a51a.cpp:22]   --->   Operation 34 'load' 'bram_1_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_cast62 = zext i6 %bram_1_load to i8" [a51a.cpp:22]   --->   Operation 35 'zext' 'p_cast62' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/2] (3.25ns)   --->   "%bram_2_load = load i6* %bram_2_addr, align 1" [a51a.cpp:22]   --->   Operation 36 'load' 'bram_2_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%p_cast61 = zext i6 %bram_2_load to i8" [a51a.cpp:22]   --->   Operation 37 'zext' 'p_cast61' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/2] (3.25ns)   --->   "%bram_3_load = load i6* %bram_3_addr, align 1" [a51a.cpp:22]   --->   Operation 38 'load' 'bram_3_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%p_cast60 = zext i6 %bram_3_load to i8" [a51a.cpp:22]   --->   Operation 39 'zext' 'p_cast60' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/2] (3.25ns)   --->   "%bram_4_load = load i6* %bram_4_addr, align 1" [a51a.cpp:22]   --->   Operation 40 'load' 'bram_4_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%p_cast59 = zext i6 %bram_4_load to i8" [a51a.cpp:22]   --->   Operation 41 'zext' 'p_cast59' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/2] (3.25ns)   --->   "%bram_5_load = load i6* %bram_5_addr, align 1" [a51a.cpp:22]   --->   Operation 42 'load' 'bram_5_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%p_cast58 = zext i6 %bram_5_load to i8" [a51a.cpp:22]   --->   Operation 43 'zext' 'p_cast58' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/2] (3.25ns)   --->   "%bram_6_load = load i6* %bram_6_addr, align 1" [a51a.cpp:22]   --->   Operation 44 'load' 'bram_6_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%p_cast57 = zext i6 %bram_6_load to i8" [a51a.cpp:22]   --->   Operation 45 'zext' 'p_cast57' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/2] (3.25ns)   --->   "%bram_7_load = load i6* %bram_7_addr, align 1" [a51a.cpp:22]   --->   Operation 46 'load' 'bram_7_load' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%p_cast56 = zext i6 %bram_7_load to i8" [a51a.cpp:22]   --->   Operation 47 'zext' 'p_cast56' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (2.47ns)   --->   "%tmp_data_0_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast63, i8 %p_cast62, i8 %p_cast61, i8 %p_cast60, i8 %p_cast59, i8 %p_cast58, i8 %p_cast57, i8 %p_cast56, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 48 'mux' 'tmp_data_0_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 49 [1/1] (2.55ns)   --->   "%tmp_1 = add nsw i32 1, %index_read" [a51a.cpp:22]   --->   Operation 49 'add' 'tmp_1' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%newIndex2 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %tmp_1, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 50 'partselect' 'newIndex2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%newIndex3 = zext i29 %newIndex2 to i64" [a51a.cpp:22]   --->   Operation 51 'zext' 'newIndex3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%bram_1_addr_1 = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 52 'getelementptr' 'bram_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [2/2] (3.25ns)   --->   "%bram_1_load_1 = load i6* %bram_1_addr_1, align 1" [a51a.cpp:22]   --->   Operation 53 'load' 'bram_1_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%bram_2_addr_1 = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 54 'getelementptr' 'bram_2_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [2/2] (3.25ns)   --->   "%bram_2_load_1 = load i6* %bram_2_addr_1, align 1" [a51a.cpp:22]   --->   Operation 55 'load' 'bram_2_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%bram_3_addr_1 = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 56 'getelementptr' 'bram_3_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [2/2] (3.25ns)   --->   "%bram_3_load_1 = load i6* %bram_3_addr_1, align 1" [a51a.cpp:22]   --->   Operation 57 'load' 'bram_3_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%bram_4_addr_1 = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 58 'getelementptr' 'bram_4_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [2/2] (3.25ns)   --->   "%bram_4_load_1 = load i6* %bram_4_addr_1, align 1" [a51a.cpp:22]   --->   Operation 59 'load' 'bram_4_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%bram_5_addr_1 = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 60 'getelementptr' 'bram_5_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [2/2] (3.25ns)   --->   "%bram_5_load_1 = load i6* %bram_5_addr_1, align 1" [a51a.cpp:22]   --->   Operation 61 'load' 'bram_5_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%bram_6_addr_1 = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 62 'getelementptr' 'bram_6_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [2/2] (3.25ns)   --->   "%bram_6_load_1 = load i6* %bram_6_addr_1, align 1" [a51a.cpp:22]   --->   Operation 63 'load' 'bram_6_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%bram_7_addr_1 = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 64 'getelementptr' 'bram_7_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [2/2] (3.25ns)   --->   "%bram_7_load_1 = load i6* %bram_7_addr_1, align 1" [a51a.cpp:22]   --->   Operation 65 'load' 'bram_7_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%bram_0_addr_1 = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex3" [a51a.cpp:22]   --->   Operation 66 'getelementptr' 'bram_0_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [2/2] (3.25ns)   --->   "%bram_0_load_1 = load i6* %bram_0_addr_1, align 1" [a51a.cpp:22]   --->   Operation 67 'load' 'bram_0_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+
+State 3 <SV = 2> <Delay = 5.80>
+ST_3 : Operation 68 [1/2] (3.25ns)   --->   "%bram_1_load_1 = load i6* %bram_1_addr_1, align 1" [a51a.cpp:22]   --->   Operation 68 'load' 'bram_1_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%p_cast55 = zext i6 %bram_1_load_1 to i8" [a51a.cpp:22]   --->   Operation 69 'zext' 'p_cast55' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/2] (3.25ns)   --->   "%bram_2_load_1 = load i6* %bram_2_addr_1, align 1" [a51a.cpp:22]   --->   Operation 70 'load' 'bram_2_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%p_cast54 = zext i6 %bram_2_load_1 to i8" [a51a.cpp:22]   --->   Operation 71 'zext' 'p_cast54' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/2] (3.25ns)   --->   "%bram_3_load_1 = load i6* %bram_3_addr_1, align 1" [a51a.cpp:22]   --->   Operation 72 'load' 'bram_3_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%p_cast53 = zext i6 %bram_3_load_1 to i8" [a51a.cpp:22]   --->   Operation 73 'zext' 'p_cast53' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/2] (3.25ns)   --->   "%bram_4_load_1 = load i6* %bram_4_addr_1, align 1" [a51a.cpp:22]   --->   Operation 74 'load' 'bram_4_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%p_cast52 = zext i6 %bram_4_load_1 to i8" [a51a.cpp:22]   --->   Operation 75 'zext' 'p_cast52' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 76 [1/2] (3.25ns)   --->   "%bram_5_load_1 = load i6* %bram_5_addr_1, align 1" [a51a.cpp:22]   --->   Operation 76 'load' 'bram_5_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%p_cast51 = zext i6 %bram_5_load_1 to i8" [a51a.cpp:22]   --->   Operation 77 'zext' 'p_cast51' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 78 [1/2] (3.25ns)   --->   "%bram_6_load_1 = load i6* %bram_6_addr_1, align 1" [a51a.cpp:22]   --->   Operation 78 'load' 'bram_6_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%p_cast50 = zext i6 %bram_6_load_1 to i8" [a51a.cpp:22]   --->   Operation 79 'zext' 'p_cast50' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 80 [1/2] (3.25ns)   --->   "%bram_7_load_1 = load i6* %bram_7_addr_1, align 1" [a51a.cpp:22]   --->   Operation 80 'load' 'bram_7_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%p_cast49 = zext i6 %bram_7_load_1 to i8" [a51a.cpp:22]   --->   Operation 81 'zext' 'p_cast49' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 82 [1/2] (3.25ns)   --->   "%bram_0_load_1 = load i6* %bram_0_addr_1, align 1" [a51a.cpp:22]   --->   Operation 82 'load' 'bram_0_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%p_cast48 = zext i6 %bram_0_load_1 to i8" [a51a.cpp:22]   --->   Operation 83 'zext' 'p_cast48' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 84 [1/1] (2.47ns)   --->   "%tmp_data_1_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast55, i8 %p_cast54, i8 %p_cast53, i8 %p_cast52, i8 %p_cast51, i8 %p_cast50, i8 %p_cast49, i8 %p_cast48, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 84 'mux' 'tmp_data_1_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 85 [1/1] (2.55ns)   --->   "%tmp_3 = add nsw i32 2, %index_read" [a51a.cpp:22]   --->   Operation 85 'add' 'tmp_3' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%newIndex4 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %tmp_3, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 86 'partselect' 'newIndex4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%newIndex5 = zext i29 %newIndex4 to i64" [a51a.cpp:22]   --->   Operation 87 'zext' 'newIndex5' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%bram_2_addr_2 = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 88 'getelementptr' 'bram_2_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 89 [2/2] (3.25ns)   --->   "%bram_2_load_2 = load i6* %bram_2_addr_2, align 1" [a51a.cpp:22]   --->   Operation 89 'load' 'bram_2_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%bram_3_addr_2 = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 90 'getelementptr' 'bram_3_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 91 [2/2] (3.25ns)   --->   "%bram_3_load_2 = load i6* %bram_3_addr_2, align 1" [a51a.cpp:22]   --->   Operation 91 'load' 'bram_3_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%bram_4_addr_2 = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 92 'getelementptr' 'bram_4_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 93 [2/2] (3.25ns)   --->   "%bram_4_load_2 = load i6* %bram_4_addr_2, align 1" [a51a.cpp:22]   --->   Operation 93 'load' 'bram_4_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%bram_5_addr_2 = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 94 'getelementptr' 'bram_5_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 95 [2/2] (3.25ns)   --->   "%bram_5_load_2 = load i6* %bram_5_addr_2, align 1" [a51a.cpp:22]   --->   Operation 95 'load' 'bram_5_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%bram_6_addr_2 = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 96 'getelementptr' 'bram_6_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 97 [2/2] (3.25ns)   --->   "%bram_6_load_2 = load i6* %bram_6_addr_2, align 1" [a51a.cpp:22]   --->   Operation 97 'load' 'bram_6_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%bram_7_addr_2 = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 98 'getelementptr' 'bram_7_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 99 [2/2] (3.25ns)   --->   "%bram_7_load_2 = load i6* %bram_7_addr_2, align 1" [a51a.cpp:22]   --->   Operation 99 'load' 'bram_7_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%bram_0_addr_2 = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 100 'getelementptr' 'bram_0_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 101 [2/2] (3.25ns)   --->   "%bram_0_load_2 = load i6* %bram_0_addr_2, align 1" [a51a.cpp:22]   --->   Operation 101 'load' 'bram_0_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%bram_1_addr_2 = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex5" [a51a.cpp:22]   --->   Operation 102 'getelementptr' 'bram_1_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 103 [2/2] (3.25ns)   --->   "%bram_1_load_2 = load i6* %bram_1_addr_2, align 1" [a51a.cpp:22]   --->   Operation 103 'load' 'bram_1_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+
+State 4 <SV = 3> <Delay = 5.80>
+ST_4 : Operation 104 [1/2] (3.25ns)   --->   "%bram_2_load_2 = load i6* %bram_2_addr_2, align 1" [a51a.cpp:22]   --->   Operation 104 'load' 'bram_2_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%p_cast47 = zext i6 %bram_2_load_2 to i8" [a51a.cpp:22]   --->   Operation 105 'zext' 'p_cast47' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 106 [1/2] (3.25ns)   --->   "%bram_3_load_2 = load i6* %bram_3_addr_2, align 1" [a51a.cpp:22]   --->   Operation 106 'load' 'bram_3_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 107 [1/1] (0.00ns)   --->   "%p_cast46 = zext i6 %bram_3_load_2 to i8" [a51a.cpp:22]   --->   Operation 107 'zext' 'p_cast46' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 108 [1/2] (3.25ns)   --->   "%bram_4_load_2 = load i6* %bram_4_addr_2, align 1" [a51a.cpp:22]   --->   Operation 108 'load' 'bram_4_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 109 [1/1] (0.00ns)   --->   "%p_cast45 = zext i6 %bram_4_load_2 to i8" [a51a.cpp:22]   --->   Operation 109 'zext' 'p_cast45' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 110 [1/2] (3.25ns)   --->   "%bram_5_load_2 = load i6* %bram_5_addr_2, align 1" [a51a.cpp:22]   --->   Operation 110 'load' 'bram_5_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%p_cast44 = zext i6 %bram_5_load_2 to i8" [a51a.cpp:22]   --->   Operation 111 'zext' 'p_cast44' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 112 [1/2] (3.25ns)   --->   "%bram_6_load_2 = load i6* %bram_6_addr_2, align 1" [a51a.cpp:22]   --->   Operation 112 'load' 'bram_6_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 113 [1/1] (0.00ns)   --->   "%p_cast43 = zext i6 %bram_6_load_2 to i8" [a51a.cpp:22]   --->   Operation 113 'zext' 'p_cast43' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 114 [1/2] (3.25ns)   --->   "%bram_7_load_2 = load i6* %bram_7_addr_2, align 1" [a51a.cpp:22]   --->   Operation 114 'load' 'bram_7_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 115 [1/1] (0.00ns)   --->   "%p_cast42 = zext i6 %bram_7_load_2 to i8" [a51a.cpp:22]   --->   Operation 115 'zext' 'p_cast42' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 116 [1/2] (3.25ns)   --->   "%bram_0_load_2 = load i6* %bram_0_addr_2, align 1" [a51a.cpp:22]   --->   Operation 116 'load' 'bram_0_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%p_cast41 = zext i6 %bram_0_load_2 to i8" [a51a.cpp:22]   --->   Operation 117 'zext' 'p_cast41' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 118 [1/2] (3.25ns)   --->   "%bram_1_load_2 = load i6* %bram_1_addr_2, align 1" [a51a.cpp:22]   --->   Operation 118 'load' 'bram_1_load_2' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%p_cast40 = zext i6 %bram_1_load_2 to i8" [a51a.cpp:22]   --->   Operation 119 'zext' 'p_cast40' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (2.47ns)   --->   "%tmp_data_2_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast47, i8 %p_cast46, i8 %p_cast45, i8 %p_cast44, i8 %p_cast43, i8 %p_cast42, i8 %p_cast41, i8 %p_cast40, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 120 'mux' 'tmp_data_2_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 121 [1/1] (2.55ns)   --->   "%tmp_5 = add nsw i32 3, %index_read" [a51a.cpp:22]   --->   Operation 121 'add' 'tmp_5' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "%newIndex6 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %tmp_5, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 122 'partselect' 'newIndex6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%newIndex7 = zext i29 %newIndex6 to i64" [a51a.cpp:22]   --->   Operation 123 'zext' 'newIndex7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "%bram_3_addr_3 = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 124 'getelementptr' 'bram_3_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 125 [2/2] (3.25ns)   --->   "%bram_3_load_3 = load i6* %bram_3_addr_3, align 1" [a51a.cpp:22]   --->   Operation 125 'load' 'bram_3_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 126 [1/1] (0.00ns)   --->   "%bram_4_addr_3 = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 126 'getelementptr' 'bram_4_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 127 [2/2] (3.25ns)   --->   "%bram_4_load_3 = load i6* %bram_4_addr_3, align 1" [a51a.cpp:22]   --->   Operation 127 'load' 'bram_4_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 128 [1/1] (0.00ns)   --->   "%bram_5_addr_3 = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 128 'getelementptr' 'bram_5_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 129 [2/2] (3.25ns)   --->   "%bram_5_load_3 = load i6* %bram_5_addr_3, align 1" [a51a.cpp:22]   --->   Operation 129 'load' 'bram_5_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "%bram_6_addr_3 = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 130 'getelementptr' 'bram_6_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 131 [2/2] (3.25ns)   --->   "%bram_6_load_3 = load i6* %bram_6_addr_3, align 1" [a51a.cpp:22]   --->   Operation 131 'load' 'bram_6_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%bram_7_addr_3 = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 132 'getelementptr' 'bram_7_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 133 [2/2] (3.25ns)   --->   "%bram_7_load_3 = load i6* %bram_7_addr_3, align 1" [a51a.cpp:22]   --->   Operation 133 'load' 'bram_7_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%bram_0_addr_3 = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 134 'getelementptr' 'bram_0_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 135 [2/2] (3.25ns)   --->   "%bram_0_load_3 = load i6* %bram_0_addr_3, align 1" [a51a.cpp:22]   --->   Operation 135 'load' 'bram_0_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 136 [1/1] (0.00ns)   --->   "%bram_1_addr_3 = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 136 'getelementptr' 'bram_1_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 137 [2/2] (3.25ns)   --->   "%bram_1_load_3 = load i6* %bram_1_addr_3, align 1" [a51a.cpp:22]   --->   Operation 137 'load' 'bram_1_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_4 : Operation 138 [1/1] (0.00ns)   --->   "%bram_2_addr_3 = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex7" [a51a.cpp:22]   --->   Operation 138 'getelementptr' 'bram_2_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 139 [2/2] (3.25ns)   --->   "%bram_2_load_3 = load i6* %bram_2_addr_3, align 1" [a51a.cpp:22]   --->   Operation 139 'load' 'bram_2_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+
+State 5 <SV = 4> <Delay = 5.80>
+ST_5 : Operation 140 [1/2] (3.25ns)   --->   "%bram_3_load_3 = load i6* %bram_3_addr_3, align 1" [a51a.cpp:22]   --->   Operation 140 'load' 'bram_3_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 141 [1/1] (0.00ns)   --->   "%p_cast39 = zext i6 %bram_3_load_3 to i8" [a51a.cpp:22]   --->   Operation 141 'zext' 'p_cast39' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 142 [1/2] (3.25ns)   --->   "%bram_4_load_3 = load i6* %bram_4_addr_3, align 1" [a51a.cpp:22]   --->   Operation 142 'load' 'bram_4_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 143 [1/1] (0.00ns)   --->   "%p_cast38 = zext i6 %bram_4_load_3 to i8" [a51a.cpp:22]   --->   Operation 143 'zext' 'p_cast38' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 144 [1/2] (3.25ns)   --->   "%bram_5_load_3 = load i6* %bram_5_addr_3, align 1" [a51a.cpp:22]   --->   Operation 144 'load' 'bram_5_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 145 [1/1] (0.00ns)   --->   "%p_cast37 = zext i6 %bram_5_load_3 to i8" [a51a.cpp:22]   --->   Operation 145 'zext' 'p_cast37' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 146 [1/2] (3.25ns)   --->   "%bram_6_load_3 = load i6* %bram_6_addr_3, align 1" [a51a.cpp:22]   --->   Operation 146 'load' 'bram_6_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 147 [1/1] (0.00ns)   --->   "%p_cast36 = zext i6 %bram_6_load_3 to i8" [a51a.cpp:22]   --->   Operation 147 'zext' 'p_cast36' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 148 [1/2] (3.25ns)   --->   "%bram_7_load_3 = load i6* %bram_7_addr_3, align 1" [a51a.cpp:22]   --->   Operation 148 'load' 'bram_7_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 149 [1/1] (0.00ns)   --->   "%p_cast35 = zext i6 %bram_7_load_3 to i8" [a51a.cpp:22]   --->   Operation 149 'zext' 'p_cast35' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 150 [1/2] (3.25ns)   --->   "%bram_0_load_3 = load i6* %bram_0_addr_3, align 1" [a51a.cpp:22]   --->   Operation 150 'load' 'bram_0_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 151 [1/1] (0.00ns)   --->   "%p_cast34 = zext i6 %bram_0_load_3 to i8" [a51a.cpp:22]   --->   Operation 151 'zext' 'p_cast34' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 152 [1/2] (3.25ns)   --->   "%bram_1_load_3 = load i6* %bram_1_addr_3, align 1" [a51a.cpp:22]   --->   Operation 152 'load' 'bram_1_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 153 [1/1] (0.00ns)   --->   "%p_cast33 = zext i6 %bram_1_load_3 to i8" [a51a.cpp:22]   --->   Operation 153 'zext' 'p_cast33' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 154 [1/2] (3.25ns)   --->   "%bram_2_load_3 = load i6* %bram_2_addr_3, align 1" [a51a.cpp:22]   --->   Operation 154 'load' 'bram_2_load_3' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 155 [1/1] (0.00ns)   --->   "%p_cast32 = zext i6 %bram_2_load_3 to i8" [a51a.cpp:22]   --->   Operation 155 'zext' 'p_cast32' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 156 [1/1] (2.47ns)   --->   "%tmp_data_3_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast39, i8 %p_cast38, i8 %p_cast37, i8 %p_cast36, i8 %p_cast35, i8 %p_cast34, i8 %p_cast33, i8 %p_cast32, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 156 'mux' 'tmp_data_3_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 157 [1/1] (2.55ns)   --->   "%tmp_7 = add nsw i32 4, %index_read" [a51a.cpp:22]   --->   Operation 157 'add' 'tmp_7' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 158 [1/1] (0.00ns)   --->   "%newIndex8 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %tmp_7, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 158 'partselect' 'newIndex8' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 159 [1/1] (0.00ns)   --->   "%newIndex9 = zext i29 %newIndex8 to i64" [a51a.cpp:22]   --->   Operation 159 'zext' 'newIndex9' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 160 [1/1] (0.00ns)   --->   "%bram_4_addr_4 = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 160 'getelementptr' 'bram_4_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 161 [2/2] (3.25ns)   --->   "%bram_4_load_4 = load i6* %bram_4_addr_4, align 1" [a51a.cpp:22]   --->   Operation 161 'load' 'bram_4_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 162 [1/1] (0.00ns)   --->   "%bram_5_addr_4 = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 162 'getelementptr' 'bram_5_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 163 [2/2] (3.25ns)   --->   "%bram_5_load_4 = load i6* %bram_5_addr_4, align 1" [a51a.cpp:22]   --->   Operation 163 'load' 'bram_5_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 164 [1/1] (0.00ns)   --->   "%bram_6_addr_4 = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 164 'getelementptr' 'bram_6_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 165 [2/2] (3.25ns)   --->   "%bram_6_load_4 = load i6* %bram_6_addr_4, align 1" [a51a.cpp:22]   --->   Operation 165 'load' 'bram_6_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 166 [1/1] (0.00ns)   --->   "%bram_7_addr_4 = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 166 'getelementptr' 'bram_7_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 167 [2/2] (3.25ns)   --->   "%bram_7_load_4 = load i6* %bram_7_addr_4, align 1" [a51a.cpp:22]   --->   Operation 167 'load' 'bram_7_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 168 [1/1] (0.00ns)   --->   "%bram_0_addr_4 = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 168 'getelementptr' 'bram_0_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 169 [2/2] (3.25ns)   --->   "%bram_0_load_4 = load i6* %bram_0_addr_4, align 1" [a51a.cpp:22]   --->   Operation 169 'load' 'bram_0_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 170 [1/1] (0.00ns)   --->   "%bram_1_addr_4 = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 170 'getelementptr' 'bram_1_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 171 [2/2] (3.25ns)   --->   "%bram_1_load_4 = load i6* %bram_1_addr_4, align 1" [a51a.cpp:22]   --->   Operation 171 'load' 'bram_1_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 172 [1/1] (0.00ns)   --->   "%bram_2_addr_4 = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 172 'getelementptr' 'bram_2_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 173 [2/2] (3.25ns)   --->   "%bram_2_load_4 = load i6* %bram_2_addr_4, align 1" [a51a.cpp:22]   --->   Operation 173 'load' 'bram_2_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_5 : Operation 174 [1/1] (0.00ns)   --->   "%bram_3_addr_4 = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex9" [a51a.cpp:22]   --->   Operation 174 'getelementptr' 'bram_3_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 175 [2/2] (3.25ns)   --->   "%bram_3_load_4 = load i6* %bram_3_addr_4, align 1" [a51a.cpp:22]   --->   Operation 175 'load' 'bram_3_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+
+State 6 <SV = 5> <Delay = 5.80>
+ST_6 : Operation 176 [1/2] (3.25ns)   --->   "%bram_4_load_4 = load i6* %bram_4_addr_4, align 1" [a51a.cpp:22]   --->   Operation 176 'load' 'bram_4_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 177 [1/1] (0.00ns)   --->   "%p_cast31 = zext i6 %bram_4_load_4 to i8" [a51a.cpp:22]   --->   Operation 177 'zext' 'p_cast31' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 178 [1/2] (3.25ns)   --->   "%bram_5_load_4 = load i6* %bram_5_addr_4, align 1" [a51a.cpp:22]   --->   Operation 178 'load' 'bram_5_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 179 [1/1] (0.00ns)   --->   "%p_cast30 = zext i6 %bram_5_load_4 to i8" [a51a.cpp:22]   --->   Operation 179 'zext' 'p_cast30' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 180 [1/2] (3.25ns)   --->   "%bram_6_load_4 = load i6* %bram_6_addr_4, align 1" [a51a.cpp:22]   --->   Operation 180 'load' 'bram_6_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 181 [1/1] (0.00ns)   --->   "%p_cast29 = zext i6 %bram_6_load_4 to i8" [a51a.cpp:22]   --->   Operation 181 'zext' 'p_cast29' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 182 [1/2] (3.25ns)   --->   "%bram_7_load_4 = load i6* %bram_7_addr_4, align 1" [a51a.cpp:22]   --->   Operation 182 'load' 'bram_7_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 183 [1/1] (0.00ns)   --->   "%p_cast28 = zext i6 %bram_7_load_4 to i8" [a51a.cpp:22]   --->   Operation 183 'zext' 'p_cast28' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 184 [1/2] (3.25ns)   --->   "%bram_0_load_4 = load i6* %bram_0_addr_4, align 1" [a51a.cpp:22]   --->   Operation 184 'load' 'bram_0_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 185 [1/1] (0.00ns)   --->   "%p_cast27 = zext i6 %bram_0_load_4 to i8" [a51a.cpp:22]   --->   Operation 185 'zext' 'p_cast27' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 186 [1/2] (3.25ns)   --->   "%bram_1_load_4 = load i6* %bram_1_addr_4, align 1" [a51a.cpp:22]   --->   Operation 186 'load' 'bram_1_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 187 [1/1] (0.00ns)   --->   "%p_cast26 = zext i6 %bram_1_load_4 to i8" [a51a.cpp:22]   --->   Operation 187 'zext' 'p_cast26' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 188 [1/2] (3.25ns)   --->   "%bram_2_load_4 = load i6* %bram_2_addr_4, align 1" [a51a.cpp:22]   --->   Operation 188 'load' 'bram_2_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 189 [1/1] (0.00ns)   --->   "%p_cast25 = zext i6 %bram_2_load_4 to i8" [a51a.cpp:22]   --->   Operation 189 'zext' 'p_cast25' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 190 [1/2] (3.25ns)   --->   "%bram_3_load_4 = load i6* %bram_3_addr_4, align 1" [a51a.cpp:22]   --->   Operation 190 'load' 'bram_3_load_4' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 191 [1/1] (0.00ns)   --->   "%p_cast24 = zext i6 %bram_3_load_4 to i8" [a51a.cpp:22]   --->   Operation 191 'zext' 'p_cast24' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 192 [1/1] (2.47ns)   --->   "%tmp_data_4_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast31, i8 %p_cast30, i8 %p_cast29, i8 %p_cast28, i8 %p_cast27, i8 %p_cast26, i8 %p_cast25, i8 %p_cast24, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 192 'mux' 'tmp_data_4_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 193 [1/1] (2.55ns)   --->   "%tmp_9 = add nsw i32 5, %index_read" [a51a.cpp:22]   --->   Operation 193 'add' 'tmp_9' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 194 [1/1] (0.00ns)   --->   "%newIndex10 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %tmp_9, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 194 'partselect' 'newIndex10' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 195 [1/1] (0.00ns)   --->   "%newIndex11 = zext i29 %newIndex10 to i64" [a51a.cpp:22]   --->   Operation 195 'zext' 'newIndex11' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 196 [1/1] (0.00ns)   --->   "%bram_5_addr_5 = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 196 'getelementptr' 'bram_5_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 197 [2/2] (3.25ns)   --->   "%bram_5_load_5 = load i6* %bram_5_addr_5, align 1" [a51a.cpp:22]   --->   Operation 197 'load' 'bram_5_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 198 [1/1] (0.00ns)   --->   "%bram_6_addr_5 = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 198 'getelementptr' 'bram_6_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 199 [2/2] (3.25ns)   --->   "%bram_6_load_5 = load i6* %bram_6_addr_5, align 1" [a51a.cpp:22]   --->   Operation 199 'load' 'bram_6_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 200 [1/1] (0.00ns)   --->   "%bram_7_addr_5 = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 200 'getelementptr' 'bram_7_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 201 [2/2] (3.25ns)   --->   "%bram_7_load_5 = load i6* %bram_7_addr_5, align 1" [a51a.cpp:22]   --->   Operation 201 'load' 'bram_7_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 202 [1/1] (0.00ns)   --->   "%bram_0_addr_5 = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 202 'getelementptr' 'bram_0_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 203 [2/2] (3.25ns)   --->   "%bram_0_load_5 = load i6* %bram_0_addr_5, align 1" [a51a.cpp:22]   --->   Operation 203 'load' 'bram_0_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 204 [1/1] (0.00ns)   --->   "%bram_1_addr_5 = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 204 'getelementptr' 'bram_1_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 205 [2/2] (3.25ns)   --->   "%bram_1_load_5 = load i6* %bram_1_addr_5, align 1" [a51a.cpp:22]   --->   Operation 205 'load' 'bram_1_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 206 [1/1] (0.00ns)   --->   "%bram_2_addr_5 = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 206 'getelementptr' 'bram_2_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 207 [2/2] (3.25ns)   --->   "%bram_2_load_5 = load i6* %bram_2_addr_5, align 1" [a51a.cpp:22]   --->   Operation 207 'load' 'bram_2_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 208 [1/1] (0.00ns)   --->   "%bram_3_addr_5 = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 208 'getelementptr' 'bram_3_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 209 [2/2] (3.25ns)   --->   "%bram_3_load_5 = load i6* %bram_3_addr_5, align 1" [a51a.cpp:22]   --->   Operation 209 'load' 'bram_3_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_6 : Operation 210 [1/1] (0.00ns)   --->   "%bram_4_addr_5 = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex11" [a51a.cpp:22]   --->   Operation 210 'getelementptr' 'bram_4_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 211 [2/2] (3.25ns)   --->   "%bram_4_load_5 = load i6* %bram_4_addr_5, align 1" [a51a.cpp:22]   --->   Operation 211 'load' 'bram_4_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+
+State 7 <SV = 6> <Delay = 5.80>
+ST_7 : Operation 212 [1/2] (3.25ns)   --->   "%bram_5_load_5 = load i6* %bram_5_addr_5, align 1" [a51a.cpp:22]   --->   Operation 212 'load' 'bram_5_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 213 [1/1] (0.00ns)   --->   "%p_cast23 = zext i6 %bram_5_load_5 to i8" [a51a.cpp:22]   --->   Operation 213 'zext' 'p_cast23' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 214 [1/2] (3.25ns)   --->   "%bram_6_load_5 = load i6* %bram_6_addr_5, align 1" [a51a.cpp:22]   --->   Operation 214 'load' 'bram_6_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 215 [1/1] (0.00ns)   --->   "%p_cast22 = zext i6 %bram_6_load_5 to i8" [a51a.cpp:22]   --->   Operation 215 'zext' 'p_cast22' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 216 [1/2] (3.25ns)   --->   "%bram_7_load_5 = load i6* %bram_7_addr_5, align 1" [a51a.cpp:22]   --->   Operation 216 'load' 'bram_7_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 217 [1/1] (0.00ns)   --->   "%p_cast21 = zext i6 %bram_7_load_5 to i8" [a51a.cpp:22]   --->   Operation 217 'zext' 'p_cast21' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 218 [1/2] (3.25ns)   --->   "%bram_0_load_5 = load i6* %bram_0_addr_5, align 1" [a51a.cpp:22]   --->   Operation 218 'load' 'bram_0_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 219 [1/1] (0.00ns)   --->   "%p_cast20 = zext i6 %bram_0_load_5 to i8" [a51a.cpp:22]   --->   Operation 219 'zext' 'p_cast20' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 220 [1/2] (3.25ns)   --->   "%bram_1_load_5 = load i6* %bram_1_addr_5, align 1" [a51a.cpp:22]   --->   Operation 220 'load' 'bram_1_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 221 [1/1] (0.00ns)   --->   "%p_cast19 = zext i6 %bram_1_load_5 to i8" [a51a.cpp:22]   --->   Operation 221 'zext' 'p_cast19' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 222 [1/2] (3.25ns)   --->   "%bram_2_load_5 = load i6* %bram_2_addr_5, align 1" [a51a.cpp:22]   --->   Operation 222 'load' 'bram_2_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 223 [1/1] (0.00ns)   --->   "%p_cast18 = zext i6 %bram_2_load_5 to i8" [a51a.cpp:22]   --->   Operation 223 'zext' 'p_cast18' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 224 [1/2] (3.25ns)   --->   "%bram_3_load_5 = load i6* %bram_3_addr_5, align 1" [a51a.cpp:22]   --->   Operation 224 'load' 'bram_3_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 225 [1/1] (0.00ns)   --->   "%p_cast17 = zext i6 %bram_3_load_5 to i8" [a51a.cpp:22]   --->   Operation 225 'zext' 'p_cast17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 226 [1/2] (3.25ns)   --->   "%bram_4_load_5 = load i6* %bram_4_addr_5, align 1" [a51a.cpp:22]   --->   Operation 226 'load' 'bram_4_load_5' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 227 [1/1] (0.00ns)   --->   "%p_cast16 = zext i6 %bram_4_load_5 to i8" [a51a.cpp:22]   --->   Operation 227 'zext' 'p_cast16' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 228 [1/1] (2.47ns)   --->   "%tmp_data_5_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast23, i8 %p_cast22, i8 %p_cast21, i8 %p_cast20, i8 %p_cast19, i8 %p_cast18, i8 %p_cast17, i8 %p_cast16, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 228 'mux' 'tmp_data_5_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 229 [1/1] (2.55ns)   --->   "%tmp_s = add nsw i32 6, %index_read" [a51a.cpp:22]   --->   Operation 229 'add' 'tmp_s' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 230 [1/1] (0.00ns)   --->   "%newIndex12 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %tmp_s, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 230 'partselect' 'newIndex12' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 231 [1/1] (0.00ns)   --->   "%newIndex13 = zext i29 %newIndex12 to i64" [a51a.cpp:22]   --->   Operation 231 'zext' 'newIndex13' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 232 [1/1] (0.00ns)   --->   "%bram_6_addr_6 = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 232 'getelementptr' 'bram_6_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 233 [2/2] (3.25ns)   --->   "%bram_6_load_6 = load i6* %bram_6_addr_6, align 1" [a51a.cpp:22]   --->   Operation 233 'load' 'bram_6_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 234 [1/1] (0.00ns)   --->   "%bram_7_addr_6 = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 234 'getelementptr' 'bram_7_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 235 [2/2] (3.25ns)   --->   "%bram_7_load_6 = load i6* %bram_7_addr_6, align 1" [a51a.cpp:22]   --->   Operation 235 'load' 'bram_7_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 236 [1/1] (0.00ns)   --->   "%bram_0_addr_6 = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 236 'getelementptr' 'bram_0_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 237 [2/2] (3.25ns)   --->   "%bram_0_load_6 = load i6* %bram_0_addr_6, align 1" [a51a.cpp:22]   --->   Operation 237 'load' 'bram_0_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 238 [1/1] (0.00ns)   --->   "%bram_1_addr_6 = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 238 'getelementptr' 'bram_1_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 239 [2/2] (3.25ns)   --->   "%bram_1_load_6 = load i6* %bram_1_addr_6, align 1" [a51a.cpp:22]   --->   Operation 239 'load' 'bram_1_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 240 [1/1] (0.00ns)   --->   "%bram_2_addr_6 = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 240 'getelementptr' 'bram_2_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 241 [2/2] (3.25ns)   --->   "%bram_2_load_6 = load i6* %bram_2_addr_6, align 1" [a51a.cpp:22]   --->   Operation 241 'load' 'bram_2_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 242 [1/1] (0.00ns)   --->   "%bram_3_addr_6 = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 242 'getelementptr' 'bram_3_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 243 [2/2] (3.25ns)   --->   "%bram_3_load_6 = load i6* %bram_3_addr_6, align 1" [a51a.cpp:22]   --->   Operation 243 'load' 'bram_3_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 244 [1/1] (0.00ns)   --->   "%bram_4_addr_6 = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 244 'getelementptr' 'bram_4_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 245 [2/2] (3.25ns)   --->   "%bram_4_load_6 = load i6* %bram_4_addr_6, align 1" [a51a.cpp:22]   --->   Operation 245 'load' 'bram_4_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 246 [1/1] (0.00ns)   --->   "%bram_5_addr_6 = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex13" [a51a.cpp:22]   --->   Operation 246 'getelementptr' 'bram_5_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 247 [2/2] (3.25ns)   --->   "%bram_5_load_6 = load i6* %bram_5_addr_6, align 1" [a51a.cpp:22]   --->   Operation 247 'load' 'bram_5_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_7 : Operation 248 [1/1] (2.55ns)   --->   "%tmp_2 = add nsw i32 7, %index_read" [a51a.cpp:22]   --->   Operation 248 'add' 'tmp_2' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 249 [1/1] (0.00ns)   --->   "%newIndex14 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %tmp_2, i32 3, i32 31)" [a51a.cpp:22]   --->   Operation 249 'partselect' 'newIndex14' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 5.73>
+ST_8 : Operation 250 [1/2] (3.25ns)   --->   "%bram_6_load_6 = load i6* %bram_6_addr_6, align 1" [a51a.cpp:22]   --->   Operation 250 'load' 'bram_6_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 251 [1/1] (0.00ns)   --->   "%p_cast15 = zext i6 %bram_6_load_6 to i8" [a51a.cpp:22]   --->   Operation 251 'zext' 'p_cast15' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 252 [1/2] (3.25ns)   --->   "%bram_7_load_6 = load i6* %bram_7_addr_6, align 1" [a51a.cpp:22]   --->   Operation 252 'load' 'bram_7_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 253 [1/1] (0.00ns)   --->   "%p_cast14 = zext i6 %bram_7_load_6 to i8" [a51a.cpp:22]   --->   Operation 253 'zext' 'p_cast14' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 254 [1/2] (3.25ns)   --->   "%bram_0_load_6 = load i6* %bram_0_addr_6, align 1" [a51a.cpp:22]   --->   Operation 254 'load' 'bram_0_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 255 [1/1] (0.00ns)   --->   "%p_cast13 = zext i6 %bram_0_load_6 to i8" [a51a.cpp:22]   --->   Operation 255 'zext' 'p_cast13' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 256 [1/2] (3.25ns)   --->   "%bram_1_load_6 = load i6* %bram_1_addr_6, align 1" [a51a.cpp:22]   --->   Operation 256 'load' 'bram_1_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 257 [1/1] (0.00ns)   --->   "%p_cast12 = zext i6 %bram_1_load_6 to i8" [a51a.cpp:22]   --->   Operation 257 'zext' 'p_cast12' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 258 [1/2] (3.25ns)   --->   "%bram_2_load_6 = load i6* %bram_2_addr_6, align 1" [a51a.cpp:22]   --->   Operation 258 'load' 'bram_2_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 259 [1/1] (0.00ns)   --->   "%p_cast11 = zext i6 %bram_2_load_6 to i8" [a51a.cpp:22]   --->   Operation 259 'zext' 'p_cast11' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 260 [1/2] (3.25ns)   --->   "%bram_3_load_6 = load i6* %bram_3_addr_6, align 1" [a51a.cpp:22]   --->   Operation 260 'load' 'bram_3_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 261 [1/1] (0.00ns)   --->   "%p_cast10 = zext i6 %bram_3_load_6 to i8" [a51a.cpp:22]   --->   Operation 261 'zext' 'p_cast10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 262 [1/2] (3.25ns)   --->   "%bram_4_load_6 = load i6* %bram_4_addr_6, align 1" [a51a.cpp:22]   --->   Operation 262 'load' 'bram_4_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 263 [1/1] (0.00ns)   --->   "%p_cast9 = zext i6 %bram_4_load_6 to i8" [a51a.cpp:22]   --->   Operation 263 'zext' 'p_cast9' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 264 [1/2] (3.25ns)   --->   "%bram_5_load_6 = load i6* %bram_5_addr_6, align 1" [a51a.cpp:22]   --->   Operation 264 'load' 'bram_5_load_6' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 265 [1/1] (0.00ns)   --->   "%p_cast8 = zext i6 %bram_5_load_6 to i8" [a51a.cpp:22]   --->   Operation 265 'zext' 'p_cast8' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 266 [1/1] (2.47ns)   --->   "%tmp_data_6_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast15, i8 %p_cast14, i8 %p_cast13, i8 %p_cast12, i8 %p_cast11, i8 %p_cast10, i8 %p_cast9, i8 %p_cast8, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 266 'mux' 'tmp_data_6_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 267 [1/1] (0.00ns)   --->   "%newIndex15 = zext i29 %newIndex14 to i64" [a51a.cpp:22]   --->   Operation 267 'zext' 'newIndex15' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 268 [1/1] (0.00ns)   --->   "%bram_7_addr_7 = getelementptr [8 x i6]* @bram_7, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 268 'getelementptr' 'bram_7_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 269 [2/2] (3.25ns)   --->   "%bram_7_load_7 = load i6* %bram_7_addr_7, align 1" [a51a.cpp:22]   --->   Operation 269 'load' 'bram_7_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 270 [1/1] (0.00ns)   --->   "%bram_0_addr_7 = getelementptr [8 x i6]* @bram_0, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 270 'getelementptr' 'bram_0_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 271 [2/2] (3.25ns)   --->   "%bram_0_load_7 = load i6* %bram_0_addr_7, align 1" [a51a.cpp:22]   --->   Operation 271 'load' 'bram_0_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 272 [1/1] (0.00ns)   --->   "%bram_1_addr_7 = getelementptr [8 x i6]* @bram_1, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 272 'getelementptr' 'bram_1_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 273 [2/2] (3.25ns)   --->   "%bram_1_load_7 = load i6* %bram_1_addr_7, align 1" [a51a.cpp:22]   --->   Operation 273 'load' 'bram_1_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 274 [1/1] (0.00ns)   --->   "%bram_2_addr_7 = getelementptr [8 x i6]* @bram_2, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 274 'getelementptr' 'bram_2_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 275 [2/2] (3.25ns)   --->   "%bram_2_load_7 = load i6* %bram_2_addr_7, align 1" [a51a.cpp:22]   --->   Operation 275 'load' 'bram_2_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 276 [1/1] (0.00ns)   --->   "%bram_3_addr_7 = getelementptr [8 x i6]* @bram_3, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 276 'getelementptr' 'bram_3_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 277 [2/2] (3.25ns)   --->   "%bram_3_load_7 = load i6* %bram_3_addr_7, align 1" [a51a.cpp:22]   --->   Operation 277 'load' 'bram_3_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 278 [1/1] (0.00ns)   --->   "%bram_4_addr_7 = getelementptr [8 x i6]* @bram_4, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 278 'getelementptr' 'bram_4_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 279 [2/2] (3.25ns)   --->   "%bram_4_load_7 = load i6* %bram_4_addr_7, align 1" [a51a.cpp:22]   --->   Operation 279 'load' 'bram_4_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 280 [1/1] (0.00ns)   --->   "%bram_5_addr_7 = getelementptr [8 x i6]* @bram_5, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 280 'getelementptr' 'bram_5_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 281 [2/2] (3.25ns)   --->   "%bram_5_load_7 = load i6* %bram_5_addr_7, align 1" [a51a.cpp:22]   --->   Operation 281 'load' 'bram_5_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_8 : Operation 282 [1/1] (0.00ns)   --->   "%bram_6_addr_7 = getelementptr [8 x i6]* @bram_6, i64 0, i64 %newIndex15" [a51a.cpp:22]   --->   Operation 282 'getelementptr' 'bram_6_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 283 [2/2] (3.25ns)   --->   "%bram_6_load_7 = load i6* %bram_6_addr_7, align 1" [a51a.cpp:22]   --->   Operation 283 'load' 'bram_6_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+
+State 9 <SV = 8> <Delay = 5.73>
+ST_9 : Operation 284 [1/2] (3.25ns)   --->   "%bram_7_load_7 = load i6* %bram_7_addr_7, align 1" [a51a.cpp:22]   --->   Operation 284 'load' 'bram_7_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 285 [1/1] (0.00ns)   --->   "%p_cast7 = zext i6 %bram_7_load_7 to i8" [a51a.cpp:22]   --->   Operation 285 'zext' 'p_cast7' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 286 [1/2] (3.25ns)   --->   "%bram_0_load_7 = load i6* %bram_0_addr_7, align 1" [a51a.cpp:22]   --->   Operation 286 'load' 'bram_0_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 287 [1/1] (0.00ns)   --->   "%p_cast6 = zext i6 %bram_0_load_7 to i8" [a51a.cpp:22]   --->   Operation 287 'zext' 'p_cast6' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 288 [1/2] (3.25ns)   --->   "%bram_1_load_7 = load i6* %bram_1_addr_7, align 1" [a51a.cpp:22]   --->   Operation 288 'load' 'bram_1_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 289 [1/1] (0.00ns)   --->   "%p_cast5 = zext i6 %bram_1_load_7 to i8" [a51a.cpp:22]   --->   Operation 289 'zext' 'p_cast5' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 290 [1/2] (3.25ns)   --->   "%bram_2_load_7 = load i6* %bram_2_addr_7, align 1" [a51a.cpp:22]   --->   Operation 290 'load' 'bram_2_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 291 [1/1] (0.00ns)   --->   "%p_cast4 = zext i6 %bram_2_load_7 to i8" [a51a.cpp:22]   --->   Operation 291 'zext' 'p_cast4' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 292 [1/2] (3.25ns)   --->   "%bram_3_load_7 = load i6* %bram_3_addr_7, align 1" [a51a.cpp:22]   --->   Operation 292 'load' 'bram_3_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 293 [1/1] (0.00ns)   --->   "%p_cast3 = zext i6 %bram_3_load_7 to i8" [a51a.cpp:22]   --->   Operation 293 'zext' 'p_cast3' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 294 [1/2] (3.25ns)   --->   "%bram_4_load_7 = load i6* %bram_4_addr_7, align 1" [a51a.cpp:22]   --->   Operation 294 'load' 'bram_4_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 295 [1/1] (0.00ns)   --->   "%p_cast2 = zext i6 %bram_4_load_7 to i8" [a51a.cpp:22]   --->   Operation 295 'zext' 'p_cast2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 296 [1/2] (3.25ns)   --->   "%bram_5_load_7 = load i6* %bram_5_addr_7, align 1" [a51a.cpp:22]   --->   Operation 296 'load' 'bram_5_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 297 [1/1] (0.00ns)   --->   "%p_cast1 = zext i6 %bram_5_load_7 to i8" [a51a.cpp:22]   --->   Operation 297 'zext' 'p_cast1' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 298 [1/2] (3.25ns)   --->   "%bram_6_load_7 = load i6* %bram_6_addr_7, align 1" [a51a.cpp:22]   --->   Operation 298 'load' 'bram_6_load_7' <Predicate = true> <Delay = 3.25> <Core = "RAM_1P_BRAM">   --->   Core 46 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 6> <Depth = 8> <RAM>
+ST_9 : Operation 299 [1/1] (0.00ns)   --->   "%p_cast = zext i6 %bram_6_load_7 to i8" [a51a.cpp:22]   --->   Operation 299 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 300 [1/1] (2.47ns)   --->   "%tmp_data_7_V = call i8 @_ssdm_op_Mux.ap_auto.8i8.i32(i8 %p_cast7, i8 %p_cast6, i8 %p_cast5, i8 %p_cast4, i8 %p_cast3, i8 %p_cast2, i8 %p_cast1, i8 %p_cast, i32 %arrayNo)" [a51a.cpp:22]   --->   Operation 300 'mux' 'tmp_data_7_V' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 3.63>
+ST_10 : Operation 301 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 301 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 302 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 302 'specinterface' 'empty_5' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 303 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 303 'specinterface' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 304 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 304 'specinterface' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 305 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 305 'specinterface' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 306 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 306 'specinterface' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 307 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 307 'specinterface' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 308 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecInterface(i8* %output_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 308 'specinterface' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 309 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_7_V), !map !22"   --->   Operation 309 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 310 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_6_V), !map !28"   --->   Operation 310 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 311 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_5_V), !map !34"   --->   Operation 311 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 312 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_4_V), !map !40"   --->   Operation 312 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 313 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_3_V), !map !46"   --->   Operation 313 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 314 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_2_V), !map !52"   --->   Operation 314 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 315 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_1_V), !map !58"   --->   Operation 315 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 316 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output_V_data_0_V), !map !64"   --->   Operation 316 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 317 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %index), !map !70"   --->   Operation 317 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 318 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @a5a_str) nounwind"   --->   Operation 318 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 319 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([8 x i6]* @bram_0, [8 x i6]* @bram_1, [8 x i6]* @bram_2, [8 x i6]* @bram_3, [8 x i6]* @bram_4, [8 x i6]* @bram_5, [8 x i6]* @bram_6, [8 x i6]* @bram_7, [1 x i8]* @p_str, [12 x i8]* @p_str1, [1 x i8]* @p_str, i32 -1, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str)" [a51a.cpp:18]   --->   Operation 319 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 320 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i8P.i8P.i8P.i8P.i8P.i8P.i8P.i8P(i8* %output_V_data_0_V, i8* %output_V_data_1_V, i8* %output_V_data_2_V, i8* %output_V_data_3_V, i8* %output_V_data_4_V, i8* %output_V_data_5_V, i8* %output_V_data_6_V, i8* %output_V_data_7_V, i8 %tmp_data_0_V, i8 %tmp_data_1_V, i8 %tmp_data_2_V, i8 %tmp_data_3_V, i8 %tmp_data_4_V, i8 %tmp_data_5_V, i8 %tmp_data_6_V, i8 %tmp_data_7_V)" [a51a.cpp:23]   --->   Operation 320 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 0> <FIFO>
+ST_10 : Operation 321 [1/1] (0.00ns)   --->   "ret void" [a51a.cpp:24]   --->   Operation 321 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 3.25ns
+The critical path consists of the following:
+	wire read on port 'index' [36]  (0 ns)
+	'getelementptr' operation ('bram_0_addr', a51a.cpp:22) [42]  (0 ns)
+	'load' operation ('bram_0_load', a51a.cpp:22) on array 'bram_0' [43]  (3.25 ns)
+
+ <State 2>: 5.81ns
+The critical path consists of the following:
+	'add' operation ('tmp_1', a51a.cpp:22) [67]  (2.55 ns)
+	'getelementptr' operation ('bram_1_addr_1', a51a.cpp:22) [70]  (0 ns)
+	'load' operation ('bram_1_load_1', a51a.cpp:22) on array 'bram_1' [71]  (3.25 ns)
+
+ <State 3>: 5.81ns
+The critical path consists of the following:
+	'add' operation ('tmp_3', a51a.cpp:22) [95]  (2.55 ns)
+	'getelementptr' operation ('bram_2_addr_2', a51a.cpp:22) [98]  (0 ns)
+	'load' operation ('bram_2_load_2', a51a.cpp:22) on array 'bram_2' [99]  (3.25 ns)
+
+ <State 4>: 5.81ns
+The critical path consists of the following:
+	'add' operation ('tmp_5', a51a.cpp:22) [123]  (2.55 ns)
+	'getelementptr' operation ('bram_3_addr_3', a51a.cpp:22) [126]  (0 ns)
+	'load' operation ('bram_3_load_3', a51a.cpp:22) on array 'bram_3' [127]  (3.25 ns)
+
+ <State 5>: 5.81ns
+The critical path consists of the following:
+	'add' operation ('tmp_7', a51a.cpp:22) [151]  (2.55 ns)
+	'getelementptr' operation ('bram_4_addr_4', a51a.cpp:22) [154]  (0 ns)
+	'load' operation ('bram_4_load_4', a51a.cpp:22) on array 'bram_4' [155]  (3.25 ns)
+
+ <State 6>: 5.81ns
+The critical path consists of the following:
+	'add' operation ('tmp_9', a51a.cpp:22) [179]  (2.55 ns)
+	'getelementptr' operation ('bram_5_addr_5', a51a.cpp:22) [182]  (0 ns)
+	'load' operation ('bram_5_load_5', a51a.cpp:22) on array 'bram_5' [183]  (3.25 ns)
+
+ <State 7>: 5.81ns
+The critical path consists of the following:
+	'add' operation ('tmp_s', a51a.cpp:22) [207]  (2.55 ns)
+	'getelementptr' operation ('bram_6_addr_6', a51a.cpp:22) [210]  (0 ns)
+	'load' operation ('bram_6_load_6', a51a.cpp:22) on array 'bram_6' [211]  (3.25 ns)
+
+ <State 8>: 5.73ns
+The critical path consists of the following:
+	'load' operation ('bram_6_load_6', a51a.cpp:22) on array 'bram_6' [211]  (3.25 ns)
+	'mux' operation ('tmp.data[6].V', a51a.cpp:22) [234]  (2.48 ns)
+
+ <State 9>: 5.73ns
+The critical path consists of the following:
+	'load' operation ('bram_7_load_7', a51a.cpp:22) on array 'bram_7' [239]  (3.25 ns)
+	'mux' operation ('tmp.data[7].V', a51a.cpp:22) [262]  (2.48 ns)
+
+ <State 10>: 3.63ns
+The critical path consists of the following:
+	fifo write on port 'output_V_data_0_V' (a51a.cpp:23) [263]  (3.63 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,206 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'a5b'" level="0">
+<item name = "Date">Mon Apr  3 17:16:19 2023
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">Assignment5b</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 7.397, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">9, 9, 9, 9, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">8, 8, 2, -, -, 4, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 1051</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 0, 21</column>
+<column name="Memory">1, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 177</column>
+<column name="Register">-, -, 89, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, 2</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="a5b_mux_42_8_1_1_U1">a5b_mux_42_8_1_1, 0, 0, 0, 21</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="bram_V_U">a5b_bram_V, 1, 0, 0, 2, 32, 1, 64</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="c_V_fu_222_p2">+, 0, 0, 12, 3, 1</column>
+<column name="ap_block_state2">and, 0, 0, 2, 1, 1</column>
+<column name="bram_V_d0">and, 0, 0, 32, 32, 32</column>
+<column name="in_V_data_0_V0_status">and, 0, 0, 2, 1, 1</column>
+<column name="out_V_data_0_V1_status">and, 0, 0, 2, 1, 1</column>
+<column name="p_demorgan1_fu_476_p2">and, 0, 0, 32, 32, 32</column>
+<column name="p_demorgan_fu_357_p2">and, 0, 0, 32, 32, 32</column>
+<column name="tmp_25_fu_369_p2">and, 0, 0, 32, 32, 32</column>
+<column name="tmp_26_fu_375_p2">and, 0, 0, 32, 32, 32</column>
+<column name="exitcond_fu_216_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="grp_fu_196_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="tmp_s_fu_258_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="tmp_23_fu_351_p2">lshr, 0, 0, 101, 2, 32</column>
+<column name="tmp_44_fu_470_p2">lshr, 0, 0, 101, 2, 32</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_27_fu_381_p2">or, 0, 0, 32, 32, 32</column>
+<column name="tmp_8_fu_251_p2">or, 0, 0, 5, 5, 3</column>
+<column name="tmp_12_fu_279_p3">select, 0, 0, 6, 1, 6</column>
+<column name="tmp_13_fu_287_p3">select, 0, 0, 6, 1, 6</column>
+<column name="tmp_14_fu_295_p3">select, 0, 0, 6, 1, 6</column>
+<column name="tmp_21_fu_337_p3">select, 0, 0, 32, 1, 32</column>
+<column name="tmp_33_fu_402_p3">select, 0, 0, 6, 1, 6</column>
+<column name="tmp_34_fu_409_p3">select, 0, 0, 6, 1, 6</column>
+<column name="tmp_35_fu_416_p3">select, 0, 0, 6, 1, 6</column>
+<column name="tmp_42_fu_457_p3">select, 0, 0, 32, 1, 32</column>
+<column name="tmp_data_0_V_2_be_fu_554_p3">select, 0, 0, 8, 1, 8</column>
+<column name="tmp_data_1_V_2_be_fu_547_p3">select, 0, 0, 8, 1, 8</column>
+<column name="tmp_data_2_V_2_be_fu_540_p3">select, 0, 0, 8, 1, 8</column>
+<column name="tmp_data_3_V_2_be_fu_533_p3">select, 0, 0, 8, 1, 8</column>
+<column name="mask_fu_492_p2">shl, 0, 0, 11, 1, 4</column>
+<column name="tmp_19_fu_321_p2">shl, 0, 0, 101, 32, 32</column>
+<column name="tmp_22_fu_345_p2">shl, 0, 0, 101, 2, 32</column>
+<column name="tmp_40_fu_441_p2">shl, 0, 0, 101, 32, 32</column>
+<column name="tmp_43_fu_464_p2">shl, 0, 0, 101, 2, 32</column>
+<column name="tmp_11_fu_273_p2">xor, 0, 0, 6, 6, 5</column>
+<column name="tmp_15_fu_303_p2">xor, 0, 0, 6, 6, 5</column>
+<column name="tmp_24_fu_363_p2">xor, 0, 0, 32, 32, 2</column>
+<column name="tmp_32_fu_396_p2">xor, 0, 0, 6, 6, 5</column>
+<column name="tmp_36_fu_423_p2">xor, 0, 0, 6, 6, 5</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
+<column name="bram_V_we0">9, 2, 4, 8</column>
+<column name="grp_fu_196_p0">15, 3, 5, 15</column>
+<column name="grp_fu_196_p1">15, 3, 5, 15</column>
+<column name="in_V_data_0_V_blk_n">9, 2, 1, 2</column>
+<column name="in_V_data_1_V_blk_n">9, 2, 1, 2</column>
+<column name="in_V_data_2_V_blk_n">9, 2, 1, 2</column>
+<column name="in_V_data_3_V_blk_n">9, 2, 1, 2</column>
+<column name="out_V_data_0_V_blk_n">9, 2, 1, 2</column>
+<column name="out_V_data_1_V_blk_n">9, 2, 1, 2</column>
+<column name="out_V_data_2_V_blk_n">9, 2, 1, 2</column>
+<column name="out_V_data_3_V_blk_n">9, 2, 1, 2</column>
+<column name="p_s_reg_185">9, 2, 3, 6</column>
+<column name="tmp_data_0_V_1_reg_172">9, 2, 8, 16</column>
+<column name="tmp_data_1_V_1_reg_159">9, 2, 8, 16</column>
+<column name="tmp_data_2_V_1_reg_146">9, 2, 8, 16</column>
+<column name="tmp_data_3_V_1_reg_133">9, 2, 8, 16</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="c_V_reg_589">3, 0, 3, 0</column>
+<column name="p_s_reg_185">3, 0, 3, 0</column>
+<column name="tmp_1_reg_594">2, 0, 2, 0</column>
+<column name="tmp_28_reg_619">1, 0, 1, 0</column>
+<column name="tmp_7_reg_605">2, 0, 5, 3</column>
+<column name="tmp_8_reg_612">2, 0, 5, 3</column>
+<column name="tmp_data_0_V_1_reg_172">8, 0, 8, 0</column>
+<column name="tmp_data_0_V_reg_561">8, 0, 8, 0</column>
+<column name="tmp_data_1_V_1_reg_159">8, 0, 8, 0</column>
+<column name="tmp_data_1_V_reg_566">8, 0, 8, 0</column>
+<column name="tmp_data_2_V_1_reg_146">8, 0, 8, 0</column>
+<column name="tmp_data_2_V_reg_571">8, 0, 8, 0</column>
+<column name="tmp_data_3_V_1_reg_133">8, 0, 8, 0</column>
+<column name="tmp_data_3_V_reg_576">8, 0, 8, 0</column>
+<column name="tmp_reg_599">8, 0, 8, 0</column>
+<column name="tmp_s_reg_627">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, a5b, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, a5b, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, a5b, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, a5b, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, a5b, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, a5b, return value</column>
+<column name="in_V_data_0_V_dout">in, 8, ap_fifo, in_V_data_0_V, pointer</column>
+<column name="in_V_data_0_V_empty_n">in, 1, ap_fifo, in_V_data_0_V, pointer</column>
+<column name="in_V_data_0_V_read">out, 1, ap_fifo, in_V_data_0_V, pointer</column>
+<column name="in_V_data_1_V_dout">in, 8, ap_fifo, in_V_data_1_V, pointer</column>
+<column name="in_V_data_1_V_empty_n">in, 1, ap_fifo, in_V_data_1_V, pointer</column>
+<column name="in_V_data_1_V_read">out, 1, ap_fifo, in_V_data_1_V, pointer</column>
+<column name="in_V_data_2_V_dout">in, 8, ap_fifo, in_V_data_2_V, pointer</column>
+<column name="in_V_data_2_V_empty_n">in, 1, ap_fifo, in_V_data_2_V, pointer</column>
+<column name="in_V_data_2_V_read">out, 1, ap_fifo, in_V_data_2_V, pointer</column>
+<column name="in_V_data_3_V_dout">in, 8, ap_fifo, in_V_data_3_V, pointer</column>
+<column name="in_V_data_3_V_empty_n">in, 1, ap_fifo, in_V_data_3_V, pointer</column>
+<column name="in_V_data_3_V_read">out, 1, ap_fifo, in_V_data_3_V, pointer</column>
+<column name="out_V_data_0_V_din">out, 8, ap_fifo, out_V_data_0_V, pointer</column>
+<column name="out_V_data_0_V_full_n">in, 1, ap_fifo, out_V_data_0_V, pointer</column>
+<column name="out_V_data_0_V_write">out, 1, ap_fifo, out_V_data_0_V, pointer</column>
+<column name="out_V_data_1_V_din">out, 8, ap_fifo, out_V_data_1_V, pointer</column>
+<column name="out_V_data_1_V_full_n">in, 1, ap_fifo, out_V_data_1_V, pointer</column>
+<column name="out_V_data_1_V_write">out, 1, ap_fifo, out_V_data_1_V, pointer</column>
+<column name="out_V_data_2_V_din">out, 8, ap_fifo, out_V_data_2_V, pointer</column>
+<column name="out_V_data_2_V_full_n">in, 1, ap_fifo, out_V_data_2_V, pointer</column>
+<column name="out_V_data_2_V_write">out, 1, ap_fifo, out_V_data_2_V, pointer</column>
+<column name="out_V_data_3_V_din">out, 8, ap_fifo, out_V_data_3_V, pointer</column>
+<column name="out_V_data_3_V_full_n">in, 1, ap_fifo, out_V_data_3_V, pointer</column>
+<column name="out_V_data_3_V_write">out, 1, ap_fifo, out_V_data_3_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,10 @@
+a5a_mux_832_8_1_1
+a5a_bram_0
+a5a_bram_1
+a5a_bram_2
+a5a_bram_3
+a5a_bram_4
+a5a_bram_5
+a5a_bram_6
+a5a_bram_7
+a5a

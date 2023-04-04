@@ -1,0 +1,197 @@
+
+
+================================================================
+== Vivado HLS Report for 'a5a'
+================================================================
+* Date:           Mon Apr  3 13:46:02 2023
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        Assignmnet5a
+* Solution:       solution52a
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     5.733|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    275|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       0|    360|
+|Memory           |        8|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|     93|
+|Register         |        -|      -|      96|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        8|      0|      96|    728|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        2|      0|   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +----------------------+-------------------+---------+-------+---+----+
+    |       Instance       |       Module      | BRAM_18K| DSP48E| FF| LUT|
+    +----------------------+-------------------+---------+-------+---+----+
+    |a5a_mux_832_8_1_1_U1  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    |a5a_mux_832_8_1_1_U2  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    |a5a_mux_832_8_1_1_U3  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    |a5a_mux_832_8_1_1_U4  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    |a5a_mux_832_8_1_1_U5  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    |a5a_mux_832_8_1_1_U6  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    |a5a_mux_832_8_1_1_U7  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    |a5a_mux_832_8_1_1_U8  |a5a_mux_832_8_1_1  |        0|      0|  0|  45|
+    +----------------------+-------------------+---------+-------+---+----+
+    |Total                 |                   |        0|      0|  0| 360|
+    +----------------------+-------------------+---------+-------+---+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +----------+------------+---------+---+----+------+-----+------+-------------+
+    |  Memory  |   Module   | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +----------+------------+---------+---+----+------+-----+------+-------------+
+    |bram_0_U  |a5a_bram_0  |        1|  0|   0|     8|    3|     1|           24|
+    |bram_1_U  |a5a_bram_1  |        1|  0|   0|     8|    4|     1|           32|
+    |bram_3_U  |a5a_bram_1  |        1|  0|   0|     8|    4|     1|           32|
+    |bram_7_U  |a5a_bram_1  |        1|  0|   0|     8|    4|     1|           32|
+    |bram_2_U  |a5a_bram_2  |        1|  0|   0|     8|    5|     1|           40|
+    |bram_6_U  |a5a_bram_2  |        1|  0|   0|     8|    5|     1|           40|
+    |bram_4_U  |a5a_bram_4  |        1|  0|   0|     8|    6|     1|           48|
+    |bram_5_U  |a5a_bram_5  |        1|  0|   0|     8|    6|     1|           48|
+    +----------+------------+---------+---+----+------+-----+------+-------------+
+    |Total     |            |        8|  0|   0|    64|   37|     8|          296|
+    +----------+------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |tmp_1_fu_317_p2            |     +    |      0|  0|  39|           4|          32|
+    |tmp_2_fu_563_p2            |     +    |      0|  0|  39|           6|          32|
+    |tmp_3_fu_358_p2            |     +    |      0|  0|  39|           5|          32|
+    |tmp_5_fu_399_p2            |     +    |      0|  0|  39|           5|          32|
+    |tmp_7_fu_440_p2            |     +    |      0|  0|  39|           6|          32|
+    |tmp_9_fu_481_p2            |     +    |      0|  0|  39|           6|          32|
+    |tmp_s_fu_522_p2            |     +    |      0|  0|  39|           6|          32|
+    |output_V_data_0_V1_status  |    and   |      0|  0|   2|           1|           1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |Total                      |          |      0|  0| 275|          39|         225|
+    +---------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |  21|          4|    1|          4|
+    |output_V_data_0_V_blk_n  |   9|          2|    1|          2|
+    |output_V_data_1_V_blk_n  |   9|          2|    1|          2|
+    |output_V_data_2_V_blk_n  |   9|          2|    1|          2|
+    |output_V_data_3_V_blk_n  |   9|          2|    1|          2|
+    |output_V_data_4_V_blk_n  |   9|          2|    1|          2|
+    |output_V_data_5_V_blk_n  |   9|          2|    1|          2|
+    |output_V_data_6_V_blk_n  |   9|          2|    1|          2|
+    |output_V_data_7_V_blk_n  |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  93|         20|    9|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------+----+----+-----+-----------+
+    |         Name         | FF | LUT| Bits| Const Bits|
+    +----------------------+----+----+-----+-----------+
+    |ap_CS_fsm             |   3|   0|    3|          0|
+    |arrayNo_reg_615       |  29|   0|   29|          0|
+    |tmp_data_0_V_reg_660  |   8|   0|    8|          0|
+    |tmp_data_1_V_reg_665  |   8|   0|    8|          0|
+    |tmp_data_2_V_reg_670  |   8|   0|    8|          0|
+    |tmp_data_3_V_reg_675  |   8|   0|    8|          0|
+    |tmp_data_4_V_reg_680  |   8|   0|    8|          0|
+    |tmp_data_5_V_reg_685  |   8|   0|    8|          0|
+    |tmp_data_6_V_reg_690  |   8|   0|    8|          0|
+    |tmp_data_7_V_reg_695  |   8|   0|    8|          0|
+    +----------------------+----+----+-----+-----------+
+    |Total                 |  96|   0|   96|          0|
+    +----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++--------------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk                    |  in |    1| ap_ctrl_hs |        a5a        | return value |
+|ap_rst                    |  in |    1| ap_ctrl_hs |        a5a        | return value |
+|ap_start                  |  in |    1| ap_ctrl_hs |        a5a        | return value |
+|ap_done                   | out |    1| ap_ctrl_hs |        a5a        | return value |
+|ap_idle                   | out |    1| ap_ctrl_hs |        a5a        | return value |
+|ap_ready                  | out |    1| ap_ctrl_hs |        a5a        | return value |
+|index                     |  in |   32|   ap_none  |       index       |    scalar    |
+|output_V_data_0_V_din     | out |    8|   ap_fifo  | output_V_data_0_V |    pointer   |
+|output_V_data_0_V_full_n  |  in |    1|   ap_fifo  | output_V_data_0_V |    pointer   |
+|output_V_data_0_V_write   | out |    1|   ap_fifo  | output_V_data_0_V |    pointer   |
+|output_V_data_1_V_din     | out |    8|   ap_fifo  | output_V_data_1_V |    pointer   |
+|output_V_data_1_V_full_n  |  in |    1|   ap_fifo  | output_V_data_1_V |    pointer   |
+|output_V_data_1_V_write   | out |    1|   ap_fifo  | output_V_data_1_V |    pointer   |
+|output_V_data_2_V_din     | out |    8|   ap_fifo  | output_V_data_2_V |    pointer   |
+|output_V_data_2_V_full_n  |  in |    1|   ap_fifo  | output_V_data_2_V |    pointer   |
+|output_V_data_2_V_write   | out |    1|   ap_fifo  | output_V_data_2_V |    pointer   |
+|output_V_data_3_V_din     | out |    8|   ap_fifo  | output_V_data_3_V |    pointer   |
+|output_V_data_3_V_full_n  |  in |    1|   ap_fifo  | output_V_data_3_V |    pointer   |
+|output_V_data_3_V_write   | out |    1|   ap_fifo  | output_V_data_3_V |    pointer   |
+|output_V_data_4_V_din     | out |    8|   ap_fifo  | output_V_data_4_V |    pointer   |
+|output_V_data_4_V_full_n  |  in |    1|   ap_fifo  | output_V_data_4_V |    pointer   |
+|output_V_data_4_V_write   | out |    1|   ap_fifo  | output_V_data_4_V |    pointer   |
+|output_V_data_5_V_din     | out |    8|   ap_fifo  | output_V_data_5_V |    pointer   |
+|output_V_data_5_V_full_n  |  in |    1|   ap_fifo  | output_V_data_5_V |    pointer   |
+|output_V_data_5_V_write   | out |    1|   ap_fifo  | output_V_data_5_V |    pointer   |
+|output_V_data_6_V_din     | out |    8|   ap_fifo  | output_V_data_6_V |    pointer   |
+|output_V_data_6_V_full_n  |  in |    1|   ap_fifo  | output_V_data_6_V |    pointer   |
+|output_V_data_6_V_write   | out |    1|   ap_fifo  | output_V_data_6_V |    pointer   |
+|output_V_data_7_V_din     | out |    8|   ap_fifo  | output_V_data_7_V |    pointer   |
+|output_V_data_7_V_full_n  |  in |    1|   ap_fifo  | output_V_data_7_V |    pointer   |
+|output_V_data_7_V_write   | out |    1|   ap_fifo  | output_V_data_7_V |    pointer   |
++--------------------------+-----+-----+------------+-------------------+--------------+
+

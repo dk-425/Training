@@ -1,0 +1,73 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/tools/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_a5a_top glbl -prj a5a.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /tools/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s a5a 
+Multi-threading is on. Using 6 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_6_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_6_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a_bram_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a5a_bram_4_rom
+INFO: [VRFC 10-311] analyzing module a5a_bram_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_7_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_7_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a_bram_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a5a_bram_0_rom
+INFO: [VRFC 10-311] analyzing module a5a_bram_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a_bram_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a5a_bram_2_rom
+INFO: [VRFC 10-311] analyzing module a5a_bram_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a_bram_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a5a_bram_5_rom
+INFO: [VRFC 10-311] analyzing module a5a_bram_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a_mux_832_8_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a5a_mux_832_8_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a5a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_4_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_4_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_a5a_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_5_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_5_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/AESL_autofifo_output_V_data_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_output_V_data_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/Assignmnet5a/solution52a/sim/verilog/a5a_bram_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a5a_bram_1_rom
+INFO: [VRFC 10-311] analyzing module a5a_bram_1
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.a5a_bram_0_rom
+Compiling module xil_defaultlib.a5a_bram_0(DataWidth=3,AddressRa...
+Compiling module xil_defaultlib.a5a_bram_1_rom
+Compiling module xil_defaultlib.a5a_bram_1(DataWidth=4,AddressRa...
+Compiling module xil_defaultlib.a5a_bram_2_rom
+Compiling module xil_defaultlib.a5a_bram_2(DataWidth=5,AddressRa...
+Compiling module xil_defaultlib.a5a_bram_4_rom
+Compiling module xil_defaultlib.a5a_bram_4(DataWidth=6,AddressRa...
+Compiling module xil_defaultlib.a5a_bram_5_rom
+Compiling module xil_defaultlib.a5a_bram_5(DataWidth=6,AddressRa...
+Compiling module xil_defaultlib.a5a_mux_832_8_1_1(ID=1,din0_WIDT...
+Compiling module xil_defaultlib.a5a
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_0_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_1_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_2_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_3_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_4_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_5_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_6_V
+Compiling module xil_defaultlib.AESL_autofifo_output_V_data_7_V
+Compiling module xil_defaultlib.apatb_a5a_top
+Compiling module work.glbl
+Built simulation snapshot a5a

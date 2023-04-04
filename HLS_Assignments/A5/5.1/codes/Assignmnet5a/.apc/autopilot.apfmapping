@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="a51a.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/a51a.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="out.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/out.dat"/>
+    <originFiles name="in.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/in.dat"/>
+    <originFiles name="a5a_tb.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A5/5.1/codes/a5a_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
