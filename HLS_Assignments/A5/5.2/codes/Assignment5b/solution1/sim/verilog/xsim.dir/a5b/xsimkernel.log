@@ -1,4 +1,4 @@
-Running: xsim.dir/a5b/xsimk -simmode gui -wdb a5b.wdb -simrunnum 0 -socket 54099
+Running: xsim.dir/a5b/xsimk -simmode gui -wdb a5b.wdb -simrunnum 0 -socket 47995
 Design successfully loaded
 Design Loading Memory Usage: 26224 KB (Peak: 26512 KB)
 Design Loading CPU Usage: 0 ms

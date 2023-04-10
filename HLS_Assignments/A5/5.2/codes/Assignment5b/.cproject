@@ -157,6 +157,8 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1395558197.1677714516" name="out.dat" rcbsApplicability="disable" resourcePath="testbench/out.dat" toolsToInvoke=""/>
+                    					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1395558197.1614030464" name="a5b_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/a5b_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.64195387.1287506602">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.64195387.1287506602" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.64195387">
@@ -186,6 +188,8 @@
                         </tool>
                         					
                     </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1395558197.567844291" name="in.dat" rcbsApplicability="disable" resourcePath="testbench/in.dat" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						
@@ -335,6 +339,8 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.337439927.1723807687" name="out.dat" rcbsApplicability="disable" resourcePath="testbench/out.dat" toolsToInvoke=""/>
+                    					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.337439927.429904336" name="a5b_tb.cpp" rcbsApplicability="disable" resourcePath="testbench/a5b_tb.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.712482373.1437940195">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.712482373.1437940195" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.712482373">
@@ -364,6 +370,8 @@
                         </tool>
                         					
                     </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.337439927.1798250693" name="in.dat" rcbsApplicability="disable" resourcePath="testbench/in.dat" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						

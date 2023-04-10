@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'sam-admin' on host 'sampaths-lappie' (Linux_x86_64 version 5.19.0-38-generic) on Mon Apr 03 17:23:33 IST 2023
+INFO: [HLS 200-10] For user 'sam-admin' on host 'sampaths-lappie' (Linux_x86_64 version 5.19.0-38-generic) on Wed Apr 05 10:05:45 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
 INFO: [HLS 200-10] In directory '/home/sam-admin/git/Training/HLS_Assignments/A5/5.2/codes'
 INFO: [HLS 200-10] Opening project '/home/sam-admin/git/Training/HLS_Assignments/A5/5.2/codes/Assignment5b'.
@@ -80,7 +80,7 @@ Built simulation snapshot a5b
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source /home/sam-admin/git/Training/HLS_Assignments/A5/5.2/codes/Assignment5b/solution1/sim/verilog/xsim.dir/a5b/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Mon Apr  3 17:24:15 2023...
+INFO: [Common 17-206] Exiting Webtalk at Wed Apr  5 10:06:34 2023...
 
 ****** xsim v2018.3 (64-bit)
   **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
@@ -104,7 +104,7 @@ source a5b.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 275 ns : File "/home/sam-admin/git/Training/HLS_Assignments/A5/5.2/codes/Assignment5b/solution1/sim/verilog/a5b.autotb.v" Line 607
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Apr  3 17:24:23 2023...
+INFO: [Common 17-206] Exiting xsim at Wed Apr  5 10:06:52 2023...
 INFO: [COSIM 212-316] Starting C post checking ...
 ALL THE TEST CASES ARE PASSED!
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
