@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="a7res.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/a7res.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="atres_tb.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/atres_tb.cpp"/>
+    <originFiles name="input.wav" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/input.wav"/>
+    <originFiles name="outref.wav" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/outref.wav"/>
+    <originFiles name="outref.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/outref.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

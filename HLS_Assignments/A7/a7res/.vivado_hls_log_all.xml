@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:28:45.427+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:26:25.573+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:20:58.704+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:17:04.426+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:14:57.550+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:12:29.264+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:09:45.493+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T16:00:55.746+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T15:52:22.699+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T15:51:03.976+0530"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="a7res" solutionName="solution1" date="2023-04-10T15:50:11.385+0530"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
