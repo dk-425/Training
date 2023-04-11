@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../firFloat.cpp in debug mode
+   Compiling ../../../../firTB.cpp in debug mode
+   Compiling ../../../../firFixed.cpp in debug mode
+   Generating csim.exe
+TEST CASE 1 PASSED 
+TEST CASE 2 DID NOT PASSED AS DIFFERENCE IS MORE THAN 5% 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

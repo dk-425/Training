@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_V_1' is power-on initialization." projectName="assignment7" solutionName="solution1" date="2023-04-11T15:44:32.731+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_V_2' is power-on initialization." projectName="assignment7" solutionName="solution1" date="2023-04-11T15:44:32.727+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'shift_reg_V_0' is power-on initialization." projectName="assignment7" solutionName="solution1" date="2023-04-11T15:44:32.724+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'y_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="assignment7" solutionName="solution1" date="2023-04-11T15:44:32.721+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-561] Cannot apply I/O mode 'ap_none' on port 'c_V' changing to the default 'ap_memory' mode." projectName="assignment7" solutionName="solution1" date="2023-04-11T15:44:32.498+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="assignment7" solutionName="solution1" date="2023-04-11T15:46:47.973+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
