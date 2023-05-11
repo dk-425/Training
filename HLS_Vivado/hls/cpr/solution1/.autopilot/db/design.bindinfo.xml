@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln12_fu_106_p2" SOURCE="../cpr.cpp:12" VARIABLE="icmp_ln12" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_12_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_112_p2" SOURCE="../cpr.cpp:12" VARIABLE="add_ln12" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_12_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln14_fu_121_p2" SOURCE="../cpr.cpp:14" VARIABLE="icmp_ln14" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_12_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_143_p2" SOURCE="../cpr.cpp:15" VARIABLE="add_ln15" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_12_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_fu_159_p2" SOURCE="../cpr.cpp:18" VARIABLE="add_ln18" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_12_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op select" ID="" IMPL="auto_sel" LATENCY="0" OPTYPE="select" PRAGMA="" RTLNAME="select_ln14_fu_175_p3" SOURCE="../cpr.cpp:14" VARIABLE="select_ln14" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_12_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_1_fu_188_p2" SOURCE="../cpr.cpp:12" VARIABLE="add_ln12_1" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_12_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

@@ -2,16 +2,11 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="firFixed.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/firFixed.cpp"/>
-    <originFiles name="firFixed.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/firFixed.cpp"/>
   </source>
   <testbench>
-    <originFiles name="coef.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/coef.dat"/>
-    <originFiles name="firFloat.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/firFloat.cpp"/>
-    <originFiles name="firTB.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/firTB.cpp"/>
     <originFiles name="inp.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/inp.dat"/>
-    <originFiles name="coef.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/coef.dat"/>
-    <originFiles name="firFloat.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/firFloat.cpp"/>
     <originFiles name="firTB.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/firTB.cpp"/>
-    <originFiles name="inp.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/inp.dat"/>
+    <originFiles name="firFloat.cpp" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/firFloat.cpp"/>
+    <originFiles name="coef.dat" path="/home/sam-admin/git/Training/HLS_Assignments/A7/codes/coef.dat"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

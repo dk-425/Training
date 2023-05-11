@@ -37,11 +37,6 @@
 			<location>/home/sam-admin/git/Training/HLS_Assignments/A7/codes/assignment7/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/fir.h</name>
-			<type>1</type>
-			<location>/home/sam-admin/git/Training/HLS_Assignments/A7/codes/fir.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/home/sam-admin/git/Training/HLS_Assignments/A7/codes/assignment7/solution1/.tcls</location>

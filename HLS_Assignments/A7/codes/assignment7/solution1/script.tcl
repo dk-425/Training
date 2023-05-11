@@ -6,10 +6,10 @@
 open_project assignment7
 set_top fir
 add_files firFixed.cpp
-add_files -tb coef.dat
-add_files -tb firFloat.cpp
-add_files -tb firTB.cpp
-add_files -tb inp.dat
+add_files -tb inp.dat -cflags "-Wno-unknown-pragmas"
+add_files -tb firTB.cpp -cflags "-Wno-unknown-pragmas"
+add_files -tb firFloat.cpp -cflags "-Wno-unknown-pragmas"
+add_files -tb coef.dat -cflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7z020clg484-1} -tool vivado
 create_clock -period 10 -name default

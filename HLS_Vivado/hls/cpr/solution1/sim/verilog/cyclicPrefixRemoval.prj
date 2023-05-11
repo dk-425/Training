@@ -1,0 +1,8 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_input_r.v"
+sv xil_defaultlib "cyclicPrefixRemoval.autotb.v"
+sv xil_defaultlib "cyclicPrefixRemoval.v"
+sv xil_defaultlib "AESL_automem_output_r.v"
+sv xil_defaultlib "cyclicPrefixRemoval_flow_control_loop_pipe.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+
