@@ -1,19 +1,9 @@
-#include <iostream>
-#include <ap_int.h>
-#include <complex>
-#include <fstream>
-#include <hls_stream.h>
-using namespace std;
-#define N 8800
-#define P 608   //(320+288)
-
-void cyclicPrefixRemoval(complex<ap_fixed<23,3>> input[N], complex<ap_fixed<23,3>> output[N-P]);
-void gen(complex<ap_fixed<23,3>> x[N]);
+#include "header.h"
 
 int main() {
-	complex<ap_fixed<23,3>> x[N];
-    complex<ap_fixed<23,3>> input[N];
-	complex<ap_fixed<23,3>> output[N-P];
+	complex<ftp> x[N];
+    complex<ftp> input[N];
+	complex<ftp> output[N-P];
     ofstream out("out.dat");
     gen(x);
     for (int i = 0; i < N; i++) {

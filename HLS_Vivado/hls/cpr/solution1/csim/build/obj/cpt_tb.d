@@ -1,5 +1,5 @@
-obj/cpt_tb.o: ../../../../../cpt_tb.cpp \
- /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h \
+obj/cpt_tb.o: ../../../../../cpt_tb.cpp ../../../../../header.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_decl.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/etc/ap_private.h \
@@ -13,11 +13,11 @@ obj/cpt_tb.o: ../../../../../cpt_tb.cpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/mpfr.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_decl.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/hls_half_x_utils.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_ref.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_special.h \
- /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h \
- /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_ref.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_special.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h

@@ -1,15 +1,9 @@
-#include <iostream>
-#include "ap_fixed.h"
-#include <complex>
-#include <fstream>
-#include <hls_stream.h>
-using namespace std;
-#define N 8800
+#include "header.h"
+//struct strm{complex<ap_fixed<23,3>> data[N];};
 
-void gen(complex<ap_fixed<23,3>> x[N]){
-	float c,d;
-	ap_fixed<23,3> a;
-	ap_fixed<23,3> b;
+void gen(complex<ftp> x[N]){
+	 float c,d;
+	 ftp a,b;
 	 ifstream in1("puschTxAfterChannelReal.txt");
 	 ifstream in2("puschTxAfterChannelImag.txt");
 	 for (int i=0;i<N;i++){

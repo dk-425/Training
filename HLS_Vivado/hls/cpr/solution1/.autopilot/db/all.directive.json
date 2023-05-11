@@ -22,7 +22,7 @@
           "functionLabel": "",
           "id": "2",
           "sourceFile": "\/home\/sam-admin\/git\/Training\/HLS_Vivado\/hls\/cpr\/solution1\/csynth.tcl",
-          "sourceLine": "17",
+          "sourceLine": "18",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -37,7 +37,7 @@
           "functionLabel": "",
           "id": "3",
           "sourceFile": "\/home\/sam-admin\/git\/Training\/HLS_Vivado\/hls\/cpr\/solution1\/csynth.tcl",
-          "sourceLine": "17",
+          "sourceLine": "18",
           "pragma": {
             "name": "TOP",
             "option": [{

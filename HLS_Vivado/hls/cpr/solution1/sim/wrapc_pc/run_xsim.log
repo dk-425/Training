@@ -58,5 +58,5 @@ source cyclicPrefixRemoval.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 82125 ns : File "/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/sim/verilog/cyclicPrefixRemoval.autotb.v" Line 270
 ## quit
-INFO: [Common 17-206] Exiting xsim at Thu May 11 14:31:22 2023...
+INFO: [Common 17-206] Exiting xsim at Thu May 11 15:41:05 2023...
 PASS

@@ -7,9 +7,10 @@ open_project cpr
 set_top cyclicPrefixRemoval
 add_files ../datagen.cpp
 add_files ../cpr.cpp
-add_files -tb ../puschTxAfterChannelReal.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
-add_files -tb ../puschTxAfterChannelImag.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 add_files -tb ../cpt_tb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb ../puschTxAfterChannelImag.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb ../puschTxAfterChannelReal.txt -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb ../ref.dat
 open_solution "solution1" -flow_target vivado
 set_part {xc7z020-clg484-1}
 create_clock -period 10 -name default

@@ -1,4 +1,4 @@
-obj/datagen.o: ../../../../../datagen.cpp \
+obj/datagen.o: ../../../../../datagen.cpp ../../../../../header.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_decl.h \

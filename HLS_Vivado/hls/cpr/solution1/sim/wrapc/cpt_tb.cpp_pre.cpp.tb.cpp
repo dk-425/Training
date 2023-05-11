@@ -9,6 +9,10 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
 # 1 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
+# 1 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 1
+
+
+
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iostream" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iostream" 3
        
@@ -28419,9 +28423,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 2 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 1
-# 10 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h"
+# 5 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h" 1
+# 9 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h" 1
 # 41 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_decl.h" 1
@@ -55174,7 +55178,11 @@ inline half rawBitsToHalf(unsigned short pi) {
   return __D;
 
 }
-# 11 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 2
+# 10 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h" 2
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h" 1
+# 16 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h"
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 1
+# 11 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h" 1
 # 21 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_base.h"
 #pragma GCC diagnostic push
@@ -58246,18 +58254,6 @@ inline bool operator!=(const ap_int<_AP_W> &__x, const complex<ap_int<_AP_W> > &
 
 }
 # 353 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 2
-
-
-
-
-
-
-
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h" 1
-# 10 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h"
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h" 1
-# 16 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h"
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 1
 # 17 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h" 2
 # 32 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_base.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/cfenv" 1 3
@@ -61827,8 +61823,7 @@ inline bool operator!=(
 
 }
 # 366 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h" 2
-# 361 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 2
-# 3 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
+# 6 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/complex" 1 3
 # 39 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/complex" 3
        
@@ -63586,7 +63581,7 @@ inline namespace complex_literals {
 
 
 }
-# 4 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
+# 7 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 3
        
@@ -65427,7 +65422,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1170 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 2 3
-# 5 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
+# 8 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h" 1
 # 23 "/tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/queue" 1 3
@@ -88945,10 +88940,11 @@ public:
 };
 
 }
-# 6 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
+# 9 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 using namespace std;
 
 
+typedef ap_fixed<23,3> ftp;
 
 
 #ifndef HLS_FASTSIM
@@ -88957,17 +88953,18 @@ extern "C"
 #endif
 void apatb_cyclicPrefixRemoval_sw(std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *, std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *);
 #endif
-# 10 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
-void cyclicPrefixRemoval(complex<ap_fixed<23,3>> input[8800], complex<ap_fixed<23,3>> output[8800 -608]);
-void gen(complex<ap_fixed<23,3>> x[8800]);
+# 14 "/home/sam-admin/git/Training/HLS_Vivado/header.h"
+void cyclicPrefixRemoval(complex<ftp> input[8800], complex<ftp> output[8800 -608]);
+void gen(complex<ftp> x[8800]);
+# 2 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
 
 
 #ifndef HLS_FASTSIM
-# 13 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
+# 3 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
 int main() {
- complex<ap_fixed<23,3>> x[8800];
-    complex<ap_fixed<23,3>> input[8800];
- complex<ap_fixed<23,3>> output[8800 -608];
+ complex<ftp> x[8800];
+    complex<ftp> input[8800];
+ complex<ftp> output[8800 -608];
     ofstream out("out.dat");
     gen(x);
     for (int i = 0; i < 8800; i++) {
@@ -88977,10 +88974,10 @@ int main() {
 #ifndef HLS_FASTSIM
 #define cyclicPrefixRemoval apatb_cyclicPrefixRemoval_sw
 #endif
-# 22 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
+# 12 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
 cyclicPrefixRemoval(input, output);
 #undef cyclicPrefixRemoval
-# 22 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
+# 12 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
 
     int q=0;
     bool f;
@@ -89015,5 +89012,5 @@ cyclicPrefixRemoval(input, output);
     return 0;
 }
 #endif
-# 54 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
+# 44 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"
 

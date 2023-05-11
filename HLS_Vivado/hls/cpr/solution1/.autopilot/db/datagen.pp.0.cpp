@@ -156,6 +156,10 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "../datagen.cpp" 2
+# 1 "../header.h" 1
+
+
+
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 1 3
 # 37 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/iostream" 3
 
@@ -28323,7 +28327,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 2 "../datagen.cpp" 2
+# 5 "../header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed.h" 1
 
 
@@ -33870,7 +33874,7 @@ inline __attribute__((nodebug)) bool operator!=(
 
 }
 # 366 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed.h" 2
-# 3 "../datagen.cpp" 2
+# 6 "../header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/complex" 1 3
 # 40 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/complex" 3
 
@@ -40813,7 +40817,7 @@ inline namespace complex_literals {
 
 
 }
-# 4 "../datagen.cpp" 2
+# 7 "../header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/fstream" 1 3
 # 37 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/fstream" 3
 
@@ -43154,7 +43158,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1170 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/fstream" 2 3
-# 5 "../datagen.cpp" 2
+# 8 "../header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 1
 # 15 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream_39.h" 1
@@ -43286,17 +43290,23 @@ class stream : public stream<__STREAM_T__, 0> {
 };
 }
 # 16 "/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_stream.h" 2
-# 6 "../datagen.cpp" 2
+# 9 "../header.h" 2
 using namespace std;
 
 
-void gen(complex<ap_fixed<23,3>> x[8800]){
- float c,d;
- ap_fixed<23,3> a;
- ap_fixed<23,3> b;
+typedef ap_fixed<23,3> ftp;
+
+void cyclicPrefixRemoval(complex<ftp> input[8800], complex<ftp> output[8800 -608]);
+void gen(complex<ftp> x[8800]);
+# 2 "../datagen.cpp" 2
+
+
+void gen(complex<ftp> x[8800]){
+  float c,d;
+  ftp a,b;
   ifstream in1("puschTxAfterChannelReal.txt");
   ifstream in2("puschTxAfterChannelImag.txt");
-  VITIS_LOOP_15_1: for (int i=0;i<8800;i++){
+  VITIS_LOOP_9_1: for (int i=0;i<8800;i++){
    in1>>c;
    in2>>d;
    a=c;

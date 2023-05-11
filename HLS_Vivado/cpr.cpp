@@ -1,11 +1,6 @@
-#include <hls_stream.h>
-#include <ap_fixed.h>
-#include <complex>
-using namespace std;
-#define N 8800
-#define P 608   //(320+288)
+#include "header.h"
 
-void cyclicPrefixRemoval(complex<ap_fixed<23,3>> input[N], complex<ap_fixed<23,3>> output[N-P]) {
+void cyclicPrefixRemoval(complex<ftp> input[N], complex<ftp> output[N-P]) {
     int z=0;
     // cpr removal (discarding the guard interval)
     for (int i = 0; i < N-P; i++) {

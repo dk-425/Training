@@ -7,7 +7,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.autopilot/db/datagen.pp.0.cpp
-        Offset:          812403
+        Offset:          812423
         Length:          0
         ReplacementText: 'VITIS_LOOP_1211_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -16,7 +16,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.autopilot/db/datagen.pp.0.cpp
-        Offset:          1019503
+        Offset:          1019523
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -25,7 +25,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.autopilot/db/datagen.pp.0.cpp
-        Offset:          1019942
+        Offset:          1019962
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -34,7 +34,7 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.autopilot/db/datagen.pp.0.cpp
-        Offset:          1020382
+        Offset:          1020402
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
   - DiagnosticName:  xilinx-label-all-loops
@@ -43,16 +43,16 @@ Diagnostics:
     FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.autopilot/db/datagen.pp.0.cpp
-        Offset:          1281809
+        Offset:          1281829
         Length:          0
         ReplacementText: 'VITIS_LOOP_1245_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_15_1:  '
-    FileOffset:      15
+    Message:         'Added loop label VITIS_LOOP_9_1:  '
+    FileOffset:      9
     FilePath:        /home/sam-admin/git/Training/HLS_Vivado/datagen.cpp
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.autopilot/db/datagen.pp.0.cpp
-        Offset:          1895356
+        Offset:          1895497
         Length:          0
-        ReplacementText: 'VITIS_LOOP_15_1: '
+        ReplacementText: 'VITIS_LOOP_9_1: '
 ...

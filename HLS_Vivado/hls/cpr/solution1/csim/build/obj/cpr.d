@@ -1,5 +1,4 @@
-obj/cpr.o: ../../../../../cpr.cpp \
- /tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h \
+obj/cpr.o: ../../../../../cpr.cpp ../../../../../header.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_decl.h \
@@ -20,4 +19,5 @@ obj/cpr.o: ../../../../../cpr.cpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_ref.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_special.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_ref.h \
- /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_special.h
+ /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_special.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h

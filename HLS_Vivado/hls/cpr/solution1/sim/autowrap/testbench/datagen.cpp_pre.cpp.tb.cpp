@@ -9,6 +9,10 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
 # 1 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp"
+# 1 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 1
+
+
+
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iostream" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/iostream" 3
        
@@ -28419,7 +28423,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 2 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp" 2
+# 5 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h" 1
 # 9 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h" 1
@@ -61819,7 +61823,7 @@ inline bool operator!=(
 
 }
 # 366 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h" 2
-# 3 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp" 2
+# 6 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/complex" 1 3
 # 39 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/complex" 3
        
@@ -63577,7 +63581,7 @@ inline namespace complex_literals {
 
 
 }
-# 4 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp" 2
+# 7 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 1 3
 # 36 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 3
        
@@ -65418,7 +65422,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 1170 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/fstream" 2 3
-# 5 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp" 2
+# 8 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h" 1
 # 23 "/tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/queue" 1 3
@@ -88936,14 +88940,20 @@ public:
 };
 
 }
-# 6 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp" 2
+# 9 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
 using namespace std;
 
 
-void gen(complex<ap_fixed<23,3>> x[8800]){
- float c,d;
- ap_fixed<23,3> a;
- ap_fixed<23,3> b;
+typedef ap_fixed<23,3> ftp;
+
+void cyclicPrefixRemoval(complex<ftp> input[8800], complex<ftp> output[8800 -608]);
+void gen(complex<ftp> x[8800]);
+# 2 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp" 2
+
+
+void gen(complex<ftp> x[8800]){
+  float c,d;
+  ftp a,b;
   ifstream in1("puschTxAfterChannelReal.txt");
   ifstream in2("puschTxAfterChannelImag.txt");
   for (int i=0;i<8800;i++){

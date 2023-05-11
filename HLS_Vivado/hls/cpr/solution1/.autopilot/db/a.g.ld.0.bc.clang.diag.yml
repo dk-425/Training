@@ -31,7 +31,7 @@ Args:
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            InsufficientAlignment
-DebugLoc:        { File: ../cpr.cpp, Line: 17, Column: 20 }
+DebugLoc:        { File: ../cpr.cpp, Line: 12, Column: 20 }
 Function:        _Z19cyclicPrefixRemovalPSt7complexI8ap_fixedILi23ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEES5_
 Args:            
   - String:          'Alignment is insufficient, current alignment is '
@@ -47,13 +47,13 @@ Args:
   - BundleName:      ''
   - String:          ' '
   - Function:        'cyclicPrefixRemoval(std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*)'
-    DebugLoc:        { File: ../cpr.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../cpr.cpp, Line: 3, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            InsufficientAlignment
-DebugLoc:        { File: ../cpr.cpp, Line: 17, Column: 20 }
+DebugLoc:        { File: ../cpr.cpp, Line: 12, Column: 20 }
 Function:        _Z19cyclicPrefixRemovalPSt7complexI8ap_fixedILi23ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEES5_
 Args:            
   - String:          'Alignment is insufficient, current alignment is '
@@ -69,13 +69,13 @@ Args:
   - BundleName:      ''
   - String:          ' '
   - Function:        'cyclicPrefixRemoval(std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*)'
-    DebugLoc:        { File: ../cpr.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../cpr.cpp, Line: 3, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            InsufficientAlignment
-DebugLoc:        { File: ../cpr.cpp, Line: 14, Column: 23 }
+DebugLoc:        { File: ../cpr.cpp, Line: 9, Column: 23 }
 Function:        _Z19cyclicPrefixRemovalPSt7complexI8ap_fixedILi23ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEES5_
 Args:            
   - String:          'Alignment is insufficient, current alignment is '
@@ -91,13 +91,13 @@ Args:
   - BundleName:      ''
   - String:          ' '
   - Function:        'cyclicPrefixRemoval(std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*)'
-    DebugLoc:        { File: ../cpr.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../cpr.cpp, Line: 3, Column: 0 }
   - String:          ' '
 ...
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            InsufficientAlignment
-DebugLoc:        { File: ../cpr.cpp, Line: 14, Column: 23 }
+DebugLoc:        { File: ../cpr.cpp, Line: 9, Column: 23 }
 Function:        _Z19cyclicPrefixRemovalPSt7complexI8ap_fixedILi23ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEES5_
 Args:            
   - String:          'Alignment is insufficient, current alignment is '
@@ -113,6 +113,6 @@ Args:
   - BundleName:      ''
   - String:          ' '
   - Function:        'cyclicPrefixRemoval(std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*, std::complex<ap_fixed<23, 3, (ap_q_mode)5, (ap_o_mode)3, 0> >*)'
-    DebugLoc:        { File: ../cpr.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../cpr.cpp, Line: 3, Column: 0 }
   - String:          ' '
 ...

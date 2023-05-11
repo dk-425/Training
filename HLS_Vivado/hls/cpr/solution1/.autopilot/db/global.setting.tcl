@@ -45,12 +45,12 @@ set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c {../../../cpr.cpp ../../../datagen.cpp}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/solution1.directive
-set TBFiles {verilog {../../../cpt_tb.cpp ../../../puschTxAfterChannelImag.txt ../../../puschTxAfterChannelReal.txt} bc {../../../cpt_tb.cpp ../../../puschTxAfterChannelImag.txt ../../../puschTxAfterChannelReal.txt} vhdl {../../../cpt_tb.cpp ../../../puschTxAfterChannelImag.txt ../../../puschTxAfterChannelReal.txt} sc {../../../cpt_tb.cpp ../../../puschTxAfterChannelImag.txt ../../../puschTxAfterChannelReal.txt} cas {../../../cpt_tb.cpp ../../../puschTxAfterChannelImag.txt ../../../puschTxAfterChannelReal.txt} c {}}
+set TBFiles {verilog {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} bc {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} sc {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} vhdl {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} c {} cas {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}
