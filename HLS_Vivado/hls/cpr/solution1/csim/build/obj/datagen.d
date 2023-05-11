@@ -19,4 +19,5 @@ obj/datagen.o: ../../../../../datagen.cpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_ref.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int_special.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_ref.h \
- /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_special.h
+ /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_special.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h

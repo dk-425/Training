@@ -2,6 +2,7 @@
 #include "ap_fixed.h"
 #include <complex>
 #include <fstream>
+#include <hls_stream.h>
 using namespace std;
 #define N 8800
 

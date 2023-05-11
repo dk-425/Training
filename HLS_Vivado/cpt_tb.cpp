@@ -1,6 +1,8 @@
 #include <iostream>
 #include <ap_int.h>
 #include <complex>
+#include <fstream>
+#include <hls_stream.h>
 using namespace std;
 #define N 8800
 #define P 608   //(320+288)
@@ -12,31 +14,41 @@ int main() {
 	complex<ap_fixed<23,3>> x[N];
     complex<ap_fixed<23,3>> input[N];
 	complex<ap_fixed<23,3>> output[N-P];
-
+    ofstream out("out.dat");
     gen(x);
     for (int i = 0; i < N; i++) {
         input[i] = x[i];
     }
     cyclicPrefixRemoval(input, output);
     int q=0;
+    bool f;
     // Print the output data
     for (int i = 0; i < N-P; i++) {
     	q=q+1;
-        cout << "Output[" << i << "]: " << output[i]<<"\t";
+        out << "Output[" << i << "]: " << output[i]<<"\t";
         if (q<=4096){
-        	cout<<"FIRST SYMBOL"<<"\t";
+        	out<<"FIRST SYMBOL"<<"\t";
         if (output[i]==input[i+320]){
-        	cout<<"Pass"<<endl;
+        	out<<"Pass"<<endl;
         }
-        else{cout<<"Fail"<<endl;}
+        else{
+        	f=1;
+        	out<<"Fail"<<endl;
+        }
     }
     else{
-    	cout<<"SECOND SYMBOL"<<"\t";
+    	out<<"SECOND SYMBOL"<<"\t";
         if (output[i]==input[i+P]){
-        	cout<<"Pass"<<endl;
+        	out<<"Pass"<<endl;
         }
-        else{cout<<"Fail"<<endl;}
+        else{
+        	f=1;
+        out<<"Fail"<<endl;
+        }
     }
     }
+    out.close();
+    if (f==1){cout<<"!ERROR!"<<endl;}
+    else {cout<<"PASS"<<endl;}
     return 0;
 }

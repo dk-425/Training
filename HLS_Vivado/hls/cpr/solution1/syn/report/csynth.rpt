@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'cyclicPrefixRemoval'
 ================================================================
 + General Information: 
-    * Date:           Thu May 11 11:51:45 2023
+    * Date:           Thu May 11 14:29:49 2023
     * Version:        2022.2.2 (Build 3779808 on Feb 17 2023)
     * Project:        cpr
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -20,7 +20,7 @@
     |        & Loops        | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
     +-----------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+----------+-----------+-----+
     |+ cyclicPrefixRemoval  |     -|  0.79|     8194|  8.194e+04|         -|     8195|     -|        no|     -|   -|  45 (~0%)|  178 (~0%)|    -|
-    | o VITIS_LOOP_12_1     |     -|  7.30|     8192|  8.192e+04|         2|        1|  8192|       yes|     -|   -|         -|          -|    -|
+    | o VITIS_LOOP_11_1     |     -|  7.30|     8192|  8.192e+04|         2|        1|  8192|       yes|     -|   -|         -|          -|    -|
     +-----------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+----------+-----------+-----+
 
 
@@ -86,10 +86,10 @@
 | Name                   | DSP | Pragma | Variable   | Op  | Impl   | Latency |
 +------------------------+-----+--------+------------+-----+--------+---------+
 | + cyclicPrefixRemoval  | 0   |        |            |     |        |         |
-|   add_ln12_fu_112_p2   | -   |        | add_ln12   | add | fabric | 0       |
-|   add_ln15_fu_143_p2   | -   |        | add_ln15   | add | fabric | 0       |
-|   add_ln18_fu_159_p2   | -   |        | add_ln18   | add | fabric | 0       |
-|   add_ln12_1_fu_188_p2 | -   |        | add_ln12_1 | add | fabric | 0       |
+|   add_ln11_fu_112_p2   | -   |        | add_ln11   | add | fabric | 0       |
+|   add_ln14_fu_143_p2   | -   |        | add_ln14   | add | fabric | 0       |
+|   add_ln17_fu_159_p2   | -   |        | add_ln17   | add | fabric | 0       |
+|   add_ln11_1_fu_188_p2 | -   |        | add_ln11_1 | add | fabric | 0       |
 +------------------------+-----+--------+------------+-----+--------+---------+
 
 

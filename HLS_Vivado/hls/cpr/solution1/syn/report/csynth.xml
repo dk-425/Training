@@ -29,7 +29,7 @@
             <Interval-max>8195</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency>
-            <VITIS_LOOP_12_1>
+            <VITIS_LOOP_11_1>
                 <Slack>7.30</Slack>
                 <TripCount>8192</TripCount>
                 <Latency>8192</Latency>
@@ -37,7 +37,7 @@
                 <PipelineII>1</PipelineII>
                 <PipelineDepth>2</PipelineDepth>
                 <InstanceList/>
-            </VITIS_LOOP_12_1>
+            </VITIS_LOOP_11_1>
         </SummaryOfLoopLatency>
     </PerformanceEstimates>
     <AreaEstimates>
@@ -211,14 +211,14 @@
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>cyclicPrefixRemoval</ModuleName>
-            <BindInstances>add_ln12_fu_112_p2 add_ln15_fu_143_p2 add_ln18_fu_159_p2 add_ln12_1_fu_188_p2</BindInstances>
+            <BindInstances>add_ln11_fu_112_p2 add_ln14_fu_143_p2 add_ln17_fu_159_p2 add_ln11_1_fu_188_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
             <Name>cyclicPrefixRemoval</Name>
             <Loops>
-                <VITIS_LOOP_12_1/>
+                <VITIS_LOOP_11_1/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
@@ -237,8 +237,8 @@
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_12_1>
-                        <Name>VITIS_LOOP_12_1</Name>
+                    <VITIS_LOOP_11_1>
+                        <Name>VITIS_LOOP_11_1</Name>
                         <Slack>7.30</Slack>
                         <TripCount>8192</TripCount>
                         <Latency>8192</Latency>
@@ -247,7 +247,7 @@
                         <PipelineDepth>2</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_12_1>
+                    </VITIS_LOOP_11_1>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
@@ -270,10 +270,10 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_fu_112_p2" SOURCE="../cpr.cpp:12" URAM="0" VARIABLE="add_ln12"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_143_p2" SOURCE="../cpr.cpp:15" URAM="0" VARIABLE="add_ln15"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_fu_159_p2" SOURCE="../cpr.cpp:18" URAM="0" VARIABLE="add_ln18"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_12_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln12_1_fu_188_p2" SOURCE="../cpr.cpp:12" URAM="0" VARIABLE="add_ln12_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_fu_112_p2" SOURCE="../cpr.cpp:11" URAM="0" VARIABLE="add_ln11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_143_p2" SOURCE="../cpr.cpp:14" URAM="0" VARIABLE="add_ln14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln17_fu_159_p2" SOURCE="../cpr.cpp:17" URAM="0" VARIABLE="add_ln17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_11_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln11_1_fu_188_p2" SOURCE="../cpr.cpp:11" URAM="0" VARIABLE="add_ln11_1"/>
             </BindNodes>
         </Module>
     </ModuleInformation>

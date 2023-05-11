@@ -1,4 +1,5 @@
 obj/cpr.o: ../../../../../cpr.cpp \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_common.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_decl.h \

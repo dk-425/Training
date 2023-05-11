@@ -47,12 +47,12 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1245_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_14_1:  '
-    FileOffset:      14
+    Message:         'Added loop label VITIS_LOOP_15_1:  '
+    FileOffset:      15
     FilePath:        /home/sam-admin/git/Training/HLS_Vivado/datagen.cpp
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.autopilot/db/datagen.pp.0.cpp
-        Offset:          1891406
+        Offset:          1895356
         Length:          0
-        ReplacementText: 'VITIS_LOOP_14_1: '
+        ReplacementText: 'VITIS_LOOP_15_1: '
 ...
