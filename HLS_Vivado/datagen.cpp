@@ -1,20 +1,13 @@
 #include "header.h"
-//struct strm{complex<ap_fixed<23,3>> data[N];};
 
-void gen(complex<ftp> x[N]){
-	 float c,d;
-	 ftp a,b;
-	 ifstream in1("puschTxAfterChannelReal.txt");
-	 ifstream in2("puschTxAfterChannelImag.txt");
-	 for (int i=0;i<N;i++){
-		 in1>>c;
-		 in2>>d;
-		 a=c;
-		 b=d;
-		 x[i]=complex<float>(a, b);
-	 }
-	 in1.close();
-	 in2.close();
+void gen(ComplexT x[N], hls::stream<ComplexT> &gst) {
+//#pragma HLS INTERFACE s_axilite port=return
+//#pragma HLS INTERFACE axis port=gst
+//#pragma HLS INTERFACE bram port=x
+
+    for (int i = 0; i < N; i++) {
+//#pragma HLS PIPELINE II=1
+        gst.write(x[i]);
+    }
 }
-
 

@@ -1,2 +1,4 @@
-cyclicPrefixRemoval_flow_control_loop_pipe
+cyclicPrefixRemoval_control_s_axi
+cyclicPrefixRemoval_regslice_both
+cyclicPrefixRemoval_regslice_both
 cyclicPrefixRemoval

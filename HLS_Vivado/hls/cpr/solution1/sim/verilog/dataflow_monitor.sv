@@ -2,12 +2,9 @@
 `include "dump_file_agent.svh"
 `include "csv_file_dump.svh"
 `include "sample_agent.svh"
-`include "loop_sample_agent.svh"
 `include "sample_manager.svh"
 `include "nodf_module_interface.svh"
 `include "nodf_module_monitor.svh"
-`include "upc_loop_interface.svh"
-`include "upc_loop_monitor.svh"
 `timescale 1ns/1ps
 
 // top module for dataflow related monitors
@@ -29,25 +26,6 @@ input logic finish
     csv_file_dump mstatus_csv_dumper_1;
     nodf_module_monitor module_monitor_1;
 
-    upc_loop_intf#(1) upc_loop_intf_1(clock,reset);
-    assign upc_loop_intf_1.cur_state = AESL_inst_cyclicPrefixRemoval.ap_CS_fsm;
-    assign upc_loop_intf_1.iter_start_state = AESL_inst_cyclicPrefixRemoval.ap_ST_fsm_pp0_stage0;
-    assign upc_loop_intf_1.iter_end_state = AESL_inst_cyclicPrefixRemoval.ap_ST_fsm_pp0_stage0;
-    assign upc_loop_intf_1.quit_state = AESL_inst_cyclicPrefixRemoval.ap_ST_fsm_pp0_stage0;
-    assign upc_loop_intf_1.iter_start_block = AESL_inst_cyclicPrefixRemoval.ap_block_pp0_stage0_subdone;
-    assign upc_loop_intf_1.iter_end_block = AESL_inst_cyclicPrefixRemoval.ap_block_pp0_stage0_subdone;
-    assign upc_loop_intf_1.quit_block = AESL_inst_cyclicPrefixRemoval.ap_block_pp0_stage0_subdone;
-    assign upc_loop_intf_1.iter_start_enable = AESL_inst_cyclicPrefixRemoval.ap_enable_reg_pp0_iter0;
-    assign upc_loop_intf_1.iter_end_enable = AESL_inst_cyclicPrefixRemoval.ap_enable_reg_pp0_iter1;
-    assign upc_loop_intf_1.quit_enable = AESL_inst_cyclicPrefixRemoval.ap_enable_reg_pp0_iter0;
-    assign upc_loop_intf_1.loop_start = AESL_inst_cyclicPrefixRemoval.ap_start;
-    assign upc_loop_intf_1.loop_ready = AESL_inst_cyclicPrefixRemoval.ap_ready;
-    assign upc_loop_intf_1.loop_done = AESL_inst_cyclicPrefixRemoval.ap_done_int;
-    assign upc_loop_intf_1.loop_continue = 1'b1;
-    assign upc_loop_intf_1.quit_at_end = 1'b0;
-    assign upc_loop_intf_1.finish = finish;
-    csv_file_dump upc_loop_csv_dumper_1;
-    upc_loop_monitor #(1) upc_loop_monitor_1;
 
     sample_manager sample_manager_inst;
 
@@ -62,11 +40,8 @@ initial begin
 
 
 
-    upc_loop_csv_dumper_1 = new("./upc_loop_status1.csv");
-    upc_loop_monitor_1 = new(upc_loop_intf_1,upc_loop_csv_dumper_1);
 
     sample_manager_inst.add_one_monitor(module_monitor_1);
-    sample_manager_inst.add_one_monitor(upc_loop_monitor_1);
     
     fork
         sample_manager_inst.start_monitor();

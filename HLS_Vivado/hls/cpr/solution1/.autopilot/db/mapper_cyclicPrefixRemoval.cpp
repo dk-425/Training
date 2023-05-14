@@ -236,34 +236,22 @@ class AESL_RUNTIME_BC {
     fstream file_token;
     string mName;
 };
+unsigned int ap_apatb_inpstream_cap_bc;
+static AESL_RUNTIME_BC __xlx_inpstream_V_size_Reader("../tv/stream_size/stream_size_in_inpstream.dat");
+unsigned int ap_apatb_oupstream_cap_bc;
+static AESL_RUNTIME_BC __xlx_oupstream_V_size_Reader("../tv/stream_size/stream_size_out_oupstream.dat");
 using hls::sim::Byte;
-extern "C" void cyclicPrefixRemoval(Byte<8>*, Byte<8>*);
-extern "C" void apatb_cyclicPrefixRemoval_hw(volatile void * __xlx_apatb_param_input_r, volatile void * __xlx_apatb_param_output_r) {
+struct __cosim_s8__ { char data[8]; };
+extern "C" void cyclicPrefixRemoval(__cosim_s8__*, __cosim_s8__*, int);
+extern "C" void apatb_cyclicPrefixRemoval_hw(volatile void * __xlx_apatb_param_inpstream, volatile void * __xlx_apatb_param_oupstream, int __xlx_apatb_param_z) {
 using hls::sim::createStream;
-  // Collect __xlx_input_r__tmp_vec
-std::vector<Byte<8>> __xlx_input_r__tmp_vec;
-for (size_t i = 0; i < 8800; ++i){
-__xlx_input_r__tmp_vec.push_back(((Byte<8>*)__xlx_apatb_param_input_r)[i]);
-}
-  int __xlx_size_param_input_r = 8800;
-  int __xlx_offset_param_input_r = 0;
-  int __xlx_offset_byte_param_input_r = 0*8;
-  // Collect __xlx_output_r__tmp_vec
-std::vector<Byte<8>> __xlx_output_r__tmp_vec;
-for (size_t i = 0; i < 8192; ++i){
-__xlx_output_r__tmp_vec.push_back(((Byte<8>*)__xlx_apatb_param_output_r)[i]);
-}
-  int __xlx_size_param_output_r = 8192;
-  int __xlx_offset_param_output_r = 0;
-  int __xlx_offset_byte_param_output_r = 0*8;
+auto* sinpstream = createStream((hls::stream<__cosim_s8__>*)__xlx_apatb_param_inpstream);
+  //Create input buffer for oupstream
+  ap_apatb_oupstream_cap_bc = __xlx_oupstream_V_size_Reader.read_size();
+  __cosim_s8__* __xlx_oupstream_input_buffer= new __cosim_s8__[ap_apatb_oupstream_cap_bc];
+auto* soupstream = createStream((hls::stream<__cosim_s8__>*)__xlx_apatb_param_oupstream);
   // DUT call
-  cyclicPrefixRemoval(__xlx_input_r__tmp_vec.data(), __xlx_output_r__tmp_vec.data());
-// print __xlx_apatb_param_input_r
-for (size_t i = 0; i < __xlx_size_param_input_r; ++i) {
-((Byte<8>*)__xlx_apatb_param_input_r)[i] = __xlx_input_r__tmp_vec[__xlx_offset_param_input_r+i];
-}
-// print __xlx_apatb_param_output_r
-for (size_t i = 0; i < __xlx_size_param_output_r; ++i) {
-((Byte<8>*)__xlx_apatb_param_output_r)[i] = __xlx_output_r__tmp_vec[__xlx_offset_param_output_r+i];
-}
+  cyclicPrefixRemoval(sinpstream->data<__cosim_s8__>(), soupstream->data<__cosim_s8__>(), __xlx_apatb_param_z);
+sinpstream->transfer((hls::stream<__cosim_s8__>*)__xlx_apatb_param_inpstream);
+soupstream->transfer((hls::stream<__cosim_s8__>*)__xlx_apatb_param_oupstream);
 }

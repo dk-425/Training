@@ -2,13 +2,13 @@
 # xsim v2022.2.2 (64-bit)
 # SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
 # IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
-# Start of session at: Thu May 11 15:40:41 2023
-# Process ID: 17975
+# Start of session at: Sun May 14 18:15:22 2023
+# Process ID: 23571
 # Current directory: /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/cyclicPrefixRemoval/xsim_script.tcl}
 # Log file: /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/sim/verilog/xsim.log
 # Journal file: /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/sim/verilog/xsim.jou
-# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3400.627 MHz, CPU Physical cores: 4, Host memory: 8241 MB
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 1800.000 MHz, CPU Physical cores: 4, Host memory: 8241 MB
 #-----------------------------------------------------------
 source xsim.dir/cyclicPrefixRemoval/xsim_script.tcl
 source cyclicPrefixRemoval.tcl

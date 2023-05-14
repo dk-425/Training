@@ -1,2 +1,9 @@
 <pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="../cpr.cpp" line="6" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="axis" port="inpstream" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="../cpr.cpp" line="7" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="axis" port="oupstream" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="../cpr.cpp" line="8" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="s_axilite" port="z" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../cpr.cpp" line="9" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
 </pragmas>

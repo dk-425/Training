@@ -9,6 +9,7 @@
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 1 "<command-line>" 2
 # 1 "/home/sam-admin/git/Training/HLS_Vivado/cpr.cpp"
+
 # 1 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 1
 
 
@@ -88941,47 +88942,51 @@ public:
 
 }
 # 9 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
+
 using namespace std;
 
 
-typedef ap_fixed<23,3> ftp;
+typedef std::complex<float> ComplexT;
 
-void cyclicPrefixRemoval(complex<ftp> input[8800], complex<ftp> output[8800 -608]);
-void gen(complex<ftp> x[8800]);
-# 2 "/home/sam-admin/git/Training/HLS_Vivado/cpr.cpp" 2
 
-void cyclicPrefixRemoval(complex<ftp> input[8800], complex<ftp> output[8800 -608]) {
-    int z=0;
 
-    for (int i = 0; i < 8800 -608; i++) {
-     z+=1;
-        if (z<=4096){
-            output[i] = input[i + 320];
-        }
-        else{
-         output[i] = input[i + 608];
-        }
-        }
+
+void gen(ComplexT x[8800], hls::stream<ComplexT> &gst);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z);
+# 3 "/home/sam-admin/git/Training/HLS_Vivado/cpr.cpp" 2
+
+
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z) {
+#pragma HLS INTERFACE axis port=inpstream
+#pragma HLS INTERFACE axis port=oupstream
+#pragma HLS INTERFACE s_axilite port=z
+#pragma HLS INTERFACE s_axilite port=return
+
+    ComplexT invar = inpstream.read();
+
+    if ((z > 320 && z <= 4416) || (z > 4704 && z <= 8800)) {
+        oupstream.write(invar);
     }
+}
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_cyclicPrefixRemoval_ir(std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *, std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *);
+void apatb_cyclicPrefixRemoval_ir(hls::stream<std::complex<float>, 0> &, hls::stream<std::complex<float>, 0> &, int);
 #ifdef __cplusplus
 extern "C"
 #endif
-void cyclicPrefixRemoval_hw_stub(std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *input, std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *output){
-cyclicPrefixRemoval(input, output);
+void cyclicPrefixRemoval_hw_stub(hls::stream<std::complex<float>, 0> &inpstream, hls::stream<std::complex<float>, 0> &oupstream, int z){
+cyclicPrefixRemoval(inpstream, oupstream, z);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_cyclicPrefixRemoval_sw(std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *input, std::complex<ap_fixed<23, 3, AP_TRN, AP_WRAP, 0> > *output){
-apatb_cyclicPrefixRemoval_ir(input, output);
+void apatb_cyclicPrefixRemoval_sw(hls::stream<std::complex<float>, 0> &inpstream, hls::stream<std::complex<float>, 0> &oupstream, int z){
+apatb_cyclicPrefixRemoval_ir(inpstream, oupstream, z);
 return ;
 }
 #endif
-# 15 "/home/sam-admin/git/Training/HLS_Vivado/cpr.cpp"
+# 16 "/home/sam-admin/git/Training/HLS_Vivado/cpr.cpp"
 

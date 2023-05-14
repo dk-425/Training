@@ -5,9 +5,9 @@
     <originFiles name="cpr.cpp" path="/home/sam-admin/git/Training/HLS_Vivado/cpr.cpp"/>
   </source>
   <testbench>
-    <originFiles name="puschTxAfterChannelReal.txt" path="/home/sam-admin/git/Training/HLS_Vivado/puschTxAfterChannelReal.txt"/>
-    <originFiles name="puschTxAfterChannelImag.txt" path="/home/sam-admin/git/Training/HLS_Vivado/puschTxAfterChannelImag.txt"/>
     <originFiles name="cpt_tb.cpp" path="/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp"/>
+    <originFiles name="puschTxAfterChannelImag.txt" path="/home/sam-admin/git/Training/HLS_Vivado/puschTxAfterChannelImag.txt"/>
+    <originFiles name="puschTxAfterChannelReal.txt" path="/home/sam-admin/git/Training/HLS_Vivado/puschTxAfterChannelReal.txt"/>
     <originFiles name="ref.dat" path="/home/sam-admin/git/Training/HLS_Vivado/ref.dat"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

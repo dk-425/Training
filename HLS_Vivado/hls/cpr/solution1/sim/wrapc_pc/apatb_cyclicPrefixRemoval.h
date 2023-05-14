@@ -5,5 +5,6 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_cyclicPrefixRemoval (
-volatile void* input_r,
-volatile void* output_r);
+hls::stream<int > inpstream,
+hls::stream<int > oupstream,
+int z);

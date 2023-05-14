@@ -18,14 +18,18 @@
 using namespace std;
 
 // wrapc file define:
-#define AUTOTB_TVIN_input_r "../tv/cdatafile/c.cyclicPrefixRemoval.autotvin_input_r.dat"
-#define AUTOTB_TVOUT_input_r "../tv/cdatafile/c.cyclicPrefixRemoval.autotvout_input_r.dat"
-#define AUTOTB_TVIN_output_r "../tv/cdatafile/c.cyclicPrefixRemoval.autotvin_output_r.dat"
-#define AUTOTB_TVOUT_output_r "../tv/cdatafile/c.cyclicPrefixRemoval.autotvout_output_r.dat"
+#define AUTOTB_TVIN_inpstream "../tv/cdatafile/c.cyclicPrefixRemoval.autotvin_inpstream.dat"
+#define WRAPC_STREAM_SIZE_IN_inpstream "../tv/stream_size/stream_size_in_inpstream.dat"
+#define WRAPC_STREAM_INGRESS_STATUS_inpstream "../tv/stream_size/stream_ingress_status_inpstream.dat"
+#define AUTOTB_TVOUT_oupstream "../tv/cdatafile/c.cyclicPrefixRemoval.autotvout_oupstream.dat"
+#define WRAPC_STREAM_SIZE_OUT_oupstream "../tv/stream_size/stream_size_out_oupstream.dat"
+#define WRAPC_STREAM_EGRESS_STATUS_oupstream "../tv/stream_size/stream_egress_status_oupstream.dat"
+#define AUTOTB_TVIN_z "../tv/cdatafile/c.cyclicPrefixRemoval.autotvin_z.dat"
+#define AUTOTB_TVOUT_z "../tv/cdatafile/c.cyclicPrefixRemoval.autotvout_z.dat"
 
 
 // tvout file define:
-#define AUTOTB_TVOUT_PC_output_r "../tv/rtldatafile/rtl.cyclicPrefixRemoval.autotvout_output_r.dat"
+#define AUTOTB_TVOUT_PC_oupstream "../tv/rtldatafile/rtl.cyclicPrefixRemoval.autotvout_oupstream.dat"
 
 
 namespace hls::sim
@@ -950,84 +954,72 @@ namespace hls::sim
 
 
 extern "C"
-void cyclicPrefixRemoval_hw_stub_wrapper(void*, void*);
+void cyclicPrefixRemoval_hw_stub_wrapper(void*, void*, hls::sim::Byte<4>);
 
 extern "C"
-void apatb_cyclicPrefixRemoval_hw(void* __xlx_apatb_param_input_r, void* __xlx_apatb_param_output_r)
+void apatb_cyclicPrefixRemoval_hw(void* __xlx_apatb_param_inpstream, void* __xlx_apatb_param_oupstream, hls::sim::Byte<4> __xlx_apatb_param_z)
 {
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port0 {
+  static hls::sim::Stream<hls::sim::Byte<8>> port0 {
+    .width = 64,
+    .name = "inpstream",
+#ifdef POST_CHECK
+    .reader = new hls::sim::Reader(WRAPC_STREAM_SIZE_IN_inpstream),
 #else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port0 {
+    .writer = new hls::sim::Writer(AUTOTB_TVIN_inpstream),
+    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_IN_inpstream),
+    .gwriter = new hls::sim::Writer(WRAPC_STREAM_INGRESS_STATUS_inpstream),
 #endif
-    .width = 46,
-    .asize = 8,
-    .hbm = false,
-    .name = { "input_r" },
+  };
+  port0.param = (hls::stream<hls::sim::Byte<8>>*)__xlx_apatb_param_inpstream;
+  port0.hasWrite = false;
+
+  static hls::sim::Stream<hls::sim::Byte<8>> port1 {
+    .width = 64,
+    .name = "oupstream",
+#ifdef POST_CHECK
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_oupstream),
+#else
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_oupstream),
+    .swriter = new hls::sim::Writer(WRAPC_STREAM_SIZE_OUT_oupstream),
+    .gwriter = new hls::sim::Writer(WRAPC_STREAM_EGRESS_STATUS_oupstream),
+#endif
+  };
+  port1.param = (hls::stream<hls::sim::Byte<8>>*)__xlx_apatb_param_oupstream;
+  port1.hasWrite = true;
+
+  static hls::sim::Register port2 {
+    .name = "z",
+    .width = 32,
 #ifdef POST_CHECK
 #else
     .owriter = nullptr,
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_input_r),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_input_r),
-#endif
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_z),
 #endif
   };
-  port0.param = { __xlx_apatb_param_input_r };
-  port0.depth = { 8800 };
-  port0.offset = {  };
-  port0.hasWrite = { false };
-
-#ifdef USE_BINARY_TV_FILE
-  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port1 {
-#else
-  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port1 {
-#endif
-    .width = 46,
-    .asize = 8,
-    .hbm = false,
-    .name = { "output_r" },
-#ifdef POST_CHECK
-#ifdef USE_BINARY_TV_FILE
-    .reader = new hls::sim::Input(AUTOTB_TVOUT_PC_output_r),
-#else
-    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_output_r),
-#endif
-#else
-#ifdef USE_BINARY_TV_FILE
-    .owriter = new hls::sim::Output(AUTOTB_TVOUT_output_r),
-#else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_output_r),
-#endif
-#ifdef USE_BINARY_TV_FILE
-    .iwriter = new hls::sim::Output(AUTOTB_TVIN_output_r),
-#else
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_output_r),
-#endif
-#endif
-  };
-  port1.param = { __xlx_apatb_param_output_r };
-  port1.depth = { 8192 };
-  port1.offset = {  };
-  port1.hasWrite = { true };
+  port2.param = &__xlx_apatb_param_z;
 
   refine_signal_handler();
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
+    check(port0);
     check(port1);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     CodeState = DUMP_INPUTS;
-    dump(port0, port0.iwriter, tcl.AESL_transaction);
-    dump(port1, port1.iwriter, tcl.AESL_transaction);
-    port0.doTCL(tcl);
-    port1.doTCL(tcl);
+    dump(port2, port2.iwriter, tcl.AESL_transaction);
+    port2.doTCL(tcl);
+    port0.markSize();
+    port0.buffer();
+    port1.markSize();
     CodeState = CALL_C_DUT;
-    cyclicPrefixRemoval_hw_stub_wrapper(__xlx_apatb_param_input_r, __xlx_apatb_param_output_r);
+    cyclicPrefixRemoval_hw_stub_wrapper(__xlx_apatb_param_inpstream, __xlx_apatb_param_oupstream, __xlx_apatb_param_z);
+    port1.buffer();
+    dump(port0, tcl.AESL_transaction);
+    port0.doTCL(tcl);
     CodeState = DUMP_OUTPUTS;
-    dump(port1, port1.owriter, tcl.AESL_transaction);
+    dump(port1, tcl.AESL_transaction);
+    port1.doTCL(tcl);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

@@ -88936,54 +88936,94 @@ public:
 
 }
 # 9 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
+
 using namespace std;
 
 
-typedef ap_fixed<23,3> ftp;
+typedef std::complex<float> ComplexT;
 
-void cyclicPrefixRemoval(complex<ftp> input[8800], complex<ftp> output[8800 -608]);
-void gen(complex<ftp> x[8800]);
+
+
+
+void gen(ComplexT x[8800], hls::stream<ComplexT> &gst);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
 
 int main() {
- complex<ftp> x[8800];
-    complex<ftp> input[8800];
- complex<ftp> output[8800 -608];
-    ofstream out("out.dat");
-    gen(x);
+    ComplexT x[8800];
+    vector<ComplexT> y;
+
+    float c, d;
+
+    ifstream in1("puschTxAfterChannelReal.txt");
+    ifstream in2("puschTxAfterChannelImag.txt");
+
     for (int i = 0; i < 8800; i++) {
-        input[i] = x[i];
+        in1 >> c;
+        in2 >> d;
+
+        x[i] = ComplexT(c, d);
+
+
     }
-    cyclicPrefixRemoval(input, output);
+
+    in1.close();
+    in2.close();
+    hls::stream<ComplexT> gst,iputref,oput;
+    gen(x, gst);
+
     int q=0;
     bool f;
+    int z=0;
+    ComplexT input,output;
+    for (int i=0;i<8800;i++){
+     z+=1;
+     input=gst.read();
 
+
+        iputref.write(input);
+        cyclicPrefixRemoval(iputref, oput,z);
+        if (!oput.empty()) {
+          output = oput.read();
+          y.push_back(output);
+
+        }
+
+
+
+
+    }
+    ofstream out("out.dat");
     for (int i = 0; i < 8800 -608; i++) {
      q=q+1;
-        out << "Output[" << i << "]: " << output[i]<<"\t";
+        out << "Output[" << i << "]: " << y[i]<<"\t";
         if (q<=4096){
          out<<"FIRST SYMBOL"<<"\t";
-        if (output[i]==input[i+320]){
+        if (y[i]==x[i+320]){
          out<<"Pass"<<endl;
         }
         else{
          f=1;
+
          out<<"Fail"<<endl;
         }
     }
     else{
      out<<"SECOND SYMBOL"<<"\t";
-        if (output[i]==input[i+608]){
+        if (y[i]==x[i+608]){
          out<<"Pass"<<endl;
         }
         else{
          f=1;
+
         out<<"Fail"<<endl;
         }
     }
     }
     out.close();
-    if (f==1){cout<<"!ERROR!"<<endl;}
+
+    if (f){cout<<"!ERROR!"<<endl;}
     else {cout<<"PASS"<<endl;}
     return 0;
+
 }

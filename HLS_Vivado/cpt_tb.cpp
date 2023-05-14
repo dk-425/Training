@@ -1,44 +1,80 @@
 #include "header.h"
 
 int main() {
-	complex<ftp> x[N];
-    complex<ftp> input[N];
-	complex<ftp> output[N-P];
-    ofstream out("out.dat");
-    gen(x);
+    ComplexT x[N];
+    vector<ComplexT> y;
+
+    float c, d;
+
+    ifstream in1("puschTxAfterChannelReal.txt");
+    ifstream in2("puschTxAfterChannelImag.txt");
+
     for (int i = 0; i < N; i++) {
-        input[i] = x[i];
+        in1 >> c;
+        in2 >> d;
+
+        x[i] = ComplexT(c, d);
+
+     //  cout << x[i] << endl;
     }
-    cyclicPrefixRemoval(input, output);
+
+    in1.close();
+    in2.close();
+    hls::stream<ComplexT> gst,iputref,oput;
+    gen(x, gst);
+
     int q=0;
     bool f;
-    // Print the output data
+    int z=0;
+    ComplexT input,output;
+    for (int i=0;i<N;i++){
+    	z+=1;
+    	input=gst.read();
+    	//cout<<input<<endl;
+
+        iputref.write(input);
+        cyclicPrefixRemoval(iputref, oput,z);
+        if (!oput.empty()) {
+          output = oput.read();
+          y.push_back(output);
+          //cout<<output<<endl;
+        }
+        /*else {
+         cout<<"Skipping Cyclic Prefix BITS"<<endl;
+       }*/
+
+    }
+    ofstream out("out.dat");
     for (int i = 0; i < N-P; i++) {
     	q=q+1;
-        out << "Output[" << i << "]: " << output[i]<<"\t";
+        out << "Output[" << i << "]: " << y[i]<<"\t";
         if (q<=4096){
         	out<<"FIRST SYMBOL"<<"\t";
-        if (output[i]==input[i+320]){
+        if (y[i]==x[i+320]){
         	out<<"Pass"<<endl;
         }
         else{
         	f=1;
+        	//cout<<f<<endl;
         	out<<"Fail"<<endl;
         }
     }
     else{
     	out<<"SECOND SYMBOL"<<"\t";
-        if (output[i]==input[i+P]){
+        if (y[i]==x[i+P]){
         	out<<"Pass"<<endl;
         }
         else{
         	f=1;
+        	//cout<<f<<endl;
         out<<"Fail"<<endl;
         }
     }
     }
     out.close();
-    if (f==1){cout<<"!ERROR!"<<endl;}
+    //cout<<f<<endl;
+    if (f){cout<<"!ERROR!"<<endl;}
     else {cout<<"PASS"<<endl;}
     return 0;
+
 }

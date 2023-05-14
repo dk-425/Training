@@ -1,15 +1,17 @@
+
 #include "header.h"
 
-void cyclicPrefixRemoval(complex<ftp> input[N], complex<ftp> output[N-P]) {
-    int z=0;
-    // cpr removal (discarding the guard interval)
-    for (int i = 0; i < N-P; i++) {
-    	z+=1;
-        if (z<=4096){
-            output[i] = input[i + 320];
-        }
-        else{
-        	output[i] = input[i + P];
-        }
-        }
+
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z) {
+#pragma HLS INTERFACE axis port=inpstream
+#pragma HLS INTERFACE axis port=oupstream
+#pragma HLS INTERFACE s_axilite port=z
+#pragma HLS INTERFACE s_axilite port=return
+
+    ComplexT invar = inpstream.read();
+
+    if ((z > 320 && z <= 4416) || (z > 4704 && z <= 8800)) {
+        oupstream.write(invar);
     }
+}
+

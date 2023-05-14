@@ -88941,28 +88941,26 @@ public:
 
 }
 # 9 "/home/sam-admin/git/Training/HLS_Vivado/header.h" 2
+
 using namespace std;
 
 
-typedef ap_fixed<23,3> ftp;
+typedef std::complex<float> ComplexT;
 
-void cyclicPrefixRemoval(complex<ftp> input[8800], complex<ftp> output[8800 -608]);
-void gen(complex<ftp> x[8800]);
+
+
+
+void gen(ComplexT x[8800], hls::stream<ComplexT> &gst);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/datagen.cpp" 2
 
+void gen(ComplexT x[8800], hls::stream<ComplexT> &gst) {
 
-void gen(complex<ftp> x[8800]){
-  float c,d;
-  ftp a,b;
-  ifstream in1("puschTxAfterChannelReal.txt");
-  ifstream in2("puschTxAfterChannelImag.txt");
-  for (int i=0;i<8800;i++){
-   in1>>c;
-   in2>>d;
-   a=c;
-   b=d;
-   x[i]=complex<float>(a, b);
-  }
-  in1.close();
-  in2.close();
+
+
+
+    for (int i = 0; i < 8800; i++) {
+
+        gst.write(x[i]);
+    }
 }

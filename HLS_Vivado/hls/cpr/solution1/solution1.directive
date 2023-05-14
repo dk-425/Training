@@ -5,6 +5,11 @@
                 <option name="name" value="cyclicPrefixRemoval"/>
             </pragma>
         </directive>
+        <directive functionName="cyclicPrefixRemoval" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="cyclicPrefixRemoval"/>
+            </pragma>
+        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 
