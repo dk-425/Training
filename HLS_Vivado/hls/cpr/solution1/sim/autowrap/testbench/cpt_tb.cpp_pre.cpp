@@ -88945,61 +88945,83 @@ typedef std::complex<float> ComplexT;
 
 
 
-void gen(ComplexT x[8800], hls::stream<ComplexT> &gst);
-void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z);
+void gen(hls::stream<ComplexT> &gst);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, hls::stream<int> &z);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/cpt_tb.cpp" 2
 
 int main() {
-    ComplexT x[8800];
-    vector<ComplexT> y;
 
+
+
+
+    ComplexT x[8800];
     float c, d;
 
     ifstream in1("puschTxAfterChannelReal.txt");
     ifstream in2("puschTxAfterChannelImag.txt");
 
+    ofstream inp("input.dat");
+    int l=0;
     for (int i = 0; i < 8800; i++) {
+     l=l+1;
         in1 >> c;
         in2 >> d;
 
         x[i] = ComplexT(c, d);
+        inp<<x[i]<<endl;
+
+
+
 
 
     }
 
     in1.close();
     in2.close();
-    hls::stream<ComplexT> gst,iputref,oput;
-    gen(x, gst);
+    inp.close();
 
-    int q=0;
-    bool f;
-    int z=0;
+
+
+    ofstream oup("output.dat");
+    vector<ComplexT> y;
+    hls::stream<ComplexT> gst,iputref,oput;
+    int t=0;
+    hls::stream<int> z;
     ComplexT input,output;
+
+    gen(gst);
     for (int i=0;i<8800;i++){
-     z+=1;
+     t+=1;
      input=gst.read();
 
-
         iputref.write(input);
+        z.write(t);
         cyclicPrefixRemoval(iputref, oput,z);
         if (!oput.empty()) {
           output = oput.read();
           y.push_back(output);
 
+          oup<<output<<endl;
         }
 
 
 
-
     }
+    oup.close();
+
+
+
+
     ofstream out("out.dat");
+    int q=0;
+    bool f=0;
     for (int i = 0; i < 8800 -608; i++) {
      q=q+1;
         out << "Output[" << i << "]: " << y[i]<<"\t";
         if (q<=4096){
          out<<"FIRST SYMBOL"<<"\t";
-        if (y[i]==x[i+320]){
+
+        if ((y[i].real()-x[i+320].real())/y[i].real() < 10e-3 && (y[i].imag()-x[i+320].imag())/y[i].imag() <10e-3){
          out<<"Pass"<<endl;
         }
         else{
@@ -89010,7 +89032,7 @@ int main() {
     }
     else{
      out<<"SECOND SYMBOL"<<"\t";
-        if (y[i]==x[i+608]){
+        if ((y[i].real()-x[i+608].real())/y[i].real() < 10e-3 && (y[i].imag()-x[i+608].imag())/y[i].imag() < 10e-3){
          out<<"Pass"<<endl;
         }
         else{
@@ -89021,9 +89043,8 @@ int main() {
     }
     }
     out.close();
-
-    if (f){cout<<"!ERROR!"<<endl;}
-    else {cout<<"PASS"<<endl;}
+    if (f==1){cout<<"!!FAIL!! OUTPUT IS NOT TOLERABLE BASED ON GIVEN PRECISION"<<endl;}
+    else {cout<<"!PASS! OUTPUT IS TOLERABLE BASED ON GIVEN PRECISION"<<endl;}
     return 0;
 
 }

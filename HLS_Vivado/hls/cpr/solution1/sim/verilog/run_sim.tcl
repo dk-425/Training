@@ -34,12 +34,12 @@ if {$ret == 1} {
 	return -code error -errorcode $::errorCode
 }
 
-if {[file isfile cyclicPrefixRemoval.autotvin.dat]} {
-	file delete -force cyclicPrefixRemoval.autotvin.dat
+if {[file isfile gen.autotvin.dat]} {
+	file delete -force gen.autotvin.dat
 }
 
-if {[file isfile cyclicPrefixRemoval.autotvout.dat]} {
-	file delete -force cyclicPrefixRemoval.autotvout.dat
+if {[file isfile gen.autotvout.dat]} {
+	file delete -force gen.autotvout.dat
 }
 
 sc_sim_check $ret $err "temp0.log"

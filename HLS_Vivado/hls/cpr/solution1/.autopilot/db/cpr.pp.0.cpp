@@ -47288,24 +47288,21 @@ typedef std::complex<float> ComplexT;
 
 
 
-void gen(ComplexT x[8800], hls::stream<ComplexT> &gst);
-__attribute__((sdx_kernel("cyclicPrefixRemoval", 0))) void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z);
+void gen(hls::stream<ComplexT> &gst);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, hls::stream<int> &z);
 # 3 "../cpr.cpp" 2
 
 
-__attribute__((sdx_kernel("cyclicPrefixRemoval", 0))) void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z) {
-#line 19 "/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/csynth.tcl"
-#pragma HLSDIRECTIVE TOP name=cyclicPrefixRemoval
-# 5 "../cpr.cpp"
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, hls::stream<int> &z) {
 
-#pragma HLS INTERFACE axis port=inpstream
-#pragma HLS INTERFACE axis port=oupstream
-#pragma HLS INTERFACE s_axilite port=z
-#pragma HLS INTERFACE s_axilite port=return
 
- ComplexT invar = inpstream.read();
 
-    if ((z > 320 && z <= 4416) || (z > 4704 && z <= 8800)) {
+
+
+
+    ComplexT invar = inpstream.read();
+    int v=z.read();
+    if ((v > 320 && v <= 4416) || (v > 4704 && v <= 8800)) {
         oupstream.write(invar);
     }
 }

@@ -4,4 +4,4 @@
 # Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 
-/tools/Xilinx/Vivado/2022.2/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xc7z020-clg484-1 ../xilinx_com_hls_cyclicPrefixRemoval_1_0.zip
+/tools/Xilinx/Vivado/2022.2/bin/vivado  -notrace -mode batch -source ipi_example.tcl -tclargs xc7z020-clg484-1 ../xilinx_com_hls_gen_1_0.zip

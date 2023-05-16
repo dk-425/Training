@@ -88946,20 +88946,21 @@ typedef std::complex<float> ComplexT;
 
 
 
-void gen(ComplexT x[8800], hls::stream<ComplexT> &gst);
-void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z);
+void gen(hls::stream<ComplexT> &gst);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, hls::stream<int> &z);
 # 3 "/home/sam-admin/git/Training/HLS_Vivado/cpr.cpp" 2
 
 
-void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z) {
-#pragma HLS INTERFACE axis port=inpstream
-#pragma HLS INTERFACE axis port=oupstream
-#pragma HLS INTERFACE s_axilite port=z
-#pragma HLS INTERFACE s_axilite port=return
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, hls::stream<int> &z) {
+
+
+
+
+
 
     ComplexT invar = inpstream.read();
-
-    if ((z > 320 && z <= 4416) || (z > 4704 && z <= 8800)) {
+    int v=z.read();
+    if ((v > 320 && v <= 4416) || (v > 4704 && v <= 8800)) {
         oupstream.write(invar);
     }
 }

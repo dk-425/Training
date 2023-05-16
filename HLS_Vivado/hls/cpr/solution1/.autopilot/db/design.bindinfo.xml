@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <BindInfo>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_fu_68_p2" SOURCE="../cpr.cpp:13" VARIABLE="icmp_ln13" MODULE="cyclicPrefixRemoval" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_1_fu_74_p2" SOURCE="../cpr.cpp:13" VARIABLE="icmp_ln13_1" MODULE="cyclicPrefixRemoval" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln13_fu_80_p2" SOURCE="../cpr.cpp:13" VARIABLE="and_ln13" MODULE="cyclicPrefixRemoval" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_2_fu_86_p2" SOURCE="../cpr.cpp:13" VARIABLE="icmp_ln13_2" MODULE="cyclicPrefixRemoval" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_3_fu_92_p2" SOURCE="../cpr.cpp:13" VARIABLE="icmp_ln13_3" MODULE="cyclicPrefixRemoval" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln13_1_fu_98_p2" SOURCE="../cpr.cpp:13" VARIABLE="and_ln13_1" MODULE="cyclicPrefixRemoval" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="cyclicPrefixRemoval" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln1770_fu_35081_p2" SOURCE="../datagen.cpp:1770" VARIABLE="icmp_ln1770" MODULE="gen" LOOP="VITIS_LOOP_1770_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1770_fu_35087_p2" SOURCE="../datagen.cpp:1770" VARIABLE="add_ln1770" MODULE="gen" LOOP="VITIS_LOOP_1770_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mux" ID="" IMPL="auto" LATENCY="0" OPTYPE="mux" PRAGMA="" RTLNAME="mux_880014_32_1_1_U1" SOURCE="../datagen.cpp:1772" VARIABLE="tmp" MODULE="gen" LOOP="VITIS_LOOP_1770_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mux" ID="" IMPL="auto" LATENCY="0" OPTYPE="mux" PRAGMA="" RTLNAME="mux_880014_32_1_1_U2" SOURCE="../datagen.cpp:1772" VARIABLE="tmp_1" MODULE="gen" LOOP="VITIS_LOOP_1770_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="gen" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
 </BindInfo>

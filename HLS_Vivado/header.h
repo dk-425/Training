@@ -15,7 +15,7 @@ typedef std::complex<float> ComplexT;
 //struct inp{complex<ftp> data[N];};
 //struct oup{complex<ftp> data[N-P];};
 
-void gen(ComplexT x[N], hls::stream<ComplexT> &gst);
-void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, int z);
+void gen(hls::stream<ComplexT> &gst);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, hls::stream<int> &z);
 
 #endif

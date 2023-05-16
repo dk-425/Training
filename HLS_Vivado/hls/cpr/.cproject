@@ -191,8 +191,6 @@
                     					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1851918439.609373020" name="puschTxAfterChannelReal.txt" rcbsApplicability="disable" resourcePath="testbench/puschTxAfterChannelReal.txt" toolsToInvoke=""/>
                     					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1851918439.1744722424" name="ref.dat" rcbsApplicability="disable" resourcePath="testbench/ref.dat" toolsToInvoke=""/>
-                    					
                     <sourceEntries>
                         						
                         <entry excluding=".apc|.reference|.settings|solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
@@ -374,8 +372,6 @@
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.121572997.1063196695" name="puschTxAfterChannelImag.txt" rcbsApplicability="disable" resourcePath="testbench/puschTxAfterChannelImag.txt" toolsToInvoke=""/>
                     					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.121572997.2066433763" name="puschTxAfterChannelReal.txt" rcbsApplicability="disable" resourcePath="testbench/puschTxAfterChannelReal.txt" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.121572997.804955074" name="ref.dat" rcbsApplicability="disable" resourcePath="testbench/ref.dat" toolsToInvoke=""/>
                     					
                     <sourceEntries>
                         						

@@ -26,7 +26,6 @@ module AESL_axi_slave_control (
     TRAN_s_axi_control_BVALID,
     TRAN_s_axi_control_BREADY,
     TRAN_s_axi_control_BRESP,
-    TRAN_control_write_data_finish,
     TRAN_control_start_in,
     TRAN_control_idle_out,
     TRAN_control_ready_out,
@@ -39,16 +38,14 @@ module AESL_axi_slave_control (
     );
 
 //------------------------Parameter----------------------
-`define TV_IN_z "../tv/cdatafile/c.cyclicPrefixRemoval.autotvin_z.dat"
-parameter ADDR_WIDTH = 5;
+parameter ADDR_WIDTH = 4;
 parameter DATA_WIDTH = 32;
-parameter z_DEPTH = 1;
-reg [31 : 0] z_OPERATE_DEPTH = 0;
-parameter z_c_bitwidth = 32;
+parameter control_DEPTH = 1;
+reg [31 : 0] control_OPERATE_DEPTH = 0;
+parameter control_c_bitwidth = 1;
 parameter START_ADDR = 0;
-parameter cyclicPrefixRemoval_continue_addr = 0;
-parameter cyclicPrefixRemoval_auto_start_addr = 0;
-parameter z_data_in_addr = 16;
+parameter gen_continue_addr = 0;
+parameter gen_auto_start_addr = 0;
 parameter STATUS_ADDR = 0;
 
 output [ADDR_WIDTH - 1 : 0] TRAN_s_axi_control_AWADDR;
@@ -68,7 +65,6 @@ input [2 - 1 : 0] TRAN_s_axi_control_RRESP;
 input  TRAN_s_axi_control_BVALID;
 output  TRAN_s_axi_control_BREADY;
 input [2 - 1 : 0] TRAN_s_axi_control_BRESP;
-output TRAN_control_write_data_finish;
 input     clk;
 input     reset;
 input     TRAN_control_start_in;
@@ -91,9 +87,8 @@ reg  ARVALID_reg = 0;
 reg  RREADY_reg = 0;
 reg [DATA_WIDTH - 1 : 0] RDATA_reg = 0;
 reg  BREADY_reg = 0;
-reg [DATA_WIDTH - 1 : 0] mem_z [z_DEPTH - 1 : 0] = '{default : 'h0};
-reg [DATA_WIDTH-1 : 0] image_mem_z [ (z_c_bitwidth+DATA_WIDTH-1)/DATA_WIDTH * z_DEPTH -1 : 0] = '{default : 'hz};
-reg z_write_data_finish;
+reg [DATA_WIDTH - 1 : 0] mem_control [control_DEPTH - 1 : 0] = '{default : 'h0};
+reg [DATA_WIDTH-1 : 0] image_mem_control [ (control_c_bitwidth+DATA_WIDTH-1)/DATA_WIDTH * control_DEPTH -1 : 0] = '{default : 'hz};
 reg AESL_ready_out_index_reg = 0;
 reg AESL_write_start_finish = 0;
 reg AESL_ready_reg;
@@ -103,11 +98,6 @@ reg AESL_idle_index_reg = 0;
 reg AESL_auto_restart_index_reg;
 reg process_0_finish = 0;
 reg process_1_finish = 0;
-reg process_2_finish = 0;
-//write z reg
-reg [31 : 0] write_z_count = 0;
-reg write_z_run_flag = 0;
-reg write_one_z_data_done = 0;
 reg [31 : 0] write_start_count = 0;
 reg write_start_run_flag = 0;
 
@@ -130,13 +120,12 @@ assign TRAN_control_write_start_finish = AESL_write_start_finish;
 assign TRAN_control_done_out = AESL_done_index_reg;
 assign TRAN_control_ready_out = AESL_ready_out_index_reg;
 assign TRAN_control_idle_out = AESL_idle_index_reg;
-assign TRAN_control_write_data_finish = 1 & z_write_data_finish;
 always @(TRAN_control_ready_in or ready_initial) 
 begin
     AESL_ready_reg <= TRAN_control_ready_in | ready_initial;
 end
 
-always @(reset or process_0_finish or process_1_finish or process_2_finish ) begin
+always @(reset or process_0_finish or process_1_finish ) begin
     if (reset == 0) begin
         ongoing_process_number <= 0;
     end
@@ -144,9 +133,6 @@ always @(reset or process_0_finish or process_1_finish or process_2_finish ) beg
             ongoing_process_number <= ongoing_process_number + 1;
     end
     else if (ongoing_process_number == 1 && process_1_finish == 1) begin
-            ongoing_process_number <= ongoing_process_number + 1;
-    end
-    else if (ongoing_process_number == 2 && process_2_finish == 1) begin
             ongoing_process_number <= 0;
     end
 end
@@ -317,88 +303,11 @@ end
 
 always @(reset or posedge clk) begin
     if (reset == 0) begin
-        z_write_data_finish <= 0;
-        write_z_run_flag <= 0; 
-        write_z_count = 0;
-        count_operate_depth_by_bitwidth_and_depth (z_c_bitwidth, z_DEPTH, z_OPERATE_DEPTH);
-    end
-    else begin
-        if (TRAN_control_start_in === 1) begin
-            z_write_data_finish <= 0;
-        end
-        if (AESL_ready_reg === 1) begin
-            write_z_run_flag <= 1; 
-            write_z_count = 0;
-        end
-        if (write_one_z_data_done === 1) begin
-            write_z_count = write_z_count + 1;
-            if (write_z_count == z_OPERATE_DEPTH) begin
-                write_z_run_flag <= 0; 
-                z_write_data_finish <= 1;
-            end
-        end
-    end
-end
-
-initial begin : write_z
-    integer write_z_resp;
-    integer process_num ;
-    integer get_ack;
-    integer four_byte_num;
-    integer c_bitwidth;
-    integer i;
-    integer j;
-    reg [31 : 0] z_data_tmp_reg;
-    wait(reset === 1);
-    @(posedge clk);
-    c_bitwidth = z_c_bitwidth;
-    process_num = 1;
-    count_c_data_four_byte_num_by_bitwidth (c_bitwidth , four_byte_num) ;
-    while (1) begin
-        process_1_finish <= 0;
-
-        if (ongoing_process_number === process_num && process_busy === 0 ) begin
-            get_ack = 1;
-            if (write_z_run_flag === 1 && get_ack === 1) begin
-                process_busy = 1;
-                //write z data 
-                for (i = 0 ; i < four_byte_num ; i = i+1) begin
-                    if (z_c_bitwidth < 32) begin
-                        z_data_tmp_reg = mem_z[write_z_count];
-                    end
-                    else begin
-                        for (j=0 ; j<32 ; j = j + 1) begin
-                            if (i*32 + j < z_c_bitwidth) begin
-                                z_data_tmp_reg[j] = mem_z[write_z_count][i*32 + j];
-                            end
-                            else begin
-                                z_data_tmp_reg[j] = 0;
-                            end
-                        end
-                    end
-                    if(image_mem_z[write_z_count * four_byte_num  + i]!==z_data_tmp_reg) begin
-                    write (z_data_in_addr + write_z_count * four_byte_num * 4 + i * 4, z_data_tmp_reg, write_z_resp);
-                    image_mem_z[write_z_count * four_byte_num + i]=z_data_tmp_reg;
-                    end
-                end
-                process_busy = 0;
-                write_one_z_data_done <= 1;
-                @(posedge clk);
-                write_one_z_data_done <= 0;
-            end   
-            process_1_finish <= 1;
-        end
-        @(posedge clk);
-    end    
-end
-
-always @(reset or posedge clk) begin
-    if (reset == 0) begin
         write_start_run_flag <= 0; 
         write_start_count <= 0;
     end
     else begin
-        if (write_start_count >= 8800) begin
+        if (write_start_count >= 1) begin
             write_start_run_flag <= 0; 
         end
         else if (TRAN_control_write_start_in === 1) begin
@@ -417,9 +326,9 @@ initial begin : write_start
     integer write_start_resp;
     wait(reset === 1);
     @(posedge clk);
-    process_num = 2;
+    process_num = 1;
     while (1) begin
-        process_2_finish = 0;
+        process_1_finish = 0;
         if (ongoing_process_number === process_num && process_busy === 0 ) begin
             if (write_start_run_flag === 1) begin
                 process_busy = 1;
@@ -431,7 +340,7 @@ initial begin : write_start
                 @(posedge clk);
                 AESL_write_start_finish <= 0;
             end
-            process_2_finish <= 1;
+            process_1_finish <= 1;
         end 
         @(posedge clk);
     end
@@ -449,102 +358,7 @@ task read_token;
     end 
 endtask 
  
-//------------------------Read file------------------------ 
- 
-// Read data from file 
-initial begin : read_z_file_process 
-  integer fp; 
-  integer ret; 
-  integer factor; 
-  reg [127 : 0] token; 
-  reg [127 : 0] token_tmp; 
-  //reg [z_c_bitwidth - 1 : 0] token_tmp; 
-  reg [DATA_WIDTH - 1 : 0] tmp_cache_mem; 
-  reg [ 8*5 : 1] str;
-    reg [63:0] trans_depth;
-  integer transaction_idx; 
-  integer i; 
-  transaction_idx = 0; 
-  tmp_cache_mem [DATA_WIDTH - 1 : 0] = 0;
-  count_seperate_factor_by_bitwidth (z_c_bitwidth , factor);
-  fp = $fopen(`TV_IN_z ,"r"); 
-  if(fp == 0) begin                               // Failed to open file 
-      $display("Failed to open file \"%s\"!", `TV_IN_z); 
-      $finish; 
-  end 
-  read_token(fp, token); 
-  if (token != "[[[runtime]]]") begin             // Illegal format 
-      $display("ERROR: Simulation using HLS TB failed.");
-      $finish; 
-  end 
-  read_token(fp, token); 
-  while (token != "[[[/runtime]]]") begin 
-      if (token != "[[transaction]]") begin 
-          $display("ERROR: Simulation using HLS TB failed.");
-          $finish; 
-      end 
-      read_token(fp, token);                        // skip transaction number 
-      @(posedge clk);
-      # 0.2;
-      while(AESL_ready_reg !== 1) begin
-          @(posedge clk); 
-          # 0.2;
-      end
-      for(i = 0; i < z_DEPTH; i = i + 1) begin 
-          read_token(fp, token); 
-          ret = $sscanf(token, "0x%x", token_tmp); 
-          if (factor == 4) begin
-              if (i%factor == 0) begin
-                  tmp_cache_mem [7 : 0] = token_tmp;
-              end
-              if (i%factor == 1) begin
-                  tmp_cache_mem [15 : 8] = token_tmp;
-              end
-              if (i%factor == 2) begin
-                  tmp_cache_mem [23 : 16] = token_tmp;
-              end
-              if (i%factor == 3) begin
-                  tmp_cache_mem [31 : 24] = token_tmp;
-                  mem_z [i/factor] = tmp_cache_mem;
-                  tmp_cache_mem [DATA_WIDTH - 1 : 0] = 0;
-              end
-          end
-          if (factor == 2) begin
-              if (i%factor == 0) begin
-                  tmp_cache_mem [15 : 0] = token_tmp;
-              end
-              if (i%factor == 1) begin
-                  tmp_cache_mem [31 : 16] = token_tmp;
-                  mem_z [i/factor] = tmp_cache_mem;
-                  tmp_cache_mem [DATA_WIDTH - 1: 0] = 0;
-              end
-          end
-          if (factor == 1) begin
-              mem_z [i] = token_tmp;
-          end
-      end 
-      if (factor == 4) begin
-          if (i%factor != 0) begin
-              mem_z [i/factor] = tmp_cache_mem;
-          end
-      end
-      if (factor == 2) begin
-          if (i%factor != 0) begin
-              mem_z [i/factor] = tmp_cache_mem;
-          end
-      end 
-      read_token(fp, token); 
-      if(token != "[[/transaction]]") begin 
-          $display("ERROR: Simulation using HLS TB failed.");
-          $finish; 
-      end 
-      read_token(fp, token); 
-      transaction_idx = transaction_idx + 1; 
-  end 
-  $fclose(fp); 
-end 
- 
-task write_binary_z;
+task write_binary_control;
     input integer fp;
     input reg[64-1:0] in;
     input integer in_bw;

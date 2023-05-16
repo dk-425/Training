@@ -1,0 +1,2 @@
+remark: <unknown>:0:0: Applying array_partition to 'z.1': Complete partitioning on dimension 1.
+remark: <unknown>:0:0: Applying array_partition to 'z.0': Complete partitioning on dimension 1.

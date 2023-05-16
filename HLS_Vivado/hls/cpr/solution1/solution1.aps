@@ -7,7 +7,7 @@
     </downStreamTool>
     <synthesis askAgain="true"/>
     <config>
-        <config_export format="ip_catalog" output="/home/sam-admin/git/Training/HLS_Vivado/Cpr_IP" rtl="verilog"/>
+        <config_export format="ip_catalog" output="/home/sam-admin/git/Training/HLS_Vivado/gen_ip" rtl="verilog"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf boardInfo="Zynq 7000 ZC702 Evaluation Board (xc7z020clg484-1) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
@@ -40,8 +40,8 @@
             </RTLs>
         </UIAutoSimConf>
     </UIConfigurations>
-    <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="/home/sam-admin/git/Training/HLS_Vivado/Cpr_IP" rtl="verilog" rtlButton="true" rtlCombo="verilog">
-        <Format formatName="ip_catalog" description="" vendor="" library="" ipname="cyclicPrefixRemoval" version="" display_name="" taxonomy=""/>
+    <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="/home/sam-admin/git/Training/HLS_Vivado/gen_ip" rtl="verilog" rtlButton="true" rtlCombo="verilog">
+        <Format formatName="ip_catalog" description="" vendor="" library="" ipname="gen" version="" display_name="" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>

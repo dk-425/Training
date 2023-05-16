@@ -1,5 +1,5 @@
 
-set TopModule "cyclicPrefixRemoval"
+set TopModule "gen"
 set ClockPeriod 10
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
@@ -7,7 +7,7 @@ set CombLogicFlag 0
 set PipelineFlag 0
 set DataflowTaskPipelineFlag 1
 set TrivialPipelineFlag 0
-set noPortSwitchingFlag 0
+set noPortSwitchingFlag 1
 set FloatingPointFlag 0
 set FftOrFirFlag 0
 set NbRWValue 0
@@ -23,7 +23,7 @@ set ResetRegisterNum 0
 set FsmEncStyle onehot
 set MaxFanout 0
 set RtlPrefix {}
-set RtlSubPrefix cyclicPrefixRemoval_
+set RtlSubPrefix gen_
 set ExtraCCFlags {}
 set ExtraCLdFlags {}
 set SynCheckOptions {}
@@ -42,15 +42,15 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
-set SourceFiles {sc {} c {../../../cpr.cpp ../../../datagen.cpp}}
+set SourceFiles {sc {} c {../../../datagen.cpp ../../../cpr.cpp}}
 set SourceFlags {sc {} c {{} {}}}
 set DirectiveFile /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/solution1.directive
-set TBFiles {verilog {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} bc {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} sc {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} vhdl {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} c {} cas {../../../ref.dat ../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp}}
+set TBFiles {verilog {../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} bc {../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} vhdl {../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} sc {../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} cas {../../../puschTxAfterChannelReal.txt ../../../puschTxAfterChannelImag.txt ../../../cpt_tb.cpp} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
-set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

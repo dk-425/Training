@@ -1,9 +1,7 @@
 <pragmas>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="../datagen.cpp" line="1771" pragmaType="pipeline" parentfunction="gen" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../datagen.cpp" line="4" pragmaType="interface" parentfunction="gen" mode="axis" port="gst" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="../datagen.cpp" line="5" pragmaType="interface" parentfunction="gen" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../datagen.cpp" line="1768" pragmaType="array_partition" parentfunction="gen" dim="1" factor="0" mode="complete" dynamic="0" variable="z"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="../cpr.cpp" line="6" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="axis" port="inpstream" register="0" register_mode="both" name="" depth="-1"/>
-<pragma file="../cpr.cpp" line="7" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="axis" port="oupstream" register="0" register_mode="both" name="" depth="-1"/>
-<pragma file="../cpr.cpp" line="8" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="s_axilite" port="z" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
-<pragma file="../cpr.cpp" line="9" pragmaType="interface" parentfunction="cyclicPrefixRemoval" mode="s_axilite" port="" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
 </pragmas>

@@ -81,8 +81,6 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.cyclicPrefixRemoval.autotvin_inpstream.dat"
-         "c.cyclicPrefixRemoval.autotvin_z.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {
@@ -102,7 +100,7 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.cyclicPrefixRemoval.autotvout_oupstream.dat"
+         "rtl.gen.autotvout_gst.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

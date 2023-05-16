@@ -1,0 +1,18 @@
+verilog xil_defaultlib --include "../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/a843/hdl/verilog" --include "../../../../fft_rtl.gen/sources_1/bd/fft/ip/fft_gen_0_0/drivers/gen_v1_0/src" --include "../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/0687/hdl/verilog" --include "../../../../fft_rtl.gen/sources_1/bd/fft/ip/fft_cyclicPrefixRemoval_0_0/drivers/cyclicPrefixRemoval_v1_0/src" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/a843/hdl/verilog/gen_control_s_axi.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/a843/hdl/verilog/gen_flow_control_loop_pipe.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/a843/hdl/verilog/gen_hls_deadlock_idx0_monitor.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/a843/hdl/verilog/gen_mux_880014_32_1_1.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/a843/hdl/verilog/gen_regslice_both.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/a843/hdl/verilog/gen.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ip/fft_gen_0_0/sim/fft_gen_0_0.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/0687/hdl/verilog/cyclicPrefixRemoval_control_s_axi.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/0687/hdl/verilog/cyclicPrefixRemoval_hls_deadlock_idx0_monitor.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/0687/hdl/verilog/cyclicPrefixRemoval_regslice_both.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ipshared/0687/hdl/verilog/cyclicPrefixRemoval.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/ip/fft_cyclicPrefixRemoval_0_0/sim/fft_cyclicPrefixRemoval_0_0.v" \
+"../../../../fft_rtl.gen/sources_1/bd/fft/sim/fft.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
