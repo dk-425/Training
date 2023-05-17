@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/./sim/autowrap/testbench/datagen.cpp_pre.cpp.tb.cpp

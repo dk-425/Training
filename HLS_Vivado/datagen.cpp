@@ -4,7 +4,6 @@ void gen(hls::stream<ComplexT> &gst) {
 #pragma HLS INTERFACE axis port=gst
 #pragma HLS INTERFACE s_axilite port=return
 
-
 ComplexT z[N]={ComplexT(0.36492,-0.728851),ComplexT(-0.752842,0.31251),ComplexT(0.875913,0.27137),ComplexT(-0.36993,-0.787211),ComplexT(-0.284297,0.793227),
 ComplexT(0.77518,-0.345721),ComplexT(-0.743295,-0.358169),ComplexT(0.341801,0.705594),ComplexT(0.200641,-0.701969),ComplexT(-0.657016,0.334532),
 ComplexT(0.732162,0.206578),ComplexT(-0.371676,-0.688014),ComplexT(-0.233051,0.713312),ComplexT(0.573324,-0.454452),ComplexT(-0.643119,-0.075746),

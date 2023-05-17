@@ -37,9 +37,14 @@
 			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/.apc/.tb</location>
 		</link>
 		<link>
-			<name>solution1/constraints</name>
+			<name>cpr/constraints</name>
 			<type>2</type>
-			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/.tcls</location>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/cpr/.tcls</location>
+		</link>
+		<link>
+			<name>gen/constraints</name>
+			<type>2</type>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/gen/.tcls</location>
 		</link>
 		<link>
 			<name>source/cpr.cpp</name>
@@ -67,19 +72,34 @@
 			<location>/home/sam-admin/git/Training/HLS_Vivado/puschTxAfterChannelReal.txt</location>
 		</link>
 		<link>
-			<name>solution1/constraints/.xml.directive</name>
+			<name>cpr/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/solution1.directive</location>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/cpr/cpr.directive</location>
 		</link>
 		<link>
-			<name>solution1/constraints/directives.tcl</name>
+			<name>cpr/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/directives.tcl</location>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/cpr/directives.tcl</location>
 		</link>
 		<link>
-			<name>solution1/constraints/script.tcl</name>
+			<name>cpr/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/solution1/script.tcl</location>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/cpr/script.tcl</location>
+		</link>
+		<link>
+			<name>gen/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/gen/gen.directive</location>
+		</link>
+		<link>
+			<name>gen/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/gen/directives.tcl</location>
+		</link>
+		<link>
+			<name>gen/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/sam-admin/git/Training/HLS_Vivado/hls/cpr/gen/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

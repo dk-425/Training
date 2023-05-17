@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../fft_rtl.gen/sources_1/bd/fft/ip/fft_xfft_0_0/sim/fft_xfft_0_0.vhd" \
-
-nosort

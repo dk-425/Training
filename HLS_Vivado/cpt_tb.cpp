@@ -35,23 +35,17 @@ int main() {
 
     ofstream oup("output.dat");
     vector<ComplexT> y;
-    hls::stream<ComplexT> gst,iputref,oput;
+    hls::stream<ComplexT> gst,oput;
     int t=0;
     hls::stream<int> z;
     ComplexT input,output;
 
     gen(gst);
-    for (int i=0;i<N;i++){
-    	t+=1;
-    	input=gst.read();
-    	//cout<<input<<endl;
-        iputref.write(input);
-        z.write(t);
-        cyclicPrefixRemoval(iputref, oput,z);
+    cyclicPrefixRemoval(gst, oput);
+        for (int i=0;i<N-P;i++){
         if (!oput.empty()) {
           output = oput.read();
           y.push_back(output);
-          //cout<<output<<endl;
           oup<<output<<endl;
         }
         /*else {

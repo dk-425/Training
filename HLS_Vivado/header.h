@@ -12,10 +12,7 @@ using namespace std;
 #define P 608   //(320+288)
 typedef std::complex<float> ComplexT;
 
-//struct inp{complex<ftp> data[N];};
-//struct oup{complex<ftp> data[N-P];};
-
 void gen(hls::stream<ComplexT> &gst);
-void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream, hls::stream<int> &z);
+void cyclicPrefixRemoval(hls::stream<ComplexT> &inpstream, hls::stream<ComplexT> &oupstream);
 
 #endif

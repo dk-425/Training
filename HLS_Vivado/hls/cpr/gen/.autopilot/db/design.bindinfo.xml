@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln1769_fu_35081_p2" SOURCE="../datagen.cpp:1769" VARIABLE="icmp_ln1769" MODULE="gen" LOOP="VITIS_LOOP_1769_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1769_fu_35087_p2" SOURCE="../datagen.cpp:1769" VARIABLE="add_ln1769" MODULE="gen" LOOP="VITIS_LOOP_1769_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mux" ID="" IMPL="auto" LATENCY="0" OPTYPE="mux" PRAGMA="" RTLNAME="mux_880014_32_1_1_U1" SOURCE="../datagen.cpp:1771" VARIABLE="tmp" MODULE="gen" LOOP="VITIS_LOOP_1769_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mux" ID="" IMPL="auto" LATENCY="0" OPTYPE="mux" PRAGMA="" RTLNAME="mux_880014_32_1_1_U2" SOURCE="../datagen.cpp:1771" VARIABLE="tmp_1" MODULE="gen" LOOP="VITIS_LOOP_1769_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="gen" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>
