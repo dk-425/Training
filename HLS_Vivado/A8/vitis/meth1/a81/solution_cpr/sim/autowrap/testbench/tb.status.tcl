@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/sam-admin/git/Training/HLS_Vivado/A8/vitis/meth1/a81/solution_cpr/./sim/autowrap/testbench/cpr.cpp_pre.cpp.tb.cpp
