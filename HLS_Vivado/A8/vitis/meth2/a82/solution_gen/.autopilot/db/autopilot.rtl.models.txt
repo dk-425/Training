@@ -1,0 +1,5 @@
+gen_z_real_ROM_AUTO_1R
+gen_z_imag_ROM_AUTO_1R
+gen_regslice_both
+gen_flow_control_loop_pipe
+gen

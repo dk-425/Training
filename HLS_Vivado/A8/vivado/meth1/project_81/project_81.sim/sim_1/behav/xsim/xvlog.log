@@ -1,0 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/2bcd/hdl/verilog/cyclicPrefixRemoval_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cyclicPrefixRemoval_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/2bcd/hdl/verilog/cyclicPrefixRemoval_hls_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cyclicPrefixRemoval_hls_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/2bcd/hdl/verilog/cyclicPrefixRemoval_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cyclicPrefixRemoval_regslice_both
+INFO: [VRFC 10-311] analyzing module cyclicPrefixRemoval_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/2bcd/hdl/verilog/cyclicPrefixRemoval.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cyclicPrefixRemoval
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.ip_user_files/bd/design_1/ip/design_1_cyclicPrefixRemoval_0_0/sim/design_1_cyclicPrefixRemoval_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_cyclicPrefixRemoval_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/bf9b/hdl/verilog/gen_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/bf9b/hdl/verilog/gen_hls_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_hls_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/bf9b/hdl/verilog/gen_mux_880014_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_mux_880014_32_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/bf9b/hdl/verilog/gen_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_regslice_both
+INFO: [VRFC 10-311] analyzing module gen_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.gen/sources_1/bd/design_1/ipshared/bf9b/hdl/verilog/gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.ip_user_files/bd/design_1/ip/design_1_gen_0_0/sim/design_1_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.srcs/sources_1/imports/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A8/vivado/meth1/project_81/project_81.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

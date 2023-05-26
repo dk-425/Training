@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="a81" solutionName="solution_cpr" date="2023-05-23T10:36:11.713+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/sam-admin/git/Training/HLS_Vivado/A8/vitis/meth1/a81/solution_cpr/sim/verilog/AESL_deadlock_kernel_monitor_top.v:19]&#xA;Completed static elaboration&#xA;Starting simulation data flow analysis&#xA;Completed simulation data flow analysis&#xA;Time Resolution for simulation is 1ps&#xA;Compiling package xil_defaultlib.$unit_dataflow_monitor_sv&#xA;Compiling module xil_defaultlib.cyclicPrefixRemoval_flow_control...&#xA;Compiling module xil_defaultlib.cyclicPrefixRemoval_regslice_bot...&#xA;Compiling module xil_defaultlib.cyclicPrefixRemoval&#xA;Compiling module xil_defaultlib.fifo(DEPTH=8800,WIDTH=64)&#xA;Compiling module xil_defaultlib.AESL_axi_s_inpstream&#xA;Compiling module xil_defaultlib.fifo(DEPTH=8192,WIDTH=64)&#xA;Compiling module xil_defaultlib.AESL_axi_s_oupstream&#xA;Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor&#xA;Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...&#xA;Compiling module xil_defaultlib.nodf_module_intf&#xA;Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)&#xA;Compiling module xil_defaultlib.dataflow_monitor_1&#xA;Compiling module xil_defaultlib.apatb_cyclicPrefixRemoval_top&#xA;Compiling module work.glbl&#xA;Built simulation snapshot cyclicPrefixRemoval&#xA;&#xA;&#xA;****** xsim v2022.2.2 (64-bit)&#xA;  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023&#xA;  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023&#xA;    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.&#xA;&#xA;&#xA;source xsim.dir/cyclicPrefixRemoval/xsim_script.tcl&#xA;# xsim {cyclicPrefixRemoval} -autoloadwcfg -tclbatch {cyclicPrefixRemoval.tcl}&#xA;Time resolution is 1 ps&#xA;source cyclicPrefixRemoval.tcl&#xA;## run all&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;// Inter-Transaction Progress: Completed Transaction / Total Transaction&#xA;// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%&#xA;//&#xA;// RTL Simulation : &quot;Inter-Transaction Progress&quot; [&quot;Intra-Transaction Progress&quot;] @ &quot;Simulation Time&quot;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;// RTL Simulation : 0 / 1 [0.00%] @ &quot;125000&quot;&#xA;find kernel block.&#xA;// RTL Simulation : 1 / 1 [100.00%] @ &quot;88165000&quot;&#xA;////////////////////////////////////////////////////////////////////////////////////&#xA;$finish called at time : 88225 ns : File &quot;/home/sam-admin/git/Training/HLS_Vivado/A8/vitis/meth1/a81/solution_cpr/sim/verilog/cyclicPrefixRemoval.autotb.v&quot; Line 247&#xA;## quit" projectName="a81" solutionName="solution_cpr" date="2023-05-23T10:38:01.685+0530" type="Warning"/>
+        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="a81" solutionName="solution_cpr" date="2023-05-23T10:37:40.958+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined" projectName="a81" solutionName="solution_cpr" date="2023-05-23T10:37:16.778+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

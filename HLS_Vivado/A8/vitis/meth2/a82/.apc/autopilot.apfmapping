@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="cpr.cpp" path="/home/sam-admin/git/Training/HLS_Vivado/A8/meth2/cpr.cpp"/>
+    <originFiles name="datagen.cpp" path="/home/sam-admin/git/Training/HLS_Vivado/A8/meth2/datagen.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="cpt_tb.cpp" path="/home/sam-admin/git/Training/HLS_Vivado/A8/meth2/cpt_tb.cpp"/>
+    <originFiles name="puschTxAfterChannelImag.txt" path="/home/sam-admin/git/Training/HLS_Vivado/A8/puschTxAfterChannelImag.txt"/>
+    <originFiles name="puschTxAfterChannelReal.txt" path="/home/sam-admin/git/Training/HLS_Vivado/A8/puschTxAfterChannelReal.txt"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

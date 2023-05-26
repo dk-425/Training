@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln1768_fu_93_p2" SOURCE="../../meth2/datagen.cpp:1768" VARIABLE="icmp_ln1768" MODULE="gen" LOOP="VITIS_LOOP_1768_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1768_fu_99_p2" SOURCE="../../meth2/datagen.cpp:1768" VARIABLE="add_ln1768" MODULE="gen" LOOP="VITIS_LOOP_1768_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="z_real_U" SOURCE="" VARIABLE="z_real" MODULE="gen" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="32" URAM="0"/>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage rom_1p" ID="" IMPL="auto" LATENCY="1" OPTYPE="rom_1p" PRAGMA="" RTLNAME="z_imag_U" SOURCE="" VARIABLE="z_imag" MODULE="gen" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="32" URAM="0"/>
+</BindInfo>

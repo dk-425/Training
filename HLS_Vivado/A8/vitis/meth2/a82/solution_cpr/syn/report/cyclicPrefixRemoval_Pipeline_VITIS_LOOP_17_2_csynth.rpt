@@ -1,0 +1,163 @@
+
+
+================================================================
+== Vitis HLS Report for 'cyclicPrefixRemoval_Pipeline_VITIS_LOOP_17_2'
+================================================================
+* Date:           Fri May 26 13:15:56 2023
+
+* Version:        2022.2.2 (Build 3779808 on Feb 17 2023)
+* Project:        a82
+* Solution:       solution_cpr (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.066 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     8194|     8194|  81.940 us|  81.940 us|  8194|  8194|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_17_2  |     8192|     8192|         2|          1|          1|  8192|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     94|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     96|    -|
+|Register         |        -|    -|      19|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      19|    190|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln17_fu_149_p2         |         +|   0|  0|  17|          14|           1|
+    |add_ln20_fu_194_p2         |         +|   0|  0|  14|          13|           9|
+    |add_ln23_fu_171_p2         |         +|   0|  0|  17|          14|          10|
+    |ap_block_pp0_stage0_01001  |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_136           |       and|   0|  0|   2|           1|           1|
+    |ap_condition_242           |       and|   0|  0|   2|           1|           1|
+    |ap_condition_247           |       and|   0|  0|   2|           1|           1|
+    |icmp_ln17_fu_143_p2        |      icmp|   0|  0|  12|          14|          15|
+    |icmp_ln19_fu_165_p2        |      icmp|   0|  0|   8|           2|           1|
+    |last_1_fu_183_p2           |      icmp|   0|  0|  12|          14|          13|
+    |ap_block_state2_io         |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  94|          78|          57|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1     |   9|          2|   14|         28|
+    |i_fu_62                  |   9|          2|   14|         28|
+    |last_fu_66               |   9|          2|    1|          2|
+    |oupstream_TDATA          |  14|          3|   64|        192|
+    |oupstream_TDATA_blk_n    |   9|          2|    1|          2|
+    |x_imag_address0          |  14|          3|   14|         42|
+    |x_real_address0          |  14|          3|   14|         42|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  96|         21|  124|        340|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |i_fu_62                  |  14|   0|   14|          0|
+    |icmp_ln19_reg_266        |   1|   0|    1|          0|
+    |last_fu_66               |   1|   0|    1|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  19|   0|   19|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+----------------------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |                 Source Object                |    C Type    |
++------------------+-----+-----+------------+----------------------------------------------+--------------+
+|ap_clk            |   in|    1|  ap_ctrl_hs|  cyclicPrefixRemoval_Pipeline_VITIS_LOOP_17_2|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  cyclicPrefixRemoval_Pipeline_VITIS_LOOP_17_2|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  cyclicPrefixRemoval_Pipeline_VITIS_LOOP_17_2|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  cyclicPrefixRemoval_Pipeline_VITIS_LOOP_17_2|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  cyclicPrefixRemoval_Pipeline_VITIS_LOOP_17_2|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  cyclicPrefixRemoval_Pipeline_VITIS_LOOP_17_2|  return value|
+|oupstream_TREADY  |   in|    1|        axis|                                     oupstream|       pointer|
+|oupstream_TDATA   |  out|   64|        axis|                                     oupstream|       pointer|
+|oupstream_TVALID  |  out|    1|        axis|                                     oupstream|       pointer|
+|x_real_address0   |  out|   14|   ap_memory|                                        x_real|         array|
+|x_real_ce0        |  out|    1|   ap_memory|                                        x_real|         array|
+|x_real_q0         |   in|   32|   ap_memory|                                        x_real|         array|
+|x_imag_address0   |  out|   14|   ap_memory|                                        x_imag|         array|
+|x_imag_ce0        |  out|    1|   ap_memory|                                        x_imag|         array|
+|x_imag_q0         |   in|   32|   ap_memory|                                        x_imag|         array|
+|last_out          |  out|    1|      ap_vld|                                      last_out|       pointer|
+|last_out_ap_vld   |  out|    1|      ap_vld|                                      last_out|       pointer|
++------------------+-----+-----+------------+----------------------------------------------+--------------+
+

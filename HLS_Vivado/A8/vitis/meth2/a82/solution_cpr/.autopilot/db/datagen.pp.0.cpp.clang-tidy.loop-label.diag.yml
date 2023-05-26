@@ -1,0 +1,13 @@
+---
+MainSourceFile:  /home/sam-admin/git/Training/HLS_Vivado/A8/vitis/meth2/a82/solution_cpr/.autopilot/db/datagen.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1768_1:  '
+    FileOffset:      1768
+    FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A8/meth2/datagen.cpp
+    Replacements:    
+      - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A8/vitis/meth2/a82/solution_cpr/.autopilot/db/datagen.pp.0.cpp
+        Offset:          1330264
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1768_1: '
+...

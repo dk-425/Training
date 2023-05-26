@@ -1,0 +1,29 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_1": {
+			"proto_instances": {
+				"/cyclicPrefixRemoval_0/inpstream": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "inpstream_TDATA"},
+						"TREADY": { "actual": "inpstream_TREADY"},
+						"TVALID": { "actual": "inpstream_TVALID"}
+					}
+				},
+				"/gen_0/gst": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "gst_TDATA"},
+						"TREADY": { "actual": "gst_TREADY"},
+						"TVALID": { "actual": "gst_TVALID"}
+					}
+				}
+			}
+		}
+	}
+}

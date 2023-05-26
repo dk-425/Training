@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln9_fu_73_p2" SOURCE="../../meth1/cpr.cpp:9" VARIABLE="icmp_ln9" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_9_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_fu_79_p2" SOURCE="../../meth1/cpr.cpp:13" VARIABLE="icmp_ln13" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_9_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_1_fu_85_p2" SOURCE="../../meth1/cpr.cpp:13" VARIABLE="icmp_ln13_1" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_9_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op and" ID="" IMPL="auto" LATENCY="0" OPTYPE="and" PRAGMA="" RTLNAME="and_ln13_fu_91_p2" SOURCE="../../meth1/cpr.cpp:13" VARIABLE="and_ln13" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_9_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln13_2_fu_97_p2" SOURCE="../../meth1/cpr.cpp:13" VARIABLE="icmp_ln13_2" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_9_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op or" ID="" IMPL="auto" LATENCY="0" OPTYPE="or" PRAGMA="" RTLNAME="or_ln13_fu_103_p2" SOURCE="../../meth1/cpr.cpp:13" VARIABLE="or_ln13" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_9_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="v_3_fu_109_p2" SOURCE="../../meth1/cpr.cpp:9" VARIABLE="v_3" MODULE="cyclicPrefixRemoval" LOOP="VITIS_LOOP_9_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

@@ -1,0 +1,27 @@
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cyclicPrefixRemoval_flow_control...
+Compiling module xil_defaultlib.cyclicPrefixRemoval_regslice_bot...
+Compiling module xil_defaultlib.cyclicPrefixRemoval_hls_deadlock...
+Compiling module xil_defaultlib.cyclicPrefixRemoval
+Compiling module xil_defaultlib.design_1_cyclicPrefixRemoval_0_0
+Compiling module xil_defaultlib.gen_mux_880014_32_1_1(ID=1,din88...
+Compiling module xil_defaultlib.gen_flow_control_loop_pipe
+Compiling module xil_defaultlib.gen_regslice_both(DataWidth=64)
+Compiling module xil_defaultlib.gen_hls_deadlock_idx0_monitor
+Compiling module xil_defaultlib.gen
+Compiling module xil_defaultlib.design_1_gen_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav

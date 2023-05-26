@@ -1,5 +1,0 @@
-gen_mux_880014_32_1_1
-gen_control_s_axi
-gen_regslice_both
-gen_flow_control_loop_pipe
-gen
