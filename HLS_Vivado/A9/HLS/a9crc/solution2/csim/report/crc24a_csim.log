@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../codes/crc.cpp in debug mode
+   Generating csim.exe
+CRC generator output : 110011101010100001101001
+CRC detectorr output : 000000000000000000000000
+CRC Check at detector is Success
+WARNING [HLS SIM]: hls::stream 'hls::stream<bool, 0>3' contains leftover data, which may result in RTL simulation hanging.
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 48
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

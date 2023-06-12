@@ -17,7 +17,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../../meth2/cpt_tb.cpp ../../../../../../meth2/datagen.cpp ../../../../../../meth2/cpr.cpp
+HLS_SOURCES = ../../../../../../meth2/cpt_tb.cpp ../../../../../../meth2/cpr.cpp ../../../../../../meth2/datagen.cpp
 
 override TARGET := csim.exe
 
@@ -75,18 +75,18 @@ all: $(TARGET)
 
 $(ObjDir)/cpt_tb.o: ../../../../../../meth2/cpt_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../../meth2/cpt_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/cpt_tb.d
-
-$(ObjDir)/datagen.o: ../../../../../../meth2/datagen.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../../meth2/datagen.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/datagen.d
 
 $(ObjDir)/cpr.o: ../../../../../../meth2/cpr.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../../meth2/cpr.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/cpr.d
+
+$(ObjDir)/datagen.o: ../../../../../../meth2/datagen.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../../meth2/datagen.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/datagen.d

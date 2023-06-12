@@ -28,7 +28,11 @@
       </simLog>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="WARNING [HLS SIM]: hls::stream 'hls::stream&lt;bool, 0>0' contains leftover data, which may result in RTL simulation hanging." projectName="a82" solutionName="solution_gen" date="2023-05-26T15:42:45.638+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find test bench file 'puschTxAfterChannelImag.txt'" projectName="a82" solutionName="solution_gen" date="2023-05-26T15:42:30.516+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find test bench file 'puschTxAfterChannelReal.txt'" projectName="a82" solutionName="solution_gen" date="2023-05-26T15:42:30.504+0530" type="Warning"/>
+      </csimLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

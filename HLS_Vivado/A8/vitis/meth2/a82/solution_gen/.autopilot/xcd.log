@@ -48,3 +48,28 @@ Fri May 26 13:26:17 2023: SERVER: destructor for server bound to port 36253
 Fri May 26 13:26:17 2023: XCD main fifo: Good unlink of /tmp/xcdmain842e580b-83b7-40cf-8a37-3679df3c224f
 Fri May 26 13:26:17 2023: Server exiting with status 0.
 Fri May 26 13:26:17 2023: Closing log file.
+Fri May 26 15:42:33 2023: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+Fri May 26 15:42:33 2023: Server was asked to start on port: '37663'
+Fri May 26 15:42:33 2023: Server is using token UUID: '076f7478-382d-4942-8d72-ae45fe1db5d4'
+Fri May 26 15:42:33 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Fri May 26 15:42:33 2023: Attempting to start server on port '37663'
+Fri May 26 15:42:33 2023: XCD main fifo: created main fifo '/tmp/xcdmain076f7478-382d-4942-8d72-ae45fe1db5d4', fd read = 13
+Fri May 26 15:42:33 2023: Running Dispatch Server
+Fri May 26 15:42:33 2023: Version 2.2.0
+Fri May 26 15:42:41 2023: Dispatch Server: Accepted socket connection from client
+Fri May 26 15:42:41 2023: Starting Socket connection
+Fri May 26 15:42:41 2023: EXCHANGE_TOKEN received, server token: 076f7478-382d-4942-8d72-ae45fe1db5d4, passed token: 076f7478-382d-4942-8d72-ae45fe1db5d4
+Fri May 26 15:42:41 2023: SESSION_MGR: creating session with session uuid: '5b894488-56b9-4054-8e94-7a6f06149922' and name 'vitis_hls'
+Fri May 26 15:42:41 2023: KERNEL_SVC: creating session with uuid: '5b894488-56b9-4054-8e94-7a6f06149922' and name 'vitis_hls'
+Fri May 26 15:42:41 2023: GUIDANCE_SMGR: creating guidance session with uuid: '5b894488-56b9-4054-8e94-7a6f06149922' and name 'vitis_hls'
+Fri May 26 15:42:45 2023: STOP_SERVER received, server token: 076f7478-382d-4942-8d72-ae45fe1db5d4, passed token: 076f7478-382d-4942-8d72-ae45fe1db5d4
+Fri May 26 15:42:45 2023: Socket received request to stop server.
+Fri May 26 15:42:45 2023: Dispatch Server: do_await_stop
+Fri May 26 15:42:45 2023: Dispatch Server: stopping mainFifo_
+Fri May 26 15:42:45 2023: XCD main fifo: Stopping
+Fri May 26 15:42:45 2023: XCD main fifo: do_read error code: Operation canceled
+Fri May 26 15:42:45 2023: XCD main fifo: bytes_transferred: 0
+Fri May 26 15:42:45 2023: SERVER: destructor for server bound to port 37663
+Fri May 26 15:42:45 2023: XCD main fifo: Good unlink of /tmp/xcdmain076f7478-382d-4942-8d72-ae45fe1db5d4
+Fri May 26 15:42:45 2023: Server exiting with status 0.
+Fri May 26 15:42:45 2023: Closing log file.

@@ -1,0 +1,174 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'crc24a_Pipeline_VITIS_LOOP_45_4'" level="0">
+<item name = "Date">Mon Jun 12 14:34:27 2023
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">a9crc</item>
+<item name = "Solution">solution2 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 5.748 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3, 50, 30.000 ns, 0.500 us, 3, 50, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_45_4">1, 48, 1, 1, 1, 1 ~ 48, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 24, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 209, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 78, -</column>
+<column name="Register">-, -, 9, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mux_486_1_1_1_U148">mux_486_1_1_1, 0, 0, 0, 209, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln47_fu_473_p2">+, 0, 0, 14, 6, 1</column>
+<column name="icmp_ln45_fu_467_p2">icmp, 0, 0, 10, 6, 6</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_phi_mux_UnifiedRetVal_phi_fu_450_p4">14, 3, 1, 3</column>
+<column name="ap_return">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_startIdx_1">9, 2, 6, 12</column>
+<column name="icmp_ln45_out">14, 3, 1, 3</column>
+<column name="startIdx_fu_138">9, 2, 6, 12</column>
+<column name="startIdx_out">14, 3, 6, 18</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_return_preg">1, 0, 1, 0</column>
+<column name="startIdx_fu_138">6, 0, 6, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, crc24a_Pipeline_VITIS_LOOP_45_4, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, crc24a_Pipeline_VITIS_LOOP_45_4, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, crc24a_Pipeline_VITIS_LOOP_45_4, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, crc24a_Pipeline_VITIS_LOOP_45_4, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, crc24a_Pipeline_VITIS_LOOP_45_4, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, crc24a_Pipeline_VITIS_LOOP_45_4, return value</column>
+<column name="ap_return">out, 1, ap_ctrl_hs, crc24a_Pipeline_VITIS_LOOP_45_4, return value</column>
+<column name="dividend_48_reload">in, 1, ap_none, dividend_48_reload, scalar</column>
+<column name="dividend_97_reload">in, 1, ap_none, dividend_97_reload, scalar</column>
+<column name="dividend_98_reload">in, 1, ap_none, dividend_98_reload, scalar</column>
+<column name="dividend_99_reload">in, 1, ap_none, dividend_99_reload, scalar</column>
+<column name="dividend_100_reload">in, 1, ap_none, dividend_100_reload, scalar</column>
+<column name="dividend_101_reload">in, 1, ap_none, dividend_101_reload, scalar</column>
+<column name="dividend_102_reload">in, 1, ap_none, dividend_102_reload, scalar</column>
+<column name="dividend_103_reload">in, 1, ap_none, dividend_103_reload, scalar</column>
+<column name="dividend_104_reload">in, 1, ap_none, dividend_104_reload, scalar</column>
+<column name="dividend_105_reload">in, 1, ap_none, dividend_105_reload, scalar</column>
+<column name="dividend_106_reload">in, 1, ap_none, dividend_106_reload, scalar</column>
+<column name="dividend_107_reload">in, 1, ap_none, dividend_107_reload, scalar</column>
+<column name="dividend_108_reload">in, 1, ap_none, dividend_108_reload, scalar</column>
+<column name="dividend_109_reload">in, 1, ap_none, dividend_109_reload, scalar</column>
+<column name="dividend_110_reload">in, 1, ap_none, dividend_110_reload, scalar</column>
+<column name="dividend_111_reload">in, 1, ap_none, dividend_111_reload, scalar</column>
+<column name="dividend_112_reload">in, 1, ap_none, dividend_112_reload, scalar</column>
+<column name="dividend_113_reload">in, 1, ap_none, dividend_113_reload, scalar</column>
+<column name="dividend_114_reload">in, 1, ap_none, dividend_114_reload, scalar</column>
+<column name="dividend_115_reload">in, 1, ap_none, dividend_115_reload, scalar</column>
+<column name="dividend_116_reload">in, 1, ap_none, dividend_116_reload, scalar</column>
+<column name="dividend_117_reload">in, 1, ap_none, dividend_117_reload, scalar</column>
+<column name="dividend_118_reload">in, 1, ap_none, dividend_118_reload, scalar</column>
+<column name="dividend_119_reload">in, 1, ap_none, dividend_119_reload, scalar</column>
+<column name="dividend_120_reload">in, 1, ap_none, dividend_120_reload, scalar</column>
+<column name="dividend_121_reload">in, 1, ap_none, dividend_121_reload, scalar</column>
+<column name="dividend_122_reload">in, 1, ap_none, dividend_122_reload, scalar</column>
+<column name="dividend_123_reload">in, 1, ap_none, dividend_123_reload, scalar</column>
+<column name="dividend_124_reload">in, 1, ap_none, dividend_124_reload, scalar</column>
+<column name="dividend_125_reload">in, 1, ap_none, dividend_125_reload, scalar</column>
+<column name="dividend_126_reload">in, 1, ap_none, dividend_126_reload, scalar</column>
+<column name="dividend_127_reload">in, 1, ap_none, dividend_127_reload, scalar</column>
+<column name="dividend_128_reload">in, 1, ap_none, dividend_128_reload, scalar</column>
+<column name="dividend_129_reload">in, 1, ap_none, dividend_129_reload, scalar</column>
+<column name="dividend_130_reload">in, 1, ap_none, dividend_130_reload, scalar</column>
+<column name="dividend_131_reload">in, 1, ap_none, dividend_131_reload, scalar</column>
+<column name="dividend_132_reload">in, 1, ap_none, dividend_132_reload, scalar</column>
+<column name="dividend_133_reload">in, 1, ap_none, dividend_133_reload, scalar</column>
+<column name="dividend_134_reload">in, 1, ap_none, dividend_134_reload, scalar</column>
+<column name="dividend_135_reload">in, 1, ap_none, dividend_135_reload, scalar</column>
+<column name="dividend_136_reload">in, 1, ap_none, dividend_136_reload, scalar</column>
+<column name="dividend_137_reload">in, 1, ap_none, dividend_137_reload, scalar</column>
+<column name="dividend_138_reload">in, 1, ap_none, dividend_138_reload, scalar</column>
+<column name="dividend_139_reload">in, 1, ap_none, dividend_139_reload, scalar</column>
+<column name="dividend_140_reload">in, 1, ap_none, dividend_140_reload, scalar</column>
+<column name="dividend_141_reload">in, 1, ap_none, dividend_141_reload, scalar</column>
+<column name="dividend_142_reload">in, 1, ap_none, dividend_142_reload, scalar</column>
+<column name="dividend_143_reload">in, 1, ap_none, dividend_143_reload, scalar</column>
+<column name="startIdx_out">out, 6, ap_vld, startIdx_out, pointer</column>
+<column name="startIdx_out_ap_vld">out, 1, ap_vld, startIdx_out, pointer</column>
+<column name="icmp_ln45_out">out, 1, ap_vld, icmp_ln45_out, pointer</column>
+<column name="icmp_ln45_out_ap_vld">out, 1, ap_vld, icmp_ln45_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,7 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../../../meth2/datagen.cpp in debug mode
+   Compiling ../../../../../../meth2/cpt_tb.cpp in debug mode
    Compiling ../../../../../../meth2/cpr.cpp in debug mode
+   Compiling ../../../../../../meth2/datagen.cpp in debug mode
    Generating csim.exe
 !PASS! OUTPUT IS TOLERABLE BASED ON GIVEN PRECISION
 WARNING [HLS SIM]: hls::stream 'hls::stream<bool, 0>0' contains leftover data, which may result in RTL simulation hanging.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="crc.cpp" path="/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="crc_tb.cpp" path="/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

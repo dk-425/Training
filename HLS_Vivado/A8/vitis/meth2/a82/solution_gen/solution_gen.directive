@@ -5,11 +5,6 @@
                 <option name="name" value="gen"/>
             </pragma>
         </directive>
-        <directive functionName="gen" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="gen"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

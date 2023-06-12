@@ -1,0 +1,755 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>crc24a</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.978</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>142</Best-caseLatency>
+            <Average-caseLatency>165</Average-caseLatency>
+            <Worst-caseLatency>189</Worst-caseLatency>
+            <Best-caseRealTimeLatency>1.420 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>1.650 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>1.890 us</Worst-caseRealTimeLatency>
+            <Interval-min>143</Interval-min>
+            <Interval-max>190</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <FF>171</FF>
+            <LUT>1805</LUT>
+            <URAM>0</URAM>
+            <DSP>0</DSP>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>crc24a</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>crc24a</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>crc24a</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>crc24a</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>crc24a</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>crc24a</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_TDATA</name>
+            <Object>a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_TVALID</name>
+            <Object>a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>a_TREADY</name>
+            <Object>a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>c_TDATA</name>
+            <Object>c</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>c_TVALID</name>
+            <Object>c</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>c_TREADY</name>
+            <Object>c</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>last_TDATA</name>
+            <Object>last</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>last_TVALID</name>
+            <Object>last</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>last_TREADY</name>
+            <Object>last</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>crc24a</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_crc24a_Pipeline_VITIS_LOOP_25_1_fu_436</InstName>
+                    <ModuleName>crc24a_Pipeline_VITIS_LOOP_25_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>436</ID>
+                    <BindInstances>add_ln25_fu_774_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_crc24a_Pipeline_VITIS_LOOP_32_2_fu_490</InstName>
+                    <ModuleName>crc24a_Pipeline_VITIS_LOOP_32_2</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>490</ID>
+                    <BindInstances>add_ln32_fu_1747_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_crc24a_Pipeline_VITIS_LOOP_45_4_fu_590</InstName>
+                    <ModuleName>crc24a_Pipeline_VITIS_LOOP_45_4</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>590</ID>
+                    <BindInstances>add_ln47_fu_473_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_crc24a_Pipeline_VITIS_LOOP_49_5_fu_644</InstName>
+                    <ModuleName>crc24a_Pipeline_VITIS_LOOP_49_5</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>644</ID>
+                    <BindInstances>add_ln49_fu_465_p2 tmp_3_fu_535_p49</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_crc24a_Pipeline_VITIS_LOOP_60_6_fu_699</InstName>
+                    <ModuleName>crc24a_Pipeline_VITIS_LOOP_60_6</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>699</ID>
+                    <BindInstances>add_ln60_fu_90_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>p_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>crc24a_Pipeline_VITIS_LOOP_25_1</Name>
+            <Loops>
+                <VITIS_LOOP_25_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.413</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>50</Best-caseLatency>
+                    <Average-caseLatency>50</Average-caseLatency>
+                    <Worst-caseLatency>50</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.500 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.500 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.500 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>50</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_25_1>
+                        <Name>VITIS_LOOP_25_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>48</TripCount>
+                        <Latency>48</Latency>
+                        <AbsoluteTimeLatency>0.480 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_25_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>56</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>64</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_25_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_fu_774_p2" SOURCE="../codes/crc.cpp:25" URAM="0" VARIABLE="add_ln25"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>crc24a_Pipeline_VITIS_LOOP_32_2</Name>
+            <Loops>
+                <VITIS_LOOP_32_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.984</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>26</Best-caseLatency>
+                    <Average-caseLatency>26</Average-caseLatency>
+                    <Worst-caseLatency>26</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.260 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.260 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.260 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>26</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_32_2>
+                        <Name>VITIS_LOOP_32_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>24</TripCount>
+                        <Latency>24</Latency>
+                        <AbsoluteTimeLatency>0.240 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_32_2>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>56</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>819</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_32_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln32_fu_1747_p2" SOURCE="../codes/crc.cpp:32" URAM="0" VARIABLE="add_ln32"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>crc24a_Pipeline_VITIS_LOOP_45_4</Name>
+            <Loops>
+                <VITIS_LOOP_45_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.748</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>3</Best-caseLatency>
+                    <Average-caseLatency>26</Average-caseLatency>
+                    <Worst-caseLatency>50</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>30.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.260 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.500 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>3 ~ 50</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_45_4>
+                        <Name>VITIS_LOOP_45_4</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>
+                            <range>
+                                <min>1</min>
+                                <max>48</max>
+                            </range>
+                        </TripCount>
+                        <Latency>1 ~ 48</Latency>
+                        <AbsoluteTimeLatency>10.000 ns ~ 0.480 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_45_4>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>9</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>311</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_45_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln47_fu_473_p2" SOURCE="../codes/crc.cpp:47" URAM="0" VARIABLE="add_ln47"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>crc24a_Pipeline_VITIS_LOOP_49_5</Name>
+            <Loops>
+                <VITIS_LOOP_49_5/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.000</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>26</Best-caseLatency>
+                    <Average-caseLatency>26</Average-caseLatency>
+                    <Worst-caseLatency>26</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.260 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.260 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.260 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>26</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_49_5>
+                        <Name>VITIS_LOOP_49_5</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>24</TripCount>
+                        <Latency>24</Latency>
+                        <AbsoluteTimeLatency>0.240 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_49_5>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>14</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>398</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_465_p2" SOURCE="../codes/crc.cpp:49" URAM="0" VARIABLE="add_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_5" OPTYPE="add" PRAGMA="" RTLNAME="tmp_3_fu_535_p49" SOURCE="../codes/crc.cpp:55" URAM="0" VARIABLE="add_ln55"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>crc24a_Pipeline_VITIS_LOOP_60_6</Name>
+            <Loops>
+                <VITIS_LOOP_60_6/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.368</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>26</Best-caseLatency>
+                    <Average-caseLatency>26</Average-caseLatency>
+                    <Worst-caseLatency>26</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.260 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.260 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.260 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>26</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_60_6>
+                        <Name>VITIS_LOOP_60_6</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>24</TripCount>
+                        <Latency>24</Latency>
+                        <AbsoluteTimeLatency>0.240 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_60_6>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>9</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>93</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_60_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln60_fu_90_p2" SOURCE="../codes/crc.cpp:60" URAM="0" VARIABLE="add_ln60"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>crc24a</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.978</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>142</Best-caseLatency>
+                    <Average-caseLatency>165</Average-caseLatency>
+                    <Worst-caseLatency>189</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.420 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.650 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.890 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>143 ~ 190</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>171</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1805</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_U" SOURCE="../codes/crc.cpp:21" URAM="0" VARIABLE="p"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_export flow="syn" output="/home/sam-admin/Desktop/iith/Module-2/sampractrice/er" vivado_clock="10"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="a" index="0" direction="in" srcType="stream&lt;bool, 0&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="interface" interface="a" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="c" index="1" direction="out" srcType="stream&lt;bool, 0&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="interface" interface="c" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="last" index="2" direction="out" srcType="stream&lt;bool, 0&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="interface" interface="last" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">a:c:last</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="a" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="8" portPrefix="a_">
+            <ports>
+                <port>a_TDATA</port>
+                <port>a_TREADY</port>
+                <port>a_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="c" type="axi4stream" busTypeName="axis" mode="master" dataWidth="8" portPrefix="c_">
+            <ports>
+                <port>c_TDATA</port>
+                <port>c_TREADY</port>
+                <port>c_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="c"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="last" type="axi4stream" busTypeName="axis" mode="master" dataWidth="8" portPrefix="last_">
+            <ports>
+                <port>last_TDATA</port>
+                <port>last_TREADY</port>
+                <port>last_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="last"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table isCollapsed="0">
+                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="a">both, 8, 1, 1, , , , , , , </column>
+                    <column name="c">both, 8, 1, 1, , , , , , , </column>
+                    <column name="last">both, 8, 1, 1, , , , , , , </column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst_n">reset, ap_rst_n, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="a">in, stream&lt;bool 0&gt;&amp;</column>
+                    <column name="c">out, stream&lt;bool 0&gt;&amp;</column>
+                    <column name="last">out, stream&lt;bool 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="a">a, interface, , </column>
+                    <column name="c">c, interface, , </column>
+                    <column name="last">last, interface, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings."/>
+    </ReportBurst>
+    <PragmaReport>
+        <Pragma type="interface" location="../codes/crc.cpp:10" status="valid" parentFunction="crc24a" variable="a" isDirective="0" options="axis port=a"/>
+        <Pragma type="interface" location="../codes/crc.cpp:11" status="valid" parentFunction="crc24a" variable="c" isDirective="0" options="axis port=c"/>
+        <Pragma type="interface" location="../codes/crc.cpp:12" status="valid" parentFunction="crc24a" variable="last" isDirective="0" options="axis port=last"/>
+        <Pragma type="pipeline" location="../codes/crc.cpp:26" status="valid" parentFunction="crc24a" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../codes/crc.cpp:33" status="valid" parentFunction="crc24a" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="../codes/crc.cpp:36" status="valid" parentFunction="crc24a" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../codes/crc.cpp:46" status="valid" parentFunction="crc24a" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../codes/crc.cpp:50" status="valid" parentFunction="crc24a" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../codes/crc.cpp:61" status="valid" parentFunction="crc24a" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="array_partition" parentFunction="crc24a" options="dim=1 type=complete  variable=dividend" pragmaLocId="../codes/crc.cpp:0:1" srcPragmaType="pipeline" srcPragmaLoc="../codes/crc.cpp:33" srcPragmaSource="pragma" srcIsDirective="0" variable="dividend" varLoc=""/>
+    </AutoPragmaReport>
+</profile>
+
