@@ -1,0 +1,16 @@
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date         : Mon Jun 19 16:03:46 2023
+| Host         : sampaths-lappie running 64-bit Ubuntu 22.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_crc24a_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_crc24a_0_0 (xilinx.com:hls:crc24a:1.0) from (Rev. 2113082255) to (Rev. 2113082279)
+

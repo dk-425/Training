@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-272,-78",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_ap_clk_0 -pg 1 -lvl 0 -x -90 -y -10 -defaultsOSRD
+preplace port port-id_ap_rst_n_0 -pg 1 -lvl 0 -x -90 -y 10 -defaultsOSRD
+preplace port port-id_c_TVALID_0 -pg 1 -lvl 2 -x 360 -y -30 -defaultsOSRD
+preplace portBus c_TDATA_0 -pg 1 -lvl 2 -x 360 -y 10 -defaultsOSRD
+preplace portBus last_TDATA_0 -pg 1 -lvl 2 -x 360 -y 90 -defaultsOSRD
+preplace portBus a_TDATA_0 -pg 1 -lvl 0 -x -90 -y 40 -defaultsOSRD
+preplace inst crc24a_0 -pg 1 -lvl 1 -x 140 -y 50 -defaultsOSRD
+preplace netloc ap_clk_0_1 1 0 1 -60 -10n
+preplace netloc ap_rst_n_0_1 1 0 2 -50 210 330
+preplace netloc crc24a_0_c_TDATA 1 1 1 340 10n
+preplace netloc crc24a_0_c_TVALID 1 1 1 340 -30n
+preplace netloc crc24a_0_last_TDATA 1 1 1 340 90n
+preplace netloc a_TDATA_0_1 1 0 1 -70 40n
+levelinfo -pg 1 -90 140 360
+pagesize -pg 1 -db -bbox -sgen -260 -110 550 220
+"
+}
+

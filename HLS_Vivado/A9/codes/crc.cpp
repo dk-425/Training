@@ -1,66 +1,87 @@
-#include <iostream>
-#include <hls_stream.h>
-#include <vector>
+#include "header.h"
 
-using namespace std;
-typedef struct {
-	bool bits[8];} data;
+void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last) {
+#pragma HLS INTERFACE mode=axis register_mode=both port=a register
+#pragma HLS INTERFACE mode=axis register_mode=both port=c register
+#pragma HLS INTERFACE mode=axis register_mode=off port=last
 
-void crc24a(hls::stream<bool>& a, hls::stream<bool>& c, hls::stream<bool> &last) {
-    #pragma HLS INTERFACE axis port=a
-    #pragma HLS INTERFACE axis port=c
-    #pragma HLS INTERFACE axis port=last
+	 // Read input stream a
+	  data d =a.read();
+
+    ap_uint<1> crc[32];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=crc
+    ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
+       int y = 25;  // Size of divisor array
+
+        for (int j = 0; j < 8; j++) {
+#pragma HLS PIPELINE II=1
+            crc[j]=d[j];
+        }
 
 
-    int x = 48;  // Size of dividend array
+    // Set last stream high when reading of a is completed
+    last.write(1);
+
+    int x = 32;  // Size of dividend array
 
 
-    bool dividend[48];
-    bool divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
-    int y = sizeof(divisor);  // Size of divisor array
-    bool p[24];
-    //bool end=1;
 
-    // Read input streams a and b into dividend and divisor arrays
-    for (int i = 0; i < x; i++) {
-        #pragma HLS PIPELINE II=1
-        dividend[i] = a.read();
+
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=divisor
+
+
+    // Add padding zeros to dividend
+    for (int i = 8; i < 32; i++) {
+#pragma HLS PIPELINE II=1
+        crc[i] = 0;
     }
 
 
     // Division
     for (int i = 0; i <= x - y; i++) {
-        #pragma HLS PIPELINE II=1
-        if (dividend[i] == 1) {
+#pragma HLS PIPELINE II=1
+        if (crc[i] == 1) {
             for (int j = 0; j < y; j++) {
-                #pragma HLS UNROLL
-
-                dividend[i + j] ^= divisor[j];
+#pragma HLS UNROLL
+                crc[i + j] = crc[i+j] ^ divisor[j];
             }
         }
     }
 
-    // neglecting leading zeros from dividend and giving remaining values to array p for crc generator output
+    // Find start index of nonzero bits in dividend
     int startIdx = 0;
-    while (startIdx < x && dividend[startIdx] == 0) {
-        #pragma HLS PIPELINE II=1
+    while (startIdx < x && crc[startIdx] == 0) {
+#pragma HLS PIPELINE II=1
         startIdx++;
-    }
-    for (int i = 0; i < 24; i++) {
-        #pragma HLS PIPELINE II=1
-     if (startIdx == x) {
-            p[i] = dividend[i];
-        }
-     else {
-            p[i] = dividend[startIdx + i];
-        }
     }
 
     // Write the result to output stream c
-    for (int j = 0; j < 24; j++) {
-        #pragma HLS PIPELINE II=1
-        c.write(p[j]);
-        if (j==23){last.write(1);}
-    }
 
+
+	ap_uint<1> f[24];
+#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=f
+    for (int i = 0; i < 24; i++) {
+#pragma HLS PIPELINE II=1
+    	f[i] = (startIdx == x) ? crc[i] : crc[startIdx + i];
+
+    }
+   data g,h,m,o;
+
+   for (int i = 0; i < 24; i++) {
+#pragma HLS PIPELINE II=1
+          if (i < 8) {
+              o(i, i) = d(i, i);
+              g(i, i) = f[i];
+          } else if (i < 16) {
+              h(i%8, i%8) = f[i];
+          } else {
+              m(i%8, i%8) = f[i];
+          }
+      }
+    c.write(o);
+    c.write(g);
+    c.write(h);
+    c.write(m);
+
+    last.write(0);
 }

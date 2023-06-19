@@ -1,0 +1,15 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="crc24a" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="crc24a"/>
+            </pragma>
+        </directive>
+        <directive functionName="crc24a" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="crc24a"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

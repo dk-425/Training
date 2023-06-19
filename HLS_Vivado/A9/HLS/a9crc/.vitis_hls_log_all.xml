@@ -6,15 +6,14 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog>
-        <logs message="ERROR: [HLS 200-1023] Part '-' is not installed.&#xA;command 'create_platform' returned error code&#xA;    while executing&#xA;&quot;source /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution1/csim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution1/csim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$newargs&quot;&#xA;    (procedure &quot;hls_proc&quot; line 16)&#xA;    invoked from within&#xA;&quot;hls_proc [info nameofexecutable] $argv&quot;" projectName="a9crc" solutionName="solution1" date="2023-06-12T12:42:18.125+0530"/>
-      </csimLog>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="a9crc" solutionName="solution2" date="2023-06-12T14:34:27.704+0530" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="a9crc" solutionName="solution_crc" date="2023-06-19T16:50:00.772+0530" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:779: variable-indexed range selection may cause suboptimal QoR." projectName="a9crc" solutionName="solution_crc" date="2023-06-19T16:49:55.231+0530" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

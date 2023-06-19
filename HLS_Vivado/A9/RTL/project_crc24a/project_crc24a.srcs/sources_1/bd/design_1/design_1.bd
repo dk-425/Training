@@ -1,0 +1,131 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x517A5E1216E3B166",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "gen_directory": "../../../../project_crc24a.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "crc24a_0": ""
+    },
+    "ports": {
+      "ap_clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst_n_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_n_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "c_TDATA_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "c_TVALID_0": {
+        "direction": "O"
+      },
+      "last_TDATA_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "a_TDATA_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "crc24a_0": {
+        "vlnv": "xilinx.com:hls:crc24a:1.0",
+        "xci_name": "design_1_crc24a_0_0",
+        "xci_path": "ip/design_1_crc24a_0_0/design_1_crc24a_0_0.xci",
+        "inst_hier_path": "crc24a_0"
+      }
+    },
+    "nets": {
+      "a_TDATA_0_1": {
+        "ports": [
+          "a_TDATA_0",
+          "crc24a_0/a_TDATA"
+        ]
+      },
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk_0",
+          "crc24a_0/ap_clk"
+        ]
+      },
+      "ap_rst_n_0_1": {
+        "ports": [
+          "ap_rst_n_0",
+          "crc24a_0/ap_rst_n",
+          "crc24a_0/ap_start",
+          "crc24a_0/a_TVALID",
+          "crc24a_0/c_TREADY",
+          "crc24a_0/last_TREADY"
+        ]
+      },
+      "crc24a_0_c_TDATA": {
+        "ports": [
+          "crc24a_0/c_TDATA",
+          "c_TDATA_0"
+        ]
+      },
+      "crc24a_0_c_TVALID": {
+        "ports": [
+          "crc24a_0/c_TVALID",
+          "c_TVALID_0"
+        ]
+      },
+      "crc24a_0_last_TDATA": {
+        "ports": [
+          "crc24a_0/last_TDATA",
+          "last_TDATA_0"
+        ]
+      }
+    }
+  }
+}
