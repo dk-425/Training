@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../edit_ip_project.ip_user_files/bd/design_1/ipshared/5b50/ds.v" \
+"../../../../edit_ip_project.ip_user_files/bd/design_1/ip/design_1_ds_0_0/sim/design_1_ds_0_0.v" \
+"../../../../edit_ip_project.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../../../../codes/verilog/src/design_1_wrapper.v" \
+"../../../../../../../codes/verilog/verilogtest.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

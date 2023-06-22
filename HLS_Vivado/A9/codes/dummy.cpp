@@ -22,7 +22,7 @@ void crc24a(hls::stream<data>& a, hls::stream<int>& lena, hls::stream<data>& c, 
 #pragma HLS INTERFACE mode=ap_none port=last
 
     ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=divisor
+
     int y = 25;  // loading Size of divisor array into a variable
 
 	// Read lena i.e, length of input
@@ -30,7 +30,7 @@ void crc24a(hls::stream<data>& a, hls::stream<int>& lena, hls::stream<data>& c, 
     int x=b+y-1;  //length of output array
     ap_uint<1> crc[x];
     ap_uint<1> arr[b];
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=crc
+
 
 	 // Read input stream a
 	while (!a.empty()) {
@@ -74,7 +74,7 @@ void crc24a(hls::stream<data>& a, hls::stream<int>& lena, hls::stream<data>& c, 
 
 //Storing division remainder in another array
 	ap_uint<1> f[y-1];
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=f
+
 
     for (int i = 0; i < y-1; i++) {
 #pragma HLS PIPELINE II=1

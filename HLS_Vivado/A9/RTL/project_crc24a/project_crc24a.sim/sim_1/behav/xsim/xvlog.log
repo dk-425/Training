@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.srcs/sim_1/new/ds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ds
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.srcs/sim_1/new/adas.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adas

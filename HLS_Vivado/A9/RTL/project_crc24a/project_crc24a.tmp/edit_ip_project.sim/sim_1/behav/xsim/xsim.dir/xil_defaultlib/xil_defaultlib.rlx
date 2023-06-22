@@ -1,0 +1,10 @@
+0.7
+2020.2
+Feb 21 2023
+20:06:57
+/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.tmp/edit_ip_project.ip_user_files/bd/design_1/ip/design_1_ds_0_0/sim/design_1_ds_0_0.v,1687422499,verilog,,/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.tmp/edit_ip_project.ip_user_files/bd/design_1/sim/design_1.v,,design_1_ds_0_0,,,,,,,,
+/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.tmp/edit_ip_project.ip_user_files/bd/design_1/ipshared/5b50/ds.v,1687422499,verilog,,/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.tmp/edit_ip_project.ip_user_files/bd/design_1/ip/design_1_ds_0_0/sim/design_1_ds_0_0.v,,ds,,,,,,,,
+/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.tmp/edit_ip_project.ip_user_files/bd/design_1/sim/design_1.v,1687422499,verilog,,/home/sam-admin/git/Training/HLS_Vivado/A9/codes/verilog/src/design_1_wrapper.v,,design_1,,,,,,,,
+/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.tmp/edit_ip_project.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+/home/sam-admin/git/Training/HLS_Vivado/A9/codes/verilog/src/design_1_wrapper.v,1687422214,verilog,,/home/sam-admin/git/Training/HLS_Vivado/A9/codes/verilog/verilogtest.v,,design_1_wrapper,,,,,,,,
+/home/sam-admin/git/Training/HLS_Vivado/A9/codes/verilog/verilogtest.v,1687422494,verilog,,,,verilogtest,,,,,,,,

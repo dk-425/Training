@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 22 13:58:20 2023" VIVADOVERSION="2022.2.2">
+
+  <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu106:part0:2.6" DEVICE="xczu7ev" NAME="design_1" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock_0" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ds_0" PORT="clock"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ds_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="crc_0" RIGHT="7" SIGIS="undef" SIGNAME="External_Ports_crc_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ds_0" PORT="crc"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="last_0" SIGIS="undef" SIGNAME="External_Ports_last_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ds_0" PORT="last"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="crc_output_0" RIGHT="7" SIGIS="undef" SIGNAME="ds_0_crc_output">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ds_0" PORT="crc_output"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/ds_0" HWVERSION="1.0" INSTANCE="ds_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ds" VLNV="user.org:user:ds:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_ds_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clock" SIGIS="clk" SIGNAME="External_Ports_clock_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clock_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="crc" RIGHT="7" SIGIS="undef" SIGNAME="External_Ports_crc_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="crc_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="last" SIGIS="undef" SIGNAME="External_Ports_last_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="last_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="crc_output" RIGHT="7" SIGIS="undef" SIGNAME="ds_0_crc_output">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="crc_output_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

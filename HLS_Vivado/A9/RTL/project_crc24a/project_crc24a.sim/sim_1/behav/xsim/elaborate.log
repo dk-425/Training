@@ -4,6 +4,11 @@ Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/home/sam-admin/git/Training/HLS_Vivado/A9/RTL/project_crc24a/project_crc24a.srcs/sim_1/new/adas.v:38]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ds
+Compiling module xil_defaultlib.adas
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot adas_behav
