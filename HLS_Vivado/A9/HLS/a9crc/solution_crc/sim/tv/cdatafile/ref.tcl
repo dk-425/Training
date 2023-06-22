@@ -1,6 +1,6 @@
 set depth_list {
-  {a 1}
-  {c 4}
-  {last 2}
+  {input_r 1}
+  {last 1}
+  {output_r 4}
 }
 set trans_num 1

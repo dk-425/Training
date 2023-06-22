@@ -1,5 +1,10 @@
 # This script segment is generated automatically by AutoPilot
 
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler crc24a_f_V_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -12,17 +17,17 @@ set axilite_register_dict [dict create]
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 226 \
-    name a \
+    id 180 \
+    name input_r \
     reset_level 0 \
     sync_rst true \
     corename {} \
     metadata {  } \
     op interface \
-    ports { a_TDATA { I 8 vector } a_TVALID { I 1 bit } a_TREADY { O 1 bit } } \
+    ports { input_r_TDATA { I 8 vector } input_r_TVALID { I 1 bit } input_r_TREADY { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'a'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'input_r'"
 }
 }
 
@@ -31,39 +36,35 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 227 \
-    name c \
+    id 181 \
+    name output_r \
     reset_level 0 \
     sync_rst true \
     corename {} \
     metadata {  } \
     op interface \
-    ports { c_TDATA { O 8 vector } c_TVALID { O 1 bit } c_TREADY { I 1 bit } } \
+    ports { output_r_TDATA { O 8 vector } output_r_TVALID { O 1 bit } output_r_TREADY { I 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'c'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'output_r'"
 }
 }
 
 
-# Native AXIS:
+# Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 228 \
+eval "cg_default_interface_gen_dc { \
+    id 182 \
     name last \
+    type other \
+    dir I \
     reset_level 0 \
     sync_rst true \
-    corename {} \
-    metadata {  } \
+    corename dc_last \
     op interface \
-    ports { last_TDATA { O 8 vector } last_TVALID { O 1 bit } last_TREADY { I 1 bit } } \
+    ports { last { I 1 vector } } \
 } "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'last'"
 }
-}
-
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
@@ -130,7 +131,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # RegSlice definition:
-set ID 229
+set ID 183
 set RegSliceName crc24a_regslice_both
 set RegSliceInstName crc24a_regslice_both_U
 set CoreName ap_simcore_crc24a_regslice_both
@@ -153,7 +154,7 @@ puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_regSlice, check you
 
 
 # RegSlice definition:
-set ID 230
+set ID 184
 set RegSliceName crc24a_regslice_both
 set RegSliceInstName crc24a_regslice_both_U
 set CoreName ap_simcore_crc24a_regslice_both

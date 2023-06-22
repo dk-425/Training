@@ -4,9 +4,10 @@
 #include <hls_stream.h>
 #include "ap_int.h"
 using namespace std;
+#define N 8  //8bits per clock cycle
 
-typedef ap_uint<8> data;
+typedef ap_uint<N> data;
 
-void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last);
+void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
 
 #endif

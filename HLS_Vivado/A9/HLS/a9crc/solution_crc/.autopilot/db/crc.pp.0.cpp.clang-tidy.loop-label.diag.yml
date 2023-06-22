@@ -47,66 +47,66 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1245_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_16_1:  '
-    FileOffset:      16
+    Message:         'Added loop label VITIS_LOOP_19_1:  '
+    FileOffset:      19
     FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
-        Offset:          869871
+        Offset:          869818
         Length:          0
-        ReplacementText: 'VITIS_LOOP_16_1: '
+        ReplacementText: 'VITIS_LOOP_19_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_34_2:  '
+    Message:         'Added loop label VITIS_LOOP_24_2:  '
+    FileOffset:      24
+    FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
+    Replacements:    
+      - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
+        Offset:          869903
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_24_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_3:  '
+    FileOffset:      31
+    FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
+    Replacements:    
+      - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
+        Offset:          869986
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_34_4:  '
     FileOffset:      34
     FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
-        Offset:          870063
+        Offset:          870090
         Length:          0
-        ReplacementText: 'VITIS_LOOP_34_2: '
+        ReplacementText: 'VITIS_LOOP_34_4: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_41_3:  '
-    FileOffset:      41
+    Message:         'Added loop label VITIS_LOOP_43_5:  '
+    FileOffset:      43
     FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
-        Offset:          870146
+        Offset:          870234
         Length:          0
-        ReplacementText: 'VITIS_LOOP_41_3: '
+        ReplacementText: 'VITIS_LOOP_43_5: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_44_4:  '
-    FileOffset:      44
+    Message:         'Added loop label VITIS_LOOP_51_6:  '
+    FileOffset:      51
     FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
-        Offset:          870239
+        Offset:          870332
         Length:          0
-        ReplacementText: 'VITIS_LOOP_44_4: '
+        ReplacementText: 'VITIS_LOOP_51_6: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_53_5:  '
-    FileOffset:      53
+    Message:         'Added loop label VITIS_LOOP_58_7:  '
+    FileOffset:      58
     FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
     Replacements:    
       - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
-        Offset:          870383
+        Offset:          870471
         Length:          0
-        ReplacementText: 'VITIS_LOOP_53_5: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_63_6:  '
-    FileOffset:      63
-    FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
-    Replacements:    
-      - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
-        Offset:          870556
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_63_6: '
-  - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_70_7:  '
-    FileOffset:      70
-    FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp
-    Replacements:    
-      - FilePath:        /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp
-        Offset:          870695
-        Length:          0
-        ReplacementText: 'VITIS_LOOP_70_7: '
+        ReplacementText: 'VITIS_LOOP_58_7: '
 ...

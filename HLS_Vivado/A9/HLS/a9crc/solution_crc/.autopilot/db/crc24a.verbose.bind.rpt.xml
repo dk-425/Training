@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'crc24a'" level="0">
-<item name = "Date">Mon Jun 19 16:49:58 2023
+<item name = "Date">Tue Jun 20 15:44:16 2023
 </item>
 <item name = "Version">2022.2.2 (Build 3779808 on Feb 17 2023)</item>
 <item name = "Project">a9crc</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 3.157 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 3.444 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -31,12 +31,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_crc24a_Pipeline_VITIS_LOOP_16_1_fu_446">crc24a_Pipeline_VITIS_LOOP_16_1, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
-<column name="grp_crc24a_Pipeline_VITIS_LOOP_34_2_fu_460">crc24a_Pipeline_VITIS_LOOP_34_2, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
-<column name="grp_crc24a_Pipeline_VITIS_LOOP_41_3_fu_488">crc24a_Pipeline_VITIS_LOOP_41_3, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
-<column name="grp_crc24a_Pipeline_VITIS_LOOP_53_5_fu_556">crc24a_Pipeline_VITIS_LOOP_53_5, 3, 34, 30.000 ns, 0.340 us, 3, 34, no</column>
-<column name="grp_crc24a_Pipeline_VITIS_LOOP_63_6_fu_594">crc24a_Pipeline_VITIS_LOOP_63_6, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
-<column name="grp_crc24a_Pipeline_VITIS_LOOP_70_7_fu_656">crc24a_Pipeline_VITIS_LOOP_70_7, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
+<column name="grp_crc24a_Pipeline_VITIS_LOOP_19_1_fu_351">crc24a_Pipeline_VITIS_LOOP_19_1, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_crc24a_Pipeline_VITIS_LOOP_24_2_fu_365">crc24a_Pipeline_VITIS_LOOP_24_2, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
+<column name="grp_crc24a_Pipeline_VITIS_LOOP_31_3_fu_393">crc24a_Pipeline_VITIS_LOOP_31_3, 10, 10, 0.100 us, 0.100 us, 10, 10, no</column>
+<column name="grp_crc24a_Pipeline_VITIS_LOOP_43_5_fu_463">crc24a_Pipeline_VITIS_LOOP_43_5, 3, 34, 30.000 ns, 0.340 us, 3, 34, no</column>
+<column name="grp_crc24a_Pipeline_VITIS_LOOP_51_6_fu_501">crc24a_Pipeline_VITIS_LOOP_51_6, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
+<column name="grp_crc24a_Pipeline_VITIS_LOOP_58_7_fu_540">crc24a_Pipeline_VITIS_LOOP_58_7, 26, 26, 0.260 us, 0.260 us, 26, 26, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

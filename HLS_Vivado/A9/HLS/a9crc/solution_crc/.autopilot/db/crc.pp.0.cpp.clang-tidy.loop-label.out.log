@@ -23,38 +23,38 @@
       ^~~
       VITIS_LOOP_1245_1: 
 /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:4069:7: note: FIX-IT applied suggested code changes
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5872:9: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5876:9: warning: Added loop label VITIS_LOOP_19_1:   [xilinx-label-all-loops]
         for (int j = 0; j < 8; j++) {
         ^~~
-        VITIS_LOOP_16_1: 
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5872:9: note: FIX-IT applied suggested code changes
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5890:2: warning: Added loop label VITIS_LOOP_34_2:   [xilinx-label-all-loops]
- for (int i = 8; i < 32; i++) {
- ^~~
- VITIS_LOOP_34_2: 
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5890:2: note: FIX-IT applied suggested code changes
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5897:5: warning: Added loop label VITIS_LOOP_41_3:   [xilinx-label-all-loops]
+        VITIS_LOOP_19_1: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5876:9: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5881:5: warning: Added loop label VITIS_LOOP_24_2:   [xilinx-label-all-loops]
+    for (int i = 8; i < 32; i++) {
+    ^~~
+    VITIS_LOOP_24_2: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5881:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5888:5: warning: Added loop label VITIS_LOOP_31_3:   [xilinx-label-all-loops]
     for (int i = 0; i <= x - y; i++) {
     ^~~
-    VITIS_LOOP_41_3: 
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5897:5: note: FIX-IT applied suggested code changes
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5900:13: warning: Added loop label VITIS_LOOP_44_4:   [xilinx-label-all-loops]
+    VITIS_LOOP_31_3: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5888:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5891:13: warning: Added loop label VITIS_LOOP_34_4:   [xilinx-label-all-loops]
             for (int j = 0; j < y; j++) {
             ^~~
-            VITIS_LOOP_44_4: 
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5900:13: note: FIX-IT applied suggested code changes
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5909:5: warning: Added loop label VITIS_LOOP_53_5:   [xilinx-label-all-loops]
+            VITIS_LOOP_34_4: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5891:13: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5900:5: warning: Added loop label VITIS_LOOP_43_5:   [xilinx-label-all-loops]
     while (startIdx < x && crc[startIdx] == 0) {
     ^~~~~
-    VITIS_LOOP_53_5: 
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5909:5: note: FIX-IT applied suggested code changes
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5919:2: warning: Added loop label VITIS_LOOP_63_6:   [xilinx-label-all-loops]
- for (int i = 0; i < 24; i++) {
- ^~~
- VITIS_LOOP_63_6: 
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5919:2: note: FIX-IT applied suggested code changes
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5926:4: warning: Added loop label VITIS_LOOP_70_7:   [xilinx-label-all-loops]
+    VITIS_LOOP_43_5: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5900:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5908:5: warning: Added loop label VITIS_LOOP_51_6:   [xilinx-label-all-loops]
+    for (int i = 0; i < 24; i++) {
+    ^~~
+    VITIS_LOOP_51_6: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5908:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5915:4: warning: Added loop label VITIS_LOOP_58_7:   [xilinx-label-all-loops]
    for (int i = 0; i < 24; i++) {
    ^~~
-   VITIS_LOOP_70_7: 
-/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5926:4: note: FIX-IT applied suggested code changes
+   VITIS_LOOP_58_7: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/.autopilot/db/crc.pp.0.cpp:5915:4: note: FIX-IT applied suggested code changes

@@ -85358,6 +85358,7 @@ inline bool operator!=(
 # 6 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/header.h" 2
 using namespace std;
 
+
 typedef ap_uint<8> data;
 
 
@@ -85365,29 +85366,35 @@ typedef ap_uint<8> data;
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_crc24a_sw(hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<1>, 0> &);
+void apatb_crc24a_sw(hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<8>, 0> &, ap_uint<1>);
 #endif
-# 10 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/header.h"
-void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last);
+# 11 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/header.h"
+void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp" 2
 
 
 #ifndef HLS_FASTSIM
 # 3 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"
 int main() {
-    hls::stream<data> a, out1;
+    hls::stream<data> a,b;
     data x, y;
-    hls::stream<ap_uint<1>> la;
+    ap_uint<1> last;
+
+
+
+
 
 
            ap_uint<1> dividend[8] = {0, 1, 1, 0, 1, 0, 0, 0};
-
            for (int i = 0; i < 8; i++) {
-#pragma HLS PIPELINE II=1
+
                   x(i,i) = dividend[i];
 
                   }
+
            a.write(x);
+           last=1;
+
 
 
 
@@ -85395,40 +85402,32 @@ int main() {
 #ifndef HLS_FASTSIM
 #define crc24a apatb_crc24a_sw
 #endif
-# 20 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"
-crc24a(a, out1, la);
+# 26 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"
+crc24a(a, b, last);
 #undef crc24a
-# 20 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"
+# 26 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"
 
 
 
     cout << "CRC generator output : "<<endl;;
     ap_uint<1> p[32];
-    y = out1.read();
-    for (int i = 0; i < 8; i++) {
-        p[i] = y(i,i);
-    }
 
-    y = out1.read();
-    for (int i = 8; i < 16; i++) {
-        p[i] = y(i%8,i%8);
-    }
-    y = out1.read();
-    for (int i = 16; i < 24; i++) {
-        p[i] = y(i%8,i%8);
-    }
-    y = out1.read();
-    for (int i = 24; i < 32; i++) {
-        p[i] = y(i%8,i%8);
+
+    for (int i = 0; i < 4; i++) {
+        y = b.read();
+        for (int j = 0; j < 8; j++) {
+            p[i * 8 + j] = y(j, j);
+        }
     }
 
     for (int i = 0; i < 32; i++) {
-       cout<< p[i];
+        cout << p[i];
     }
+
     cout<<endl;
 
     return 0;
 }
 #endif
-# 49 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"
+# 47 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp"
 

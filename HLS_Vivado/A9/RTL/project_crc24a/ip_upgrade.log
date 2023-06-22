@@ -1,16 +1,131 @@
 Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
-| Date         : Mon Jun 19 16:03:46 2023
+| Date         : Tue Jun 20 15:50:19 2023
 | Host         : sampaths-lappie running 64-bit Ubuntu 22.04.2 LTS
 | Command      : upgrade_ip
 | Device       : xczu7ev-ffvc1156-2-e
 --------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'design_1_crc24a_0_0'
+Upgrade Log for IP 'design_1_crc24a_0_upgraded_ipi_0'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of design_1_crc24a_0_0 (xilinx.com:hls:crc24a:1.0) from (Rev. 2113082255) to (Rev. 2113082279)
+CAUTION (success, with warnings) in the upgrade of design_1_crc24a_0_upgraded_ipi_0 (xilinx.com:hls:crc24a:1.0) from (Rev. 2113083460) to (Rev. 2113083707)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_crc24a_0_upgraded_ipi_0'.
+
+
+-Upgrade has removed interface 'a'
+
+-Upgrade has removed interface 'c'
+
+-Upgrade has added interface 'ap_ctrl' (xilinx.com:interface:acc_handshake:1.0)
+
+-Upgrade has added interface 'input_r' (xilinx.com:interface:axis:1.0)
+
+-Upgrade has added interface 'output_r' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_crc24a_0_upgraded_ipi_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'a_TDATA'
+
+-Upgrade has removed port 'a_TREADY'
+
+-Upgrade has removed port 'a_TVALID'
+
+-Upgrade has removed port 'c_TDATA'
+
+-Upgrade has removed port 'c_TREADY'
+
+-Upgrade has removed port 'c_TVALID'
+
+-Upgrade has added port 'ap_done'
+
+-Upgrade has added port 'ap_idle'
+
+-Upgrade has added port 'ap_ready'
+
+-Upgrade has added port 'ap_start'
+
+-Upgrade has added port 'input_r_TDATA'
+
+-Upgrade has added port 'input_r_TREADY'
+
+-Upgrade has added port 'input_r_TVALID'
+
+-Upgrade has added port 'output_r_TDATA'
+
+-Upgrade has added port 'output_r_TREADY'
+
+-Upgrade has added port 'output_r_TVALID'
+
+
+
+
+
+
+
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date         : Tue Jun 20 11:42:32 2023
+| Host         : sampaths-lappie running 64-bit Ubuntu 22.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_crc24a_0_upgraded_ipi_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_crc24a_0_upgraded_ipi_0 (xilinx.com:hls:crc24a:1.0) from (Rev. 2113083423) to (Rev. 2113083460)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_crc24a_0_upgraded_ipi_0'.
+
+
+-Upgrade has removed interface 'ap_ctrl'
+
+-Upgrade has removed interface 'last'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_crc24a_0_upgraded_ipi_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ap_done'
+
+-Upgrade has removed port 'ap_idle'
+
+-Upgrade has removed port 'ap_ready'
+
+-Upgrade has removed port 'ap_start'
+
+-Upgrade has removed port 'last_TDATA'
+
+-Upgrade has removed port 'last_TREADY'
+
+-Upgrade has removed port 'last_TVALID'
+
+-Upgrade has added port 'last'
+
 

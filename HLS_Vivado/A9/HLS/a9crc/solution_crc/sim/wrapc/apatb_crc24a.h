@@ -5,6 +5,6 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_crc24a (
-hls::stream<int > a,
-hls::stream<int > c,
-hls::stream<int > last);
+hls::stream<int > input_r,
+hls::stream<int > output_r,
+char last);

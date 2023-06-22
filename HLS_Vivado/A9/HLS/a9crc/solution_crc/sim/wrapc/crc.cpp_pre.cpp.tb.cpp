@@ -85358,41 +85358,32 @@ inline bool operator!=(
 # 6 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/header.h" 2
 using namespace std;
 
+
 typedef ap_uint<8> data;
 
-void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last);
+void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp" 2
 
-void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last) {
-#pragma HLS INTERFACE mode=axis register_mode=both port=a register
-#pragma HLS INTERFACE mode=axis register_mode=both port=c register
-#pragma HLS INTERFACE mode=axis register_mode=off port=last
+void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last) {
 
+#pragma HLS INTERFACE mode=axis register_mode=both port=input register
+#pragma HLS INTERFACE mode=axis register_mode=both port=output register
+#pragma HLS INTERFACE mode=ap_none port=last
+
+    ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
+
+    int y = 25;
 
     ap_uint<1> crc[32];
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=crc
+
+    int x = 32;
 
 
-
-    data d =a.read();
+    data d =input.read();
         for (int j = 0; j < 8; j++) {
 #pragma HLS PIPELINE II=1
             crc[j]=d[j];
         }
-
-
-
-    last.write(1);
-
-    int x = 32;
-
-    ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
-    int y = 25;
-
-
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=divisor
-
-
 
     for (int i = 8; i < 32; i++) {
 #pragma HLS PIPELINE II=1
@@ -85403,7 +85394,7 @@ void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> 
 
     for (int i = 0; i <= x - y; i++) {
 #pragma HLS PIPELINE II=1
-        if (crc[i] == 1) {
+        if (crc[i] == 1 && last==1) {
             for (int j = 0; j < y; j++) {
 #pragma HLS UNROLL
                 crc[i + j] = crc[i+j] ^ divisor[j];
@@ -85414,20 +85405,18 @@ void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> 
 
     int startIdx = 0;
     while (startIdx < x && crc[startIdx] == 0) {
-#pragma HLS PIPELINE II=1
         startIdx++;
     }
 
 
-
-
  ap_uint<1> f[24];
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=f
+
+
     for (int i = 0; i < 24; i++) {
 #pragma HLS PIPELINE II=1
      f[i] = (startIdx == x) ? crc[i] : crc[startIdx + i];
-
     }
+
    data g,h,m,o;
 
    for (int i = 0; i < 24; i++) {
@@ -85441,32 +85430,33 @@ void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> 
               m(i%8, i%8) = f[i];
           }
       }
-    c.write(o);
-    c.write(g);
-    c.write(h);
-    c.write(m);
 
-    last.write(0);
+    output.write(o);
+    output.write(g);
+    output.write(h);
+    output.write(m);
+
 }
 #ifndef HLS_FASTSIM
+struct __cosim_s1__{char data[sizeof(ap_uint<1>)];};
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_crc24a_ir(hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<1>, 0> &);
+void apatb_crc24a_ir(hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<8>, 0> &, struct __cosim_s1__*);
 #ifdef __cplusplus
 extern "C"
 #endif
-void crc24a_hw_stub(hls::stream<ap_uint<8>, 0> &a, hls::stream<ap_uint<8>, 0> &c, hls::stream<ap_uint<1>, 0> &last){
-crc24a(a, c, last);
+void crc24a_hw_stub(hls::stream<ap_uint<8>, 0> &input, hls::stream<ap_uint<8>, 0> &output, struct __cosim_s1__* last){
+crc24a(input, output, *((ap_uint<1>*)last));
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_crc24a_sw(hls::stream<ap_uint<8>, 0> &a, hls::stream<ap_uint<8>, 0> &c, hls::stream<ap_uint<1>, 0> &last){
-apatb_crc24a_ir(a, c, last);
+void apatb_crc24a_sw(hls::stream<ap_uint<8>, 0> &input, hls::stream<ap_uint<8>, 0> &output, ap_uint<1> last){
+apatb_crc24a_ir(input, output, ((struct __cosim_s1__*)&last));
 return ;
 }
 #endif
-# 87 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp"
+# 75 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc.cpp"
 

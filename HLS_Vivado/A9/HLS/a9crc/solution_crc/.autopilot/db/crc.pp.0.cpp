@@ -5843,12 +5843,13 @@ inline __attribute__((nodebug)) bool operator!=(
 # 6 "../codes/header.h" 2
 using namespace std;
 
+
 typedef ap_uint<8> data;
 
-__attribute__((sdx_kernel("crc24a", 0))) void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last);
+__attribute__((sdx_kernel("crc24a", 0))) void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
 # 2 "../codes/crc.cpp" 2
 
-__attribute__((sdx_kernel("crc24a", 0))) void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last) {
+__attribute__((sdx_kernel("crc24a", 0))) void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last) {
 #line 15 "/home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=crc24a
 # 3 "../codes/crc.cpp"
@@ -5857,47 +5858,37 @@ __attribute__((sdx_kernel("crc24a", 0))) void crc24a(hls::stream<data>& a, hls::
 #pragma HLSDIRECTIVE TOP name=crc24a
 # 3 "../codes/crc.cpp"
 
-#pragma HLS INTERFACE mode=axis register_mode=both port=a register
-#pragma HLS INTERFACE mode=axis register_mode=both port=c register
-#pragma HLS INTERFACE mode=axis register_mode=off port=last
 
+#pragma HLS INTERFACE mode=axis register_mode=both port=input register
+#pragma HLS INTERFACE mode=axis register_mode=both port=output register
+#pragma HLS INTERFACE mode=ap_none port=last
 
- data d =a.read();
+ ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
+
+    int y = 25;
 
     ap_uint<1> crc[32];
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=crc
- ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
-       int y = 25;
-
-        VITIS_LOOP_16_1: for (int j = 0; j < 8; j++) {
-#pragma HLS PIPELINE II=1
- crc[j]=d[j];
-        }
-
-
-
-    last.write(1);
 
     int x = 32;
 
 
+    data d =input.read();
+        VITIS_LOOP_19_1: for (int j = 0; j < 8; j++) {
+#pragma HLS PIPELINE II=1
+ crc[j]=d[j];
+        }
 
-
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=divisor
-
-
-
- VITIS_LOOP_34_2: for (int i = 8; i < 32; i++) {
+    VITIS_LOOP_24_2: for (int i = 8; i < 32; i++) {
 #pragma HLS PIPELINE II=1
  crc[i] = 0;
     }
 
 
 
-    VITIS_LOOP_41_3: for (int i = 0; i <= x - y; i++) {
+    VITIS_LOOP_31_3: for (int i = 0; i <= x - y; i++) {
 #pragma HLS PIPELINE II=1
- if (crc[i] == 1) {
-            VITIS_LOOP_44_4: for (int j = 0; j < y; j++) {
+ if (crc[i] == 1 && last==1) {
+            VITIS_LOOP_34_4: for (int j = 0; j < y; j++) {
 #pragma HLS UNROLL
  crc[i + j] = crc[i+j] ^ divisor[j];
             }
@@ -5906,24 +5897,22 @@ __attribute__((sdx_kernel("crc24a", 0))) void crc24a(hls::stream<data>& a, hls::
 
 
     int startIdx = 0;
-    VITIS_LOOP_53_5: while (startIdx < x && crc[startIdx] == 0) {
-#pragma HLS PIPELINE II=1
- startIdx++;
+    VITIS_LOOP_43_5: while (startIdx < x && crc[startIdx] == 0) {
+        startIdx++;
     }
-
-
 
 
  ap_uint<1> f[24];
-#pragma HLS ARRAY_PARTITION dim=1 type=complete variable=f
- VITIS_LOOP_63_6: for (int i = 0; i < 24; i++) {
+
+
+    VITIS_LOOP_51_6: for (int i = 0; i < 24; i++) {
 #pragma HLS PIPELINE II=1
  f[i] = (startIdx == x) ? crc[i] : crc[startIdx + i];
-
     }
+
    data g,h,m,o;
 
-   VITIS_LOOP_70_7: for (int i = 0; i < 24; i++) {
+   VITIS_LOOP_58_7: for (int i = 0; i < 24; i++) {
 #pragma HLS PIPELINE II=1
  if (i < 8) {
               o(i, i) = d(i, i);
@@ -5934,10 +5923,10 @@ __attribute__((sdx_kernel("crc24a", 0))) void crc24a(hls::stream<data>& a, hls::
               m(i%8, i%8) = f[i];
           }
       }
-    c.write(o);
-    c.write(g);
-    c.write(h);
-    c.write(m);
 
-    last.write(0);
+    output.write(o);
+    output.write(g);
+    output.write(h);
+    output.write(m);
+
 }

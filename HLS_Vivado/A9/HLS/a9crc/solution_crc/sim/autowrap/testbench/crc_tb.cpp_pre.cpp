@@ -85353,54 +85353,53 @@ inline bool operator!=(
 # 6 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/header.h" 2
 using namespace std;
 
+
 typedef ap_uint<8> data;
 
-void crc24a(hls::stream<data>& a, hls::stream<data>& c, hls::stream<ap_uint<1>> &last);
+void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/A9/codes/crc_tb.cpp" 2
 
 int main() {
-    hls::stream<data> a, out1;
+    hls::stream<data> a,b;
     data x, y;
-    hls::stream<ap_uint<1>> la;
+    ap_uint<1> last;
+
+
+
+
 
 
            ap_uint<1> dividend[8] = {0, 1, 1, 0, 1, 0, 0, 0};
-
            for (int i = 0; i < 8; i++) {
-#pragma HLS PIPELINE II=1
+
                   x(i,i) = dividend[i];
 
                   }
+
            a.write(x);
+           last=1;
 
 
 
-    crc24a(a, out1, la);
+
+    crc24a(a, b, last);
 
 
     cout << "CRC generator output : "<<endl;;
     ap_uint<1> p[32];
-    y = out1.read();
-    for (int i = 0; i < 8; i++) {
-        p[i] = y(i,i);
-    }
 
-    y = out1.read();
-    for (int i = 8; i < 16; i++) {
-        p[i] = y(i%8,i%8);
-    }
-    y = out1.read();
-    for (int i = 16; i < 24; i++) {
-        p[i] = y(i%8,i%8);
-    }
-    y = out1.read();
-    for (int i = 24; i < 32; i++) {
-        p[i] = y(i%8,i%8);
+
+    for (int i = 0; i < 4; i++) {
+        y = b.read();
+        for (int j = 0; j < 8; j++) {
+            p[i * 8 + j] = y(j, j);
+        }
     }
 
     for (int i = 0; i < 32; i++) {
-       cout<< p[i];
+        cout << p[i];
     }
+
     cout<<endl;
 
     return 0;

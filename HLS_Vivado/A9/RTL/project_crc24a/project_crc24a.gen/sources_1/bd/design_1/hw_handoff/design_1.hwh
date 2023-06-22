@@ -1,41 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jun 19 16:04:04 2023" VIVADOVERSION="2022.2.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun 20 15:52:23 2023" VIVADOVERSION="2022.2.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu106:part0:2.6" DEVICE="xczu7ev" NAME="design_1" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ap_clk_0" SIGIS="clk" SIGNAME="External_Ports_ap_clk_0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="crc24a_0" PORT="ap_clk"/>
+        <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="ap_clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="ap_rst_n_0" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_ap_rst_n_0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="crc24a_0" PORT="ap_rst_n"/>
-        <CONNECTION INSTANCE="crc24a_0" PORT="ap_start"/>
-        <CONNECTION INSTANCE="crc24a_0" PORT="a_TVALID"/>
-        <CONNECTION INSTANCE="crc24a_0" PORT="c_TREADY"/>
-        <CONNECTION INSTANCE="crc24a_0" PORT="last_TREADY"/>
+        <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="ap_rst_n"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="7" NAME="c_TDATA_0" RIGHT="0" SIGIS="undef" SIGNAME="crc24a_0_c_TDATA">
+    <PORT DIR="I" LEFT="0" NAME="last_0" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_last_0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="crc24a_0" PORT="c_TDATA"/>
+        <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="last"/>
+        <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="output_r_TREADY"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="c_TVALID_0" SIGIS="undef" SIGNAME="crc24a_0_c_TVALID">
+    <PORT DIR="O" LEFT="7" NAME="output_r_TDATA_0" RIGHT="0" SIGIS="undef" SIGNAME="crc24a_0_upgraded_ipi_output_r_TDATA">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="crc24a_0" PORT="c_TVALID"/>
+        <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="output_r_TDATA"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="7" NAME="last_TDATA_0" RIGHT="0" SIGIS="undef" SIGNAME="crc24a_0_last_TDATA">
+    <PORT DIR="O" NAME="output_r_TVALID_0" SIGIS="undef" SIGNAME="crc24a_0_upgraded_ipi_output_r_TVALID">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="crc24a_0" PORT="last_TDATA"/>
+        <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="output_r_TVALID"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="7" NAME="a_TDATA_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_TDATA_0">
+    <PORT DIR="I" LEFT="7" NAME="input_r_TDATA_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_input_r_TDATA_0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="crc24a_0" PORT="a_TDATA"/>
+        <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="input_r_TDATA"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -43,10 +40,10 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="2113082279" FULLNAME="/crc24a_0" HWVERSION="1.0" INSTANCE="crc24a_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="crc24a" VLNV="xilinx.com:hls:crc24a:1.0">
+    <MODULE COREREVISION="2113083707" FULLNAME="/crc24a_0_upgraded_ipi" HWVERSION="1.0" INSTANCE="crc24a_0_upgraded_ipi" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="crc24a" VLNV="xilinx.com:hls:crc24a:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_crc24a_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_crc24a_0_upgraded_ipi_0"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
@@ -65,49 +62,43 @@
             <CONNECTION INSTANCE="External_Ports" PORT="ap_rst_n_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="ap_start" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_ap_rst_n_0">
+        <PORT DIR="I" NAME="ap_start" SIGIS="undef" SIGNAME="xlconstant_0_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst_n_0"/>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
         <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
-        <PORT DIR="I" NAME="a_TVALID" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_ap_rst_n_0">
+        <PORT DIR="I" NAME="input_r_TVALID" SIGIS="undef" SIGNAME="xlconstant_0_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst_n_0"/>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="a_TREADY" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="7" NAME="a_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_a_TDATA_0">
+        <PORT DIR="O" NAME="input_r_TREADY" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="input_r_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_input_r_TDATA_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="a_TDATA_0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="input_r_TDATA_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="c_TVALID" SIGIS="undef" SIGNAME="crc24a_0_c_TVALID">
+        <PORT DIR="O" NAME="output_r_TVALID" SIGIS="undef" SIGNAME="crc24a_0_upgraded_ipi_output_r_TVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="c_TVALID_0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="output_r_TVALID_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="c_TREADY" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_ap_rst_n_0">
+        <PORT DIR="I" NAME="output_r_TREADY" SIGIS="undef" SIGNAME="External_Ports_last_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst_n_0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="last_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="c_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="crc24a_0_c_TDATA">
+        <PORT DIR="O" LEFT="7" NAME="output_r_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="crc24a_0_upgraded_ipi_output_r_TDATA">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="c_TDATA_0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="output_r_TDATA_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="last_TVALID" SIGIS="undef"/>
-        <PORT DIR="I" NAME="last_TREADY" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="External_Ports_ap_rst_n_0">
+        <PORT DIR="I" LEFT="0" NAME="last" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_last_0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ap_rst_n_0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="7" NAME="last_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="crc24a_0_last_TDATA">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="last_TDATA_0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="last_0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -120,7 +111,7 @@
             <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="a" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="input_r" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="LAYERED_METADATA"/>
@@ -135,12 +126,12 @@
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_ap_clk_0"/>
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="TVALID" PHYSICAL="a_TVALID"/>
-            <PORTMAP LOGICAL="TREADY" PHYSICAL="a_TREADY"/>
-            <PORTMAP LOGICAL="TDATA" PHYSICAL="a_TDATA"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="input_r_TVALID"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="input_r_TREADY"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="input_r_TDATA"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="c" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="output_r" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
           <PARAMETER NAME="LAYERED_METADATA"/>
@@ -155,32 +146,30 @@
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_ap_clk_0"/>
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="TVALID" PHYSICAL="c_TVALID"/>
-            <PORTMAP LOGICAL="TREADY" PHYSICAL="c_TREADY"/>
-            <PORTMAP LOGICAL="TDATA" PHYSICAL="c_TDATA"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="last" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
-          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="LAYERED_METADATA"/>
-          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
-          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
-          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
-          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
-          <PARAMETER NAME="PHASE" VALUE="0.0"/>
-          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_ap_clk_0"/>
-          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="TVALID" PHYSICAL="last_TVALID"/>
-            <PORTMAP LOGICAL="TREADY" PHYSICAL="last_TREADY"/>
-            <PORTMAP LOGICAL="TDATA" PHYSICAL="last_TDATA"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="output_r_TVALID"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="output_r_TREADY"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="output_r_TDATA"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="ap_start"/>
+            <CONNECTION INSTANCE="crc24a_0_upgraded_ipi" PORT="input_r_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
     </MODULE>
   </MODULES>
 
