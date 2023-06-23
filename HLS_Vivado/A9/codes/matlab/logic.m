@@ -1,6 +1,4 @@
-clc;
-clear all;
-close all;
+
 % Provide the binary inputs
 input = [0 1 1 0 1 0 0 0];  % input
 divisor = [1 1 0 0 0 0 1 1 0 0 1 0 0 1 1 0 0 1 1 1 1 1 0 1 1];  % Divisor
