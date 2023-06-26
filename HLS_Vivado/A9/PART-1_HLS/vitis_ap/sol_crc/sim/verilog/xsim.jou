@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# xsim v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Jun 26 11:20:56 2023
+# Process ID: 11146
+# Current directory: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/crc24a/xsim_script.tcl}
+# Log file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/xsim.log
+# Journal file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/xsim.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3398.897 MHz, CPU Physical cores: 4, Host memory: 8096 MB
+#-----------------------------------------------------------
+source xsim.dir/crc24a/xsim_script.tcl
+source crc24a.tcl

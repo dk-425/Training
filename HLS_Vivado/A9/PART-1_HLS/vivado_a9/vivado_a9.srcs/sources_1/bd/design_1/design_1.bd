@@ -1,0 +1,149 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x50B9568A1E4581BB",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "gen_directory": "../../../../vivado_a9.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "crc24a_0": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "ap_clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst_n_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst_n_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "last_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "input_r_TDATA_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "output_r_TDATA_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "output_r_TVALID_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "crc24a_0": {
+        "vlnv": "xilinx.com:hls:crc24a:1.0",
+        "xci_name": "design_1_crc24a_0_0",
+        "xci_path": "ip/design_1_crc24a_0_0/design_1_crc24a_0_0.xci",
+        "inst_hier_path": "crc24a_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      }
+    },
+    "nets": {
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk_0",
+          "crc24a_0/ap_clk"
+        ]
+      },
+      "ap_rst_n_0_1": {
+        "ports": [
+          "ap_rst_n_0",
+          "crc24a_0/ap_rst_n"
+        ]
+      },
+      "crc24a_0_output_r_TDATA": {
+        "ports": [
+          "crc24a_0/output_r_TDATA",
+          "output_r_TDATA_0"
+        ]
+      },
+      "crc24a_0_output_r_TVALID": {
+        "ports": [
+          "crc24a_0/output_r_TVALID",
+          "output_r_TVALID_0"
+        ]
+      },
+      "input_r_TDATA_0_1": {
+        "ports": [
+          "input_r_TDATA_0",
+          "crc24a_0/input_r_TDATA"
+        ]
+      },
+      "last_0_1": {
+        "ports": [
+          "last_0",
+          "crc24a_0/last",
+          "crc24a_0/output_r_TREADY"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "crc24a_0/ap_start",
+          "crc24a_0/input_r_TVALID"
+        ]
+      }
+    }
+  }
+}

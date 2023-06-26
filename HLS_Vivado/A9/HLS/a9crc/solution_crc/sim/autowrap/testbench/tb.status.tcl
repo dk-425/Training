@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/sam-admin/git/Training/HLS_Vivado/A9/HLS/a9crc/solution_crc/./sim/autowrap/testbench/crc.cpp_pre.cpp.tb.cpp

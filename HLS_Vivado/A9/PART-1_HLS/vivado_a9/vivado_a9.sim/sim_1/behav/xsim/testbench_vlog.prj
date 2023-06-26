@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_15_1.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_20_2.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_27_3.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_39_5.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_46_6.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_54_7.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_flow_control_loop_pipe_sequential_init.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_hls_deadlock_idx0_monitor.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_mux_83_1_1_1.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_mux_325_1_1_1.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_regslice_both.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a_temp_V_RAM_AUTO_1R1W.v" \
+"../../../../vivado_a9.gen/sources_1/bd/design_1/ipshared/972b/hdl/verilog/crc24a.v" \
+"../../../../vivado_a9.ip_user_files/bd/design_1/ip/design_1_crc24a_0_0/sim/design_1_crc24a_0_0.v" \
+"../../../../vivado_a9.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../vivado_a9.ip_user_files/bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
+"../../../../vivado_a9.srcs/sources_1/imports/hdl/design_1_wrapper.v" \
+"../../../../vivado_a9.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

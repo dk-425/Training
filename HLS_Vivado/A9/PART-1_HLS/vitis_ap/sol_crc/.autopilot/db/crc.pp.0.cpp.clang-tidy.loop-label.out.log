@@ -1,0 +1,60 @@
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:1456:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:1456:7: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:2430:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:2430:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:2444:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:2444:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:2458:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:2458:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:4069:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:4069:7: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5872:9: warning: Added loop label VITIS_LOOP_15_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < 8; j++) {
+        ^~~
+        VITIS_LOOP_15_1: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5872:9: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5877:5: warning: Added loop label VITIS_LOOP_20_2:   [xilinx-label-all-loops]
+    for (int i = 8; i < 8 +25 -1; i++) {
+    ^~~
+    VITIS_LOOP_20_2: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5877:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5884:5: warning: Added loop label VITIS_LOOP_27_3:   [xilinx-label-all-loops]
+    for (int i = 0; i <= 8 +25 -1 - 25; i++) {
+    ^~~
+    VITIS_LOOP_27_3: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5884:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5887:13: warning: Added loop label VITIS_LOOP_30_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < 25; j++) {
+            ^~~
+            VITIS_LOOP_30_4: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5887:13: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5896:5: warning: Added loop label VITIS_LOOP_39_5:   [xilinx-label-all-loops]
+    while (startIdx < 8 +25 -1 && crc[startIdx] == 0) {
+    ^~~~~
+    VITIS_LOOP_39_5: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5896:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5903:5: warning: Added loop label VITIS_LOOP_46_6:   [xilinx-label-all-loops]
+    for (int i = 0; i < 25 -1; i++) {
+    ^~~
+    VITIS_LOOP_46_6: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5903:5: note: FIX-IT applied suggested code changes
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5911:4: warning: Added loop label VITIS_LOOP_54_7:   [xilinx-label-all-loops]
+   for (int i = 0; i < 25 -1; i++) {
+   ^~~
+   VITIS_LOOP_54_7: 
+/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/.autopilot/db/crc.pp.0.cpp:5911:4: note: FIX-IT applied suggested code changes

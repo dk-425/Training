@@ -1,6 +1,0 @@
-remark: ../codes/crc.cpp:34:30: Loop 'VITIS_LOOP_34_4' is marked as complete unroll implied by the pipeline pragma
-remark: ../codes/crc.cpp:3:0: Unrolling loop 'VITIS_LOOP_34_4' (../codes/crc.cpp:34:30) in function 'crc24a' completely with a factor of 25
-remark: ../codes/crc.cpp:43:22: Could not analyze the loop bounds _XLX_SEP_ VITIS_LOOP_43_5 ../codes/crc.cpp:43:22 crc24a(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, ap_uint<1>) 
-remark: ../codes/crc.cpp:0:1: array_partition dim=1 type=complete  variable=crc 1 crc24a ../codes/crc.cpp:13:16 ../codes/crc.cpp:32:9crc 
-remark: ../codes/crc.cpp:32:9: Inferring pragma 'array_partition type=complete dim=1' for array 'crc' due to pipeline pragma
-remark: ../codes/crc.cpp:13:16: Applying array_partition to 'crc': Complete partitioning on dimension 1.

@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "crc24a",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/sam-admin\/git\/Training\/HLS_Vivado\/A9\/PART-1_HLS\/vitis_ap\/sol_crc\/csynth.tcl",
+          "sourceLine": "14",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "crc24a"
+              }]
+          }
+        }]
+    }]}

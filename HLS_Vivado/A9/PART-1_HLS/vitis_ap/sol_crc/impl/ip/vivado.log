@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Jun 26 11:22:35 2023
+# Process ID: 11326
+# Current directory: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/impl/ip/vivado.log
+# Journal file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/impl/ip/vivado.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 2601.282 MHz, CPU Physical cores: 4, Host memory: 8096 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1291.949 ; gain = 0.023 ; free physical = 1255 ; free virtual = 5399
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 26 11:22:52 2023...
