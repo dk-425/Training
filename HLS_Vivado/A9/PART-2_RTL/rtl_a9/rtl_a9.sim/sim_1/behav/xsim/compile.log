@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/codes/crcaxis.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/codes/axistb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axistb

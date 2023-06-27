@@ -1,0 +1,139 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD8B89D9BEA1A275D",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "gen_directory": "../../../../rtl_a9.gen/sources_1/bd/design_rtl_IP",
+      "name": "design_rtl_IP",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "axis_reg_0": ""
+    },
+    "ports": {
+      "m_tvalid_0": {
+        "direction": "O"
+      },
+      "m_tdata_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "reset_n_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_rtl_IP_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "s_tdata_0": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "s_tvalid_0": {
+        "direction": "I"
+      },
+      "last_0": {
+        "direction": "I"
+      },
+      "m_tready_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "axis_reg_0": {
+        "vlnv": "user.org:user:axis_reg:1.0",
+        "xci_name": "design_rtl_IP_axis_reg_0_0",
+        "xci_path": "ip/design_rtl_IP_axis_reg_0_0/design_rtl_IP_axis_reg_0_0.xci",
+        "inst_hier_path": "axis_reg_0"
+      }
+    },
+    "nets": {
+      "axis_reg_0_m_tdata": {
+        "ports": [
+          "axis_reg_0/m_tdata",
+          "m_tdata_0"
+        ]
+      },
+      "axis_reg_0_m_tvalid": {
+        "ports": [
+          "axis_reg_0/m_tvalid",
+          "m_tvalid_0"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "axis_reg_0/clk"
+        ]
+      },
+      "last_0_1": {
+        "ports": [
+          "last_0",
+          "axis_reg_0/last"
+        ]
+      },
+      "m_tready_0_1": {
+        "ports": [
+          "m_tready_0",
+          "axis_reg_0/m_tready"
+        ]
+      },
+      "reset_n_0_1": {
+        "ports": [
+          "reset_n_0",
+          "axis_reg_0/reset_n"
+        ]
+      },
+      "s_tdata_0_1": {
+        "ports": [
+          "s_tdata_0",
+          "axis_reg_0/s_tdata"
+        ]
+      },
+      "s_tvalid_0_1": {
+        "ports": [
+          "s_tvalid_0",
+          "axis_reg_0/s_tvalid"
+        ]
+      }
+    }
+  }
+}
