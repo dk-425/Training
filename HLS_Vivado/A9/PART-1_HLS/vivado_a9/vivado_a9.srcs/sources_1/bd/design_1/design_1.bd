@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x50B9568A1E4581BB",
+      "boundary_crc": "0x5D15D101FE22AF05",
       "device": "xczu7ev-ffvc1156-2-e",
       "gen_directory": "../../../../vivado_a9.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -11,8 +11,8 @@
       "validated": "true"
     },
     "design_tree": {
-      "crc24a_0": "",
-      "xlconstant_0": ""
+      "xlconstant_0": "",
+      "crc24a_0": ""
     },
     "ports": {
       "ap_clk_0": {
@@ -59,18 +59,6 @@
           }
         }
       },
-      "last_0": {
-        "type": "data",
-        "direction": "I",
-        "left": "0",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
       "input_r_TDATA_0": {
         "direction": "I",
         "left": "7",
@@ -86,17 +74,17 @@
       }
     },
     "components": {
-      "crc24a_0": {
-        "vlnv": "xilinx.com:hls:crc24a:1.0",
-        "xci_name": "design_1_crc24a_0_0",
-        "xci_path": "ip/design_1_crc24a_0_0/design_1_crc24a_0_0.xci",
-        "inst_hier_path": "crc24a_0"
-      },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "design_1_xlconstant_0_0",
         "xci_path": "ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci",
         "inst_hier_path": "xlconstant_0"
+      },
+      "crc24a_0": {
+        "vlnv": "xilinx.com:hls:crc24a:1.0",
+        "xci_name": "design_1_crc24a_0_0",
+        "xci_path": "ip/design_1_crc24a_0_0/design_1_crc24a_0_0.xci",
+        "inst_hier_path": "crc24a_0"
       }
     },
     "nets": {
@@ -130,18 +118,12 @@
           "crc24a_0/input_r_TDATA"
         ]
       },
-      "last_0_1": {
-        "ports": [
-          "last_0",
-          "crc24a_0/last",
-          "crc24a_0/output_r_TREADY"
-        ]
-      },
       "xlconstant_0_dout": {
         "ports": [
           "xlconstant_0/dout",
           "crc24a_0/ap_start",
-          "crc24a_0/input_r_TVALID"
+          "crc24a_0/input_r_TVALID",
+          "crc24a_0/output_r_TREADY"
         ]
       }
     }

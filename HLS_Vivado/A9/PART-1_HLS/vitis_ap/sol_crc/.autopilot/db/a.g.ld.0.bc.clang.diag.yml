@@ -1,50 +1,66 @@
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: codes/crc.cpp, Line: 30, Column: 30 }
-Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_S1_ILi1EE
+DebugLoc:        { File: codes/crc.cpp, Line: 25, Column: 18 }
+Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_30_4
+  - LoopName:        loop3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: codes/crc.cpp, Line: 3, Column: 0 }
-Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_S1_ILi1EE
+Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_30_4
+  - LoopName:        loop4
   - String:          ''' ('
-  - LoopLoc:         'codes/crc.cpp:30:30'
+  - LoopLoc:         'codes/crc.cpp:35:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          crc24a
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: codes/crc.cpp, Line: 3, Column: 0 }
+Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        loop3
+  - String:          ''' ('
+  - LoopLoc:         'codes/crc.cpp:25:18'
   - String:          ') '
   - String:          'in function '''
   - String:          crc24a
   - String:          ''' completely with a factor of '
   - Factor:          '25'
 ...
---- !Missed
-Pass:            reflow-burst-inference
-Name:            CouldNotAnalyzeBoundsPattern
-DebugLoc:        { File: codes/crc.cpp, Line: 39, Column: 22 }
-Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_S1_ILi1EE
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: codes/crc.cpp, Line: 3, Column: 0 }
+Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_
 Args:            
-  - String:          Could not analyze the loop bounds
-  - String:          ' _XLX_SEP_ '
-  - LoopName:        VITIS_LOOP_39_5
-  - String:          ' '
-  - LoopLoc:         'codes/crc.cpp:39:22'
-  - String:          ' '
-  - Function:        'crc24a(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&, ap_uint<1>)'
-    DebugLoc:        { File: codes/crc.cpp, Line: 3, Column: 0 }
-  - String:          ' '
+  - String:          'Unrolling loop '''
+  - LoopName:        loop1
+  - String:          ''' ('
+  - LoopLoc:         'codes/crc.cpp:14:11'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          crc24a
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: codes/crc.cpp, Line: 0, Column: 1 }
-Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_S1_ILi1EE
+Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_
 Args:            
   - PragmaType:      array_partition
   - String:          ' '
@@ -54,18 +70,18 @@ Args:
   - String:          ' '
   - PragmaFunction:  crc24a
   - String:          ' '
-  - varLoc:          'codes/crc.cpp:9:13'
+  - varLoc:          'codes/crc.cpp:8:13'
   - String:          ' '
-  - PragmaSrcLoc:    'codes/crc.cpp:28:9'
-    DebugLoc:        { File: codes/crc.cpp, Line: 28, Column: 9 }
+  - PragmaSrcLoc:    'codes/crc.cpp:23:9'
+    DebugLoc:        { File: codes/crc.cpp, Line: 23, Column: 9 }
   - VarName:         crc
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: codes/crc.cpp, Line: 28, Column: 9 }
-Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_S1_ILi1EE
+DebugLoc:        { File: codes/crc.cpp, Line: 23, Column: 9 }
+Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_
 Args:            
   - String:          'Inferring pragma '''
   - PragmaType:      array_partition
@@ -83,8 +99,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: codes/crc.cpp, Line: 9, Column: 13 }
-Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_S1_ILi1EE
+DebugLoc:        { File: codes/crc.cpp, Line: 8, Column: 13 }
+Function:        _Z6crc24aRN3hls6streamI7ap_uintILi8EELi0EEES4_
 Args:            
   - String:          'Applying '
   - String:          array_partition

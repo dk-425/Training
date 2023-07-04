@@ -17,20 +17,16 @@
 
 `define AESL_DEPTH_input_r 1
 `define AESL_DEPTH_output_r 1
-`define AESL_DEPTH_last 1
 `define AUTOTB_TVIN_input_r  "../tv/cdatafile/c.crc24a.autotvin_input_r.dat"
-`define AUTOTB_TVIN_last  "../tv/cdatafile/c.crc24a.autotvin_last.dat"
 `define AUTOTB_TVIN_input_r_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvin_input_r.dat"
-`define AUTOTB_TVIN_last_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvin_last.dat"
 `define AUTOTB_TVOUT_output_r  "../tv/cdatafile/c.crc24a.autotvout_output_r.dat"
 `define AUTOTB_TVOUT_output_r_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvout_output_r.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 136;
-parameter LENGTH_input_r = 1;
-parameter LENGTH_last = 1;
+parameter LATENCY_ESTIMATION = 17;
+parameter LENGTH_input_r = 2;
 parameter LENGTH_output_r = 4;
 
 task read_token;
@@ -72,7 +68,6 @@ wire  input_r_TREADY;
 wire [7 : 0] output_r_TDATA;
 wire  output_r_TVALID;
 wire  output_r_TREADY;
-wire [0 : 0] last;
 integer done_cnt = 0;
 integer AESL_ready_cnt = 0;
 integer ready_cnt = 0;
@@ -100,8 +95,7 @@ wire ap_rst_n_n;
     .input_r_TREADY(input_r_TREADY),
     .output_r_TDATA(output_r_TDATA),
     .output_r_TVALID(output_r_TVALID),
-    .output_r_TREADY(output_r_TREADY),
-    .last(last));
+    .output_r_TREADY(output_r_TREADY));
 
 // Assignment for control signal
 assign ap_clk = AESL_clock;
@@ -133,60 +127,6 @@ assign AESL_continue = tb_continue;
             end
         end
     end
-
-
-// The signal of port last
-reg [0: 0] AESL_REG_last = 0;
-assign last = AESL_REG_last;
-initial begin : read_file_process_last
-    integer fp;
-    integer err;
-    integer ret;
-    integer proc_rand;
-    reg [143  : 0] token;
-    integer i;
-    reg transaction_finish;
-    integer transaction_idx;
-    transaction_idx = 0;
-    wait(AESL_reset === 1);
-    fp = $fopen(`AUTOTB_TVIN_last,"r");
-    if(fp == 0) begin       // Failed to open file
-        $display("Failed to open file \"%s\"!", `AUTOTB_TVIN_last);
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    if (token != "[[[runtime]]]") begin
-        $display("ERROR: Simulation using HLS TB failed.");
-        $finish;
-    end
-    read_token(fp, token);
-    while (token != "[[[/runtime]]]") begin
-        if (token != "[[transaction]]") begin
-            $display("ERROR: Simulation using HLS TB failed.");
-              $finish;
-        end
-        read_token(fp, token);  // skip transaction number
-          read_token(fp, token);
-            # 0.2;
-            while(ready_wire !== 1) begin
-                @(posedge AESL_clock);
-                # 0.2;
-            end
-        if(token != "[[/transaction]]") begin
-            ret = $sscanf(token, "0x%x", AESL_REG_last);
-              if (ret != 1) begin
-                  $display("Failed to parse token!");
-                $display("ERROR: Simulation using HLS TB failed.");
-                  $finish;
-              end
-            @(posedge AESL_clock);
-              read_token(fp, token);
-        end
-          read_token(fp, token);
-    end
-    $fclose(fp);
-end
 
 
 reg [31:0] ap_c_n_tvin_trans_num_input_r;
@@ -316,9 +256,6 @@ end
 reg end_input_r;
 reg [31:0] size_input_r;
 reg [31:0] size_input_r_backup;
-reg end_last;
-reg [31:0] size_last;
-reg [31:0] size_last_backup;
 reg end_output_r;
 reg [31:0] size_output_r;
 reg [31:0] size_output_r_backup;

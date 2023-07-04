@@ -1,71 +1,56 @@
 #include "header.h"
 
-void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last) {
+void crc24a(hls::stream<data>& input, hls::stream<data>& output) {
 
 #pragma HLS INTERFACE mode=axis register_mode=both port=input register
 #pragma HLS INTERFACE mode=axis register_mode=both port=output register
-#pragma HLS INTERFACE mode=ap_none port=last
 
-	ap_uint<1> crc[x];
+	ap_uint<1> crc[x],oput[x];
     ap_uint<1> divisor[y] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
+    data o1,o2,o3,o4;
 
-
-// Read input stream a
-    data d =input.read();
-        for (int j = 0; j < N; j++) {
-#pragma HLS PIPELINE II=1
-            crc[j]=d[j];
-        }
-// Add padding zeros to message
-    for (int i = 8; i < x; i++) {
-#pragma HLS PIPELINE II=1
-        crc[i] = 0;
+// Read input stream and do padding
+    data d = input.read();
+   loop1: for (int i = 0; i < x; i++) {
+#pragma HLS UNROLL
+    	crc[i] = (i < N) ? d(i,i) : 0;
+    	oput[i] = (i < N) ? d(i,i) : 0;
     }
-
+   ap_uint<1> last=input.read();
 
 // Division is performed only when last is high
-    for (int i = 0; i <= x - y; i++) {
+   loop2: for (int i = 0; i <= x - y; i++) {
 #pragma HLS PIPELINE II=1
-        if (crc[i] == 1  && last==1) {
-            for (int j = 0; j < y; j++) {
+        if (crc[i] == 1 && last==1) {
+          loop3:  for (int j = 0; j < y; j++) {
+        	  int k=i+j;
 #pragma HLS UNROLL
-                crc[i + j] = crc[i+j] ^ divisor[j];
+                crc[k] = crc[k] ^ divisor[j];
             }
         }
     }
 
-// Find start index of nonzero bits in crc
-    int startIdx = 0;
-    while (startIdx < x && crc[startIdx] == 0) {
-        startIdx++;
-    }
-
-// Store nonzero values into another array and minimum length will be length of divisor-1
-	ap_uint<1> temp[y-1];
-
-    for (int i = 0; i < y-1; i++) {
-#pragma HLS PIPELINE II=1
-    	temp[i] = (startIdx == x) ? crc[i] : crc[startIdx + i];
-    }
-
 // Write the result to output stream c
-   data o1,o2,o3,o4;
 
-   for (int i = 0; i < y-1; i++) {
-#pragma HLS PIPELINE II=1
-          if (i < N) {
-              o1(i, i) = d(i, i);
-              o2(i, i) = temp[i];
-          } else if (i < N*2) {
-              o3(i%N, i%N) = temp[i];
-          } else {
-              o4(i%N, i%N) = temp[i];
-          }
-      }
+   loop4:for (int i = 0; i < x; i++) {
+#pragma HLS UNROLL
+	   oput[i] = crc[i] ^ oput[i];
+       if (i < N) {
+           o1(i, i) = oput[i];
+       }else if (i < N * 2){
+           o2(i % N, i % N) = oput[i];
+       } else if (i < N * 3) {
+           o3(i % N, i % N) = oput[i];
+       } else {
+           o4(i % N, i % N) = oput[i];
+       }
+   }
 
-    output.write(o1);
-    output.write(o2);
-    output.write(o3);
-    output.write(o4);
+   output.write(o1);
+   output.write(o2);
+   output.write(o3);
+   output.write(o4);
+
+
 
 }

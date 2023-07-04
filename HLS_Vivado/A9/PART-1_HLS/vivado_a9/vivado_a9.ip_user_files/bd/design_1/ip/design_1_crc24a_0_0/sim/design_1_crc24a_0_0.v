@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:crc24a:1.0
-// IP Revision: 2113092082
+// IP Revision: 2113102409
 
 `timescale 1ns/1ps
 
@@ -66,8 +66,7 @@ module design_1_crc24a_0_0 (
   input_r_TDATA,
   output_r_TVALID,
   output_r_TREADY,
-  output_r_TDATA,
-  last
+  output_r_TDATA
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF input_r:output_r, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_ap_clk_0, INSERT_VIP 0" *)
@@ -98,9 +97,6 @@ input wire output_r_TREADY;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME output_r, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_r TDATA" *)
 output wire [7 : 0] output_r_TDATA;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME last, LAYERED_METADATA undef" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 last DATA" *)
-input wire [0 : 0] last;
 
 (* SDX_KERNEL = "true" *)
 (* SDX_KERNEL_TYPE = "hls" *)
@@ -117,7 +113,6 @@ input wire [0 : 0] last;
     .input_r_TDATA(input_r_TDATA),
     .output_r_TVALID(output_r_TVALID),
     .output_r_TREADY(output_r_TREADY),
-    .output_r_TDATA(output_r_TDATA),
-    .last(last)
+    .output_r_TDATA(output_r_TDATA)
   );
 endmodule

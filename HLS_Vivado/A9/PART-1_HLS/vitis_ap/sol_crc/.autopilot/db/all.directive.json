@@ -1,12 +1,13 @@
 {"sourceFile": [{
       "name": "",
-      "directive": [{
+      "directive": [
+        {
           "functionName": "crc24a",
           "label": "",
           "functionLabel": "",
           "id": "1",
-          "sourceFile": "\/home\/sam-admin\/git\/Training\/HLS_Vivado\/A9\/PART-1_HLS\/vitis_ap\/sol_crc\/csynth.tcl",
-          "sourceLine": "14",
+          "sourceFile": "\/home\/sam-admin\/git\/Training\/HLS_Vivado\/A9\/PART-1_HLS\/vitis_ap\/sol_crc\/directives.tcl",
+          "sourceLine": "6",
           "pragma": {
             "name": "TOP",
             "option": [{
@@ -14,5 +15,21 @@
                 "value": "crc24a"
               }]
           }
-        }]
+        },
+        {
+          "functionName": "crc24a",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/sam-admin\/git\/Training\/HLS_Vivado\/A9\/PART-1_HLS\/vitis_ap\/sol_crc\/csynth.tcl",
+          "sourceLine": "15",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "crc24a"
+              }]
+          }
+        }
+      ]
     }]}

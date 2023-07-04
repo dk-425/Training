@@ -82,7 +82,6 @@ proc check_tvin_file {} {
 	}
     set rtlfilelist {
          "c.crc24a.autotvin_input_r.dat"
-         "c.crc24a.autotvin_last.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

@@ -28,7 +28,7 @@ module AESL_axi_s_input_r (
     reg input_r_TDATA_read_en;
     wire [8 - 1:0] input_r_TDATA_read_data;
     
-    fifo #(1, 8) fifo_input_r_TDATA (
+    fifo #(2, 8) fifo_input_r_TDATA (
         .reset(1'b0),
         .write_clock(clk),
         .write_en(input_r_TDATA_write_en),

@@ -242,8 +242,8 @@ unsigned int ap_apatb_output_r_cap_bc;
 static AESL_RUNTIME_BC __xlx_output_r_V_size_Reader("../tv/stream_size/stream_size_out_output_r.dat");
 using hls::sim::Byte;
 struct __cosim_s1__ { char data[1]; };
-extern "C" void crc24a(__cosim_s1__*, __cosim_s1__*, __cosim_s1__);
-extern "C" void apatb_crc24a_hw(volatile void * __xlx_apatb_param_input_r, volatile void * __xlx_apatb_param_output_r, __cosim_s1__* __xlx_apatb_param_last) {
+extern "C" void crc24a(__cosim_s1__*, __cosim_s1__*);
+extern "C" void apatb_crc24a_hw(volatile void * __xlx_apatb_param_input_r, volatile void * __xlx_apatb_param_output_r) {
 using hls::sim::createStream;
 auto* sinput_r = createStream((hls::stream<__cosim_s1__>*)__xlx_apatb_param_input_r);
   //Create input buffer for output_r
@@ -251,7 +251,7 @@ auto* sinput_r = createStream((hls::stream<__cosim_s1__>*)__xlx_apatb_param_inpu
   __cosim_s1__* __xlx_output_r_input_buffer= new __cosim_s1__[ap_apatb_output_r_cap_bc];
 auto* soutput_r = createStream((hls::stream<__cosim_s1__>*)__xlx_apatb_param_output_r);
   // DUT call
-  crc24a(sinput_r->data<__cosim_s1__>(), soutput_r->data<__cosim_s1__>(), *__xlx_apatb_param_last);
+  crc24a(sinput_r->data<__cosim_s1__>(), soutput_r->data<__cosim_s1__>());
 sinput_r->transfer((hls::stream<__cosim_s1__>*)__xlx_apatb_param_input_r);
 soutput_r->transfer((hls::stream<__cosim_s1__>*)__xlx_apatb_param_output_r);
 }

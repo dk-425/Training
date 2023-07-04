@@ -2,13 +2,13 @@
 # xsim v2022.2.2 (64-bit)
 # SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
 # IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
-# Start of session at: Mon Jun 26 11:20:56 2023
-# Process ID: 11146
+# Start of session at: Mon Jul  3 15:28:31 2023
+# Process ID: 11921
 # Current directory: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/crc24a/xsim_script.tcl}
 # Log file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/xsim.log
 # Journal file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/xsim.jou
-# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3398.897 MHz, CPU Physical cores: 4, Host memory: 8096 MB
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3400.341 MHz, CPU Physical cores: 4, Host memory: 8096 MB
 #-----------------------------------------------------------
 source xsim.dir/crc24a/xsim_script.tcl
 # xsim {crc24a} -autoloadwcfg -tclbatch {crc24a.tcl}
@@ -23,8 +23,8 @@ source crc24a.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
 find kernel block.
-// RTL Simulation : 1 / 1 [100.00%] @ "1175000"
+// RTL Simulation : 1 / 1 [100.00%] @ "305000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1235 ns : File "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.autotb.v" Line 307
+$finish called at time : 365 ns : File "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.autotb.v" Line 247
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jun 26 11:21:03 2023...
+INFO: [Common 17-206] Exiting xsim at Mon Jul  3 15:28:44 2023...

@@ -26,28 +26,20 @@ WARNING: [XSIM 43-3431] One or more environment variables have been detected whi
     LIBRARY_PATH
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/glbl.v" into library work
 INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_20_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_crc24a_Pipeline_VITIS_LOOP_20_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module crc24a
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_temp_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_temp_V_RAM_AUTO_1R1W
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module crc24a_flow_control_loop_pipe_sequential_init
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.autotb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module apatb_crc24a_top
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_15_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_crc24a_Pipeline_VITIS_LOOP_15_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_crc24a_Pipeline_loop2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crc24a_crc24a_Pipeline_loop2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/AESL_axi_s_input_r.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_input_r
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_39_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_crc24a_Pipeline_VITIS_LOOP_39_5
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_54_7.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_crc24a_Pipeline_VITIS_LOOP_54_7
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_mux_83_1_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module crc24a_mux_83_1_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/AESL_fifo.v" into library xil_defaultlib
@@ -57,12 +49,6 @@ INFO: [VRFC 10-311] analyzing module crc24a_regslice_both
 INFO: [VRFC 10-311] analyzing module crc24a_regslice_both_w1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/AESL_axi_s_output_r.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_axi_s_output_r
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_27_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_crc24a_Pipeline_VITIS_LOOP_27_3
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_mux_325_1_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_mux_325_1_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a_crc24a_Pipeline_VITIS_LOOP_46_6.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module crc24a_crc24a_Pipeline_VITIS_LOOP_46_6
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dataflow_monitor
 Starting static elaboration
@@ -73,26 +59,18 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
-Compiling module xil_defaultlib.crc24a_temp_V_RAM_AUTO_1R1W
-Compiling module xil_defaultlib.crc24a_flow_control_loop_pipe_se...
-Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_VITIS_LOO...
-Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_VITIS_LOO...
 Compiling module xil_defaultlib.crc24a_mux_83_1_1_1(ID=1,din0_WI...
-Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_VITIS_LOO...
-Compiling module xil_defaultlib.crc24a_mux_325_1_1_1(ID=1,din0_W...
-Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_VITIS_LOO...
-Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_VITIS_LOO...
-Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_VITIS_LOO...
+Compiling module xil_defaultlib.crc24a_flow_control_loop_pipe_se...
+Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_loop2
 Compiling module xil_defaultlib.crc24a_regslice_both(DataWidth=8...
 Compiling module xil_defaultlib.crc24a
-Compiling module xil_defaultlib.fifo(DEPTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=2)
 Compiling module xil_defaultlib.AESL_axi_s_input_r
 Compiling module xil_defaultlib.fifo(DEPTH=4)
 Compiling module xil_defaultlib.AESL_axi_s_output_r
 Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
 Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
 Compiling module xil_defaultlib.nodf_module_intf
-Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
 Compiling module xil_defaultlib.dataflow_monitor_1
 Compiling module xil_defaultlib.apatb_crc24a_top
 Compiling module work.glbl
@@ -116,11 +94,11 @@ source crc24a.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
 find kernel block.
-// RTL Simulation : 1 / 1 [100.00%] @ "1175000"
+// RTL Simulation : 1 / 1 [100.00%] @ "305000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 1235 ns : File "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.autotb.v" Line 307
+$finish called at time : 365 ns : File "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.autotb.v" Line 247
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jun 26 11:21:03 2023...
+INFO: [Common 17-206] Exiting xsim at Mon Jul  3 15:28:44 2023...
 CRC generator output : 01101000101101001111001100000010
 CRC detector output :  00000000000000000000000000000000
 !PASS!CRC Check at detector is Success

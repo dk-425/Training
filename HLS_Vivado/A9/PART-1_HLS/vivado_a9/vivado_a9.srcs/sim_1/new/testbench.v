@@ -26,7 +26,6 @@ module testbench();
         always #5 ap_clk_0=~ap_clk_0;
         
         reg [7:0] ip;
-        reg last_0;
         wire [7:0] op;
         wire output_r_TVALID_0;
        
@@ -35,13 +34,13 @@ module testbench();
         #10
         ap_rst_n_0=1;
         #10
-        ip=16'b00010110;//ascii "h"
-
-        #1  last_0=1;
-        #2000
+        ip=8'b00010110;//ascii "h"
+        #10
+        ip=8'b00000001;
+        #200
         $finish;
         end
-      design_1_wrapper uut(.ap_clk_0(ap_clk_0), .ap_rst_n_0(ap_rst_n_0),.input_r_TDATA_0(ip),.last_0(last_0),.output_r_TDATA_0(op),.output_r_TVALID_0(output_r_TVALID_0));
+      design_1_wrapper uut(.ap_clk_0(ap_clk_0), .ap_rst_n_0(ap_rst_n_0),.input_r_TDATA_0(ip),.output_r_TDATA_0(op),.output_r_TVALID_0(output_r_TVALID_0));
     
     
 endmodule

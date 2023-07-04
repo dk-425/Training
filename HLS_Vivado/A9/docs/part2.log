@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  27 JUN 2023 16:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.31)  4 JUL 2023 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -239,22 +239,7 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Label `fig:my_label' multiply defined.
 
 
-LaTeX Warning: Label `sub@fig:my_label' multiply defined.
-
-
 LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:my_label' multiply defined.
 
 
 LaTeX Warning: Label `fig:my_label' multiply defined.
@@ -341,115 +326,115 @@ LaTeX Warning: No \author given.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 5
-2.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 52.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-8.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 49.
 
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 53--54
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
+4.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
  [2]
-Overfull \hbox (147.005pt too wide) in paragraph at lines 86--87
+Overfull \hbox (147.005pt too wide) in paragraph at lines 83--84
 [][][][] 
  []
 
 
-Overfull \hbox (147.005pt too wide) in paragraph at lines 104--107
+Overfull \hbox (147.005pt too wide) in paragraph at lines 101--104
 [][][][] 
  []
 
 [3] [4]
-<figs/p2rtlwavfull.png, id=216, 847.165pt x 365.365pt>
-File: figs/p2rtlwavfull.png Graphic file (type png)
-<use figs/p2rtlwavfull.png>
-Package pdftex.def Info: figs/p2rtlwavfull.png  used on input line 192.
-(pdftex.def)             Requested size: 276.00105pt x 119.03212pt.
-<figs/p2rtlwav.png, id=218, 847.165pt x 365.365pt>
+<figs/p2rtlwav.png, id=217, 829.0975pt x 595.22375pt>
 File: figs/p2rtlwav.png Graphic file (type png)
 <use figs/p2rtlwav.png>
-Package pdftex.def Info: figs/p2rtlwav.png  used on input line 199.
-(pdftex.def)             Requested size: 276.00105pt x 119.03212pt.
- [5 <./figs/p2rtlwavfull.png> <./figs/p2rtlwav.png>]
-<figs/p2ipbd.png, id=236, 847.165pt x 365.365pt>
+Package pdftex.def Info: figs/p2rtlwav.png  used on input line 185.
+(pdftex.def)             Requested size: 345.0pt x 247.67627pt.
+ [5 <./figs/p2rtlwav.png>]
+<figs/p2ipbd.png, id=231, 890.32625pt x 462.72874pt>
 File: figs/p2ipbd.png Graphic file (type png)
 <use figs/p2ipbd.png>
-Package pdftex.def Info: figs/p2ipbd.png  used on input line 214.
-(pdftex.def)             Requested size: 345.0pt x 148.79153pt.
- [6 <./figs/p2ipbd.png>]
-Overfull \hbox (147.005pt too wide) in paragraph at lines 223--224
+Package pdftex.def Info: figs/p2ipbd.png  used on input line 199.
+(pdftex.def)             Requested size: 345.0pt x 179.30553pt.
+
+Overfull \hbox (147.005pt too wide) in paragraph at lines 208--209
 [][][][] 
  []
 
-
-Overfull \hbox (147.005pt too wide) in paragraph at lines 241--244
+[6 <./figs/p2ipbd.png>]
+Overfull \hbox (147.005pt too wide) in paragraph at lines 226--229
 [][][][] 
  []
 
-[7] [8]
-<figs/p2ipwavfull.png, id=344, 834.11626pt x 294.09875pt>
-File: figs/p2ipwavfull.png Graphic file (type png)
-<use figs/p2ipwavfull.png>
-Package pdftex.def Info: figs/p2ipwavfull.png  used on input line 332.
-(pdftex.def)             Requested size: 379.5021pt x 133.81064pt.
-<figs/p2ipwav.png, id=345, 842.14626pt x 401.5pt>
+[7]
+<figs/p2ipwav.png, id=300, 829.0975pt x 595.22375pt>
 File: figs/p2ipwav.png Graphic file (type png)
 <use figs/p2ipwav.png>
-Package pdftex.def Info: figs/p2ipwav.png  used on input line 339.
-(pdftex.def)             Requested size: 379.5021pt x 180.93063pt.
-
-Overfull \hbox (34.5021pt too wide) in paragraph at lines 330--343
- [][] 
+Package pdftex.def Info: figs/p2ipwav.png  used on input line 311.
+(pdftex.def)             Requested size: 345.0pt x 247.67627pt.
+ [8]
+Overfull \hbox (87.0044pt too wide) in paragraph at lines 320--321
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (34.5021pt too wide) in paragraph at lines 330--343
- [] 
- []
-
-[9] [10 <./figs/p2ipwavfull.png> <./figs/p2ipwav.png>]
-<figs/actual_matlab.png, id=366, 1892.06876pt x 719.68875pt>
+[9 <./figs/p2ipwav.png>]
+<figs/actual_matlab.png, id=355, 1892.06876pt x 719.68875pt>
 File: figs/actual_matlab.png Graphic file (type png)
 <use figs/actual_matlab.png>
-Package pdftex.def Info: figs/actual_matlab.png  used on input line 351.
+Package pdftex.def Info: figs/actual_matlab.png  used on input line 330.
 (pdftex.def)             Requested size: 448.50105pt x 170.58742pt.
 
-Overfull \hbox (103.50105pt too wide) in paragraph at lines 351--352
+Overfull \hbox (103.50105pt too wide) in paragraph at lines 330--331
  [][] 
  []
 
 
-Overfull \hbox (123.00476pt too wide) in paragraph at lines 358--359
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (93.00446pt too wide) in paragraph at lines 337--338
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (105.00458pt too wide) in paragraph at lines 338--340
+[][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 362.
+(Font)              <7> on input line 341.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 362.
-[11 <./figs/actual_matlab.png>] [12] (./part2.aux)
+(Font)              <5> on input line 341.
+[10 <./figs/actual_matlab.png>] (./part2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `part2.out' has not changed.
-(rerunfilecheck)             Checksum: 380B3E7FD326C5C56BEEAA3393BFEDA5;1120.
+
+Package rerunfilecheck Warning: File `part2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `part2.out':
+(rerunfilecheck)             Before: 3DF56F24D52CB4C6FB9A24B34BCD308B;1215
+(rerunfilecheck)             After:  EB6CE18FC5219EEEC9DB4CABEF38DCC2;1238.
  ) 
 Here is how much of TeX's memory you used:
- 11422 strings out of 478287
- 181289 string characters out of 5849289
- 494936 words of memory out of 5000000
- 29225 multiletter control sequences out of 15000+600000
- 474009 words of font info for 44 fonts, out of 8000000 for 9000
+ 11392 strings out of 478287
+ 180686 string characters out of 5849289
+ 494875 words of memory out of 5000000
+ 29205 multiletter control sequences out of 15000+600000
+ 473710 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,63p,242b,1737s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,6n,63p,242b,1737s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -457,13 +442,12 @@ t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on part2.pdf (12 pages, 323023 bytes).
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on part2.pdf (10 pages, 287608 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 438 compressed objects within 5 object streams
- 286 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 469 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 279 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

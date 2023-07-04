@@ -24,8 +24,6 @@ using namespace std;
 #define AUTOTB_TVOUT_output_r "../tv/cdatafile/c.crc24a.autotvout_output_r.dat"
 #define WRAPC_STREAM_SIZE_OUT_output_r "../tv/stream_size/stream_size_out_output_r.dat"
 #define WRAPC_STREAM_EGRESS_STATUS_output_r "../tv/stream_size/stream_egress_status_output_r.dat"
-#define AUTOTB_TVIN_last "../tv/cdatafile/c.crc24a.autotvin_last.dat"
-#define AUTOTB_TVOUT_last "../tv/cdatafile/c.crc24a.autotvout_last.dat"
 
 
 // tvout file define:
@@ -954,10 +952,10 @@ namespace hls::sim
 
 
 extern "C"
-void crc24a_hw_stub_wrapper(void*, void*, hls::sim::Byte<1>*);
+void crc24a_hw_stub_wrapper(void*, void*);
 
 extern "C"
-void apatb_crc24a_hw(void* __xlx_apatb_param_input_r, void* __xlx_apatb_param_output_r, hls::sim::Byte<1>* __xlx_apatb_param_last)
+void apatb_crc24a_hw(void* __xlx_apatb_param_input_r, void* __xlx_apatb_param_output_r)
 {
   static hls::sim::Stream<hls::sim::Byte<1>> port0 {
     .width = 8,
@@ -987,17 +985,6 @@ void apatb_crc24a_hw(void* __xlx_apatb_param_input_r, void* __xlx_apatb_param_ou
   port1.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_output_r;
   port1.hasWrite = true;
 
-  static hls::sim::Register port2 {
-    .name = "last",
-    .width = 1,
-#ifdef POST_CHECK
-#else
-    .owriter = nullptr,
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_last),
-#endif
-  };
-  port2.param = __xlx_apatb_param_last;
-
   refine_signal_handler();
   try {
 #ifdef POST_CHECK
@@ -1007,13 +994,11 @@ void apatb_crc24a_hw(void* __xlx_apatb_param_input_r, void* __xlx_apatb_param_ou
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     CodeState = DUMP_INPUTS;
-    dump(port2, port2.iwriter, tcl.AESL_transaction);
-    port2.doTCL(tcl);
     port0.markSize();
     port0.buffer();
     port1.markSize();
     CodeState = CALL_C_DUT;
-    crc24a_hw_stub_wrapper(__xlx_apatb_param_input_r, __xlx_apatb_param_output_r, __xlx_apatb_param_last);
+    crc24a_hw_stub_wrapper(__xlx_apatb_param_input_r, __xlx_apatb_param_output_r);
     port1.buffer();
     dump(port0, tcl.AESL_transaction);
     port0.doTCL(tcl);

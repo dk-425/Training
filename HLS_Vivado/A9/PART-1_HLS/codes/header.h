@@ -12,6 +12,6 @@ using namespace std;
 typedef ap_uint<N> data;
 
 
-void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
+void crc24a(hls::stream<data>& input, hls::stream<data>& output);
 
 #endif

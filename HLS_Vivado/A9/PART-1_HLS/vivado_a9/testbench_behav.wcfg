@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="992.550 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,127.251 ns"></ZoomEndTime>
-      <Cursor1Time time="1,015.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="230.000 ns"></ZoomEndTime>
+      <Cursor1Time time="145.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="86"></NameColumnWidth>
+      <NameColumnWidth column_width="81"></NameColumnWidth>
       <ValueColumnWidth column_width="79"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="5" />
    <wvobject type="logic" fp_name="/testbench/ap_clk_0">
       <obj_property name="ElementShortName">ap_clk_0</obj_property>
       <obj_property name="ObjectShortName">ap_clk_0</obj_property>
@@ -32,10 +32,6 @@
       <obj_property name="ElementShortName">ip[0:7]</obj_property>
       <obj_property name="ObjectShortName">ip[0:7]</obj_property>
       <obj_property name="Reversed">true</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/testbench/last_0">
-      <obj_property name="ElementShortName">last_0</obj_property>
-      <obj_property name="ObjectShortName">last_0</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/testbench/op">
       <obj_property name="ElementShortName">op[0:7]</obj_property>

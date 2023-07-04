@@ -85360,75 +85360,60 @@ using namespace std;
 typedef ap_uint<8> data;
 
 
-void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
+void crc24a(hls::stream<data>& input, hls::stream<data>& output);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc.cpp" 2
 
-void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last) {
+void crc24a(hls::stream<data>& input, hls::stream<data>& output) {
 
 #pragma HLS INTERFACE mode=axis register_mode=both port=input register
 #pragma HLS INTERFACE mode=axis register_mode=both port=output register
-#pragma HLS INTERFACE mode=ap_none port=last
 
- ap_uint<1> crc[8 +25 -1];
+ ap_uint<1> crc[8 +25 -1],oput[8 +25 -1];
     ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
+    data o1,o2,o3,o4;
 
 
-
-    data d =input.read();
-        for (int j = 0; j < 8; j++) {
-#pragma HLS PIPELINE II=1
-            crc[j]=d[j];
-        }
-
-    for (int i = 8; i < 8 +25 -1; i++) {
-#pragma HLS PIPELINE II=1
-        crc[i] = 0;
+    data d = input.read();
+   loop1: for (int i = 0; i < 8 +25 -1; i++) {
+#pragma HLS UNROLL
+     crc[i] = (i < 8) ? d(i,i) : 0;
+     oput[i] = (i < 8) ? d(i,i) : 0;
     }
+   ap_uint<1> last=input.read();
 
 
-
-    for (int i = 0; i <= 8 +25 -1 - 25; i++) {
+   loop2: for (int i = 0; i <= 8 +25 -1 - 25; i++) {
 #pragma HLS PIPELINE II=1
         if (crc[i] == 1 && last==1) {
-            for (int j = 0; j < 25; j++) {
+          loop3: for (int j = 0; j < 25; j++) {
+           int k=i+j;
 #pragma HLS UNROLL
-                crc[i + j] = crc[i+j] ^ divisor[j];
+                crc[k] = crc[k] ^ divisor[j];
             }
         }
     }
 
 
-    int startIdx = 0;
-    while (startIdx < 8 +25 -1 && crc[startIdx] == 0) {
-        startIdx++;
-    }
+
+   loop4:for (int i = 0; i < 8 +25 -1; i++) {
+#pragma HLS UNROLL
+    oput[i] = crc[i] ^ oput[i];
+       if (i < 8) {
+           o1(i, i) = oput[i];
+       }else if (i < 8 * 2){
+           o2(i % 8, i % 8) = oput[i];
+       } else if (i < 8 * 3) {
+           o3(i % 8, i % 8) = oput[i];
+       } else {
+           o4(i % 8, i % 8) = oput[i];
+       }
+   }
+
+   output.write(o1);
+   output.write(o2);
+   output.write(o3);
+   output.write(o4);
 
 
- ap_uint<1> temp[25 -1];
-
-    for (int i = 0; i < 25 -1; i++) {
-#pragma HLS PIPELINE II=1
-     temp[i] = (startIdx == 8 +25 -1) ? crc[i] : crc[startIdx + i];
-    }
-
-
-   data o1,o2,o3,o4;
-
-   for (int i = 0; i < 25 -1; i++) {
-#pragma HLS PIPELINE II=1
-          if (i < 8) {
-              o1(i, i) = d(i, i);
-              o2(i, i) = temp[i];
-          } else if (i < 8*2) {
-              o3(i%8, i%8) = temp[i];
-          } else {
-              o4(i%8, i%8) = temp[i];
-          }
-      }
-
-    output.write(o1);
-    output.write(o2);
-    output.write(o3);
-    output.write(o4);
 
 }

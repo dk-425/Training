@@ -1,27 +1,25 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.979245",
-   "Default View_TopLeft":"-205,-15",
+   "Default View_TopLeft":"-207,-14",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port port-id_ap_clk_0 -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
 preplace port port-id_ap_rst_n_0 -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
-preplace port port-id_output_r_TVALID_0 -pg 1 -lvl 3 -x 640 -y 160 -defaultsOSRD
-preplace portBus last_0 -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_output_r_TVALID_0 -pg 1 -lvl 3 -x 670 -y 160 -defaultsOSRD
 preplace portBus input_r_TDATA_0 -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
-preplace portBus output_r_TDATA_0 -pg 1 -lvl 3 -x 640 -y 200 -defaultsOSRD
-preplace inst crc24a_0 -pg 1 -lvl 2 -x 400 -y 170 -defaultsOSRD
+preplace portBus output_r_TDATA_0 -pg 1 -lvl 3 -x 670 -y 200 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 1 -x 100 -y 80 -defaultsOSRD
-preplace netloc ap_clk_0_1 1 0 2 NJ 240 NJ
-preplace netloc ap_rst_n_0_1 1 0 2 NJ 260 NJ
-preplace netloc last_0_1 1 0 3 NJ 280 180 340 620
-preplace netloc input_r_TDATA_0_1 1 0 2 NJ 220 NJ
+preplace inst crc24a_0 -pg 1 -lvl 2 -x 430 -y 170 -defaultsOSRD
+preplace netloc ap_clk_0_1 1 0 2 NJ 240 180J
+preplace netloc ap_rst_n_0_1 1 0 2 NJ 260 190J
 preplace netloc crc24a_0_output_r_TDATA 1 2 1 NJ 200
 preplace netloc crc24a_0_output_r_TVALID 1 2 1 NJ 160
-preplace netloc xlconstant_0_dout 1 1 1 180 80n
-levelinfo -pg 1 0 100 400 640
-pagesize -pg 1 -db -bbox -sgen -210 0 860 350
+preplace netloc input_r_TDATA_0_1 1 0 2 20J 190 NJ
+preplace netloc xlconstant_0_dout 1 1 2 180 50 650
+levelinfo -pg 1 0 100 430 670
+pagesize -pg 1 -db -bbox -sgen -210 0 890 350
 "
 }
-
+0

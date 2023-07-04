@@ -7,22 +7,19 @@ target triple = "fpga64-xilinx-none"
 %"struct.ap_uint<8>" = type { %"struct.ap_int_base<8, false>" }
 %"struct.ap_int_base<8, false>" = type { %"struct.ssdm_int<8, false>" }
 %"struct.ssdm_int<8, false>" = type { i8 }
-%"struct.ap_uint<1>" = type { %"struct.ap_int_base<1, false>" }
-%"struct.ap_int_base<1, false>" = type { %"struct.ssdm_int<1, false>" }
-%"struct.ssdm_int<1, false>" = type { i1 }
 
 ; Function Attrs: inaccessiblememonly nounwind
 declare void @llvm.sideeffect() #0
 
 ; Function Attrs: inaccessiblemem_or_argmemonly noinline
-define void @apatb_crc24a_ir(%"class.hls::stream<ap_uint<8>, 0>"* noalias nocapture nonnull dereferenceable(1) %input, %"class.hls::stream<ap_uint<8>, 0>"* noalias nocapture nonnull dereferenceable(1) %output, %"struct.ap_uint<1>"* nocapture readonly %last) local_unnamed_addr #1 {
+define void @apatb_crc24a_ir(%"class.hls::stream<ap_uint<8>, 0>"* noalias nocapture nonnull dereferenceable(1) %input, %"class.hls::stream<ap_uint<8>, 0>"* noalias nocapture nonnull dereferenceable(1) %output) local_unnamed_addr #1 {
 entry:
   %input_copy = alloca %"class.hls::stream<ap_uint<8>, 0>", align 512
   call void @llvm.sideeffect() #7 [ "stream_interface"(%"class.hls::stream<ap_uint<8>, 0>"* %input_copy, i32 0) ]
   %output_copy = alloca %"class.hls::stream<ap_uint<8>, 0>", align 512
   call void @llvm.sideeffect() #7 [ "stream_interface"(%"class.hls::stream<ap_uint<8>, 0>"* %output_copy, i32 0) ]
   call fastcc void @copy_in(%"class.hls::stream<ap_uint<8>, 0>"* nonnull %input, %"class.hls::stream<ap_uint<8>, 0>"* nonnull align 512 %input_copy, %"class.hls::stream<ap_uint<8>, 0>"* nonnull %output, %"class.hls::stream<ap_uint<8>, 0>"* nonnull align 512 %output_copy)
-  call void @apatb_crc24a_hw(%"class.hls::stream<ap_uint<8>, 0>"* %input_copy, %"class.hls::stream<ap_uint<8>, 0>"* %output_copy, %"struct.ap_uint<1>"* %last)
+  call void @apatb_crc24a_hw(%"class.hls::stream<ap_uint<8>, 0>"* %input_copy, %"class.hls::stream<ap_uint<8>, 0>"* %output_copy)
   call void @copy_back(%"class.hls::stream<ap_uint<8>, 0>"* %input, %"class.hls::stream<ap_uint<8>, 0>"* %input_copy, %"class.hls::stream<ap_uint<8>, 0>"* %output, %"class.hls::stream<ap_uint<8>, 0>"* %output_copy)
   ret void
 }
@@ -84,7 +81,7 @@ entry:
   ret void
 }
 
-declare void @apatb_crc24a_hw(%"class.hls::stream<ap_uint<8>, 0>"*, %"class.hls::stream<ap_uint<8>, 0>"*, %"struct.ap_uint<1>"*)
+declare void @apatb_crc24a_hw(%"class.hls::stream<ap_uint<8>, 0>"*, %"class.hls::stream<ap_uint<8>, 0>"*)
 
 ; Function Attrs: argmemonly noinline
 define internal fastcc void @copy_back(%"class.hls::stream<ap_uint<8>, 0>"* noalias, %"class.hls::stream<ap_uint<8>, 0>"* noalias align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<ap_uint<8>, 0>"* noalias, %"class.hls::stream<ap_uint<8>, 0>"* noalias align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #5 {
@@ -94,15 +91,15 @@ entry:
   ret void
 }
 
-define void @crc24a_hw_stub_wrapper(%"class.hls::stream<ap_uint<8>, 0>"*, %"class.hls::stream<ap_uint<8>, 0>"*, %"struct.ap_uint<1>"*) #6 {
+define void @crc24a_hw_stub_wrapper(%"class.hls::stream<ap_uint<8>, 0>"*, %"class.hls::stream<ap_uint<8>, 0>"*) #6 {
 entry:
   call void @copy_out(%"class.hls::stream<ap_uint<8>, 0>"* null, %"class.hls::stream<ap_uint<8>, 0>"* %0, %"class.hls::stream<ap_uint<8>, 0>"* null, %"class.hls::stream<ap_uint<8>, 0>"* %1)
-  call void @crc24a_hw_stub(%"class.hls::stream<ap_uint<8>, 0>"* %0, %"class.hls::stream<ap_uint<8>, 0>"* %1, %"struct.ap_uint<1>"* %2)
+  call void @crc24a_hw_stub(%"class.hls::stream<ap_uint<8>, 0>"* %0, %"class.hls::stream<ap_uint<8>, 0>"* %1)
   call void @copy_in(%"class.hls::stream<ap_uint<8>, 0>"* null, %"class.hls::stream<ap_uint<8>, 0>"* %0, %"class.hls::stream<ap_uint<8>, 0>"* null, %"class.hls::stream<ap_uint<8>, 0>"* %1)
   ret void
 }
 
-declare void @crc24a_hw_stub(%"class.hls::stream<ap_uint<8>, 0>"*, %"class.hls::stream<ap_uint<8>, 0>"*, %"struct.ap_uint<1>"*)
+declare void @crc24a_hw_stub(%"class.hls::stream<ap_uint<8>, 0>"*, %"class.hls::stream<ap_uint<8>, 0>"*)
 
 declare i1 @fpga_fifo_not_empty_1(i8*)
 

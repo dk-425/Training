@@ -17,11 +17,6 @@
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
-        <name>last</name>
-        <type>Unsigned</type>
-        <fractionWidth>0</fractionWidth>
-      </RtlPort>
-      <RtlPort>
         <name>output_r_TDATA</name>
         <type>Unsigned</type>
         <fractionWidth>0</fractionWidth>
@@ -43,7 +38,7 @@
   <Machine>64</Machine>
   <modelParameters>
     <combinational>0</combinational>
-    <latency>105</latency>
-    <II>106 ~ 137</II>
+    <latency>17</latency>
+    <II>18</II>
   </modelParameters>
 </AdditionalInfo>

@@ -1,7 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../codes/crc_tb.cpp in debug mode
-   Compiling ../../../../codes/crc.cpp in debug mode
    Generating csim.exe
 CRC generator output : 01101000101101001111001100000010
 CRC detector output :  00000000000000000000000000000000

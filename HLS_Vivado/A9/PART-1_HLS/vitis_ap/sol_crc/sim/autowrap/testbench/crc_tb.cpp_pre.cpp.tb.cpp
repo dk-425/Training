@@ -85370,10 +85370,10 @@ typedef ap_uint<8> data;
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_crc24a_sw(hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<8>, 0> &, ap_uint<1>);
+void apatb_crc24a_sw(hls::stream<ap_uint<8>, 0> &, hls::stream<ap_uint<8>, 0> &);
 #endif
 # 15 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/header.h"
-void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last);
+void crc24a(hls::stream<data>& input, hls::stream<data>& output);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp" 2
 
 
@@ -85381,13 +85381,15 @@ void crc24a(hls::stream<data>& input, hls::stream<data>& output, ap_uint<1> last
 # 3 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
 int main() {
     hls::stream<data> a,b;
-    data w, z;
+    data w;
     ap_uint<1> last;
 
       w=0b00010110;
-# 18 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
+# 17 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
+          last=1;
            a.write(w);
-           last=1;
+           a.write(last);
+
 
 
 
@@ -85396,59 +85398,53 @@ int main() {
 #ifndef HLS_FASTSIM
 #define crc24a apatb_crc24a_sw
 #endif
-# 24 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
-crc24a(a, b, last);
+# 25 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
+crc24a(a, b);
 #undef crc24a
-# 24 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
+# 25 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
 
 
 
+    vector<ap_uint<1>> p;
     cout << "CRC generator output : ";
-    ap_uint<1> p[32];
+    while(!b.empty()){
+          data d = b.read();
+         for (int i = 0; i < 8 ; i++) {
+           cout<< d(i,i);
+           p.push_back(d(i,i));
+          }
+       }
+       cout<<endl;
 
 
-    for (int i = 0; i < 4; i++) {
-        z = b.read();
-        for (int j = 0; j < 8; j++) {
-            p[i * 8 + j] = z(j, j);
-        }
-    }
-
-    for (int i = 0; i < 32; i++) {
-        cout << p[i];
-    }
-
-    cout<<endl;
-
-
-    ap_uint<1> comp[32]; bool flag=0;
-    ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
+           bool flag=0;
+           ap_uint<1> divisor[25] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1};
 
 
 
-    for (int i = 0; i <= 8 +25 -1 - 25; i++) {
-        if (p[i] == 1) {
-            for (int j = 0; j < 25; j++) {
-                p[i + j] = p[i+j] ^ divisor[j];
-            }
-        }
-    }
-    cout<<"CRC detector output :  ";
-    for (int i = 0; i < 32; i++) {
-     cout<<p[i];
-        if (p[i]==1){
-         flag=1;
-        }
-    }
-     cout<<endl;
-    if ( flag==0) {
-               cout << "!PASS!CRC Check at detector is Success" << std::endl;
+           for (int i = 0; i <= 8 +25 -1 - 25; i++) {
+               if (p[i] == 1) {
+                   for (int j = 0; j < 25; j++) {
+                       p[i + j] = p[i+j] ^ divisor[j];
+                   }
+               }
            }
-    else {
-               cout << "!ERROR!CRC Check at detector has Failed" << std::endl;
+           cout<<"CRC detector output :  ";
+           for (int i = 0; i < 32; i++) {
+            cout<<p[i];
+               if (p[i]==1){
+                flag=1;
+               }
            }
+            cout<<endl;
+           if ( flag==0) {
+                      cout << "!PASS!CRC Check at detector is Success" << std::endl;
+                  }
+           else {
+                      cout << "!ERROR!CRC Check at detector has Failed" << std::endl;
+                  }
     return 0;
 }
 #endif
-# 72 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
+# 67 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
 
