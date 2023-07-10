@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul  4 10:54:39 2023" VIVADOVERSION="2022.2.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul 10 14:38:35 2023" VIVADOVERSION="2022.2.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu106:part0:2.6" DEVICE="xczu7ev" NAME="design_1" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
 
@@ -32,6 +32,11 @@
     <PORT DIR="I" LEFT="7" NAME="s_0_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_reg_0_s_tdata">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axis_reg_0" PORT="s_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_0_tlast" SIGIS="undef" SIGNAME="axis_reg_0_s_tlast">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_reg_0" PORT="s_tlast"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="s_0_tvalid" SIGIS="undef" SIGNAME="axis_reg_0_s_tvalid">
@@ -75,7 +80,7 @@
       <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
       <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
       <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
-      <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+      <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
       <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
       <PARAMETER NAME="PHASE" VALUE="0.0"/>
       <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_clk_0"/>
@@ -83,6 +88,7 @@
       <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
       <PORTMAPS>
         <PORTMAP LOGICAL="TDATA" PHYSICAL="s_0_tdata"/>
+        <PORTMAP LOGICAL="TLAST" PHYSICAL="s_0_tlast"/>
         <PORTMAP LOGICAL="TVALID" PHYSICAL="s_0_tvalid"/>
         <PORTMAP LOGICAL="TREADY" PHYSICAL="s_0_tready"/>
       </PORTMAPS>
@@ -93,8 +99,7 @@
     <MODULE COREREVISION="2" FULLNAME="/axis_reg_0" HWVERSION="1.0" INSTANCE="axis_reg_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis_reg" VLNV="user.org:user:axis_reg:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="DW_IN" VALUE="8"/>
-        <PARAMETER NAME="DW_OUT" VALUE="32"/>
+        <PARAMETER NAME="N" VALUE="8"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_axis_reg_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -117,6 +122,11 @@
         <PORT DIR="I" NAME="s_tvalid" SIGIS="undef" SIGNAME="axis_reg_0_s_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="design_1_imp" PORT="s_0_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_tlast" SIGIS="undef" SIGNAME="axis_reg_0_s_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="design_1_imp" PORT="s_0_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="s_tready" SIGIS="undef" SIGNAME="axis_reg_0_s_tready">
@@ -169,7 +179,7 @@
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
           <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
-          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_clk_0"/>
@@ -177,6 +187,7 @@
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="s_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_tlast"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="s_tvalid"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="s_tready"/>
           </PORTMAPS>

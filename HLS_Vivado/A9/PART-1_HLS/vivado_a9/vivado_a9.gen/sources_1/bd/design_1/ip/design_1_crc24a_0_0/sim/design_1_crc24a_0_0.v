@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:crc24a:1.0
-// IP Revision: 2113102409
+// IP Revision: 2113112201
 
 `timescale 1ns/1ps
 
@@ -64,6 +64,9 @@ module design_1_crc24a_0_0 (
   input_r_TVALID,
   input_r_TREADY,
   input_r_TDATA,
+  input_r_TLAST,
+  input_r_TKEEP,
+  input_r_TSTRB,
   output_r_TVALID,
   output_r_TREADY,
   output_r_TDATA
@@ -87,9 +90,15 @@ output wire ap_ready;
 input wire input_r_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_r TREADY" *)
 output wire input_r_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_r, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_ap_clk_0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_r TDATA" *)
 input wire [7 : 0] input_r_TDATA;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_r TLAST" *)
+input wire [0 : 0] input_r_TLAST;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_r TKEEP" *)
+input wire [0 : 0] input_r_TKEEP;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME input_r, TDATA_NUM_BYTES 1, TUSER_WIDTH 0, TDEST_WIDTH 0, TID_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_ap_clk_0, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 input_r TSTRB" *)
+input wire [0 : 0] input_r_TSTRB;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_r TVALID" *)
 output wire output_r_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 output_r TREADY" *)
@@ -111,6 +120,9 @@ output wire [7 : 0] output_r_TDATA;
     .input_r_TVALID(input_r_TVALID),
     .input_r_TREADY(input_r_TREADY),
     .input_r_TDATA(input_r_TDATA),
+    .input_r_TLAST(input_r_TLAST),
+    .input_r_TKEEP(input_r_TKEEP),
+    .input_r_TSTRB(input_r_TSTRB),
     .output_r_TVALID(output_r_TVALID),
     .output_r_TREADY(output_r_TREADY),
     .output_r_TDATA(output_r_TDATA)

@@ -1,6 +1,84 @@
 Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date         : Mon Jul 10 10:44:02 2023
+| Host         : sampaths-lappie running 64-bit Ubuntu 22.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_crc24a_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_crc24a_0_0 (xilinx.com:hls:crc24a:1.0) from (Rev. 2113106524) to (Rev. 2113112201)
+
+
+
+
+
+
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date         : Thu Jul  6 12:07:33 2023
+| Host         : sampaths-lappie running 64-bit Ubuntu 22.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_crc24a_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_crc24a_0_0 (xilinx.com:hls:crc24a:1.0) from (Rev. 2113106448) to (Rev. 2113106524)
+
+
+
+
+
+
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
+| Date         : Thu Jul  6 10:50:29 2023
+| Host         : sampaths-lappie running 64-bit Ubuntu 22.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xczu7ev-ffvc1156-2-e
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_crc24a_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_crc24a_0_0 (xilinx.com:hls:crc24a:1.0) from (Rev. 2113102409) to (Rev. 2113106448)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_crc24a_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'input_r_TKEEP'
+
+-Upgrade has added port 'input_r_TLAST'
+
+-Upgrade has added port 'input_r_TSTRB'
+
+
+
+
+
+
+
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (lin64) Build 3788238 Tue Feb 21 19:59:23 MST 2023
 | Date         : Mon Jul  3 15:33:40 2023
 | Host         : sampaths-lappie running 64-bit Ubuntu 22.04.2 LTS
 | Command      : upgrade_ip

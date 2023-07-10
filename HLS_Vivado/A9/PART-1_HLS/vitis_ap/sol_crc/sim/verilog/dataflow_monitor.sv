@@ -26,9 +26,9 @@ input logic finish
     csv_file_dump mstatus_csv_dumper_1;
     nodf_module_monitor module_monitor_1;
     nodf_module_intf module_intf_2(clock,reset);
-    assign module_intf_2.ap_start = AESL_inst_crc24a.grp_crc24a_Pipeline_loop2_fu_189.ap_start;
-    assign module_intf_2.ap_ready = AESL_inst_crc24a.grp_crc24a_Pipeline_loop2_fu_189.ap_ready;
-    assign module_intf_2.ap_done = AESL_inst_crc24a.grp_crc24a_Pipeline_loop2_fu_189.ap_done;
+    assign module_intf_2.ap_start = AESL_inst_crc24a.grp_crc24a_Pipeline_loop2_fu_207.ap_start;
+    assign module_intf_2.ap_ready = AESL_inst_crc24a.grp_crc24a_Pipeline_loop2_fu_207.ap_ready;
+    assign module_intf_2.ap_done = AESL_inst_crc24a.grp_crc24a_Pipeline_loop2_fu_207.ap_done;
     assign module_intf_2.ap_continue = 1'b1;
     assign module_intf_2.finish = finish;
     csv_file_dump mstatus_csv_dumper_2;

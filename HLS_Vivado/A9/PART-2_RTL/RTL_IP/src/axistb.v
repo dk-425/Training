@@ -26,36 +26,39 @@ module axistb(
     reg clk;
     reg reset_n;
     reg [7:0] s_tdata;
-    reg s_tvalid;
-    wire s_tready;
+    reg s_tlast;
+    reg s_tvalid;  
+    reg m_tready;
+    wire s_tready;   
     wire [7:0] m_tdata;
     wire m_tvalid;
-    reg m_tready;
     
-    // Instantiate the DUT (Design Under Test)
+    
+    // Instantiating
    axis_reg #(
-        .DW_IN(8),
-        .DW_OUT(32)
+        .N(8)
     ) dut (
         .clk(clk),
         .reset_n(reset_n),
         .s_tdata(s_tdata),
         .s_tvalid(s_tvalid),
         .s_tready(s_tready),
+        .s_tlast(s_tlast),
         .m_tdata(m_tdata),
         .m_tvalid(m_tvalid),
         .m_tready(m_tready)
     );
-  /*   design_rtl_IP_wrapper uut
+   /*  design_1_wrapper uut
    (.clk_0(clk),
-    .last_0(last),
-    .m_tdata_0(m_tdata),
-    .m_tvalid_0(m_tvalid),
+    .m_0_tdata(m_tdata),
+    .m_0_tvalid(m_tvalid),
     .reset_n_0(reset_n),
-    .s_tdata_0(s_tdata),
-    .s_tvalid_0(s_tvalid),
-    .m_tready_0(m_tready));
-   */ 
+    .s_0_tdata(s_tdata),
+    .s_0_tlast(s_tlast),
+    .s_0_tready(s_tready),
+    .s_0_tvalid(s_tvalid),
+    .m_0_tready(m_tready));
+    */
     // Clock generation
     always #5 clk = ~clk;
     
@@ -76,15 +79,14 @@ module axistb(
         
         // Send data and wait for it to be accepted
         s_tdata <= 8'b01101000;
-        #10
-        s_tdata <= 8'b00000001;
-        #10 
-        s_tdata <=8'dx;
+        s_tlast <= 1'b1;
+        
+        #1
         
         s_tvalid <= 1;
         #10;
         s_tvalid <= 0;
-        #20
+        #40
         m_tready<=0;
         #5
         // Finish simulation

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5D15D101FE22AF05",
+      "boundary_crc": "0xBD96DDBA1E884D9F",
       "device": "xczu7ev-ffvc1156-2-e",
       "gen_directory": "../../../../vivado_a9.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -71,6 +71,11 @@
       },
       "output_r_TVALID_0": {
         "direction": "O"
+      },
+      "input_r_TLAST_0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -116,6 +121,12 @@
         "ports": [
           "input_r_TDATA_0",
           "crc24a_0/input_r_TDATA"
+        ]
+      },
+      "input_r_TLAST_0_1": {
+        "ports": [
+          "input_r_TLAST_0",
+          "crc24a_0/input_r_TLAST"
         ]
       },
       "xlconstant_0_dout": {

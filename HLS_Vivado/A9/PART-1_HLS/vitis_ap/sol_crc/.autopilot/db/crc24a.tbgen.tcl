@@ -13,14 +13,20 @@ set hasInterrupt 0
 set C_modelName {crc24a}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ input_r int 8 regular {axi_s 0 volatile  { input_r Data } }  }
+	{ input_r_V_data_V int 8 regular {axi_s 0 volatile  { input_r Data } }  }
+	{ input_r_V_keep_V int 1 regular {axi_s 0 volatile  { input_r Keep } }  }
+	{ input_r_V_strb_V int 1 regular {axi_s 0 volatile  { input_r Strb } }  }
+	{ input_r_V_last_V int 1 regular {axi_s 0 volatile  { input_r Last } }  }
 	{ output_r int 8 regular {axi_s 1 volatile  { output_r Data } }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "input_r", "interface" : "axis", "bitwidth" : 8, "direction" : "READONLY"} , 
+	{ "Name" : "input_r_V_data_V", "interface" : "axis", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "input_r_V_keep_V", "interface" : "axis", "bitwidth" : 1, "direction" : "READONLY"} , 
+ 	{ "Name" : "input_r_V_strb_V", "interface" : "axis", "bitwidth" : 1, "direction" : "READONLY"} , 
+ 	{ "Name" : "input_r_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "output_r", "interface" : "axis", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 12
+set portNum 15
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
@@ -29,11 +35,14 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ input_r_TDATA sc_in sc_lv 8 signal 0 } 
-	{ input_r_TVALID sc_in sc_logic 1 invld 0 } 
-	{ input_r_TREADY sc_out sc_logic 1 inacc 0 } 
-	{ output_r_TDATA sc_out sc_lv 8 signal 1 } 
-	{ output_r_TVALID sc_out sc_logic 1 outvld 1 } 
-	{ output_r_TREADY sc_in sc_logic 1 outacc 1 } 
+	{ input_r_TVALID sc_in sc_logic 1 invld 3 } 
+	{ input_r_TREADY sc_out sc_logic 1 inacc 3 } 
+	{ input_r_TKEEP sc_in sc_lv 1 signal 1 } 
+	{ input_r_TSTRB sc_in sc_lv 1 signal 2 } 
+	{ input_r_TLAST sc_in sc_lv 1 signal 3 } 
+	{ output_r_TDATA sc_out sc_lv 8 signal 4 } 
+	{ output_r_TVALID sc_out sc_logic 1 outvld 4 } 
+	{ output_r_TREADY sc_in sc_logic 1 outacc 4 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -42,21 +51,24 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "input_r_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "input_r", "role": "TDATA" }} , 
- 	{ "name": "input_r_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "input_r", "role": "TVALID" }} , 
- 	{ "name": "input_r_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "input_r", "role": "TREADY" }} , 
+ 	{ "name": "input_r_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "input_r_V_data_V", "role": "default" }} , 
+ 	{ "name": "input_r_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "input_r_V_last_V", "role": "default" }} , 
+ 	{ "name": "input_r_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "input_r_V_last_V", "role": "default" }} , 
+ 	{ "name": "input_r_TKEEP", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r_V_keep_V", "role": "default" }} , 
+ 	{ "name": "input_r_TSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r_V_strb_V", "role": "default" }} , 
+ 	{ "name": "input_r_TLAST", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "input_r_V_last_V", "role": "default" }} , 
  	{ "name": "output_r_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "output_r", "role": "TDATA" }} , 
  	{ "name": "output_r_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "output_r", "role": "TVALID" }} , 
  	{ "name": "output_r_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "output_r", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "4", "5"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "4", "5", "6", "7", "8"],
 		"CDFG" : "crc24a",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "17", "EstimateLatencyMax" : "17",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "16", "EstimateLatencyMax" : "16",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -65,13 +77,16 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "input_r", "Type" : "Axis", "Direction" : "I",
+			{"Name" : "input_r_V_data_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "input_r",
 				"BlockSignal" : [
 					{"Name" : "input_r_TDATA_blk_n", "Type" : "RtlSignal"}]},
+			{"Name" : "input_r_V_keep_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "input_r"},
+			{"Name" : "input_r_V_strb_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "input_r"},
+			{"Name" : "input_r_V_last_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "input_r"},
 			{"Name" : "output_r", "Type" : "Axis", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "output_r_TDATA_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_crc24a_Pipeline_loop2_fu_189", "Parent" : "0", "Child" : ["2", "3"],
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_crc24a_Pipeline_loop2_fu_207", "Parent" : "0", "Child" : ["2", "3"],
 		"CDFG" : "crc24a_Pipeline_loop2",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
@@ -94,7 +109,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "crc_V_80", "Type" : "None", "Direction" : "I"},
 			{"Name" : "crc_V_79", "Type" : "None", "Direction" : "I"},
 			{"Name" : "crc_V_78", "Type" : "None", "Direction" : "I"},
-			{"Name" : "last", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tmp_last_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "crc_V_31_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "crc_V_98_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "crc_V_97_out", "Type" : "Vld", "Direction" : "O"},
@@ -129,16 +144,22 @@ set RtlHierarchyInfo {[
 			{"Name" : "crc_V_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "loop2", "PipelineType" : "NotSupport"}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_crc24a_Pipeline_loop2_fu_189.mux_83_1_1_1_U1", "Parent" : "1"},
-	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_crc24a_Pipeline_loop2_fu_189.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_input_r_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_r_U", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_crc24a_Pipeline_loop2_fu_207.mux_83_1_1_1_U1", "Parent" : "1"},
+	{"ID" : "3", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_crc24a_Pipeline_loop2_fu_207.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_input_r_V_data_V_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_input_r_V_keep_V_U", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_input_r_V_strb_V_U", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_input_r_V_last_V_U", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_output_r_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	crc24a {
-		input_r {Type I LastRead 1 FirstWrite -1}
-		output_r {Type O LastRead -1 FirstWrite 3}}
+		input_r_V_data_V {Type I LastRead 0 FirstWrite -1}
+		input_r_V_keep_V {Type I LastRead 0 FirstWrite -1}
+		input_r_V_strb_V {Type I LastRead 0 FirstWrite -1}
+		input_r_V_last_V {Type I LastRead 0 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 2}}
 	crc24a_Pipeline_loop2 {
 		crc_V_85 {Type I LastRead 0 FirstWrite -1}
 		crc_V_84 {Type I LastRead 0 FirstWrite -1}
@@ -148,7 +169,7 @@ set ArgLastReadFirstWriteLatency {
 		crc_V_80 {Type I LastRead 0 FirstWrite -1}
 		crc_V_79 {Type I LastRead 0 FirstWrite -1}
 		crc_V_78 {Type I LastRead 0 FirstWrite -1}
-		last {Type I LastRead 0 FirstWrite -1}
+		tmp_last_V {Type I LastRead 0 FirstWrite -1}
 		crc_V_31_out {Type O LastRead -1 FirstWrite 0}
 		crc_V_98_out {Type O LastRead -1 FirstWrite 0}
 		crc_V_97_out {Type O LastRead -1 FirstWrite 0}
@@ -185,15 +206,18 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "17", "Max" : "17"}
-	, {"Name" : "Interval", "Min" : "18", "Max" : "18"}
+	{"Name" : "Latency", "Min" : "16", "Max" : "16"}
+	, {"Name" : "Interval", "Min" : "17", "Max" : "17"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	input_r { axis {  { input_r_TDATA in_data 0 8 }  { input_r_TVALID in_vld 0 1 }  { input_r_TREADY in_acc 1 1 } } }
+	input_r_V_data_V { axis {  { input_r_TDATA in_data 0 8 } } }
+	input_r_V_keep_V { axis {  { input_r_TKEEP in_data 0 1 } } }
+	input_r_V_strb_V { axis {  { input_r_TSTRB in_data 0 1 } } }
+	input_r_V_last_V { axis {  { input_r_TVALID in_vld 0 1 }  { input_r_TREADY in_acc 1 1 }  { input_r_TLAST in_data 0 1 } } }
 	output_r { axis {  { output_r_TDATA out_data 1 8 }  { output_r_TVALID out_vld 1 1 }  { output_r_TREADY out_acc 0 1 } } }
 }
 

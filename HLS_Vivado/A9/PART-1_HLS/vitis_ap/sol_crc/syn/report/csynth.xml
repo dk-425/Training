@@ -19,20 +19,20 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>17</Best-caseLatency>
-            <Average-caseLatency>17</Average-caseLatency>
-            <Worst-caseLatency>17</Worst-caseLatency>
-            <Best-caseRealTimeLatency>0.170 us</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>0.170 us</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>0.170 us</Worst-caseRealTimeLatency>
-            <Interval-min>18</Interval-min>
-            <Interval-max>18</Interval-max>
+            <Best-caseLatency>16</Best-caseLatency>
+            <Average-caseLatency>16</Average-caseLatency>
+            <Worst-caseLatency>16</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.160 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.160 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.160 us</Worst-caseRealTimeLatency>
+            <Interval-min>17</Interval-min>
+            <Interval-max>17</Interval-max>
         </SummaryOfOverallLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
-            <FF>88</FF>
-            <LUT>881</LUT>
+            <FF>87</FF>
+            <LUT>875</LUT>
             <BRAM_18K>0</BRAM_18K>
             <DSP>0</DSP>
             <URAM>0</URAM>
@@ -114,7 +114,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>input_r_TDATA</name>
-            <Object>input_r</Object>
+            <Object>input_r_V_data_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -126,7 +126,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>input_r_TVALID</name>
-            <Object>input_r</Object>
+            <Object>input_r_V_last_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -138,7 +138,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>input_r_TREADY</name>
-            <Object>input_r</Object>
+            <Object>input_r_V_last_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -146,6 +146,42 @@
             <Dir>out</Dir>
             <Bits>1</Bits>
             <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_TLAST</name>
+            <Object>input_r_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_TKEEP</name>
+            <Object>input_r_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>input_r_TSTRB</name>
+            <Object>input_r_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
@@ -190,11 +226,11 @@
             <ModuleName>crc24a</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_crc24a_Pipeline_loop2_fu_189</InstName>
+                    <InstName>grp_crc24a_Pipeline_loop2_fu_207</InstName>
                     <ModuleName>crc24a_Pipeline_loop2</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>189</ID>
-                    <BindInstances>add_ln22_fu_776_p2</BindInstances>
+                    <ID>207</ID>
+                    <BindInstances>add_ln21_fu_776_p2</BindInstances>
                 </Instance>
             </InstancesList>
         </TopModule>
@@ -255,7 +291,7 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln22_fu_776_p2" SOURCE="codes/crc.cpp:22" URAM="0" VARIABLE="add_ln22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_fu_776_p2" SOURCE="codes/crc.cpp:21" URAM="0" VARIABLE="add_ln21"/>
             </BindNodes>
         </Module>
         <Module>
@@ -267,22 +303,22 @@
                     <EstimatedClockPeriod>3.444</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>17</Best-caseLatency>
-                    <Average-caseLatency>17</Average-caseLatency>
-                    <Worst-caseLatency>17</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>0.170 us</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>0.170 us</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>0.170 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>18</PipelineInitiationInterval>
+                    <Best-caseLatency>16</Best-caseLatency>
+                    <Average-caseLatency>16</Average-caseLatency>
+                    <Worst-caseLatency>16</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.160 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.160 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.160 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>17</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>88</FF>
+                    <FF>87</FF>
                     <AVAIL_FF>460800</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>881</LUT>
+                    <LUT>875</LUT>
                     <AVAIL_LUT>230400</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -303,7 +339,7 @@
         <config_export output="/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/HLS_IP"/>
     </UserConfigCommands>
     <Args>
-        <Arg ArgName="input" index="0" direction="in" srcType="stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;" srcSize="8">
+        <Arg ArgName="input" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="56">
             <hwRefs>
                 <hwRef type="interface" interface="input_r" name="" usage="data" direction="in"/>
             </hwRefs>
@@ -355,7 +391,10 @@
         <Interface InterfaceName="input_r" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="8" portPrefix="input_r_">
             <ports>
                 <port>input_r_TDATA</port>
+                <port>input_r_TKEEP</port>
+                <port>input_r_TLAST</port>
                 <port>input_r_TREADY</port>
+                <port>input_r_TSTRB</port>
                 <port>input_r_TVALID</port>
             </ports>
             <constraints>
@@ -377,9 +416,9 @@
         <section name="HW Interfaces" level="0">
             <item name="AXIS">
                 <table isCollapsed="0">
-                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
-                    <column name="input_r">both, 8, 1, 1, , , , , , , </column>
-                    <column name="output_r">both, 8, 1, 1, , , , , , , </column>
+                    <keys size="8">Interface, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
+                    <column name="input_r">both, 8, 1, 1, 1, 1, 1, , , , </column>
+                    <column name="output_r">both, 8, , , 1, , 1, , , , </column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -397,7 +436,7 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="input">in, stream&lt;ap_uint&lt;8&gt; 0&gt;&amp;</column>
+                    <column name="input">in, stream&lt;hls::axis&lt;ap_uint&lt;8&gt; 0 0 0&gt; 0&gt;&amp;</column>
                     <column name="output">out, stream&lt;ap_uint&lt;8&gt; 0&gt;&amp;</column>
                 </table>
             </item>
@@ -414,12 +453,12 @@
         <Pragma type="interface" location="codes/crc.cpp:5" status="valid" parentFunction="crc24a" variable="input" isDirective="0" options="mode=axis register_mode=both port=input register"/>
         <Pragma type="interface" location="codes/crc.cpp:6" status="valid" parentFunction="crc24a" variable="output" isDirective="0" options="mode=axis register_mode=both port=output register"/>
         <Pragma type="unroll" location="codes/crc.cpp:15" status="valid" parentFunction="crc24a" variable="" isDirective="0" options=""/>
-        <Pragma type="pipeline" location="codes/crc.cpp:23" status="valid" parentFunction="crc24a" variable="" isDirective="0" options="II=1"/>
-        <Pragma type="unroll" location="codes/crc.cpp:27" status="valid" parentFunction="crc24a" variable="" isDirective="0" options=""/>
-        <Pragma type="unroll" location="codes/crc.cpp:36" status="valid" parentFunction="crc24a" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="codes/crc.cpp:22" status="valid" parentFunction="crc24a" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="codes/crc.cpp:26" status="valid" parentFunction="crc24a" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="codes/crc.cpp:34" status="valid" parentFunction="crc24a" variable="" isDirective="0" options=""/>
     </PragmaReport>
     <AutoPragmaReport>
-        <AutoPragma type="array_partition" parentFunction="crc24a" options="dim=1 type=complete  variable=crc" pragmaLocId="codes/crc.cpp:0:1" srcPragmaType="pipeline" srcPragmaLoc="codes/crc.cpp:23" srcPragmaSource="pragma" srcIsDirective="0" variable="crc" varLoc=""/>
+        <AutoPragma type="array_partition" parentFunction="crc24a" options="dim=1 type=complete  variable=crc" pragmaLocId="codes/crc.cpp:0:1" srcPragmaType="pipeline" srcPragmaLoc="codes/crc.cpp:22" srcPragmaSource="pragma" srcIsDirective="0" variable="crc" varLoc=""/>
     </AutoPragmaReport>
 </profile>
 

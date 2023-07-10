@@ -5,10 +5,10 @@
 <ModuleName>crc24a</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_crc24a_Pipeline_loop2_fu_189</InstName>
+<InstName>grp_crc24a_Pipeline_loop2_fu_207</InstName>
 <ModuleName>crc24a_Pipeline_loop2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>189</ID>
+<ID>207</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -226,8 +226,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>last</name>
-<Object>last</Object>
+<name>tmp_last_V</name>
+<Object>tmp_last_V</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -951,22 +951,22 @@
 <EstimatedClockPeriod>3.444</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>17</Best-caseLatency>
-<Average-caseLatency>17</Average-caseLatency>
-<Worst-caseLatency>17</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.170 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.170 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.170 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>18</PipelineInitiationInterval>
+<Best-caseLatency>16</Best-caseLatency>
+<Average-caseLatency>16</Average-caseLatency>
+<Worst-caseLatency>16</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.160 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.160 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.160 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>17</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>88</FF>
+<FF>87</FF>
 <AVAIL_FF>460800</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>881</LUT>
+<LUT>875</LUT>
 <AVAIL_LUT>230400</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1049,7 +1049,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_r_TDATA</name>
-<Object>input_r</Object>
+<Object>input_r_V_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -1061,7 +1061,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_r_TVALID</name>
-<Object>input_r</Object>
+<Object>input_r_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -1073,7 +1073,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>input_r_TREADY</name>
-<Object>input_r</Object>
+<Object>input_r_V_last_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -1081,6 +1081,42 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_TLAST</name>
+<Object>input_r_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_TKEEP</name>
+<Object>input_r_V_keep_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_TSTRB</name>
+<Object>input_r_V_strb_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>

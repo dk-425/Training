@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x197194AD20705D88",
+      "boundary_crc": "0x199A80378EB92D51",
       "device": "xczu7ev-ffvc1156-2-e",
       "gen_directory": "../../../../rtl_a9.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -106,7 +106,7 @@
             "value": "0"
           },
           "HAS_TLAST": {
-            "value": "0"
+            "value": "1"
           },
           "HAS_TREADY": {
             "value": "1"
@@ -144,6 +144,10 @@
             "direction": "I",
             "left": "7",
             "right": "0"
+          },
+          "TLAST": {
+            "physical_name": "s_0_tlast",
+            "direction": "I"
           },
           "TVALID": {
             "physical_name": "s_0_tvalid",

@@ -17,6 +17,7 @@
 					"ports": {
 						"ACLK": { "actual": "clk"},
 						"TDATA": { "actual": "s_tdata"},
+						"TLAST": { "actual": "s_tlast"},
 						"TREADY": { "actual": "s_tready"},
 						"TVALID": { "actual": "s_tvalid"}
 					}

@@ -15,18 +15,30 @@
 `define AUTOTB_MAX_ALLOW_LATENCY  15000000
 `define AUTOTB_CLOCK_PERIOD_DIV2 5.00
 
-`define AESL_DEPTH_input_r 1
+`define AESL_DEPTH_input_r_V_data_V 1
+`define AESL_DEPTH_input_r_V_keep_V 1
+`define AESL_DEPTH_input_r_V_strb_V 1
+`define AESL_DEPTH_input_r_V_last_V 1
 `define AESL_DEPTH_output_r 1
-`define AUTOTB_TVIN_input_r  "../tv/cdatafile/c.crc24a.autotvin_input_r.dat"
-`define AUTOTB_TVIN_input_r_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvin_input_r.dat"
+`define AUTOTB_TVIN_input_r_V_data_V  "../tv/cdatafile/c.crc24a.autotvin_input_r_V_data_V.dat"
+`define AUTOTB_TVIN_input_r_V_keep_V  "../tv/cdatafile/c.crc24a.autotvin_input_r_V_keep_V.dat"
+`define AUTOTB_TVIN_input_r_V_strb_V  "../tv/cdatafile/c.crc24a.autotvin_input_r_V_strb_V.dat"
+`define AUTOTB_TVIN_input_r_V_last_V  "../tv/cdatafile/c.crc24a.autotvin_input_r_V_last_V.dat"
+`define AUTOTB_TVIN_input_r_V_data_V_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvin_input_r_V_data_V.dat"
+`define AUTOTB_TVIN_input_r_V_keep_V_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvin_input_r_V_keep_V.dat"
+`define AUTOTB_TVIN_input_r_V_strb_V_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvin_input_r_V_strb_V.dat"
+`define AUTOTB_TVIN_input_r_V_last_V_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvin_input_r_V_last_V.dat"
 `define AUTOTB_TVOUT_output_r  "../tv/cdatafile/c.crc24a.autotvout_output_r.dat"
 `define AUTOTB_TVOUT_output_r_out_wrapc  "../tv/rtldatafile/rtl.crc24a.autotvout_output_r.dat"
 module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 17;
-parameter LENGTH_input_r = 2;
+parameter LATENCY_ESTIMATION = 16;
+parameter LENGTH_input_r_V_data_V = 1;
+parameter LENGTH_input_r_V_keep_V = 1;
+parameter LENGTH_input_r_V_last_V = 1;
+parameter LENGTH_input_r_V_strb_V = 1;
 parameter LENGTH_output_r = 4;
 
 task read_token;
@@ -65,6 +77,9 @@ wire ap_ready;
 wire [7 : 0] input_r_TDATA;
 wire  input_r_TVALID;
 wire  input_r_TREADY;
+wire [0 : 0] input_r_TKEEP;
+wire [0 : 0] input_r_TSTRB;
+wire [0 : 0] input_r_TLAST;
 wire [7 : 0] output_r_TDATA;
 wire  output_r_TVALID;
 wire  output_r_TREADY;
@@ -93,6 +108,9 @@ wire ap_rst_n_n;
     .input_r_TDATA(input_r_TDATA),
     .input_r_TVALID(input_r_TVALID),
     .input_r_TREADY(input_r_TREADY),
+    .input_r_TKEEP(input_r_TKEEP),
+    .input_r_TSTRB(input_r_TSTRB),
+    .input_r_TLAST(input_r_TLAST),
     .output_r_TDATA(output_r_TDATA),
     .output_r_TVALID(output_r_TVALID),
     .output_r_TREADY(output_r_TREADY));
@@ -129,7 +147,10 @@ assign AESL_continue = tb_continue;
     end
 
 
-reg [31:0] ap_c_n_tvin_trans_num_input_r;
+
+
+
+reg [31:0] ap_c_n_tvin_trans_num_input_r_V_data_V;
 
 reg input_r_ready_reg; // for self-sync
 
@@ -143,6 +164,9 @@ AESL_axi_s_input_r AESL_AXI_S_input_r(
     .clk(AESL_clock),
     .reset(AESL_reset),
     .TRAN_input_r_TDATA(input_r_TDATA),
+    .TRAN_input_r_TKEEP(input_r_TKEEP),
+    .TRAN_input_r_TSTRB(input_r_TSTRB),
+    .TRAN_input_r_TLAST(input_r_TLAST),
     .TRAN_input_r_TVALID(axi_s_input_r_TVALID),
     .TRAN_input_r_TREADY(axi_s_input_r_TREADY),
     .ready(input_r_ready),
@@ -253,9 +277,18 @@ initial begin
 end
 
 
-reg end_input_r;
-reg [31:0] size_input_r;
-reg [31:0] size_input_r_backup;
+reg end_input_r_V_data_V;
+reg [31:0] size_input_r_V_data_V;
+reg [31:0] size_input_r_V_data_V_backup;
+reg end_input_r_V_keep_V;
+reg [31:0] size_input_r_V_keep_V;
+reg [31:0] size_input_r_V_keep_V_backup;
+reg end_input_r_V_strb_V;
+reg [31:0] size_input_r_V_strb_V;
+reg [31:0] size_input_r_V_strb_V_backup;
+reg end_input_r_V_last_V;
+reg [31:0] size_input_r_V_last_V;
+reg [31:0] size_input_r_V_last_V_backup;
 reg end_output_r;
 reg [31:0] size_output_r;
 reg [31:0] size_output_r_backup;
@@ -370,8 +403,8 @@ end
         input_r_ready_reg = 0;
         @ (posedge ready_initial);
         forever begin
-            @ (ap_c_n_tvin_trans_num_input_r or input_r_transaction);
-            if (ap_c_n_tvin_trans_num_input_r > input_r_transaction) begin
+            @ (ap_c_n_tvin_trans_num_input_r_V_data_V or input_r_transaction);
+            if (ap_c_n_tvin_trans_num_input_r_V_data_V > input_r_transaction) begin
                 input_r_ready_reg = 1;
             end else begin
                 input_r_ready_reg = 0;
@@ -379,71 +412,71 @@ end
         end
     end
     
-    `define STREAM_SIZE_IN_input_r "../tv/stream_size/stream_size_in_input_r.dat"
+    `define STREAM_SIZE_IN_input_r_V_data_V "../tv/stream_size/stream_size_in_input_r_V_data_V.dat"
     
-    initial begin : gen_ap_c_n_tvin_trans_num_input_r
-        integer fp_input_r;
-        reg [127:0] token_input_r;
+    initial begin : gen_ap_c_n_tvin_trans_num_input_r_V_data_V
+        integer fp_input_r_V_data_V;
+        reg [127:0] token_input_r_V_data_V;
         integer ret;
         
-        ap_c_n_tvin_trans_num_input_r = 0;
-        end_input_r = 0;
+        ap_c_n_tvin_trans_num_input_r_V_data_V = 0;
+        end_input_r_V_data_V = 0;
         wait (AESL_reset === 1);
         
-        fp_input_r = $fopen(`STREAM_SIZE_IN_input_r, "r");
-        if(fp_input_r == 0) begin
-            $display("Failed to open file \"%s\"!", `STREAM_SIZE_IN_input_r);
+        fp_input_r_V_data_V = $fopen(`STREAM_SIZE_IN_input_r_V_data_V, "r");
+        if(fp_input_r_V_data_V == 0) begin
+            $display("Failed to open file \"%s\"!", `STREAM_SIZE_IN_input_r_V_data_V);
             $finish;
         end
-        read_token(fp_input_r, token_input_r); // should be [[[runtime]]]
-        if (token_input_r != "[[[runtime]]]") begin
-            $display("ERROR: token_input_r != \"[[[runtime]]]\"");
+        read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be [[[runtime]]]
+        if (token_input_r_V_data_V != "[[[runtime]]]") begin
+            $display("ERROR: token_input_r_V_data_V != \"[[[runtime]]]\"");
             $finish;
         end
-        size_input_r = 0;
-        size_input_r_backup = 0;
-        while (size_input_r == 0 && end_input_r == 0) begin
-            ap_c_n_tvin_trans_num_input_r = ap_c_n_tvin_trans_num_input_r + 1;
-            read_token(fp_input_r, token_input_r); // should be [[transaction]] or [[[/runtime]]]
-            if (token_input_r == "[[transaction]]") begin
-                read_token(fp_input_r, token_input_r); // should be transaction number
-                read_token(fp_input_r, token_input_r); // should be size for hls::stream
-                ret = $sscanf(token_input_r, "%d", size_input_r);
-                if (size_input_r > 0) begin
-                    size_input_r_backup = size_input_r;
+        size_input_r_V_data_V = 0;
+        size_input_r_V_data_V_backup = 0;
+        while (size_input_r_V_data_V == 0 && end_input_r_V_data_V == 0) begin
+            ap_c_n_tvin_trans_num_input_r_V_data_V = ap_c_n_tvin_trans_num_input_r_V_data_V + 1;
+            read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be [[transaction]] or [[[/runtime]]]
+            if (token_input_r_V_data_V == "[[transaction]]") begin
+                read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be transaction number
+                read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be size for hls::stream
+                ret = $sscanf(token_input_r_V_data_V, "%d", size_input_r_V_data_V);
+                if (size_input_r_V_data_V > 0) begin
+                    size_input_r_V_data_V_backup = size_input_r_V_data_V;
                 end
-                read_token(fp_input_r, token_input_r); // should be [[/transaction]]
-            end else if (token_input_r == "[[[/runtime]]]") begin
-                $fclose(fp_input_r);
-                end_input_r = 1;
+                read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be [[/transaction]]
+            end else if (token_input_r_V_data_V == "[[[/runtime]]]") begin
+                $fclose(fp_input_r_V_data_V);
+                end_input_r_V_data_V = 1;
             end else begin
-                $display("ERROR: unknown token_input_r");
+                $display("ERROR: unknown token_input_r_V_data_V");
                 $finish;
             end
         end
         forever begin
             @ (posedge AESL_clock);
-            if (end_input_r == 0) begin
+            if (end_input_r_V_data_V == 0) begin
                 if ((input_r_TREADY & input_r_TVALID) == 1) begin
-                    if (size_input_r > 0) begin
-                        size_input_r = size_input_r - 1;
-                        while (size_input_r == 0 && end_input_r == 0) begin
-                            ap_c_n_tvin_trans_num_input_r = ap_c_n_tvin_trans_num_input_r + 1;
-                            read_token(fp_input_r, token_input_r); // should be [[transaction]] or [[[/runtime]]]
-                            if (token_input_r == "[[transaction]]") begin
-                                read_token(fp_input_r, token_input_r); // should be transaction number
-                                read_token(fp_input_r, token_input_r); // should be size for hls::stream
-                                ret = $sscanf(token_input_r, "%d", size_input_r);
-                                if (size_input_r > 0) begin
-                                    size_input_r_backup = size_input_r;
+                    if (size_input_r_V_data_V > 0) begin
+                        size_input_r_V_data_V = size_input_r_V_data_V - 1;
+                        while (size_input_r_V_data_V == 0 && end_input_r_V_data_V == 0) begin
+                            ap_c_n_tvin_trans_num_input_r_V_data_V = ap_c_n_tvin_trans_num_input_r_V_data_V + 1;
+                            read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be [[transaction]] or [[[/runtime]]]
+                            if (token_input_r_V_data_V == "[[transaction]]") begin
+                                read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be transaction number
+                                read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be size for hls::stream
+                                ret = $sscanf(token_input_r_V_data_V, "%d", size_input_r_V_data_V);
+                                if (size_input_r_V_data_V > 0) begin
+                                    size_input_r_V_data_V_backup = size_input_r_V_data_V;
                                 end
-                                read_token(fp_input_r, token_input_r); // should be [[/transaction]]
-                            end else if (token_input_r == "[[[/runtime]]]") begin
-                                size_input_r = size_input_r_backup;
-                                $fclose(fp_input_r);
-                                end_input_r = 1;
+                                read_token(fp_input_r_V_data_V, token_input_r_V_data_V); // should be [[/transaction]]
+                            end else if (token_input_r_V_data_V == "[[[/runtime]]]") begin
+                                size_input_r_V_data_V = size_input_r_V_data_V_backup;
+                                $fclose(fp_input_r_V_data_V);
+                                end_input_r_V_data_V = 1;
                             end else begin
-                                $display("ERROR: unknown token_input_r");
+                                $display("ERROR: unknown token_input_r_V_data_V");
                                 $finish;
                             end
                         end
@@ -451,11 +484,11 @@ end
                 end
             end else begin
                 if ((input_r_TREADY & input_r_TVALID) == 1) begin
-                    if (size_input_r > 0) begin
-                        size_input_r = size_input_r - 1;
-                        if (size_input_r == 0) begin
-                            ap_c_n_tvin_trans_num_input_r = ap_c_n_tvin_trans_num_input_r + 1;
-                            size_input_r = size_input_r_backup;
+                    if (size_input_r_V_data_V > 0) begin
+                        size_input_r_V_data_V = size_input_r_V_data_V - 1;
+                        if (size_input_r_V_data_V == 0) begin
+                            ap_c_n_tvin_trans_num_input_r_V_data_V = ap_c_n_tvin_trans_num_input_r_V_data_V + 1;
+                            size_input_r_V_data_V = size_input_r_V_data_V_backup;
                         end
                     end
                 end

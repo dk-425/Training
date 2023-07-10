@@ -47,8 +47,10 @@ Compiling module xil_defaultlib.crc24a_mux_83_1_1_1(ID=1,din0_WI...
 Compiling module xil_defaultlib.crc24a_flow_control_loop_pipe_se...
 Compiling module xil_defaultlib.crc24a_crc24a_Pipeline_loop2
 Compiling module xil_defaultlib.crc24a_regslice_both(DataWidth=8...
+Compiling module xil_defaultlib.crc24a_regslice_both(DataWidth=1...
 Compiling module xil_defaultlib.crc24a
-Compiling module xil_defaultlib.fifo(DEPTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=1,WIDTH=1)
 Compiling module xil_defaultlib.AESL_axi_s_input_r
 Compiling module xil_defaultlib.fifo(DEPTH=4)
 Compiling module xil_defaultlib.AESL_axi_s_output_r
@@ -78,11 +80,11 @@ source crc24a.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
 find kernel block.
-// RTL Simulation : 1 / 1 [100.00%] @ "305000"
+// RTL Simulation : 1 / 1 [100.00%] @ "295000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 365 ns : File "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.autotb.v" Line 247
+$finish called at time : 355 ns : File "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/sim/verilog/crc24a.autotb.v" Line 271
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Jul  3 15:28:44 2023...
+INFO: [Common 17-206] Exiting xsim at Mon Jul 10 10:39:51 2023...
 CRC generator output : 01101000101101001111001100000010
 CRC detector output :  00000000000000000000000000000000
 !PASS!CRC Check at detector is Success

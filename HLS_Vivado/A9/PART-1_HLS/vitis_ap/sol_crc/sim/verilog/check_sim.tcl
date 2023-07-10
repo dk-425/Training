@@ -81,7 +81,10 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.crc24a.autotvin_input_r.dat"
+         "c.crc24a.autotvin_input_r_V_data_V.dat"
+         "c.crc24a.autotvin_input_r_V_keep_V.dat"
+         "c.crc24a.autotvin_input_r_V_strb_V.dat"
+         "c.crc24a.autotvin_input_r_V_last_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

@@ -85351,28 +85351,190 @@ inline bool operator!=(
 # 366 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h" 2
 # 361 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 2
 # 6 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/header.h" 2
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h" 1
+# 41 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h"
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 1 3
+# 39 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 3
+       
+# 40 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 3
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed/limits.h" 1 3 4
+# 43 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 2 3
+# 42 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h" 2
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 1
+# 43 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h" 2
+
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+struct ap_fixed;
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+struct ap_ufixed;
+
+namespace hls {
+
+template <typename T> constexpr std::size_t bitwidth = sizeof(T) * 8;
+
+template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> = _AP_W;
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> = _AP_W;
+
+template <typename T>
+constexpr std::size_t bytewidth = (bitwidth<T> + 8 - 1) / 8;
+
+template <typename T, std::size_t WUser, std::size_t WId, std::size_t WDest> struct axis {
+  static constexpr std::size_t NewWUser = (WUser == 0) ? 1 : WUser;
+  static constexpr std::size_t NewWId = (WId == 0) ? 1 : WId;
+  static constexpr std::size_t NewWDest = (WDest == 0) ? 1 : WDest;
+  T data;
+  ap_uint<bytewidth<T>> keep;
+  ap_uint<bytewidth<T>> strb;
+  ap_uint<NewWUser> user;
+  ap_uint<1> last;
+  ap_uint<NewWId> id;
+  ap_uint<NewWDest> dest;
+
+  ap_uint<NewWUser> *get_user_ptr() {
+#pragma HLS inline
+    return (WUser == 0) ? nullptr : &user;
+  }
+  ap_uint<NewWId> *get_id_ptr() {
+#pragma HLS inline
+    return (WId == 0) ? nullptr : &id;
+  }
+  ap_uint<NewWDest> *get_dest_ptr() {
+#pragma HLS inline
+    return (WDest == 0) ? nullptr : &dest;
+  }
+};
+
+}
+
+template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
+using ap_axis = hls::axis<ap_int<WData>, WUser, WId, WDest>;
+
+template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
+using ap_axiu = hls::axis<ap_uint<WData>, WUser, WId, WDest>;
+
+
+template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
+struct qdma_axis;
+
+template <std::size_t WData> struct qdma_axis<WData, 0, 0, 0> {
+
+  static constexpr std::size_t kBytes = (WData + 7) / 8;
+
+  ap_uint<WData> data;
+  ap_uint<kBytes> keep;
+  ap_uint<1> strb;
+  ap_uint<1> user;
+  ap_uint<1> last;
+  ap_uint<1> id;
+  ap_uint<1> dest;
+
+  ap_uint<1> *get_strb_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+  ap_uint<1> *get_user_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+  ap_uint<1> *get_id_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+  ap_uint<1> *get_dest_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+
+
+  ap_uint<WData> get_data() const {
+#pragma HLS inline
+    return data;
+  }
+  ap_uint<kBytes> get_keep() const {
+#pragma HLS inline
+    return keep;
+  }
+  ap_uint<1> get_last() const {
+#pragma HLS inline
+    return last;
+  }
+
+  void set_data(const ap_uint<WData> &d) {
+#pragma HLS inline
+    data = d;
+  }
+  void set_keep(const ap_uint<kBytes> &k) {
+#pragma HLS inline
+    keep = k;
+  }
+  void set_last(const ap_uint<1> &l) {
+#pragma HLS inline
+    last = l;
+  }
+  void keep_all() {
+#pragma HLS inline
+    ap_uint<kBytes> k = 0;
+    keep = ~k;
+  }
+
+  qdma_axis() {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(ap_uint<WData> d) : data(d) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(ap_uint<WData> d, ap_uint<kBytes> k) : data(d), keep(k) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(ap_uint<WData> d, ap_uint<kBytes> k, ap_uint<1> l)
+      : data(d), keep(k), last(l) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(const qdma_axis<WData, 0, 0, 0> &d)
+      : data(d.data), keep(d.keep), last(d.last) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis &operator=(const qdma_axis<WData, 0, 0, 0> &d) {
+#pragma HLS inline
+    data = d.data;
+    keep = d.keep;
+    last = d.last;
+    return *this;
+  }
+};
+# 7 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/header.h" 2
 using namespace std;
 
 
 
 
 
-typedef ap_uint<8> data;
+typedef ap_uint<8> typo;
 
 
-void crc24a(hls::stream<data>& input, hls::stream<data>& output);
+void crc24a(hls::stream<ap_axiu<8,0,0,0>>& input, hls::stream<typo>& output);
 # 2 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp" 2
 
 int main() {
-    hls::stream<data> a,b;
-    data w;
-    ap_uint<1> last;
+    hls::stream<ap_axiu<8,0,0,0>> a;
+    hls::stream<typo> b;
+    ap_axiu<8,0,0,0> w;
 
-      w=0b00010110;
-# 17 "/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/codes/crc_tb.cpp"
-          last=1;
+      w.data=0b00010110;
+
+           w.last=1;
            a.write(w);
-           a.write(last);
 
 
 
@@ -85384,7 +85546,7 @@ int main() {
     vector<ap_uint<1>> p;
     cout << "CRC generator output : ";
     while(!b.empty()){
-          data d = b.read();
+          typo d = b.read();
          for (int i = 0; i < 8 ; i++) {
            cout<< d(i,i);
            p.push_back(d(i,i));
@@ -85414,10 +85576,10 @@ int main() {
            }
             cout<<endl;
            if ( flag==0) {
-                      cout << "!PASS!CRC Check at detector is Success" << std::endl;
+                      cout << "!PASS!CRC Check at detector is Success" << endl;
                   }
            else {
-                      cout << "!ERROR!CRC Check at detector has Failed" << std::endl;
+                      cout << "!ERROR!CRC Check at detector has Failed" << endl;
                   }
     return 0;
 }

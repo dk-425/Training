@@ -236,22 +236,43 @@ class AESL_RUNTIME_BC {
     fstream file_token;
     string mName;
 };
-unsigned int ap_apatb_input_r_cap_bc;
-static AESL_RUNTIME_BC __xlx_input_r_V_size_Reader("../tv/stream_size/stream_size_in_input_r.dat");
+unsigned int ap_apatb_input_V_data_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_input_V_data_V_V_size_Reader("../tv/stream_size/stream_size_in_input_V_data_V.dat");
+unsigned int ap_apatb_input_V_keep_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_input_V_keep_V_V_size_Reader("../tv/stream_size/stream_size_in_input_V_keep_V.dat");
+unsigned int ap_apatb_input_V_strb_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_input_V_strb_V_V_size_Reader("../tv/stream_size/stream_size_in_input_V_strb_V.dat");
+unsigned int ap_apatb__cap_bc;
+static AESL_RUNTIME_BC __xlx__V_size_Reader("../tv/stream_size/stream_size_in_.dat");
+unsigned int ap_apatb_input_V_last_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_input_V_last_V_V_size_Reader("../tv/stream_size/stream_size_in_input_V_last_V.dat");
+unsigned int ap_apatb__cap_bc;
+static AESL_RUNTIME_BC __xlx__V_size_Reader("../tv/stream_size/stream_size_in_.dat");
+unsigned int ap_apatb__cap_bc;
+static AESL_RUNTIME_BC __xlx__V_size_Reader("../tv/stream_size/stream_size_in_.dat");
 unsigned int ap_apatb_output_r_cap_bc;
 static AESL_RUNTIME_BC __xlx_output_r_V_size_Reader("../tv/stream_size/stream_size_out_output_r.dat");
 using hls::sim::Byte;
 struct __cosim_s1__ { char data[1]; };
-extern "C" void crc24a(__cosim_s1__*, __cosim_s1__*);
-extern "C" void apatb_crc24a_hw(volatile void * __xlx_apatb_param_input_r, volatile void * __xlx_apatb_param_output_r) {
+extern "C" void crc24a(volatile void *, volatile void *, volatile void *, , volatile void *, , , __cosim_s1__*);
+extern "C" void apatb_crc24a_hw(volatile void * __xlx_apatb_param_input_V_data_V, volatile void * __xlx_apatb_param_input_V_keep_V, volatile void * __xlx_apatb_param_input_V_strb_V, volatile void * __xlx_apatb_param_input_V_last_V, volatile void * __xlx_apatb_param_output_r) {
 using hls::sim::createStream;
-auto* sinput_r = createStream((hls::stream<__cosim_s1__>*)__xlx_apatb_param_input_r);
+auto* sinput_V_data_V = createStream((hls::stream<char>*)__xlx_apatb_param_input_V_data_V);
+auto* sinput_V_keep_V = createStream((hls::stream<char>*)__xlx_apatb_param_input_V_keep_V);
+auto* sinput_V_strb_V = createStream((hls::stream<char>*)__xlx_apatb_param_input_V_strb_V);
+auto* sinput_V_last_V = createStream((hls::stream<char>*)__xlx_apatb_param_input_V_last_V);
   //Create input buffer for output_r
   ap_apatb_output_r_cap_bc = __xlx_output_r_V_size_Reader.read_size();
   __cosim_s1__* __xlx_output_r_input_buffer= new __cosim_s1__[ap_apatb_output_r_cap_bc];
 auto* soutput_r = createStream((hls::stream<__cosim_s1__>*)__xlx_apatb_param_output_r);
   // DUT call
-  crc24a(sinput_r->data<__cosim_s1__>(), soutput_r->data<__cosim_s1__>());
-sinput_r->transfer((hls::stream<__cosim_s1__>*)__xlx_apatb_param_input_r);
+  crc24a(sinput_V_data_V->data<char>(), sinput_V_keep_V->data<char>(), sinput_V_strb_V->data<char>(), sinput_V_last_V->data<char>(), soutput_r->data<__cosim_s1__>());
+sinput_V_data_V->transfer((hls::stream<char>*)__xlx_apatb_param_input_V_data_V);
+sinput_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_input_V_keep_V);
+sinput_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_input_V_strb_V);
+s->transfer((hls::stream<char>*)__xlx_apatb_param_);
+sinput_V_last_V->transfer((hls::stream<char>*)__xlx_apatb_param_input_V_last_V);
+s->transfer((hls::stream<char>*)__xlx_apatb_param_);
+s->transfer((hls::stream<char>*)__xlx_apatb_param_);
 soutput_r->transfer((hls::stream<__cosim_s1__>*)__xlx_apatb_param_output_r);
 }

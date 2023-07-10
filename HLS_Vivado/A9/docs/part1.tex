@@ -1,12 +1,19 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{hyperref}
 \graphicspath{{./figs/}}{}
 \usepackage{listings}
 \title{
-HLS-Assignment 9 PART-1
+HLS-Assignment 9 (PART-1) 
 }
 \begin{document}
 \maketitle
@@ -16,224 +23,192 @@ HLS-Assignment 9 PART-1
 \hfill \textbf{VITIS-HLS}
 \section{Problem Statement}
 \href{run:./problem_statement.pdf} {Problem Statemt}
+\begin{lstlisting}
+Design a digital circuit using RTL and HLS for a 5G NR CRC bits generator.
+
+ Requirements: 
+1. The module should process 8 bits per clock cycle.
+2. The input and output buses should use the AXIS interface.
+3. Implement a pipelined design.
+4. The implementation should use as minimum resources as possible.
+
+ Considerations:
+1. Implement the module only for CRC24A
+2. A last signal should be used to indicate the end of the input bit stream.
+3. The design implementation should be targeted on the ZCU111 FPGA board.
+\end{lstlisting}
 \vspace{1cm}
 \section{Header File}
-\begin{lstlisting}
-//header.h
-#ifndef _HEADER_H_
-#define _HEADER_H_
-
-#include <hls_stream.h>
-#include "ap_int.h"
-using namespace std;
-
-#define N 8      //length of input message
-#define y 25     //length of divisor(parity)
-#define x N+y-1  //length of crc (len of input+divisor-1)
-
-typedef ap_uint<N> data;
-
-
-void crc24a(hls::stream<data>& input, hls::stream<data>& output);
-
-#endif
-
-
-
-\end{lstlisting}
+\vspace{1cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/p1header.png}
+    \caption{header.h}
+    \label{fig:my_label}
+\end{figure}
 
 \vspace{15cm}
-\section{CRC bits Generator Code}
+\section{Crc bits Generator Code}
+\vspace{1cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.1\textwidth]{figs/p1crc.png}
+    \caption{crc.cpp}
+    \label{fig:my_label}
+\end{figure}
+\vspace{1cm}
+\section{Design Choices}
 \begin{lstlisting}
-//crc.cpp
-#include "header.h"
 
-void crc24a(hls::stream<data>& input, hls::stream<data>& output) {
+1. I Considered input message of length 8 and I designed the module accordingly.
 
-#pragma HLS INTERFACE mode=axis register_mode=both port=input register
-#pragma HLS INTERFACE mode=axis register_mode=both port=output register
+2. The function takes two parameters: input and output.
 
-	ap_uint<1> crc[x],oput[x];
-    ap_uint<1> divisor[y] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1,
-    1, 1, 1, 1, 0, 1, 1};
-    data o1,o2,o3,o4;
+   input is an AXIS input stream of ap_axiu type with a width of 8 bits and with 
+  a last signal.
+  
+   output is an AXIS output stream of ap_uint<8> type, since last signal
+  is not requested.
 
-// Read input stream and do padding
-    data d = input.read();
-   loop1: for (int i = 0; i < x; i++) {
-#pragma HLS UNROLL
-    	crc[i] = (i < N) ? d(i,i) : 0;
-    	oput[i] = (i < N) ? d(i,i) : 0;
-    }
-   ap_uint<1> last=input.read();
+3. The pragmas specify the interface properties for the function. mode=axis
+  indicates that the function uses an AXI-Stream interface. register_mode=both
+  specifies that both the input and output streams should be implemented using
+  registers.
 
-// Division is performed only when last is high
-   loop2: for (int i = 0; i <= x - y; i++) {
-#pragma HLS PIPELINE II=1
-        if (crc[i] == 1 && last==1) {
-          loop3:  for (int j = 0; j < y; j++) {
-        	  int k=i+j;
-#pragma HLS UNROLL
-                crc[k] = crc[k] ^ divisor[j];
-            }
-        }
-    }
+4. divisor is an array of ap_uint<1> type with a size of 25(crc24a).
 
-// Write the result to output stream c
+   crc and oput are arrays of ap_uint<1> type with a size of 
+  x(input length + divisor length - 1). crc array is used for crc computation 
+  and oput array is used to stream output data along with input message.
+  
+   o is a variable of type ap_uint<8> which is used for storing of output data 
+  and then streaming accordingly.
+  
+   d is a variable of type ap_uint<8> which reads input data. Since I had only
+  8 bits input data I read it only once.
 
-   loop4:for (int i = 0; i < x; i++) {
-#pragma HLS UNROLL
-	   oput[i] = crc[i] ^ oput[i];
-       if (i < N) {
-           o1(i, i) = oput[i];
-       }else if (i < N * 2){
-           o2(i % N, i % N) = oput[i];
-       } else if (i < N * 3) {
-           o3(i % N, i % N) = oput[i];
-       } else {
-           o4(i % N, i % N) = oput[i];
-       }
-   }
+5. loop1 initializes values to the crc and oput arrays based on the data present
+  in d(from the input stream). It copies the i-th bit of d.data to crc[i] and
+  oput[i] and it assigns all other indexes to zero. 
+  
+    The loop is unrolled to improve the efficiency of copying bits from d.data
+  to crc and oput arrays. Unrolling eliminates loop control overhead and allows 
+  multiple assignments to be performed in parallel.
+  
+6. loop2 and loop3 performs the division operation for the CRC algorithm.
+  It checks if the i-th bit of crc is 1 and if d.last is also 1 (indicating 
+  it is the last element of the input stream). If both conditions are satisfied,
+  it performs the XOR operation between crc[k] and divisor[j] and stores the 
+  result in crc[k] , where k iterates from i to i+y-1. At the end of loop3 crc 
+  array is loaded with crc computed values(remainder) of input message and divisor.
+  
+   For the loop2 the #pragma HLS PIPELINE II=1 directive is used to pipeline the 
+  loop iterations. By applying pipelining, the tool can overlap the execution of 
+  consecutive iterations, allowing the operations within the loop to be executed 
+  concurrently. This can result in increased throughput.
+  
+   Additionally, the #pragma HLS UNROLL directive is used for loop3. It  
+  instructs the tool to unroll the inner loop completely and multiple loop 
+  iterations are executed in parallel, which can further improve parallelism and 
+  increase performance.
 
-   output.write(o1);
-   output.write(o2);
-   output.write(o3);
-   output.write(o4);
-}
+7. loop4 performs the final XOR operation between crc(has crc computation 
+  output) and oput(has input message) arrays(since we need the output in form of 
+  input+crcoutput) and updates the o object with the XOR result.
+   The line o(i%N, i%N) = oput[i]; assigns the i-th bit of oput to the 
+   corresponding position in o. Finally, if the current index i is a multiple of
+   8 (i.e., i%N == 7), it writes the o object to the output stream.
 
-\end{lstlisting}
-\vspace{2cm}
+   This loop performs the final XOR operation between crc and oput arrays and 
+  updates the variable o. Unrolling the loop helps increase parallelism and 
+  pipeline the operations for better performance.
 
-\section{Test Bench Code}
-\begin{lstlisting}
-//crc_tb.cpp
-#include "header.h"
-#include <vector>
-int main() {
-    hls::stream<data> a,b;
-    data w;
-    ap_uint<1> last;
-
-      w=0b00010110;                                               //msbtolsb
-
-          /* ap_uint<1> dividend[8] = {0, 1, 1, 0, 1, 0, 0, 0};   //lsbtomsb
-   	       for (int i = 0; i < 8; i++) {
-
-   	              w(i,i) = dividend[i];
-
-   	              }
-   	      */
-          last=1;
-   	       a.write(w);
-   	       a.write(last);
-
-
-
-
-// Perform binary divison
-    crc24a(a, b);
-
-// Read the result from the output stream
-    vector<ap_uint<1>> p;
-    cout << "CRC generator output : ";
-    while(!b.empty()){
-          data d = b.read();
-         for (int i = 0; i < N ; i++) {
-          	cout<< d(i,i);
-          	p.push_back(d(i,i));
-          }
-       }
-       cout<<endl;
-
-// Checking if output is valid or not
-           bool flag=0;
-           ap_uint<1> divisor[y] = {1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 0,
-           0, 1, 1, 1, 1, 1, 0, 1, 1};
-
-
-       //Output is valid only when remainder divison of output with divisor is 0
-           for (int i = 0; i <= x - y; i++) {
-               if (p[i] == 1) {
-                   for (int j = 0; j < y; j++) {
-                       p[i + j] = p[i+j] ^ divisor[j];
-                   }
-               }
-           }
-           cout<<"CRC detector output :  ";
-           for (int i = 0; i < 32; i++) {
-           	cout<<p[i];
-               if (p[i]==1){
-               	flag=1;
-               }
-           }
-            cout<<endl;
-           if ( flag==0) {
-                      cout << "!PASS!CRC Check at detector is Success" << endl;
-                  }
-           else {
-                      cout << "!ERROR!CRC Check at detector has Failed" << endl;
-                  }
-    return 0;
-}
+8. Overall, this code reads an input stream of AXI-Stream elements and performs
+  the CRC-24 algorithm on the data, and writes the result to the output stream.
 
 \end{lstlisting}
 \vspace{13cm}
 
+\section{Testbench Code}
+\vspace{1cm}
+\begin{figure}[h]
+\centering
+\begin{subfigure}[b]{\textwidth}
+    \centering
+\includegraphics[width=1.1\textwidth]{figs/p1crc_tb1.png}
+    \label{fig:my_label}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{\textwidth}
+    \centering
+\includegraphics[width=1.1\textwidth]{figs/p1crc_tb2.png}
+    \caption{crctb.cpp}
+    \label{fig:my_label}
+\end{subfigure}
+\end{figure}
+\vspace{10cm}
 
 \section{C simulation Output}
-\begin{lstlisting}
-INFO: [SIM 2] *************** CSIM start ***************
-INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../codes/crc_tb.cpp in debug mode
-   Generating csim.exe
-CRC generator output : 01101000101101001111001100000010
-CRC detector output :  00000000000000000000000000000000
-!PASS!CRC Check at detector is Success
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the
-design is 4
-INFO: [SIM 1] CSim done with 0 errors.
-INFO: [SIM 3] *************** CSIM finish ***************
 
-
-
-
-\end{lstlisting}
-\vspace{15cm}
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.1\textwidth]{figs/p1csim.png}
+    \caption{C Simulation Output}
+    \label{fig:my_label}
+\end{figure}
+\vspace{1cm}
 
 \section{HLS Resource Consumption Report}
 \vspace{1cm}
 \begin{figure}[h]
 \centering
-\includegraphics[width=\textwidth]{figs/p11.png}
+\includegraphics[width=0.8\textwidth]{figs/p11.png}
     \caption{Resource Consumption}
     \label{fig:my_label}
 \end{figure}
 
-\vspace{13cm}
+\vspace{12cm}
 
 
 \section{HLS Timing and Fmax Report}
 \vspace{1cm}
 \begin{figure}[h]
     \centering
-\includegraphics[width=1.4\textwidth]{figs/p12.png}
+\includegraphics[width=1.1\textwidth]{figs/p12.png}
     \caption{Timing and Fmax}
     \label{fig:my_label}
 \end{figure}
 
-\vspace{15cm}
+\vspace{1cm}
 
 
 \section{CoSimulation Report}
 \vspace{1cm}
 \begin{figure}[h]
     \centering
-\includegraphics[width=1.4\textwidth]{figs/p13.png}
+\includegraphics[width=1.1\textwidth]{figs/p13.png}
     \caption{Cosimulation}
     \label{fig:my_label}
 \end{figure}
 
 \vspace{15cm}
+
+
+\section{Performance Evaluation}
+\begin{lstlisting}
+
+After synthesis source code has :
+  1. Execution Time:          12.65 seconds
+  2. Latency:                 16 
+  3. Resource Utilization:    87 FF & 875 LUT
+  4. Memory Usage:            76.434 MB
+  5. Fmax:                    290.36 MHz
+  6. Iteration Interval:      17
+  7. Throughput:              0.632
+ 
+
+\end{lstlisting}
+\vspace{1cm}
 
 
 \maketitle
@@ -246,9 +221,11 @@ INFO: [SIM 3] *************** CSIM finish ***************
     \caption{Block Diagram}
     \label{fig:my_label}
 \end{figure}
-\vspace{3cm}
+\vspace{13cm}
+
 \section{Verilog Testbench}
 \begin{lstlisting}
+
 //testbench.v
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
@@ -274,77 +251,57 @@ INFO: [SIM 3] *************** CSIM finish ***************
 
 module testbench();
         reg ap_clk_0;
-        reg ap_rst_n_0;
-        always #5 ap_clk_0=~ap_clk_0;
-        
+        reg ap_rst_n_0;         
         reg [7:0] ip;
+        reg input_r_TLAST_0;  
         wire [7:0] op;
         wire output_r_TVALID_0;
-       
+        
+        
+   design_1_wrapper uut(.ap_clk_0(ap_clk_0),.input_r_TLAST_0(input_r_TLAST_0),
+   .ap_rst_n_0(ap_rst_n_0),.input_r_TDATA_0(ip),.output_r_TDATA_0(op),
+   .output_r_TVALID_0(output_r_TVALID_0));
+    
+        always #5 ap_clk_0=~ap_clk_0;
+        
         initial begin
         ap_clk_0=0;ap_rst_n_0=0;
         #10
         ap_rst_n_0=1;
         #10
         ip=8'b00010110;//ascii "h"
-        #10
-        ip=8'b00000001;
-        #200
+        input_r_TLAST_0=1;
+        #180
         $finish;
         end
-      design_1_wrapper uut(.ap_clk_0(ap_clk_0), .ap_rst_n_0(ap_rst_n_0),
-      .input_r_TDATA_0(ip),.output_r_TDATA_0(op),
-      .output_r_TVALID_0(output_r_TVALID_0));
-    
+      
     
 endmodule
 
 \end{lstlisting}
 
-\vspace{3cm}
+\vspace{13cm}
 
 
 \section{Output Waveform}
 \vspace{1cm}
 \begin{figure}[h]
 \centering
-\begin{subfigure}[b]{1.1\textwidth}
+\begin{subfigure}[b]{0.8\textwidth}
     \centering
 \includegraphics[width=\textwidth]{figs/p1wavfull.png}
     \caption{Output of IP}
     \label{fig:my_label}
 \end{subfigure}
 \hfill
-\begin{subfigure}[b]{1.1\textwidth}
+\begin{subfigure}[b]{0.8\textwidth}
     \centering
 \includegraphics[width=\textwidth]{figs/p1wav.png}
     \caption{Zoomed format of above figure}
     \label{fig:my_label}
 \end{subfigure}
 \end{figure}
-\vspace{13cm}
 
-\section{Design Choices}
-\begin{lstlisting}
-
-1. Initially I had designed the code with input message stream of unknown length 
-up to a maximum of 1024,whenever input stream reads a value of 1, until then all
-values are stored in a array and then binary division takes place.(code is 
-uploaded in github named dummy.cpp is in codes folder along with all other codes)
-
-2. This code compiles successfully, but while synthesis it gives an error
-"unsupported memory access on variable 'vla211' which is (or contains) an array
-with unknown size at compile time".
-
-3. Since hls does not support dynamic memory allocation and arrays should be of
-fixed length so Initally I took input message length as a fixed variable with 8
-bits and continued with the problem accordingly.
-
-4. By using above aspects in point3 I designed the cyclic redundancy check
-generator module in HLS.
-
-\end{lstlisting}
-\vspace{1cm}
 
 \end{document}
 

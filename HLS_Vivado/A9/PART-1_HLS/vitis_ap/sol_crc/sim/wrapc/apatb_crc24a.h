@@ -5,5 +5,5 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_crc24a (
-hls::stream<int > input_r,
+hls::stream<struct ap_axis<32, 0, 0, 0 > > (&input_r),
 hls::stream<int > output_r);

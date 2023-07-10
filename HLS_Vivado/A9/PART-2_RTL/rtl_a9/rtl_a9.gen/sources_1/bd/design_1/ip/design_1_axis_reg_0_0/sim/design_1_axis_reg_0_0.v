@@ -59,6 +59,7 @@ module design_1_axis_reg_0_0 (
   reset_n,
   s_tdata,
   s_tvalid,
+  s_tlast,
   s_tready,
   m_tdata,
   m_tvalid,
@@ -75,7 +76,9 @@ input wire reset_n;
 input wire [7 : 0] s_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s TVALID" *)
 input wire s_tvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s TLAST" *)
+input wire s_tlast;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_1_clk_0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s TREADY" *)
 output wire s_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m TDATA" *)
@@ -87,13 +90,13 @@ output wire m_tvalid;
 input wire m_tready;
 
   axis_reg #(
-    .DW_IN(8),
-    .DW_OUT(32)
+    .N(8)
   ) inst (
     .clk(clk),
     .reset_n(reset_n),
     .s_tdata(s_tdata),
     .s_tvalid(s_tvalid),
+    .s_tlast(s_tlast),
     .s_tready(s_tready),
     .m_tdata(m_tdata),
     .m_tvalid(m_tvalid),

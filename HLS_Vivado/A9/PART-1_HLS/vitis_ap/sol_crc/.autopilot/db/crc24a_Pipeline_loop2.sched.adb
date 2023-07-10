@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>769623408</coreId>
+						<coreId>3655641280</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>769636720</coreId>
+						<coreId>3655654592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -286,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784595008</coreId>
+						<coreId>772462918</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -304,7 +304,7 @@
 					<Obj>
 						<type>1</type>
 						<id>9</id>
-						<name>last</name>
+						<name>tmp_last_V</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -322,7 +322,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784539792</coreId>
+						<coreId>772732487</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -358,7 +358,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>461</coreId>
+						<coreId>3669706848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -394,7 +394,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>192</coreId>
+						<coreId>771866321</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -430,7 +430,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784544912</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -466,7 +466,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784582800</coreId>
+						<coreId>540697965</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -502,7 +502,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784558656</coreId>
+						<coreId>517</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -538,7 +538,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3591448268</coreId>
+						<coreId>771869060</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -574,7 +574,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784537872</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -610,7 +610,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>192</coreId>
+						<coreId>3670827104</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -646,7 +646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>769753104</coreId>
+						<coreId>3670841264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -682,7 +682,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784523968</coreId>
+						<coreId>7</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -718,7 +718,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3591378223</coreId>
+						<coreId>3669706848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -754,7 +754,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3670851776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -790,7 +790,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3591471254</coreId>
+						<coreId>3670809184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -826,7 +826,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3669706848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -862,7 +862,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784555072</coreId>
+						<coreId>772170752</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -898,7 +898,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784573856</coreId>
+						<coreId>3670853040</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -934,7 +934,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>783405168</coreId>
+						<coreId>3670808448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -970,7 +970,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>114</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1006,7 +1006,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3670794672</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1042,7 +1042,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3591472502</coreId>
+						<coreId>256</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1078,7 +1078,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784555520</coreId>
+						<coreId>3670850864</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1114,7 +1114,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>769640048</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1150,7 +1150,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784544000</coreId>
+						<coreId>3670804272</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1186,7 +1186,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784544504</coreId>
+						<coreId>1330007625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1222,7 +1222,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>3670276376</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1258,7 +1258,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>783405168</coreId>
+						<coreId>771855027</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1294,7 +1294,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>3669818000</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1330,7 +1330,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>769679936</coreId>
+						<coreId>840979276</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1366,7 +1366,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1414419794</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1402,7 +1402,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>783405168</coreId>
+						<coreId>3670763208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1438,7 +1438,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784588032</coreId>
+						<coreId>771856006</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1474,7 +1474,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784521008</coreId>
+						<coreId>3670763968</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1538,7 +1538,7 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>last_read</name>
+						<name>tmp_last_V_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1599,7 +1599,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>148003814</coreId>
+						<coreId>1679850272</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1642,7 +1642,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>746013040</coreId>
+						<coreId>3626999824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1685,7 +1685,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3567472681</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1728,7 +1728,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1679850272</coreId>
+						<coreId>772166480</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1771,7 +1771,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1814,7 +1814,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784525552</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1857,7 +1857,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394531</coreId>
+						<coreId>3670815776</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1900,7 +1900,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784546848</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1943,7 +1943,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>304</coreId>
+						<coreId>3670805472</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1986,7 +1986,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784571568</coreId>
+						<coreId>771864353</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2028,7 +2028,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784572152</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2073,7 +2073,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784595360</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2118,7 +2118,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>304</coreId>
+						<coreId>3670794672</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2163,7 +2163,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784589296</coreId>
+						<coreId>320</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2208,7 +2208,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784589880</coreId>
+						<coreId>3670812672</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2253,7 +2253,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>320</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2298,7 +2298,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784563664</coreId>
+						<coreId>3670814224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2343,7 +2343,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3670841568</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2388,7 +2388,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3591485859</coreId>
+						<coreId>3670759792</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2433,7 +2433,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>3670846240</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2478,7 +2478,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784529184</coreId>
+						<coreId>3670845176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2523,7 +2523,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784532952</coreId>
+						<coreId>3670759792</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2568,7 +2568,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784533856</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2613,7 +2613,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784532792</coreId>
+						<coreId>3670846656</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2658,7 +2658,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784533384</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2703,7 +2703,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>771824747</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2748,7 +2748,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>240</coreId>
+						<coreId>3670792656</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2793,7 +2793,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3670782024</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2838,7 +2838,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3591382652</coreId>
+						<coreId>3670781168</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2883,7 +2883,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>155</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2928,7 +2928,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784518736</coreId>
+						<coreId>3670782304</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2973,7 +2973,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3591386429</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3018,7 +3018,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>3670782160</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3063,7 +3063,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>224</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3108,7 +3108,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784520704</coreId>
+						<coreId>3670832816</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3153,7 +3153,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>3670785936</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3243,7 +3243,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784595008</coreId>
+						<coreId>3669786512</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3288,7 +3288,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>960</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3333,7 +3333,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784608928</coreId>
+						<coreId>3670809568</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3378,7 +3378,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784609944</coreId>
+						<coreId>176</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3423,7 +3423,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784610304</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3482,7 +3482,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784590336</coreId>
+						<coreId>3669706848</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -3507,10 +3507,10 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>icmp_ln22</name>
+						<name>icmp_ln21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -3526,7 +3526,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>22</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -3539,7 +3539,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3655654592</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3564,10 +3564,10 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>add_ln22</name>
+						<name>add_ln21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -3583,7 +3583,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>22</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -3596,7 +3596,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>32</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -3621,10 +3621,10 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>br_ln22</name>
+						<name>br_ln21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -3640,7 +3640,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>22</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -3653,7 +3653,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>265</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -3711,7 +3711,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1153</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -3800,10 +3800,10 @@
 					<Obj>
 						<type>0</type>
 						<id>97</id>
-						<name>and_ln24</name>
+						<name>and_ln23</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -3819,7 +3819,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>24</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -3832,7 +3832,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>798</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3889,7 +3889,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3946,7 +3946,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>786</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4117,7 +4117,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858</coreId>
+						<coreId>16843009</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4174,7 +4174,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>244</coreId>
+						<coreId>164</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4231,7 +4231,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>440</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4288,7 +4288,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>724</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4345,7 +4345,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1000</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4402,7 +4402,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834512688</coreId>
+						<coreId>1276</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4459,7 +4459,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834512688</coreId>
+						<coreId>1576</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4516,7 +4516,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834512688</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4630,7 +4630,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3834512688</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4687,7 +4687,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>16843009</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4744,7 +4744,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>16843009</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4801,7 +4801,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>204</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4858,7 +4858,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>504</coreId>
+						<coreId>16843009</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4883,10 +4883,10 @@
 					<Obj>
 						<type>0</type>
 						<id>116</id>
-						<name>icmp_ln28</name>
+						<name>icmp_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -4902,7 +4902,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -4915,7 +4915,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>804</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4940,10 +4940,10 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>icmp_ln28_1</name>
+						<name>icmp_ln27_1</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -4959,7 +4959,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -4972,7 +4972,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>952</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4997,10 +4997,10 @@
 					<Obj>
 						<type>0</type>
 						<id>118</id>
-						<name>icmp_ln28_2</name>
+						<name>icmp_ln27_2</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5016,7 +5016,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5029,7 +5029,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>783884288</coreId>
+						<coreId>2147483647</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5054,10 +5054,10 @@
 					<Obj>
 						<type>0</type>
 						<id>119</id>
-						<name>icmp_ln28_3</name>
+						<name>icmp_ln27_3</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5073,7 +5073,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5086,7 +5086,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2147483647</coreId>
+						<coreId>66</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5111,10 +5111,10 @@
 					<Obj>
 						<type>0</type>
 						<id>120</id>
-						<name>icmp_ln28_4</name>
+						<name>icmp_ln27_4</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5130,7 +5130,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5143,7 +5143,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>66</coreId>
+						<coreId>262</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5168,10 +5168,10 @@
 					<Obj>
 						<type>0</type>
 						<id>121</id>
-						<name>icmp_ln28_5</name>
+						<name>icmp_ln27_5</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5187,7 +5187,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5200,7 +5200,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>262</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5225,10 +5225,10 @@
 					<Obj>
 						<type>0</type>
 						<id>122</id>
-						<name>icmp_ln28_6</name>
+						<name>icmp_ln27_6</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5244,7 +5244,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5282,10 +5282,10 @@
 					<Obj>
 						<type>0</type>
 						<id>123</id>
-						<name>xor_ln24</name>
+						<name>xor_ln23</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>24</lineNumber>
+						<lineNumber>23</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5301,7 +5301,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>24</second>
+										<second>23</second>
 									</item>
 								</second>
 							</item>
@@ -5339,10 +5339,10 @@
 					<Obj>
 						<type>0</type>
 						<id>124</id>
-						<name>or_ln28</name>
+						<name>or_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5358,7 +5358,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5396,10 +5396,10 @@
 					<Obj>
 						<type>0</type>
 						<id>125</id>
-						<name>or_ln28_1</name>
+						<name>or_ln27_1</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5415,7 +5415,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5453,10 +5453,10 @@
 					<Obj>
 						<type>0</type>
 						<id>126</id>
-						<name>or_ln28_2</name>
+						<name>or_ln27_2</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5472,7 +5472,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5510,10 +5510,10 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>or_ln28_3</name>
+						<name>or_ln27_3</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5529,7 +5529,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5567,10 +5567,10 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>or_ln28_4</name>
+						<name>or_ln27_4</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5586,7 +5586,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5624,10 +5624,10 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>or_ln28_5</name>
+						<name>or_ln27_5</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5643,7 +5643,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5681,10 +5681,10 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>or_ln28_6</name>
+						<name>or_ln27_6</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5700,7 +5700,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5713,7 +5713,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>33620225</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5738,10 +5738,10 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>xor_ln28</name>
+						<name>xor_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5757,7 +5757,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5770,7 +5770,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1578</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5798,7 +5798,7 @@
 						<name>crc_V_69</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5814,7 +5814,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5827,7 +5827,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>709</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5852,10 +5852,10 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>xor_ln28_2</name>
+						<name>xor_ln27_2</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5871,7 +5871,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5884,7 +5884,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1598</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5909,10 +5909,10 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>and_ln28</name>
+						<name>and_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5928,7 +5928,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5941,7 +5941,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>960</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5966,10 +5966,10 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>or_ln28_7</name>
+						<name>or_ln27_7</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -5985,7 +5985,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -5998,7 +5998,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1241</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6026,7 +6026,7 @@
 						<name>crc_V_38</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6042,7 +6042,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6055,7 +6055,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>131</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6080,10 +6080,10 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>and_ln28_1</name>
+						<name>and_ln27_1</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6099,7 +6099,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6112,7 +6112,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>524</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6137,10 +6137,10 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>select_ln28</name>
+						<name>select_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6156,7 +6156,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6169,7 +6169,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>381</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6198,7 +6198,7 @@
 						<name>crc_V_68</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6214,7 +6214,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6227,7 +6227,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1311</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6253,10 +6253,10 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>or_ln28_8</name>
+						<name>or_ln27_8</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6272,7 +6272,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6285,7 +6285,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>726</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6310,10 +6310,10 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>xor_ln28_4</name>
+						<name>xor_ln27_4</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6329,7 +6329,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6342,7 +6342,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>576</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6370,7 +6370,7 @@
 						<name>crc_V_67</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6386,7 +6386,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6399,7 +6399,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>507</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6424,10 +6424,10 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>or_ln28_9</name>
+						<name>or_ln27_9</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6443,7 +6443,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6456,7 +6456,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1303</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6481,10 +6481,10 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>xor_ln28_6</name>
+						<name>xor_ln27_6</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6500,7 +6500,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6513,7 +6513,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1043</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6538,10 +6538,10 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>and_ln28_2</name>
+						<name>and_ln27_2</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6557,7 +6557,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6570,7 +6570,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1338</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6595,10 +6595,10 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>and_ln28_3</name>
+						<name>and_ln27_3</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6614,7 +6614,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6627,7 +6627,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>852</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6652,10 +6652,10 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>or_ln28_10</name>
+						<name>or_ln27_10</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6671,7 +6671,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6684,7 +6684,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>884</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6709,10 +6709,10 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>or_ln28_11</name>
+						<name>or_ln27_11</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6728,7 +6728,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6766,10 +6766,10 @@
 					<Obj>
 						<type>0</type>
 						<id>149</id>
-						<name>or_ln28_12</name>
+						<name>or_ln27_12</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6785,7 +6785,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6826,7 +6826,7 @@
 						<name>crc_V_66</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6842,7 +6842,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6880,10 +6880,10 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>or_ln28_13</name>
+						<name>or_ln27_13</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6899,7 +6899,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6912,7 +6912,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6937,10 +6937,10 @@
 					<Obj>
 						<type>0</type>
 						<id>152</id>
-						<name>xor_ln28_8</name>
+						<name>xor_ln27_8</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -6956,7 +6956,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -6969,7 +6969,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3326044860</coreId>
+						<coreId>53</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6994,10 +6994,10 @@
 					<Obj>
 						<type>0</type>
 						<id>153</id>
-						<name>and_ln28_4</name>
+						<name>and_ln27_4</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7013,7 +7013,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7026,7 +7026,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2847196381</coreId>
+						<coreId>249</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7051,10 +7051,10 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>or_ln28_14</name>
+						<name>or_ln27_14</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7070,7 +7070,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7083,7 +7083,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>758</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7108,10 +7108,10 @@
 					<Obj>
 						<type>0</type>
 						<id>155</id>
-						<name>or_ln28_15</name>
+						<name>or_ln27_15</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7127,7 +7127,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7140,7 +7140,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>567</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7165,10 +7165,10 @@
 					<Obj>
 						<type>0</type>
 						<id>156</id>
-						<name>or_ln28_16</name>
+						<name>or_ln27_16</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7184,7 +7184,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7197,7 +7197,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>5</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7225,7 +7225,7 @@
 						<name>crc_V_65</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7241,7 +7241,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7279,10 +7279,10 @@
 					<Obj>
 						<type>0</type>
 						<id>158</id>
-						<name>or_ln28_17</name>
+						<name>or_ln27_17</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7298,7 +7298,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7311,7 +7311,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>477</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7336,10 +7336,10 @@
 					<Obj>
 						<type>0</type>
 						<id>159</id>
-						<name>xor_ln28_10</name>
+						<name>xor_ln27_10</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7355,7 +7355,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7368,7 +7368,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>713</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7393,10 +7393,10 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>and_ln28_5</name>
+						<name>and_ln27_5</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7412,7 +7412,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7425,7 +7425,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>736</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7450,10 +7450,10 @@
 					<Obj>
 						<type>0</type>
 						<id>161</id>
-						<name>or_ln28_18</name>
+						<name>or_ln27_18</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7469,7 +7469,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7482,7 +7482,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>179</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7507,10 +7507,10 @@
 					<Obj>
 						<type>0</type>
 						<id>162</id>
-						<name>or_ln28_19</name>
+						<name>or_ln27_19</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7526,7 +7526,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7539,7 +7539,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>415</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7564,10 +7564,10 @@
 					<Obj>
 						<type>0</type>
 						<id>163</id>
-						<name>or_ln28_20</name>
+						<name>or_ln27_20</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7583,7 +7583,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7596,7 +7596,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>651</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7624,7 +7624,7 @@
 						<name>crc_V_64</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7640,7 +7640,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7653,7 +7653,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>887</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7678,10 +7678,10 @@
 					<Obj>
 						<type>0</type>
 						<id>165</id>
-						<name>icmp_ln28_7</name>
+						<name>icmp_ln27_7</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7697,7 +7697,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7735,10 +7735,10 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>and_ln28_6</name>
+						<name>and_ln27_6</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7754,7 +7754,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7795,7 +7795,7 @@
 						<name>crc_V_63</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7811,7 +7811,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7849,10 +7849,10 @@
 					<Obj>
 						<type>0</type>
 						<id>168</id>
-						<name>and_ln28_7</name>
+						<name>and_ln27_7</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7868,7 +7868,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7881,7 +7881,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7906,10 +7906,10 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
-						<name>or_ln28_21</name>
+						<name>or_ln27_21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7925,7 +7925,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7938,7 +7938,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -7963,10 +7963,10 @@
 					<Obj>
 						<type>0</type>
 						<id>170</id>
-						<name>or_ln28_22</name>
+						<name>or_ln27_22</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -7982,7 +7982,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -7995,7 +7995,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8020,10 +8020,10 @@
 					<Obj>
 						<type>0</type>
 						<id>171</id>
-						<name>or_ln28_23</name>
+						<name>or_ln27_23</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8039,7 +8039,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8052,7 +8052,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8077,10 +8077,10 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>or_ln28_24</name>
+						<name>or_ln27_24</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8096,7 +8096,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8109,7 +8109,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8134,10 +8134,10 @@
 					<Obj>
 						<type>0</type>
 						<id>173</id>
-						<name>select_ln28_2</name>
+						<name>select_ln27_2</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8153,7 +8153,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8166,7 +8166,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>115</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8195,7 +8195,7 @@
 						<name>crc_V_62</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8211,7 +8211,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8224,7 +8224,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>398</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8250,10 +8250,10 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>or_ln28_25</name>
+						<name>or_ln27_25</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8269,7 +8269,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8282,7 +8282,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>773</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8307,10 +8307,10 @@
 					<Obj>
 						<type>0</type>
 						<id>176</id>
-						<name>or_ln28_26</name>
+						<name>or_ln27_26</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8326,7 +8326,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8364,10 +8364,10 @@
 					<Obj>
 						<type>0</type>
 						<id>177</id>
-						<name>select_ln28_4</name>
+						<name>select_ln27_4</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8383,7 +8383,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8422,10 +8422,10 @@
 					<Obj>
 						<type>0</type>
 						<id>178</id>
-						<name>or_ln28_27</name>
+						<name>or_ln27_27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8441,7 +8441,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8454,7 +8454,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784714024</coreId>
+						<coreId>586</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8482,7 +8482,7 @@
 						<name>crc_V_61</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8498,7 +8498,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8537,10 +8537,10 @@
 					<Obj>
 						<type>0</type>
 						<id>180</id>
-						<name>or_ln28_28</name>
+						<name>or_ln27_28</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8556,7 +8556,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8594,10 +8594,10 @@
 					<Obj>
 						<type>0</type>
 						<id>181</id>
-						<name>or_ln28_29</name>
+						<name>or_ln27_29</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8613,7 +8613,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8651,10 +8651,10 @@
 					<Obj>
 						<type>0</type>
 						<id>182</id>
-						<name>xor_ln28_13</name>
+						<name>xor_ln27_13</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8670,7 +8670,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8708,10 +8708,10 @@
 					<Obj>
 						<type>0</type>
 						<id>183</id>
-						<name>or_ln28_30</name>
+						<name>or_ln27_30</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8727,7 +8727,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8740,7 +8740,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1089</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8765,10 +8765,10 @@
 					<Obj>
 						<type>0</type>
 						<id>184</id>
-						<name>or_ln28_31</name>
+						<name>or_ln27_31</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8784,7 +8784,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8797,7 +8797,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1341</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8822,10 +8822,10 @@
 					<Obj>
 						<type>0</type>
 						<id>185</id>
-						<name>or_ln28_32</name>
+						<name>or_ln27_32</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8841,7 +8841,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8854,7 +8854,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1593</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8879,10 +8879,10 @@
 					<Obj>
 						<type>0</type>
 						<id>186</id>
-						<name>or_ln28_33</name>
+						<name>or_ln27_33</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8898,7 +8898,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8911,7 +8911,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1843</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8936,10 +8936,10 @@
 					<Obj>
 						<type>0</type>
 						<id>187</id>
-						<name>or_ln28_34</name>
+						<name>or_ln27_34</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -8955,7 +8955,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -8968,7 +8968,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2097</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -8996,7 +8996,7 @@
 						<name>crc_V_60</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9012,7 +9012,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9025,7 +9025,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4228300630</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9050,10 +9050,10 @@
 					<Obj>
 						<type>0</type>
 						<id>189</id>
-						<name>or_ln28_35</name>
+						<name>or_ln27_35</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9069,7 +9069,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9082,7 +9082,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2601</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9107,10 +9107,10 @@
 					<Obj>
 						<type>0</type>
 						<id>190</id>
-						<name>or_ln28_36</name>
+						<name>or_ln27_36</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9126,7 +9126,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9139,7 +9139,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2851</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9164,10 +9164,10 @@
 					<Obj>
 						<type>0</type>
 						<id>191</id>
-						<name>xor_ln28_15</name>
+						<name>xor_ln27_15</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9183,7 +9183,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9196,7 +9196,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>2200</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9221,10 +9221,10 @@
 					<Obj>
 						<type>0</type>
 						<id>192</id>
-						<name>or_ln28_37</name>
+						<name>or_ln27_37</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9240,7 +9240,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9253,7 +9253,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1322</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9278,10 +9278,10 @@
 					<Obj>
 						<type>0</type>
 						<id>193</id>
-						<name>or_ln28_38</name>
+						<name>or_ln27_38</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9297,7 +9297,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9310,7 +9310,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3502</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9335,10 +9335,10 @@
 					<Obj>
 						<type>0</type>
 						<id>194</id>
-						<name>or_ln28_39</name>
+						<name>or_ln27_39</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9354,7 +9354,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9367,7 +9367,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3861</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9392,10 +9392,10 @@
 					<Obj>
 						<type>0</type>
 						<id>195</id>
-						<name>or_ln28_40</name>
+						<name>or_ln27_40</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9411,7 +9411,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9424,7 +9424,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4113</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9452,7 +9452,7 @@
 						<name>crc_V_59</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9468,7 +9468,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9481,7 +9481,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4365</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9506,10 +9506,10 @@
 					<Obj>
 						<type>0</type>
 						<id>197</id>
-						<name>select_ln28_6</name>
+						<name>select_ln27_6</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9525,7 +9525,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9538,7 +9538,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>464</coreId>
+						<coreId>4617</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9564,10 +9564,10 @@
 					<Obj>
 						<type>0</type>
 						<id>198</id>
-						<name>or_ln28_41</name>
+						<name>or_ln27_41</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9583,7 +9583,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9596,7 +9596,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>207</coreId>
+						<coreId>4869</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9624,7 +9624,7 @@
 						<name>crc_V_58</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9640,7 +9640,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9653,7 +9653,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>459</coreId>
+						<coreId>5121</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9679,10 +9679,10 @@
 					<Obj>
 						<type>0</type>
 						<id>200</id>
-						<name>or_ln28_42</name>
+						<name>or_ln27_42</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9698,7 +9698,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9711,7 +9711,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>711</coreId>
+						<coreId>5373</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9739,7 +9739,7 @@
 						<name>crc_V_57</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9755,7 +9755,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9768,7 +9768,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>5625</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9794,10 +9794,10 @@
 					<Obj>
 						<type>0</type>
 						<id>202</id>
-						<name>or_ln28_43</name>
+						<name>or_ln27_43</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9813,7 +9813,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9826,7 +9826,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>5877</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9851,10 +9851,10 @@
 					<Obj>
 						<type>0</type>
 						<id>203</id>
-						<name>or_ln28_44</name>
+						<name>or_ln27_44</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9870,7 +9870,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9883,7 +9883,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6129</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9908,10 +9908,10 @@
 					<Obj>
 						<type>0</type>
 						<id>204</id>
-						<name>or_ln28_45</name>
+						<name>or_ln27_45</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9927,7 +9927,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9940,7 +9940,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6381</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -9965,10 +9965,10 @@
 					<Obj>
 						<type>0</type>
 						<id>205</id>
-						<name>or_ln28_46</name>
+						<name>or_ln27_46</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -9984,7 +9984,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -9997,7 +9997,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6633</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -10022,10 +10022,10 @@
 					<Obj>
 						<type>0</type>
 						<id>206</id>
-						<name>xor_ln28_17</name>
+						<name>xor_ln27_17</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10041,7 +10041,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10054,7 +10054,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6885</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -10079,10 +10079,10 @@
 					<Obj>
 						<type>0</type>
 						<id>207</id>
-						<name>or_ln28_47</name>
+						<name>or_ln27_47</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10098,7 +10098,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10111,7 +10111,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>7137</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -10136,10 +10136,10 @@
 					<Obj>
 						<type>0</type>
 						<id>208</id>
-						<name>or_ln28_48</name>
+						<name>or_ln27_48</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10155,7 +10155,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10168,7 +10168,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>7389</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -10193,10 +10193,10 @@
 					<Obj>
 						<type>0</type>
 						<id>209</id>
-						<name>or_ln28_49</name>
+						<name>or_ln27_49</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10212,7 +10212,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10253,7 +10253,7 @@
 						<name>crc_V_56</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10269,7 +10269,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10307,10 +10307,10 @@
 					<Obj>
 						<type>0</type>
 						<id>211</id>
-						<name>select_ln28_9</name>
+						<name>select_ln27_9</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10326,7 +10326,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10368,7 +10368,7 @@
 						<name>crc_V_55</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10384,7 +10384,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10423,10 +10423,10 @@
 					<Obj>
 						<type>0</type>
 						<id>213</id>
-						<name>select_ln28_11</name>
+						<name>select_ln27_11</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10442,7 +10442,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10484,7 +10484,7 @@
 						<name>crc_V_54</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10500,7 +10500,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10539,10 +10539,10 @@
 					<Obj>
 						<type>0</type>
 						<id>215</id>
-						<name>or_ln28_50</name>
+						<name>or_ln27_50</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10558,7 +10558,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10596,10 +10596,10 @@
 					<Obj>
 						<type>0</type>
 						<id>216</id>
-						<name>or_ln28_51</name>
+						<name>or_ln27_51</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10615,7 +10615,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10653,10 +10653,10 @@
 					<Obj>
 						<type>0</type>
 						<id>217</id>
-						<name>or_ln28_52</name>
+						<name>or_ln27_52</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10672,7 +10672,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10710,10 +10710,10 @@
 					<Obj>
 						<type>0</type>
 						<id>218</id>
-						<name>xor_ln28_19</name>
+						<name>xor_ln27_19</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10729,7 +10729,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10767,10 +10767,10 @@
 					<Obj>
 						<type>0</type>
 						<id>219</id>
-						<name>or_ln28_53</name>
+						<name>or_ln27_53</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10786,7 +10786,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10824,10 +10824,10 @@
 					<Obj>
 						<type>0</type>
 						<id>220</id>
-						<name>or_ln28_54</name>
+						<name>or_ln27_54</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10843,7 +10843,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10884,7 +10884,7 @@
 						<name>crc_V_53</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10900,7 +10900,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10938,10 +10938,10 @@
 					<Obj>
 						<type>0</type>
 						<id>222</id>
-						<name>or_ln28_55</name>
+						<name>or_ln27_55</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -10957,7 +10957,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -10995,10 +10995,10 @@
 					<Obj>
 						<type>0</type>
 						<id>223</id>
-						<name>xor_ln28_21</name>
+						<name>xor_ln27_21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11014,7 +11014,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11027,7 +11027,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>161</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11052,10 +11052,10 @@
 					<Obj>
 						<type>0</type>
 						<id>224</id>
-						<name>or_ln28_56</name>
+						<name>or_ln27_56</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11071,7 +11071,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11084,7 +11084,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>413</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11109,10 +11109,10 @@
 					<Obj>
 						<type>0</type>
 						<id>225</id>
-						<name>or_ln28_57</name>
+						<name>or_ln27_57</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11128,7 +11128,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11141,7 +11141,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>665</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11169,7 +11169,7 @@
 						<name>crc_V_52</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11185,7 +11185,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11198,7 +11198,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>917</coreId>
+						<coreId>885</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11223,10 +11223,10 @@
 					<Obj>
 						<type>0</type>
 						<id>227</id>
-						<name>select_ln28_13</name>
+						<name>select_ln27_13</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11242,7 +11242,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11255,7 +11255,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1169</coreId>
+						<coreId>836</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11284,7 +11284,7 @@
 						<name>crc_V_51</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11300,7 +11300,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11313,7 +11313,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1421</coreId>
+						<coreId>1273</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11339,10 +11339,10 @@
 					<Obj>
 						<type>0</type>
 						<id>229</id>
-						<name>or_ln28_58</name>
+						<name>or_ln27_58</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11358,7 +11358,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11371,7 +11371,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1673</coreId>
+						<coreId>1323</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11396,10 +11396,10 @@
 					<Obj>
 						<type>0</type>
 						<id>230</id>
-						<name>select_ln28_15</name>
+						<name>select_ln27_15</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11415,7 +11415,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11428,7 +11428,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1923</coreId>
+						<coreId>234</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11457,7 +11457,7 @@
 						<name>crc_V_50</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11473,7 +11473,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11486,7 +11486,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1762</coreId>
+						<coreId>244</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11512,10 +11512,10 @@
 					<Obj>
 						<type>0</type>
 						<id>232</id>
-						<name>select_ln28_17</name>
+						<name>select_ln27_17</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11531,7 +11531,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11544,7 +11544,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2429</coreId>
+						<coreId>1099</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11573,7 +11573,7 @@
 						<name>crc_V_49</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11589,7 +11589,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11602,7 +11602,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4228300630</coreId>
+						<coreId>1502</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11628,10 +11628,10 @@
 					<Obj>
 						<type>0</type>
 						<id>234</id>
-						<name>select_ln28_19</name>
+						<name>select_ln27_19</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11647,7 +11647,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11660,7 +11660,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2931</coreId>
+						<coreId>744</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11689,7 +11689,7 @@
 						<name>crc_V_48</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11705,7 +11705,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11718,7 +11718,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3182</coreId>
+						<coreId>486</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11744,10 +11744,10 @@
 					<Obj>
 						<type>0</type>
 						<id>236</id>
-						<name>or_ln28_59</name>
+						<name>or_ln27_59</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11763,7 +11763,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11776,7 +11776,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3337</coreId>
+						<coreId>445</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11801,10 +11801,10 @@
 					<Obj>
 						<type>0</type>
 						<id>237</id>
-						<name>or_ln28_60</name>
+						<name>or_ln27_60</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11820,7 +11820,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11833,7 +11833,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3637</coreId>
+						<coreId>627</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11858,10 +11858,10 @@
 					<Obj>
 						<type>0</type>
 						<id>238</id>
-						<name>xor_ln28_23</name>
+						<name>xor_ln27_23</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11877,7 +11877,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11890,7 +11890,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3941</coreId>
+						<coreId>1366</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11915,10 +11915,10 @@
 					<Obj>
 						<type>0</type>
 						<id>239</id>
-						<name>or_ln28_61</name>
+						<name>or_ln27_61</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11934,7 +11934,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -11947,7 +11947,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4193</coreId>
+						<coreId>1070</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -11972,10 +11972,10 @@
 					<Obj>
 						<type>0</type>
 						<id>240</id>
-						<name>or_ln28_62</name>
+						<name>or_ln27_62</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -11991,7 +11991,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12004,7 +12004,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4445</coreId>
+						<coreId>864</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12032,7 +12032,7 @@
 						<name>crc_V_47</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12048,7 +12048,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12061,7 +12061,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4697</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12086,10 +12086,10 @@
 					<Obj>
 						<type>0</type>
 						<id>242</id>
-						<name>or_ln28_63</name>
+						<name>or_ln27_63</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12105,7 +12105,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12118,7 +12118,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4949</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12143,10 +12143,10 @@
 					<Obj>
 						<type>0</type>
 						<id>243</id>
-						<name>and_ln28_8</name>
+						<name>and_ln27_8</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12162,7 +12162,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12175,7 +12175,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>5201</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12200,10 +12200,10 @@
 					<Obj>
 						<type>0</type>
 						<id>244</id>
-						<name>select_ln28_21</name>
+						<name>select_ln27_21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12219,7 +12219,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12232,7 +12232,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>5453</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12261,7 +12261,7 @@
 						<name>crc_V_46</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12277,7 +12277,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12290,7 +12290,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>5705</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12316,10 +12316,10 @@
 					<Obj>
 						<type>0</type>
 						<id>246</id>
-						<name>select_ln28_23</name>
+						<name>select_ln27_23</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12335,7 +12335,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12348,7 +12348,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>5957</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12374,10 +12374,10 @@
 					<Obj>
 						<type>0</type>
 						<id>247</id>
-						<name>select_ln28_24</name>
+						<name>select_ln27_24</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12393,7 +12393,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12406,7 +12406,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6209</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12432,10 +12432,10 @@
 					<Obj>
 						<type>0</type>
 						<id>248</id>
-						<name>xor_ln28_25</name>
+						<name>xor_ln27_25</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12451,7 +12451,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12464,7 +12464,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6461</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12492,7 +12492,7 @@
 						<name>crc_V_45</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12508,7 +12508,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12521,7 +12521,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6713</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12546,10 +12546,10 @@
 					<Obj>
 						<type>0</type>
 						<id>250</id>
-						<name>xor_ln28_26</name>
+						<name>xor_ln27_26</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12565,7 +12565,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12578,7 +12578,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>6965</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12603,10 +12603,10 @@
 					<Obj>
 						<type>0</type>
 						<id>251</id>
-						<name>and_ln28_10</name>
+						<name>and_ln27_10</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12622,7 +12622,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12635,7 +12635,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7217</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12663,7 +12663,7 @@
 						<name>crc_V_44</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12679,7 +12679,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12692,7 +12692,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>7469</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -12718,10 +12718,10 @@
 					<Obj>
 						<type>0</type>
 						<id>253</id>
-						<name>xor_ln28_27</name>
+						<name>xor_ln27_27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12737,7 +12737,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12775,10 +12775,10 @@
 					<Obj>
 						<type>0</type>
 						<id>254</id>
-						<name>and_ln28_11</name>
+						<name>and_ln27_11</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12794,7 +12794,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12835,7 +12835,7 @@
 						<name>crc_V_43</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12851,7 +12851,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12890,10 +12890,10 @@
 					<Obj>
 						<type>0</type>
 						<id>256</id>
-						<name>xor_ln28_28</name>
+						<name>xor_ln27_28</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12909,7 +12909,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -12947,10 +12947,10 @@
 					<Obj>
 						<type>0</type>
 						<id>257</id>
-						<name>and_ln28_12</name>
+						<name>and_ln27_12</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -12966,7 +12966,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13007,7 +13007,7 @@
 						<name>crc_V_42</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13023,7 +13023,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13062,10 +13062,10 @@
 					<Obj>
 						<type>0</type>
 						<id>259</id>
-						<name>xor_ln28_29</name>
+						<name>xor_ln27_29</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13081,7 +13081,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13119,10 +13119,10 @@
 					<Obj>
 						<type>0</type>
 						<id>260</id>
-						<name>and_ln28_13</name>
+						<name>and_ln27_13</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13138,7 +13138,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13179,7 +13179,7 @@
 						<name>crc_V_41</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13195,7 +13195,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13234,10 +13234,10 @@
 					<Obj>
 						<type>0</type>
 						<id>262</id>
-						<name>xor_ln28_30</name>
+						<name>xor_ln27_30</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13253,7 +13253,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13291,10 +13291,10 @@
 					<Obj>
 						<type>0</type>
 						<id>263</id>
-						<name>and_ln28_14</name>
+						<name>and_ln27_14</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13310,7 +13310,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13351,7 +13351,7 @@
 						<name>crc_V_40</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13367,7 +13367,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13406,10 +13406,10 @@
 					<Obj>
 						<type>0</type>
 						<id>265</id>
-						<name>xor_ln28_31</name>
+						<name>xor_ln27_31</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13425,7 +13425,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13466,7 +13466,7 @@
 						<name>crc_V_39</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13482,7 +13482,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13495,7 +13495,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>435</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -13520,10 +13520,10 @@
 					<Obj>
 						<type>0</type>
 						<id>267</id>
-						<name>k_write_ln22</name>
+						<name>k_write_ln21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13539,7 +13539,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>22</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -13552,7 +13552,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>687</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -13579,10 +13579,10 @@
 					<Obj>
 						<type>0</type>
 						<id>268</id>
-						<name>br_ln22</name>
+						<name>br_ln21</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>22</lineNumber>
+						<lineNumber>21</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13598,7 +13598,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>22</second>
+										<second>21</second>
 									</item>
 								</second>
 							</item>
@@ -13611,7 +13611,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>917</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -13635,10 +13635,10 @@
 					<Obj>
 						<type>0</type>
 						<id>270</id>
-						<name>crc_V_31_out_write_ln28</name>
+						<name>crc_V_31_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13654,7 +13654,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13667,7 +13667,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>318</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -13693,10 +13693,10 @@
 					<Obj>
 						<type>0</type>
 						<id>271</id>
-						<name>crc_V_98_out_write_ln28</name>
+						<name>crc_V_98_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13712,7 +13712,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13725,7 +13725,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>643</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -13751,10 +13751,10 @@
 					<Obj>
 						<type>0</type>
 						<id>272</id>
-						<name>crc_V_97_out_write_ln28</name>
+						<name>crc_V_97_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13770,7 +13770,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13809,10 +13809,10 @@
 					<Obj>
 						<type>0</type>
 						<id>273</id>
-						<name>crc_V_28_out_write_ln28</name>
+						<name>crc_V_28_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13828,7 +13828,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13841,7 +13841,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>164</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -13867,10 +13867,10 @@
 					<Obj>
 						<type>0</type>
 						<id>274</id>
-						<name>crc_V_96_out_write_ln28</name>
+						<name>crc_V_96_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13886,7 +13886,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13899,7 +13899,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>3650575856</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -13925,10 +13925,10 @@
 					<Obj>
 						<type>0</type>
 						<id>275</id>
-						<name>crc_V_95_out_write_ln28</name>
+						<name>crc_V_95_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -13944,7 +13944,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -13957,7 +13957,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1505</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -13983,10 +13983,10 @@
 					<Obj>
 						<type>0</type>
 						<id>276</id>
-						<name>crc_V_94_out_write_ln28</name>
+						<name>crc_V_94_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14002,7 +14002,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14041,10 +14041,10 @@
 					<Obj>
 						<type>0</type>
 						<id>277</id>
-						<name>crc_V_93_out_write_ln28</name>
+						<name>crc_V_93_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14060,7 +14060,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14073,7 +14073,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>149</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14099,10 +14099,10 @@
 					<Obj>
 						<type>0</type>
 						<id>278</id>
-						<name>crc_V_92_out_write_ln28</name>
+						<name>crc_V_92_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14118,7 +14118,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14131,7 +14131,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>459</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14157,10 +14157,10 @@
 					<Obj>
 						<type>0</type>
 						<id>279</id>
-						<name>crc_V_22_out_write_ln28</name>
+						<name>crc_V_22_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14176,7 +14176,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14189,7 +14189,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>854</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14215,10 +14215,10 @@
 					<Obj>
 						<type>0</type>
 						<id>280</id>
-						<name>crc_V_21_out_write_ln28</name>
+						<name>crc_V_21_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14234,7 +14234,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14247,7 +14247,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14273,10 +14273,10 @@
 					<Obj>
 						<type>0</type>
 						<id>281</id>
-						<name>crc_V_91_out_write_ln28</name>
+						<name>crc_V_91_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14292,7 +14292,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14331,10 +14331,10 @@
 					<Obj>
 						<type>0</type>
 						<id>282</id>
-						<name>crc_V_90_out_write_ln28</name>
+						<name>crc_V_90_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14350,7 +14350,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14363,7 +14363,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14389,10 +14389,10 @@
 					<Obj>
 						<type>0</type>
 						<id>283</id>
-						<name>crc_V_18_out_write_ln28</name>
+						<name>crc_V_18_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14408,7 +14408,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14447,10 +14447,10 @@
 					<Obj>
 						<type>0</type>
 						<id>284</id>
-						<name>crc_V_17_out_write_ln28</name>
+						<name>crc_V_17_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14466,7 +14466,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14505,10 +14505,10 @@
 					<Obj>
 						<type>0</type>
 						<id>285</id>
-						<name>crc_V_89_out_write_ln28</name>
+						<name>crc_V_89_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14524,7 +14524,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14537,7 +14537,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14563,10 +14563,10 @@
 					<Obj>
 						<type>0</type>
 						<id>286</id>
-						<name>crc_V_15_out_write_ln28</name>
+						<name>crc_V_15_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14582,7 +14582,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14595,7 +14595,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14621,10 +14621,10 @@
 					<Obj>
 						<type>0</type>
 						<id>287</id>
-						<name>crc_V_14_out_write_ln28</name>
+						<name>crc_V_14_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14640,7 +14640,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14653,7 +14653,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>138</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14679,10 +14679,10 @@
 					<Obj>
 						<type>0</type>
 						<id>288</id>
-						<name>crc_V_88_out_write_ln28</name>
+						<name>crc_V_88_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14698,7 +14698,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14711,7 +14711,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>208</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14737,10 +14737,10 @@
 					<Obj>
 						<type>0</type>
 						<id>289</id>
-						<name>crc_V_87_out_write_ln28</name>
+						<name>crc_V_87_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14756,7 +14756,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14769,7 +14769,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>248</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14795,10 +14795,10 @@
 					<Obj>
 						<type>0</type>
 						<id>290</id>
-						<name>crc_V_11_out_write_ln28</name>
+						<name>crc_V_11_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14814,7 +14814,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14827,7 +14827,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>298</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14853,10 +14853,10 @@
 					<Obj>
 						<type>0</type>
 						<id>291</id>
-						<name>crc_V_10_out_write_ln28</name>
+						<name>crc_V_10_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14872,7 +14872,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14885,7 +14885,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>334</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14911,10 +14911,10 @@
 					<Obj>
 						<type>0</type>
 						<id>292</id>
-						<name>crc_V_9_out_write_ln28</name>
+						<name>crc_V_9_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14930,7 +14930,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -14943,7 +14943,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>370</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -14969,10 +14969,10 @@
 					<Obj>
 						<type>0</type>
 						<id>293</id>
-						<name>crc_V_8_out_write_ln28</name>
+						<name>crc_V_8_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -14988,7 +14988,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15001,7 +15001,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>406</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -15027,10 +15027,10 @@
 					<Obj>
 						<type>0</type>
 						<id>294</id>
-						<name>crc_V_86_out_write_ln28</name>
+						<name>crc_V_86_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15046,7 +15046,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15059,7 +15059,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>446</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -15085,10 +15085,10 @@
 					<Obj>
 						<type>0</type>
 						<id>295</id>
-						<name>crc_V_6_out_write_ln28</name>
+						<name>crc_V_6_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15104,7 +15104,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15117,7 +15117,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>498</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -15143,10 +15143,10 @@
 					<Obj>
 						<type>0</type>
 						<id>296</id>
-						<name>crc_V_5_out_write_ln28</name>
+						<name>crc_V_5_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15162,7 +15162,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15201,10 +15201,10 @@
 					<Obj>
 						<type>0</type>
 						<id>297</id>
-						<name>crc_V_4_out_write_ln28</name>
+						<name>crc_V_4_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15220,7 +15220,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15233,7 +15233,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>292</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -15259,10 +15259,10 @@
 					<Obj>
 						<type>0</type>
 						<id>298</id>
-						<name>crc_V_3_out_write_ln28</name>
+						<name>crc_V_3_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15278,7 +15278,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15291,7 +15291,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -15317,10 +15317,10 @@
 					<Obj>
 						<type>0</type>
 						<id>299</id>
-						<name>crc_V_2_out_write_ln28</name>
+						<name>crc_V_2_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15336,7 +15336,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15375,10 +15375,10 @@
 					<Obj>
 						<type>0</type>
 						<id>300</id>
-						<name>crc_V_1_out_write_ln28</name>
+						<name>crc_V_1_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15394,7 +15394,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15407,7 +15407,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>652</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -15433,10 +15433,10 @@
 					<Obj>
 						<type>0</type>
 						<id>301</id>
-						<name>crc_V_out_write_ln28</name>
+						<name>crc_V_out_write_ln27</name>
 						<fileName>codes/crc.cpp</fileName>
 						<fileDirectory>/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS</fileDirectory>
-						<lineNumber>28</lineNumber>
+						<lineNumber>27</lineNumber>
 						<contextFuncName>crc24a</contextFuncName>
 						<contextNormFuncName>crc24a</contextNormFuncName>
 						<inlineStackInfo>
@@ -15452,7 +15452,7 @@
 											<first>codes/crc.cpp</first>
 											<second>crc24a</second>
 										</first>
-										<second>28</second>
+										<second>27</second>
 									</item>
 								</second>
 							</item>
@@ -15616,7 +15616,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784842272</coreId>
+						<coreId>3671086336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -15647,7 +15647,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>448</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -15709,7 +15709,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1099</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -15740,7 +15740,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784842272</coreId>
+						<coreId>3671086336</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -15771,7 +15771,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784556384</coreId>
+						<coreId>3669708112</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -15802,7 +15802,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>784847456</coreId>
+						<coreId>3671091520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -15833,7 +15833,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>705</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -15864,7 +15864,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1436</coreId>
+						<coreId>904</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -15895,7 +15895,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>742</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -15926,7 +15926,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>912</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -16254,7 +16254,7 @@
 				<Obj>
 					<type>3</type>
 					<id>303</id>
-					<name>for.body76.exitStub</name>
+					<name>loop4.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -16272,7 +16272,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>784521296</coreId>
+					<coreId>0</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -17881,14 +17881,14 @@
 			<item class_id_reference="20" object_id="_537">
 				<id>577</id>
 				<edge_type>1</edge_type>
-				<source_obj>96</source_obj>
+				<source_obj>43</source_obj>
 				<sink_obj>97</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_538">
 				<id>578</id>
 				<edge_type>1</edge_type>
-				<source_obj>43</source_obj>
+				<source_obj>96</source_obj>
 				<sink_obj>97</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>

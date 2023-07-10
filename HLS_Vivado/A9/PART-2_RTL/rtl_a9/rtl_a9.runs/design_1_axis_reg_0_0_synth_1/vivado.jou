@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Jul 10 15:24:07 2023
+# Process ID: 30085
+# Current directory: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.runs/design_1_axis_reg_0_0_synth_1
+# Command line: vivado -log design_1_axis_reg_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axis_reg_0_0.tcl
+# Log file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.runs/design_1_axis_reg_0_0_synth_1/design_1_axis_reg_0_0.vds
+# Journal file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.runs/design_1_axis_reg_0_0_synth_1/vivado.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 799.999 MHz, CPU Physical cores: 4, Host memory: 8096 MB
+#-----------------------------------------------------------
+source design_1_axis_reg_0_0.tcl -notrace

@@ -218,8 +218,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>last</name>
-<Object>last</Object>
+<name>tmp_last_V</name>
+<Object>tmp_last_V</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

@@ -21,7 +21,7 @@ set C_modelArgList {
 	{ crc_V_80 int 1 regular  }
 	{ crc_V_79 int 1 regular  }
 	{ crc_V_78 int 1 regular  }
-	{ last int 1 regular  }
+	{ tmp_last_V int 1 regular  }
 	{ crc_V_31_out int 1 regular {pointer 1}  }
 	{ crc_V_98_out int 1 regular {pointer 1}  }
 	{ crc_V_97_out int 1 regular {pointer 1}  }
@@ -64,7 +64,7 @@ set C_modelArgMapList {[
  	{ "Name" : "crc_V_80", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "crc_V_79", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "crc_V_78", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "last", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
+ 	{ "Name" : "tmp_last_V", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "crc_V_31_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "crc_V_98_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "crc_V_97_out", "interface" : "wire", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
@@ -114,7 +114,7 @@ set portList {
 	{ crc_V_80 sc_in sc_lv 1 signal 5 } 
 	{ crc_V_79 sc_in sc_lv 1 signal 6 } 
 	{ crc_V_78 sc_in sc_lv 1 signal 7 } 
-	{ last sc_in sc_lv 1 signal 8 } 
+	{ tmp_last_V sc_in sc_lv 1 signal 8 } 
 	{ crc_V_31_out sc_out sc_lv 1 signal 9 } 
 	{ crc_V_31_out_ap_vld sc_out sc_logic 1 outvld 9 } 
 	{ crc_V_98_out sc_out sc_lv 1 signal 10 } 
@@ -195,7 +195,7 @@ set NewPortList {[
  	{ "name": "crc_V_80", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "crc_V_80", "role": "default" }} , 
  	{ "name": "crc_V_79", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "crc_V_79", "role": "default" }} , 
  	{ "name": "crc_V_78", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "crc_V_78", "role": "default" }} , 
- 	{ "name": "last", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "last", "role": "default" }} , 
+ 	{ "name": "tmp_last_V", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "tmp_last_V", "role": "default" }} , 
  	{ "name": "crc_V_31_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "crc_V_31_out", "role": "default" }} , 
  	{ "name": "crc_V_31_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "crc_V_31_out", "role": "ap_vld" }} , 
  	{ "name": "crc_V_98_out", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "crc_V_98_out", "role": "default" }} , 
@@ -285,7 +285,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "crc_V_80", "Type" : "None", "Direction" : "I"},
 			{"Name" : "crc_V_79", "Type" : "None", "Direction" : "I"},
 			{"Name" : "crc_V_78", "Type" : "None", "Direction" : "I"},
-			{"Name" : "last", "Type" : "None", "Direction" : "I"},
+			{"Name" : "tmp_last_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "crc_V_31_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "crc_V_98_out", "Type" : "Vld", "Direction" : "O"},
 			{"Name" : "crc_V_97_out", "Type" : "Vld", "Direction" : "O"},
@@ -334,7 +334,7 @@ set ArgLastReadFirstWriteLatency {
 		crc_V_80 {Type I LastRead 0 FirstWrite -1}
 		crc_V_79 {Type I LastRead 0 FirstWrite -1}
 		crc_V_78 {Type I LastRead 0 FirstWrite -1}
-		last {Type I LastRead 0 FirstWrite -1}
+		tmp_last_V {Type I LastRead 0 FirstWrite -1}
 		crc_V_31_out {Type O LastRead -1 FirstWrite 0}
 		crc_V_98_out {Type O LastRead -1 FirstWrite 0}
 		crc_V_97_out {Type O LastRead -1 FirstWrite 0}
@@ -387,7 +387,7 @@ set Spec2ImplPortList {
 	crc_V_80 { ap_none {  { crc_V_80 in_data 0 1 } } }
 	crc_V_79 { ap_none {  { crc_V_79 in_data 0 1 } } }
 	crc_V_78 { ap_none {  { crc_V_78 in_data 0 1 } } }
-	last { ap_none {  { last in_data 0 1 } } }
+	tmp_last_V { ap_none {  { tmp_last_V in_data 0 1 } } }
 	crc_V_31_out { ap_vld {  { crc_V_31_out out_data 1 1 }  { crc_V_31_out_ap_vld out_vld 1 1 } } }
 	crc_V_98_out { ap_vld {  { crc_V_98_out out_data 1 1 }  { crc_V_98_out_ap_vld out_vld 1 1 } } }
 	crc_V_97_out { ap_vld {  { crc_V_97_out out_data 1 1 }  { crc_V_97_out_ap_vld out_vld 1 1 } } }

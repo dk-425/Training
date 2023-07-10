@@ -2,5 +2,8 @@ crc24a_mux_83_1_1_1
 crc24a_flow_control_loop_pipe_sequential_init
 crc24a_regslice_both
 crc24a_regslice_both
+crc24a_regslice_both
+crc24a_regslice_both
+crc24a_regslice_both
 crc24a_Pipeline_loop2
 crc24a

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul  3 15:36:53 2023" VIVADOVERSION="2022.2.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul 10 10:46:37 2023" VIVADOVERSION="2022.2.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu106:part0:2.6" DEVICE="xczu7ev" NAME="design_1" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
 
@@ -29,19 +29,24 @@
         <CONNECTION INSTANCE="crc24a_0" PORT="output_r_TVALID"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" LEFT="0" NAME="input_r_TLAST_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_input_r_TLAST_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="crc24a_0" PORT="input_r_TLAST"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="2113102409" FULLNAME="/crc24a_0" HWVERSION="1.0" INSTANCE="crc24a_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="crc24a" VLNV="xilinx.com:hls:crc24a:1.0">
+    <MODULE COREREVISION="2113112201" FULLNAME="/crc24a_0" HWVERSION="1.0" INSTANCE="crc24a_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="crc24a" VLNV="xilinx.com:hls:crc24a:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="design_1_crc24a_0_0"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="17"/>
+        <PARAMETER NAME="latency" VALUE="16"/>
         <PARAMETER NAME="II" VALUE="x"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -75,6 +80,13 @@
             <CONNECTION INSTANCE="External_Ports" PORT="input_r_TDATA_0"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="0" NAME="input_r_TLAST" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_input_r_TLAST_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="input_r_TLAST_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="input_r_TKEEP" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="input_r_TSTRB" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="output_r_TVALID" SIGIS="undef" SIGNAME="crc24a_0_output_r_TVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="output_r_TVALID_0"/>
@@ -107,9 +119,9 @@
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
-          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
-          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_ap_clk_0"/>
@@ -118,6 +130,9 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="input_r_TVALID"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="input_r_TREADY"/>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="input_r_TDATA"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="input_r_TLAST"/>
+            <PORTMAP LOGICAL="TKEEP" PHYSICAL="input_r_TKEEP"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="input_r_TSTRB"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="output_r" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">

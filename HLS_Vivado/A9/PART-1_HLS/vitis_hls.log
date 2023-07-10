@@ -1,5 +1,5 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'sam-admin' on host 'sampaths-lappie' (Linux_x86_64 version 5.19.0-46-generic) on Mon Jul 03 15:29:23 IST 2023
+INFO: [HLS 200-10] For user 'sam-admin' on host 'sampaths-lappie' (Linux_x86_64 version 5.19.0-46-generic) on Mon Jul 10 10:40:54 IST 2023
 INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
 INFO: [HLS 200-10] In directory '/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS'
 Sourcing Tcl script '/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc/export.tcl'
@@ -9,7 +9,7 @@ INFO: [HLS 200-10] Opening project '/home/sam-admin/git/Training/HLS_Vivado/A9/P
 INFO: [HLS 200-1510] Running: set_top crc24a 
 INFO: [HLS 200-1510] Running: add_files codes/crc.cpp 
 INFO: [HLS 200-10] Adding design file 'codes/crc.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb codes/crc_tb.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-1510] Running: add_files -tb codes/crc_tb.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'codes/crc_tb.cpp' to the project
 INFO: [HLS 200-1510] Running: open_solution sol_crc -flow_target vivado 
 INFO: [HLS 200-10] Opening solution '/home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/vitis_ap/sol_crc'.
@@ -26,7 +26,7 @@ INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/sam
 INFO: [HLS 200-1510] Running: source ./vitis_ap/sol_crc/directives.tcl
 INFO: [HLS 200-1510] Running: set_directive_top -name crc24a crc24a 
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/sam-admin/git/Training/HLS_Vivado/A9/PART-1_HLS/HLS_IP 
-Running Dispatch Server on port: 35615
+Running Dispatch Server on port: 40683
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
 ****** Vivado v2022.2.2 (64-bit)
@@ -35,11 +35,11 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
     ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 
 source run_ippack.tcl -notrace
-ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1327.363 ; gain = 13.023 ; free physical = 131 ; free virtual = 4230
+ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1287.289 ; gain = 31.023 ; free physical = 144 ; free virtual = 5235
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Jul  3 15:30:26 2023...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 10 10:41:33 2023...
 INFO: [HLS 200-802] Generated output file HLS_IP/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 11.79 seconds. CPU system time: 0.88 seconds. Elapsed time: 56.23 seconds; current allocated memory: 7.211 MB.
-INFO: [HLS 200-112] Total CPU user time: 13.2 seconds. Total CPU system time: 1.07 seconds. Total elapsed time: 67.8 seconds; peak allocated memory: 221.023 MB.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 13.75 seconds. CPU system time: 1.21 seconds. Elapsed time: 31.51 seconds; current allocated memory: 7.418 MB.
+INFO: [HLS 200-112] Total CPU user time: 15.21 seconds. Total CPU system time: 1.46 seconds. Total elapsed time: 43.04 seconds; peak allocated memory: 221.254 MB.
