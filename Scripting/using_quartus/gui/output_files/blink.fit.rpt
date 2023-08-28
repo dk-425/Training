@@ -1,5 +1,5 @@
 Fitter report for blink
-Mon Aug 28 17:10:54 2023
+Mon Aug 28 18:01:17 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -62,7 +62,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +---------------------------------+------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Aug 28 17:10:54 2023          ;
+; Fitter Status                   ; Successful - Mon Aug 28 18:01:17 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; blink                                          ;
 ; Top-level Entity Name           ; blink                                          ;
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CGXFC7C7F23C8                                 ;
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; 3 / 56,480 ( < 1 % )                           ;
-; Total registers                 ; 6                                              ;
+; Total registers                 ; 7                                              ;
 ; Total pins                      ; 2 / 268 ( < 1 % )                              ;
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 0 / 7,024,640 ( 0 % )                          ;
@@ -168,7 +168,8 @@ https://fpgasoftware.intel.com/eula.
 ; Node             ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node     ; Destination Port ; Destination Port Name ;
 +------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+----------------------+------------------+-----------------------+
 ; clk~inputCLKENA0 ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                      ;                  ;                       ;
-; counter[2]       ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter[2]~DUPLICATE ;                  ;                       ;
+; counter[0]       ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter[0]~DUPLICATE ;                  ;                       ;
+; counter[1]       ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; counter[1]~DUPLICATE ;                  ;                       ;
 +------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+----------------------+------------------+-----------------------+
 
 
@@ -241,18 +242,18 @@ The pin-out file can be found in /home/sam-admin/git/Training/Scripting/using_qu
 ; Combinational ALUT usage for logic                          ; 6                  ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 0                  ;       ;
-;     -- 5 input functions                                    ; 1                  ;       ;
-;     -- 4 input functions                                    ; 1                  ;       ;
+;     -- 5 input functions                                    ; 0                  ;       ;
+;     -- 4 input functions                                    ; 2                  ;       ;
 ;     -- <=3 input functions                                  ; 4                  ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 6                  ;       ;
+; Dedicated logic registers                                   ; 7                  ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 5 / 112,960        ; < 1 % ;
-;         -- Secondary logic registers                        ; 1 / 112,960        ; < 1 % ;
+;         -- Secondary logic registers                        ; 2 / 112,960        ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 5                  ;       ;
-;         -- Routing optimization registers                   ; 1                  ;       ;
+;         -- Routing optimization registers                   ; 2                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 2 / 268            ; < 1 % ;
@@ -288,10 +289,10 @@ The pin-out file can be found in /home/sam-admin/git/Training/Scripting/using_qu
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
 ; Peak interconnect usage (total/H/V)                         ; 0.0% / 0.0% / 0.0% ;       ;
-; Maximum fan-out                                             ; 6                  ;       ;
-; Highest non-global fan-out                                  ; 5                  ;       ;
-; Total fan-out                                               ; 31                 ;       ;
-; Average fan-out                                             ; 1.82               ;       ;
+; Maximum fan-out                                             ; 7                  ;       ;
+; Highest non-global fan-out                                  ; 3                  ;       ;
+; Total fan-out                                               ; 32                 ;       ;
+; Average fan-out                                             ; 1.78               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -323,8 +324,8 @@ The pin-out file can be found in /home/sam-admin/git/Training/Scripting/using_qu
 ; Combinational ALUT usage for logic                          ; 6                    ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 0                    ; 0                              ;
-;     -- 5 input functions                                    ; 1                    ; 0                              ;
-;     -- 4 input functions                                    ; 1                    ; 0                              ;
+;     -- 5 input functions                                    ; 0                    ; 0                              ;
+;     -- 4 input functions                                    ; 2                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 4                    ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
@@ -334,10 +335,10 @@ The pin-out file can be found in /home/sam-admin/git/Training/Scripting/using_qu
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
 ;         -- Primary logic registers                          ; 5 / 112960 ( < 1 % ) ; 0 / 112960 ( 0 % )             ;
-;         -- Secondary logic registers                        ; 1 / 112960 ( < 1 % ) ; 0 / 112960 ( 0 % )             ;
+;         -- Secondary logic registers                        ; 2 / 112960 ( < 1 % ) ; 0 / 112960 ( 0 % )             ;
 ;     -- By function:                                         ;                      ;                                ;
 ;         -- Design implementation registers                  ; 5                    ; 0                              ;
-;         -- Routing optimization registers                   ; 1                    ; 0                              ;
+;         -- Routing optimization registers                   ; 2                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -354,8 +355,8 @@ The pin-out file can be found in /home/sam-admin/git/Training/Scripting/using_qu
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 31                   ; 0                              ;
-;     -- Registered Connections                               ; 16                   ; 0                              ;
+;     -- Total Connections                                    ; 32                   ; 0                              ;
+;     -- Registered Connections                               ; 15                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -387,7 +388,7 @@ The pin-out file can be found in /home/sam-admin/git/Training/Scripting/using_qu
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; clk  ; M16   ; 5B       ; 89           ; 35           ; 60           ; 6                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; clk  ; M16   ; 5B       ; 89           ; 35           ; 60           ; 7                     ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -928,7 +929,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
-; |blink                     ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 6 (6)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 2    ; 0            ; |blink              ; blink       ; work         ;
+; |blink                     ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 2    ; 0            ; |blink              ; blink       ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -957,7 +958,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
-; clk  ; PIN_M16  ; 6       ; Clock ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; clk  ; PIN_M16  ; 7       ; Clock ; yes    ; Global Clock         ; GCLK10           ; --                        ;
 +------+----------+---------+-------+--------+----------------------+------------------+---------------------------+
 
 
@@ -966,7 +967,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_M16  ; 6       ; Global Clock         ; GCLK10           ; --                        ;
+; clk  ; PIN_M16  ; 7       ; Global Clock         ; GCLK10           ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -975,17 +976,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+-----------------------+
 ; Routing Resource Type        ; Usage                 ;
 +------------------------------+-----------------------+
-; Block interconnects          ; 5 / 374,484 ( < 1 % ) ;
+; Block interconnects          ; 4 / 374,484 ( < 1 % ) ;
 ; C12 interconnects            ; 0 / 16,664 ( 0 % )    ;
 ; C2 interconnects             ; 1 / 155,012 ( < 1 % ) ;
 ; C4 interconnects             ; 0 / 72,600 ( 0 % )    ;
 ; DQS bus muxes                ; 0 / 30 ( 0 % )        ;
 ; DQS-18 I/O buses             ; 0 / 30 ( 0 % )        ;
 ; DQS-9 I/O buses              ; 0 / 30 ( 0 % )        ;
-; Direct links                 ; 2 / 374,484 ( < 1 % ) ;
+; Direct links                 ; 1 / 374,484 ( < 1 % ) ;
 ; Global clocks                ; 1 / 16 ( 6 % )        ;
 ; Horizontal periphery clocks  ; 0 / 72 ( 0 % )        ;
-; Local interconnects          ; 2 / 112,960 ( < 1 % ) ;
+; Local interconnects          ; 4 / 112,960 ( < 1 % ) ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )        ;
 ; R14 interconnects            ; 0 / 15,868 ( 0 % )    ;
 ; R14/C12 interconnect drivers ; 0 / 27,256 ( 0 % )    ;
@@ -1120,9 +1121,9 @@ This will disable optimization of problematic paths and expose them for further 
 ; Source Register ; Destination Register ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
 ; counter[0]      ; counter[2]           ; 0.374             ;
-; counter[1]      ; led~reg0             ; 0.353             ;
-; counter[3]      ; led~reg0             ; 0.324             ;
-; counter[2]      ; led~reg0             ; 0.321             ;
+; counter[1]      ; counter[2]           ; 0.350             ;
+; counter[3]      ; led~reg0             ; 0.344             ;
+; counter[2]      ; counter[3]           ; 0.315             ;
 +-----------------+----------------------+-------------------+
 Note: This table only shows the top 4 path(s) that have the largest delay added for hold.
 
@@ -1172,11 +1173,11 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1908 megabytes
-    Info: Processing ended: Mon Aug 28 17:10:54 2023
-    Info: Elapsed time: 00:00:28
-    Info: Total CPU time (on all processors): 00:00:52
+    Info: Peak virtual memory: 1906 megabytes
+    Info: Processing ended: Mon Aug 28 18:01:18 2023
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:53
 
 

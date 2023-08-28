@@ -1,4 +1,4 @@
-|blink_led
+|blink
 clk => led~reg0.CLK
 clk => counter[0].CLK
 clk => counter[1].CLK

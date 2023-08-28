@@ -1,7 +1,7 @@
-Fitter Status : Successful - Mon Aug 28 16:24:17 2023
+Fitter Status : Successful - Mon Aug 28 17:31:52 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : blink
-Top-level Entity Name : blink_led
+Top-level Entity Name : blink
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final

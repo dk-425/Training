@@ -1,5 +1,5 @@
 Analysis & Synthesis report for blink
-Mon Aug 28 16:23:47 2023
+Mon Aug 28 17:31:21 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -43,10 +43,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Aug 28 16:23:47 2023          ;
+; Analysis & Synthesis Status     ; Successful - Mon Aug 28 17:31:21 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; blink                                          ;
-; Top-level Entity Name           ; blink_led                                      ;
+; Top-level Entity Name           ; blink                                          ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 5                                              ;
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; blink_led          ; blink              ;
+; Top-level entity name                                                           ; blink              ; blink              ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Maximum processors allowed for parallel compilation                             ; 4                  ;                    ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -209,7 +209,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |blink_led                 ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 2    ; 0            ; |blink_led          ; blink_led   ; work         ;
+; |blink                     ; 5 (5)               ; 5 (5)                     ; 0                 ; 0          ; 2    ; 0            ; |blink              ; blink       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -265,13 +265,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Aug 28 16:23:39 2023
+    Info: Processing started: Mon Aug 28 17:31:13 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off blink -c blink
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 1 design units, including 1 entities, in source file blink.v
-    Info (12023): Found entity 1: blink_led File: /home/sam-admin/git/Training/Scripting/using_quartus/cli/blink.v Line: 1
+    Info (12023): Found entity 1: blink File: /home/sam-admin/git/Training/Scripting/using_quartus/cli/blink.v Line: 1
 Info (12021): Found 0 design units, including 0 entities, in source file blink_tb.v
-Info (12127): Elaborating entity "blink_led" for the top level hierarchy
+Info (12127): Elaborating entity "blink" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -281,8 +281,8 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 481 megabytes
-    Info: Processing ended: Mon Aug 28 16:23:47 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Processing ended: Mon Aug 28 17:31:22 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 

@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Mon Aug 28 16:23:47 2023
+Analysis & Synthesis Status : Successful - Mon Aug 28 17:31:21 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : blink
-Top-level Entity Name : blink_led
+Top-level Entity Name : blink
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 5
