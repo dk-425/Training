@@ -1,4 +1,4 @@
-module blink_led(
+module blink(
     input wire clk,
     output reg led
 );

@@ -9,7 +9,7 @@ set_global_assignment -name DEVICE "5CSEMA5F31C6"
 set_global_assignment -name VERILOG_FILE ./blink.v
 set_global_assignment -name VERILOG_FILE ./blink_tb.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name TOP_LEVEL_ENTITY blink_led
+set_global_assignment -name TOP_LEVEL_ENTITY blink
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
 
 # Add constraints
