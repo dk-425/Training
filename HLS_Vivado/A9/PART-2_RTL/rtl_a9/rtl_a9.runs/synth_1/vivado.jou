@@ -2,12 +2,12 @@
 # Vivado v2022.2.2 (64-bit)
 # SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
 # IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
-# Start of session at: Mon Jul 10 15:25:29 2023
-# Process ID: 30364
+# Start of session at: Wed Aug  2 14:15:01 2023
+# Process ID: 28989
 # Current directory: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.runs/synth_1/design_1_wrapper.vds
 # Journal file: /home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.runs/synth_1/vivado.jou
-# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3398.075 MHz, CPU Physical cores: 4, Host memory: 8096 MB
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3400.434 MHz, CPU Physical cores: 4, Host memory: 8096 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

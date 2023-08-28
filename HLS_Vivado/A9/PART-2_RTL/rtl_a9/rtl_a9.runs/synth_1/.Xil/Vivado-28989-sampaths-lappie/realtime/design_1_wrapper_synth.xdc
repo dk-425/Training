@@ -1,0 +1,8 @@
+set_property SRC_FILE_INFO {cfile:/home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.gen/sources_1/bd/design_1/ip/design_1_axis_reg_0_0/design_1_axis_reg_0_0/design_1_axis_reg_0_0_in_context.xdc rfile:../../../../../rtl_a9.gen/sources_1/bd/design_1/ip/design_1_axis_reg_0_0/design_1_axis_reg_0_0/design_1_axis_reg_0_0_in_context.xdc id:1 order:EARLY scoped_inst:design_1_i/axis_reg_0} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/sam-admin/git/Training/HLS_Vivado/A9/PART-2_RTL/rtl_a9/rtl_a9.runs/synth_1/dont_touch.xdc rfile:../../../dont_touch.xdc id:2} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property IS_IP_OOC_CELL true [get_cells design_1_i/axis_reg_0]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells design_1_i]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells design_1_i/axis_reg_0]

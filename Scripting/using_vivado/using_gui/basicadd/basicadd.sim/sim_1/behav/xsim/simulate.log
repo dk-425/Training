@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+0 + 0 = 0 with carry 0 at time                10000
+0 + 1 = 1 with carry 0 at time                20000
+1 + 0 = 1 with carry 0 at time                30000
+1 + 1 = 0 with carry 1 at time                40000
+$stop called at time : 50 ns : File "/home/sam-admin/git/Training/Scripting/adder_tb.v" Line 23

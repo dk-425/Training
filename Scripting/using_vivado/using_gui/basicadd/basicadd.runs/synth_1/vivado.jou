@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Fri Aug  4 11:55:43 2023
+# Process ID: 35040
+# Current directory: /home/sam-admin/git/Training/Scripting/using_gui/basicadd/basicadd.runs/synth_1
+# Command line: vivado -log adder1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source adder1.tcl
+# Log file: /home/sam-admin/git/Training/Scripting/using_gui/basicadd/basicadd.runs/synth_1/adder1.vds
+# Journal file: /home/sam-admin/git/Training/Scripting/using_gui/basicadd/basicadd.runs/synth_1/vivado.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3399.998 MHz, CPU Physical cores: 4, Host memory: 8096 MB
+#-----------------------------------------------------------
+source adder1.tcl -notrace
