@@ -1,0 +1,45 @@
+Inital Intern Report:
+           - Initally worked on Xilinx using Vivado and HLS.
+           
+           
+Extended Intern Report:
+
+           <P--1>:
+           - Gone through Jenkins flow and how it works.
+           - Learnt Tcl scripting.
+           - Wrote Tcl script to Automate the process of Xilinx GUI until generation of .bit file.
+           
+           <P--2>:
+           - Working on Quartus Prime and program agilix7 fpga using .sof file
+           - Learnt Python and Unit testing
+           - Wrote Tcl script to automate the process of Quartus GUI until generation of .sof file
+           - used existing .jic and .rbf file to flash fpga using arm, and automated it using script.
+           - Stuck on generating .jic and .rbf files for a sample design from .sof file using GHRD.
+           
+           <P--3>:
+           - Learning Vunit on how to use it with jenkins for verilog files testing.
+           - Learnt edailsze but it has some issues with which were not yet solved by developer.
+           
+           <P--4>:
+           - Trying to apply changes to the existing git flow 
+           - created a sample vunit testbench for multi.sv 
+           - changed makefile so that make all executes overall flow of vivado and quartus.(took name of all module vheir ) had some complications trying to minimise this.
+           - used fpga-tool-perf and worked on with example designs with existing boards with vivado and tried to add custom boards to meet our requirement.
+           
+           <P--5>:
+           - Back to quartus.
+           - Generated .jic and .rbf files for a sample design from .sof file using GHRD.
+           
+           <P--6>:
+           - Understand agib027 build process from git repo and trying to apply the same for agib014 board and hitek board.
+           
+           <P--7>:
+           - Implementing the above build using docker containers
+           - Understanding questa and testing script
+           - Need to implement above using docker after its build complete.
+           
+           <P--8>:
+           - Modifying jenkins pipeline to work with all other boards
+           - After implementing that doing the same using containers like pipeline should launch container run build and take desired results after build and close container.
+           - Understand how questa and vunit build works.
+           <P--9>:
