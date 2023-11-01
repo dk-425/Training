@@ -10,8 +10,8 @@ Extended Intern Report:
            - Wrote Tcl script to Automate the process of Xilinx GUI until generation of .bit file.
            
            <P--2>:
-           - Working on Quartus Prime and program agilix7 fpga using .sof file
            - Learnt Python and Unit testing
+           - Working on Quartus Prime and program agilix7 fpga using .sof file
            - Wrote Tcl script to automate the process of Quartus GUI until generation of .sof file
            - used existing .jic and .rbf file to flash fpga using arm, and automated it using script.
            - Stuck on generating .jic and .rbf files for a sample design from .sof file using GHRD.
@@ -31,7 +31,8 @@ Extended Intern Report:
            - Generated .jic and .rbf files for a sample design from .sof file using GHRD.
            
            <P--6>:
-           - Understand agib027 build process from git repo and trying to apply the same for agib014 board and hitek board.
+           - Understand agib027 build process from git repo and trying to apply the same for agib014 board and hitek board. 
+           - .ipx file is used for wirking with hitek build(.ipx file which has location of ip's and is read by project in that directory automotically when a project is build/opened.)
            
            <P--7>:
            - Implementing the above build using docker containers
@@ -42,5 +43,27 @@ Extended Intern Report:
            - Modifying jenkins pipeline to work with all other boards
            - After implementing that doing the same using containers like pipeline should launch container run build and take desired results after build and close container.
            - Understand how questa and vunit build works.
+           
            <P--9>:
-           - Parallely working on RTL designing.
+           - Modified jenkins pipeline script to run build with all other boards using containers as docker agents.
+           - My previous container has all envorinment variables inside itself. but my new container is different from it, envorinment variables is given from jenkins itself.
+           
+           <P--10>:
+           - Understanding vunit script.
+           - enabling virtual python envorinments.
+           - Integrating jenkins with google chat (after build we get notifications and also we can trigger jobs using google chats).
+           
+           <P--11>:
+           - f and i series build fails for latest repo so made changes from scratch and f series working perfectly.  working on i series
+           
+           <P--12>:
+           - learning c unit for c unit testing to integrate it with L1C team.
+           -
+           
+           
+           
+           
+           
+           
+           
+           
