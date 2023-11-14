@@ -1,0 +1,68 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/simulation/questa
+T_opt
+Z1 !s110 1699958841
+VCb_U1>cGi:ikFf=c^=PjS0
+04 10 4 work counter_tb fast 0
+=1-000ae431a4f1-65535039-68082-bff07
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vcounter
+!s110 1699958840
+!i10b 1
+!s100 [SF35@mEF:a742VOjBo2k1
+INYKP<[269z1PjNDDkig_S1
+R0
+w1699958351
+8/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter.v
+F/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter.v
+!i122 0
+L0 3 35
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1699958840.000000
+!s107 /home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus|/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -vlog01compat -work work {+incdir+/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vcounter_tb
+R1
+!i10b 1
+!s100 RLT`o:fg;L3E_3iojBeSD3
+Ii:RNTW0J6ZBh8DVoVEzhV2
+R0
+w1699958793
+8/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter_tb.v
+F/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter_tb.v
+!i122 1
+L0 3 29
+R3
+R4
+r1
+!s85 0
+31
+!s108 1699958841.000000
+!s107 /home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus|/home/sam-admin/git/Training/Quartus/Sample Code Using Quartus/counter_tb.v|
+!i113 0
+R5
+R6
+R2
