@@ -1,0 +1,13 @@
+	component unsaved is
+		port (
+			clk_clk                         : in  std_logic                    := 'X';             -- clk
+			counter_custom_ip_0_count_write : out std_logic_vector(7 downto 0);                    -- write
+			counter_custom_ip_0_dec_read    : in  std_logic                    := 'X';             -- read
+			counter_custom_ip_0_div_read    : in  std_logic                    := 'X';             -- read
+			counter_custom_ip_0_in_read     : in  std_logic_vector(7 downto 0) := (others => 'X'); -- read
+			counter_custom_ip_0_latch_read  : in  std_logic                    := 'X';             -- read
+			counter_custom_ip_0_zero_write  : out std_logic;                                       -- write
+			reset_reset_n                   : in  std_logic                    := 'X'              -- reset_n
+		);
+	end component unsaved;
+
