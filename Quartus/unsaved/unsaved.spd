@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/altera_reset_controller.v"
+   type="VERILOG"
+   library="rst_controller" />
+ <file
+   path="simulation/submodules/altera_reset_synchronizer.v"
+   type="VERILOG"
+   library="rst_controller" />
+ <file
+   path="simulation/submodules/altera_reset_controller.sdc"
+   type="SDC"
+   library="rst_controller" />
+ <file
+   path="simulation/submodules/counter_tb.v"
+   type="VERILOG"
+   library="new_component_0" />
+ <file path="simulation/unsaved.v" type="VERILOG" />
+ <topLevel name="unsaved" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

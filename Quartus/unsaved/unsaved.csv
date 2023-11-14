@@ -1,0 +1,22 @@
+# system info unsaved on 2023.11.14.14:16:55
+system_info:
+name,value
+DEVICE,5CGXFC7C7F23C8
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1699951614
+#
+#
+# Files generated for unsaved on 2023.11.14.14:16:55
+files:
+filepath,kind,attributes,module,is_top
+simulation/unsaved.v,VERILOG,,unsaved,true
+simulation/submodules/counter_tb.v,VERILOG,,counter,false
+simulation/submodules/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
+simulation/submodules/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
+simulation/submodules/altera_reset_controller.sdc,SDC,,altera_reset_controller,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+unsaved.new_component_0,counter
+unsaved.rst_controller,altera_reset_controller

@@ -1,0 +1,74 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/sam-admin/Intel/unsaved.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=/home/sam-admin/Intel/unsaved/simulation --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading Intel/unsaved.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_component_0 [new_component 1.0]
+Progress: Parameterizing module new_component_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: unsaved.new_component_0: Port in conflicts with a VHDL, verilog or system verilog reserved word
+Info: unsaved: Generating unsaved "unsaved" for SIM_VERILOG
+Info: new_component_0: "unsaved" instantiated new_component "new_component_0"
+Info: rst_controller: "unsaved" instantiated altera_reset_controller "rst_controller"
+Info: unsaved: Done "unsaved" with 3 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/sam-admin/Intel/unsaved/unsaved.spd --output-directory=/home/sam-admin/Intel/unsaved/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/sam-admin/Intel/unsaved/unsaved.spd --output-directory=/home/sam-admin/Intel/unsaved/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for VCSMX simulator in /home/sam-admin/Intel/unsaved/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for VCS simulator in /home/sam-admin/Intel/unsaved/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for MODELSIM simulator in /home/sam-admin/Intel/unsaved/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for RIVIERA simulator in /home/sam-admin/Intel/unsaved/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Generating the following file(s) for XCELIUM simulator in /home/sam-admin/Intel/unsaved/simulation/ directory:
+Info: 	xcelium/cds.lib
+Info: 	xcelium/hdl.var
+Info: 	xcelium/xcelium_setup.sh
+Info: 	2 .cds.lib files in xcelium/cds_libs/ directory
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/sam-admin/Intel/unsaved/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/sam-admin/Intel/unsaved.qsys --block-symbol-file --output-directory=/home/sam-admin/Intel/unsaved --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading Intel/unsaved.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_component_0 [new_component 1.0]
+Progress: Parameterizing module new_component_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: unsaved.new_component_0: Port in conflicts with a VHDL, verilog or system verilog reserved word
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/sam-admin/Intel/unsaved.qsys --synthesis=VERILOG --output-directory=/home/sam-admin/Intel/unsaved/synthesis --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading Intel/unsaved.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding new_component_0 [new_component 1.0]
+Progress: Parameterizing module new_component_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: unsaved.new_component_0: Port in conflicts with a VHDL, verilog or system verilog reserved word
+Info: unsaved: Generating unsaved "unsaved" for QUARTUS_SYNTH
+Info: new_component_0: "unsaved" instantiated new_component "new_component_0"
+Info: rst_controller: "unsaved" instantiated altera_reset_controller "rst_controller"
+Info: unsaved: Done "unsaved" with 3 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

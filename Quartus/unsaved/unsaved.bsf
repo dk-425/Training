@@ -1,0 +1,126 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 288 384)
+	(text "unsaved" (rect 121 -1 155 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 368 20 380)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 112 72)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "dec_readdata" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "dec_readdata" (rect 4 141 76 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 112 152)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "div_readdata" (rect 0 0 51 12)(font "Arial" (font_size 8)))
+		(text "div_readdata" (rect 4 181 76 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 112 192)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "in_readdata[7..0]" (rect 0 0 66 12)(font "Arial" (font_size 8)))
+		(text "in_readdata[7..0]" (rect 4 221 106 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 112 232)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "latch_readdata" (rect 0 0 57 12)(font "Arial" (font_size 8)))
+		(text "latch_readdata" (rect 4 261 88 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 112 272)(line_width 1))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 301 82 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 112 312)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "count_writedata[7..0]" (rect 0 0 81 12)(font "Arial" (font_size 8)))
+		(text "count_writedata[7..0]" (rect 4 101 130 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 112 112)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(output)
+		(text "zero_writedata" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "zero_writedata" (rect 4 341 88 352)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 112 352)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 97 43 212 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 117 67 252 144)(font "Arial" (color 0 0 0)))
+		(text "count" (rect 82 83 194 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "writedata" (rect 117 107 288 224)(font "Arial" (color 0 0 0)))
+		(text "dec" (rect 93 123 204 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "readdata" (rect 117 147 282 304)(font "Arial" (color 0 0 0)))
+		(text "div" (rect 97 163 212 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "readdata" (rect 117 187 282 384)(font "Arial" (color 0 0 0)))
+		(text "in" (rect 103 203 218 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "readdata" (rect 117 227 282 464)(font "Arial" (color 0 0 0)))
+		(text "latch" (rect 86 243 202 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "readdata" (rect 117 267 282 544)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 83 283 196 579)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 117 307 276 624)(font "Arial" (color 0 0 0)))
+		(text "zero" (rect 88 323 200 659)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "writedata" (rect 117 347 288 704)(font "Arial" (color 0 0 0)))
+		(text " unsaved " (rect 249 368 552 746)(font "Arial" ))
+		(line (pt 112 32)(pt 176 32)(line_width 1))
+		(line (pt 176 32)(pt 176 368)(line_width 1))
+		(line (pt 112 368)(pt 176 368)(line_width 1))
+		(line (pt 112 32)(pt 112 368)(line_width 1))
+		(line (pt 113 52)(pt 113 76)(line_width 1))
+		(line (pt 114 52)(pt 114 76)(line_width 1))
+		(line (pt 113 92)(pt 113 116)(line_width 1))
+		(line (pt 114 92)(pt 114 116)(line_width 1))
+		(line (pt 113 132)(pt 113 156)(line_width 1))
+		(line (pt 114 132)(pt 114 156)(line_width 1))
+		(line (pt 113 172)(pt 113 196)(line_width 1))
+		(line (pt 114 172)(pt 114 196)(line_width 1))
+		(line (pt 113 212)(pt 113 236)(line_width 1))
+		(line (pt 114 212)(pt 114 236)(line_width 1))
+		(line (pt 113 252)(pt 113 276)(line_width 1))
+		(line (pt 114 252)(pt 114 276)(line_width 1))
+		(line (pt 113 292)(pt 113 316)(line_width 1))
+		(line (pt 114 292)(pt 114 316)(line_width 1))
+		(line (pt 113 332)(pt 113 356)(line_width 1))
+		(line (pt 114 332)(pt 114 356)(line_width 1))
+		(line (pt 0 0)(pt 288 0)(line_width 1))
+		(line (pt 288 0)(pt 288 384)(line_width 1))
+		(line (pt 0 384)(pt 288 384)(line_width 1))
+		(line (pt 0 0)(pt 0 384)(line_width 1))
+	)
+)
