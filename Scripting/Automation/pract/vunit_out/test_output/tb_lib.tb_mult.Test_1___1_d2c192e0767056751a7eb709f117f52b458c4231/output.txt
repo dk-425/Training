@@ -1,0 +1,10 @@
+# End time: 14:36:35 on Sep 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___1_d2c192e0767056751a7eb709f117f52b458c4231/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 1 * 1,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___1_d2c192e0767056751a7eb709f117f52b458c4231/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 14:36:35 on Sep 13,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Running test case setup code
+# Testing 1 * 1: 1 * 1 = 01 at time                   10
+# Cleaning up after a test case
+# Break in Function vunit_pkg/test_runner::cleanup at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138

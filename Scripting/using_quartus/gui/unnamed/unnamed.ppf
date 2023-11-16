@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="unsaved_0"
+ megafunction_name="UNSAVED"
+ intended_family="Cyclone IV E"
+ specifies="all_ports">
+ <global>
+  <pin name="clk_clk" direction="input" scope="external" />
+  <pin
+     name="pio_0_external_connection_export"
+     direction="input"
+     scope="external" />
+  <pin
+     name="pio_1_external_connection_export"
+     direction="output"
+     scope="external" />
+ </global>
+</pinplan>

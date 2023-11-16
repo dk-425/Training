@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/Scripting/using_vivado/using_cli/adder1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/Scripting/using_vivado/using_cli/adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/Scripting/using_vivado/using_cli/using_tcl/halfadder_tcl/halfadder_tcl.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

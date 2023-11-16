@@ -1,0 +1,43 @@
+tool: vivado  # quartus or vivado
+rootdir: .
+modules:
+  - top: mult_1
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_2
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_4
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_8
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_16
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_32
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_64
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_128
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_256
+    clk: 250
+    files:
+      - mult.sv
+  - top: mult_512
+    clk: 250
+    files:
+      - mult.sv

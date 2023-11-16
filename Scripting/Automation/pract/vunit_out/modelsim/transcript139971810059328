@@ -1,0 +1,75 @@
+# do /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___0_0cb33d9d60577987e122169f4499bf6fbbd056f5/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 0 * 0,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___0_0cb33d9d60577987e122169f4499bf6fbbd056f5/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 17:44:04 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 linux_x86_64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Running test case setup code
+# Testing 0 * 0: 0 * 0 = 00 at time                   10
+# Cleaning up after a test case
+# Break in Function vunit_pkg/test_runner::cleanup at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138
+# End time: 17:44:05 on Sep 12,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___1_1085c4ca0d64b7b952ae8cf6de34972a22c3b8fb/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 0 * 1,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___1_1085c4ca0d64b7b952ae8cf6de34972a22c3b8fb/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 17:44:05 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Running test case setup code
+# Testing 0 * 1: 0 * 1 = 00 at time                   10
+# Cleaning up after a test case
+# Break in Function vunit_pkg/test_runner::cleanup at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138
+# End time: 17:44:06 on Sep 12,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___0_9ffa7d5a1d7b1b3b358321a84b3196eae3153f1c/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 1 * 0,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___0_9ffa7d5a1d7b1b3b358321a84b3196eae3153f1c/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 17:44:06 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Running test case setup code
+# Testing 1 * 0: 1 * 0 = 00 at time                   10
+# Cleaning up after a test case
+# Break in Function vunit_pkg/test_runner::cleanup at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit_hdl-5.0.0.dev0-py3.11.egg/vunit/verilog/vunit_pkg.sv line 138
+# End time: 17:44:06 on Sep 12,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___1_d2c192e0767056751a7eb709f117f52b458c4231/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 1 * 1,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___1_d2c192e0767056751a7eb709f117f52b458c4231/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 17:44:06 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Running test case setup code
+# Testing 1 * 1: 1 * 1 = 01 at time                   10
+# ** Error: CHECK_EQUAL failed! Got output_value=1 expected 0. Carry should be 1
+#    Time: 10 ps  Scope: tb_mult File: /home/sam-admin/git/Training/Scripting/Automation/pract/tb_mult.sv Line: 56
+# Break at /home/sam-admin/git/Training/Scripting/Automation/pract/tb_mult.sv line 56
+# Stopped at /home/sam-admin/git/Training/Scripting/Automation/pract/tb_mult.sv line 56
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/git/Training/Scripting/Automation/pract/tb_mult.sv 56 return [address 0x7feff033ae22]  
+# 
+# 
+# Surrounding code from 'see' command
+#   51 :     `TEST_CASE("Test 1 * 1") begin
+#   52 :       i0 = 1;
+#   53 :       i1 = 1;
+#   54 :       #10;
+#   55 :       $display("Testing 1 * 1: %b * %b = %b at time %t", i0, i1, output_value, $time);
+# ->56 :       `CHECK_EQUAL(output_value, 0, "Carry should be 1");
+#   57 :     end
+#   58 : 
+#   59 :     `TEST_CASE_CLEANUP begin
+#   60 :        //Test case cleanup code
+# 
+# End time: 17:44:07 on Sep 12,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

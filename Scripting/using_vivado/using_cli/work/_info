@@ -1,0 +1,69 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sam-admin/git/Training/Scripting/using_vivado/using_cli
+T_opt
+!s110 1696926289
+V]Abm4bFz9[e51hEF74VZL2
+04 8 4 work adder_tb fast 0
+=1-000ae431a4f1-65250a51-60b6-36c3
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vadder1
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1696926248
+!i10b 1
+!s100 _cg0CUjWBV1hc5EbAD3d?3
+Im_mfkQT03f7cjNGPkR3jB0
+S1
+R0
+w1691475051
+8adder1.v
+Fadder1.v
+!i122 0
+L0 3 9
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1696926248.000000
+Z7 !s107 adder_tb.v|adder1.v|
+Z8 !s90 -sv|adder1.v|adder_tb.v|
+!i113 0
+Z9 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vadder_tb
+R2
+R3
+!i10b 1
+!s100 6f_OmRd8odK8<DK_NJ@?M2
+IPgJDD;5:YKQ0;U`X1lg6f3
+S1
+R0
+w1691127990
+8adder_tb.v
+Fadder_tb.v
+!i122 0
+L0 3 26
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

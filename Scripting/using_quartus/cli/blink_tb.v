@@ -1,29 +1,30 @@
-`timescale 1ns / 1ps
-
+`timescale 10ns / 1ps
+//`include "adder_hw.tcl"
 module blink_tb;
 
   // Inputs
   reg clk;
-
+  reg rst;
   // Outputs
-  wire led;
+  wire q;
 
   // Instantiate the module under test
   blink uut (
     .clk(clk),
-    .led(led)
+    .rst(rst),
+    .q(q)
   );
 
 
-  always #5 clk = ~clk;
+  always #10 clk = ~clk;
 
   // Initial block to start the simulation
   initial begin
   clk=1;
     // Run simulation for a certain time
-    #1000 // Adjust the simulation time as needed
+    #10000 // Adjust the simulation time as needed
 
-    $finish; // End simulation
+    $stop; // Stop simulation
   end
 
 endmodule

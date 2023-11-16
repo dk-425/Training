@@ -72,3 +72,11 @@ project_close
 #puts "$res"
 exit
 
+
+#quartus_pfg -c output_files/blink.sof \
+#	blink.jic \
+#	-o device=MT25QU02G \
+#	-o flash_loader=AGFB014R24B2E2V \
+#	-o hps_path=/home/wisig/Desktop/Sampath/project_3/u-boot-spl-dtb.hex \
+#	-o mode=ASX4 \
+#	-o hps=on

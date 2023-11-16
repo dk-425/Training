@@ -27,7 +27,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:19 on Aug 28,2023
+# Start time: 11:28:46 on Oct 10,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -109,7 +109,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 17:59:19 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 11:28:47 on Oct 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -121,7 +121,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:19 on Aug 28,2023
+# Start time: 11:28:47 on Oct 10,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -185,7 +185,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 17:59:19 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 11:28:47 on Oct 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -197,7 +197,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:19 on Aug 28,2023
+# Start time: 11:28:47 on Oct 10,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -239,7 +239,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 17:59:19 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 11:28:47 on Oct 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -251,7 +251,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:20 on Aug 28,2023
+# Start time: 11:28:47 on Oct 10,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -381,7 +381,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 17:59:20 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 11:28:48 on Oct 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -393,7 +393,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:20 on Aug 28,2023
+# Start time: 11:28:48 on Oct 10,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -476,389 +476,496 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 17:59:20 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 11:28:49 on Oct 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vlib verilog_libs/cyclonev_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/cyclonev_ver".
+# vlib verilog_libs/cycloneive_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneive_ver".
 # Errors: 0, Warnings: 1
-# vmap cyclonev_ver ./verilog_libs/cyclonev_ver
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver
 # Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
-# vmap cyclonev_ver ./verilog_libs/cyclonev_ver 
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver 
 # Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
+# vlog -vlog01compat -work cycloneive_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cycloneive_atoms.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:20 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
+# Start time: 11:28:49 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work cycloneive_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cycloneive_atoms.v 
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFE
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS_HIGH
+# -- Compiling module cycloneive_dffe
+# -- Compiling module cycloneive_mux21
+# -- Compiling module cycloneive_mux41
+# -- Compiling module cycloneive_and1
+# -- Compiling module cycloneive_and16
+# -- Compiling module cycloneive_bmux21
+# -- Compiling module cycloneive_b17mux21
+# -- Compiling module cycloneive_nmux21
+# -- Compiling module cycloneive_b5mux21
+# -- Compiling module cycloneive_latch
+# -- Compiling module cycloneive_routing_wire
+# -- Compiling module cycloneive_m_cntr
+# -- Compiling module cycloneive_n_cntr
+# -- Compiling module cycloneive_scale_cntr
+# -- Compiling module cycloneive_pll_reg
+# -- Compiling module cycloneive_pll
+# -- Compiling module cycloneive_lcell_comb
+# -- Compiling module cycloneive_ff
+# -- Compiling module cycloneive_ram_pulse_generator
+# -- Compiling module cycloneive_ram_register
+# -- Compiling module cycloneive_ram_block
+# -- Compiling module cycloneive_mac_data_reg
+# -- Compiling module cycloneive_mac_sign_reg
+# -- Compiling module cycloneive_mac_mult_internal
+# -- Compiling module cycloneive_mac_mult
+# -- Compiling module cycloneive_mac_out
+# -- Compiling module cycloneive_io_ibuf
+# -- Compiling module cycloneive_io_obuf
+# -- Compiling module cycloneive_ddio_out
+# -- Compiling module cycloneive_ddio_oe
+# -- Compiling module cycloneive_pseudo_diff_out
+# -- Compiling module cycloneive_io_pad
+# -- Compiling module cycloneive_asmiblock
+# -- Compiling module cycloneive_ena_reg
+# -- Compiling module cycloneive_clkctrl
+# -- Compiling module cycloneive_rublock
+# -- Compiling module cycloneive_apfcontroller
+# -- Compiling module cycloneive_termination_ctrl
+# -- Compiling module cycloneive_termination_rupdn
+# -- Compiling module cycloneive_termination
+# -- Compiling module cycloneive_jtag
+# -- Compiling module cycloneive_crcblock
+# -- Compiling module cycloneive_oscillator
 # 
 # Top level modules:
-# End time: 17:59:22 on Aug 28,2023, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:22 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
-# 
-# Top level modules:
-# End time: 17:59:22 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:22 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_atoms.v 
-# -- Compiling UDP CYCLONEV_PRIM_DFFE
-# -- Compiling UDP CYCLONEV_PRIM_DFFEAS
-# -- Compiling UDP CYCLONEV_PRIM_DFFEAS_HIGH
-# -- Compiling module cyclonev_dffe
-# -- Compiling module cyclonev_mux21
-# -- Compiling module cyclonev_mux41
-# -- Compiling module cyclonev_and1
-# -- Compiling module cyclonev_and16
-# -- Compiling module cyclonev_bmux21
-# -- Compiling module cyclonev_b17mux21
-# -- Compiling module cyclonev_nmux21
-# -- Compiling module cyclonev_b5mux21
-# -- Compiling module cyclonev_ff
-# -- Compiling module cyclonev_lcell_comb
-# -- Compiling module cyclonev_routing_wire
-# -- Compiling module cyclonev_ram_block
-# -- Compiling module cyclonev_mlab_cell
-# -- Compiling module cyclonev_io_ibuf
-# -- Compiling module cyclonev_io_obuf
-# -- Compiling module cyclonev_ddio_out
-# -- Compiling module cyclonev_ddio_oe
-# -- Compiling module cyclonev_ddio_in
-# -- Compiling module cyclonev_io_pad
-# -- Compiling module cyclonev_pseudo_diff_out
-# -- Compiling module cyclonev_bias_logic
-# -- Compiling module cyclonev_bias_generator
-# -- Compiling module cyclonev_bias_block
-# -- Compiling module cyclonev_clk_phase_select
-# -- Compiling module cyclonev_clkena
-# -- Compiling module cyclonev_clkselect
-# -- Compiling module cyclonev_delay_chain
-# -- Compiling module cyclonev_dll_offset_ctrl
-# -- Compiling module cyclonev_dll
-# -- Compiling module cyclonev_dqs_config
-# -- Compiling module cyclonev_dqs_delay_chain
-# -- Compiling module cyclonev_dqs_enable_ctrl
-# -- Compiling module cyclonev_duty_cycle_adjustment
-# -- Compiling module cyclonev_fractional_pll
-# -- Compiling module cyclonev_half_rate_input
-# -- Compiling module cyclonev_input_phase_alignment
-# -- Compiling module cyclonev_io_clock_divider
-# -- Compiling module cyclonev_io_config
-# -- Compiling module cyclonev_leveling_delay_chain
-# -- Compiling module cyclonev_pll_dll_output
-# -- Compiling module cyclonev_pll_dpa_output
-# -- Compiling module cyclonev_pll_extclk_output
-# -- Compiling module cyclonev_pll_lvds_output
-# -- Compiling module cyclonev_pll_output_counter
-# -- Compiling module cyclonev_pll_reconfig
-# -- Compiling module cyclonev_pll_refclk_select
-# -- Compiling module cyclonev_termination_logic
-# -- Compiling module cyclonev_termination
-# -- Compiling module cyclonev_asmiblock
-# -- Compiling module cyclonev_chipidblock
-# -- Compiling module cyclonev_controller
-# -- Compiling module cyclonev_crcblock
-# -- Compiling module cyclonev_jtag
-# -- Compiling module cyclonev_prblock
-# -- Compiling module cyclonev_rublock
-# -- Compiling module cyclonev_tsdblock
-# -- Compiling module cyclonev_read_fifo
-# -- Compiling module cyclonev_read_fifo_read_enable
-# -- Compiling module cyclonev_phy_clkbuf
-# -- Compiling module cyclonev_ir_fifo_userdes
-# -- Compiling module cyclonev_read_fifo_read_clock_select
-# -- Compiling module cyclonev_lfifo
-# -- Compiling module cyclonev_vfifo
-# -- Compiling module cyclonev_mac
-# -- Compiling module cyclonev_mem_phy
-# -- Compiling module cyclonev_oscillator
-# -- Compiling module cyclonev_hps_interface_fpga2sdram
-# 
-# Top level modules:
-# 	cyclonev_dffe
-# 	cyclonev_mux41
-# 	cyclonev_and1
-# 	cyclonev_and16
-# 	cyclonev_bmux21
-# 	cyclonev_b17mux21
-# 	cyclonev_nmux21
-# 	cyclonev_b5mux21
-# 	cyclonev_ff
-# 	cyclonev_lcell_comb
-# 	cyclonev_routing_wire
-# 	cyclonev_ram_block
-# 	cyclonev_mlab_cell
-# 	cyclonev_io_ibuf
-# 	cyclonev_io_obuf
-# 	cyclonev_ddio_out
-# 	cyclonev_ddio_oe
-# 	cyclonev_ddio_in
-# 	cyclonev_io_pad
-# 	cyclonev_pseudo_diff_out
-# 	cyclonev_bias_block
-# 	cyclonev_clk_phase_select
-# 	cyclonev_clkena
-# 	cyclonev_clkselect
-# 	cyclonev_delay_chain
-# 	cyclonev_dll_offset_ctrl
-# 	cyclonev_dll
-# 	cyclonev_dqs_config
-# 	cyclonev_dqs_delay_chain
-# 	cyclonev_dqs_enable_ctrl
-# 	cyclonev_duty_cycle_adjustment
-# 	cyclonev_fractional_pll
-# 	cyclonev_half_rate_input
-# 	cyclonev_input_phase_alignment
-# 	cyclonev_io_clock_divider
-# 	cyclonev_io_config
-# 	cyclonev_leveling_delay_chain
-# 	cyclonev_pll_dll_output
-# 	cyclonev_pll_dpa_output
-# 	cyclonev_pll_extclk_output
-# 	cyclonev_pll_lvds_output
-# 	cyclonev_pll_output_counter
-# 	cyclonev_pll_reconfig
-# 	cyclonev_pll_refclk_select
-# 	cyclonev_termination_logic
-# 	cyclonev_termination
-# 	cyclonev_asmiblock
-# 	cyclonev_chipidblock
-# 	cyclonev_controller
-# 	cyclonev_crcblock
-# 	cyclonev_jtag
-# 	cyclonev_prblock
-# 	cyclonev_rublock
-# 	cyclonev_tsdblock
-# 	cyclonev_read_fifo
-# 	cyclonev_read_fifo_read_enable
-# 	cyclonev_phy_clkbuf
-# 	cyclonev_ir_fifo_userdes
-# 	cyclonev_read_fifo_read_clock_select
-# 	cyclonev_lfifo
-# 	cyclonev_vfifo
-# 	cyclonev_mac
-# 	cyclonev_mem_phy
-# 	cyclonev_oscillator
-# 	cyclonev_hps_interface_fpga2sdram
-# End time: 17:59:22 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/cyclonev_hssi_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/cyclonev_hssi_ver".
-# Errors: 0, Warnings: 1
-# vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver
-# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
-# vmap cyclonev_hssi_ver ./verilog_libs/cyclonev_hssi_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_hssi_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:23 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
-# 
-# Top level modules:
-# End time: 17:59:23 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_hssi_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:23 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
-# -- Compiling module cyclonev_hssi_8g_pcs_aggregate
-# -- Compiling module cyclonev_hssi_8g_rx_pcs
-# -- Compiling module cyclonev_hssi_8g_tx_pcs
-# -- Compiling module cyclonev_hssi_common_pcs_pma_interface
-# -- Compiling module cyclonev_hssi_common_pld_pcs_interface
-# -- Compiling module cyclonev_hssi_pipe_gen1_2
-# -- Compiling module cyclonev_hssi_pma_aux
-# -- Compiling module cyclonev_hssi_pma_int
-# -- Compiling module cyclonev_hssi_pma_rx_buf
-# -- Compiling module cyclonev_hssi_pma_rx_deser
-# -- Compiling module cyclonev_hssi_pma_tx_buf
-# -- Compiling module cyclonev_hssi_pma_tx_cgb
-# -- Compiling module cyclonev_hssi_pma_tx_ser
-# -- Compiling module cyclonev_hssi_pma_cdr_refclk_select_mux
-# -- Compiling module cyclonev_hssi_rx_pcs_pma_interface
-# -- Compiling module cyclonev_hssi_rx_pld_pcs_interface
-# -- Compiling module cyclonev_hssi_tx_pcs_pma_interface
-# -- Compiling module cyclonev_hssi_tx_pld_pcs_interface
-# -- Compiling module cyclonev_hssi_refclk_divider
-# -- Compiling module cyclonev_pll_aux
-# -- Compiling module cyclonev_channel_pll
-# -- Compiling module cyclonev_hssi_avmm_interface
-# -- Compiling module cyclonev_hssi_pma_hi_pmaif
-# -- Compiling module cyclonev_hssi_pma_hi_xcvrif
-# -- Compiling module arriav_hssi_8g_pcs_aggregate
-# -- Compiling module arriav_hssi_8g_rx_pcs
-# -- Compiling module arriav_hssi_8g_tx_pcs
-# -- Compiling module arriav_hssi_common_pcs_pma_interface
-# -- Compiling module arriav_hssi_common_pld_pcs_interface
-# -- Compiling module arriav_hssi_pipe_gen1_2
-# -- Compiling module arriav_hssi_pma_aux
-# -- Compiling module arriav_hssi_pma_int
-# -- Compiling module arriav_hssi_pma_rx_buf
-# -- Compiling module arriav_hssi_pma_rx_deser
-# -- Compiling module arriav_hssi_pma_tx_buf
-# -- Compiling module arriav_hssi_pma_tx_cgb
-# -- Compiling module arriav_hssi_pma_tx_ser
-# -- Compiling module arriav_hssi_pma_cdr_refclk_select_mux
-# -- Compiling module arriav_hssi_rx_pcs_pma_interface
-# -- Compiling module arriav_hssi_rx_pld_pcs_interface
-# -- Compiling module arriav_hssi_tx_pcs_pma_interface
-# -- Compiling module arriav_hssi_tx_pld_pcs_interface
-# -- Compiling module arriav_hssi_refclk_divider
-# -- Compiling module arriav_pll_aux
-# -- Compiling module arriav_channel_pll
-# -- Compiling module arriav_hssi_avmm_interface
-# -- Compiling module arriav_hssi_pma_hi_pmaif
-# -- Compiling module arriav_hssi_pma_hi_xcvrif
-# 
-# Top level modules:
-# 	cyclonev_hssi_8g_pcs_aggregate
-# 	cyclonev_hssi_8g_rx_pcs
-# 	cyclonev_hssi_8g_tx_pcs
-# 	cyclonev_hssi_common_pcs_pma_interface
-# 	cyclonev_hssi_common_pld_pcs_interface
-# 	cyclonev_hssi_pipe_gen1_2
-# 	cyclonev_hssi_pma_aux
-# 	cyclonev_hssi_pma_int
-# 	cyclonev_hssi_pma_rx_buf
-# 	cyclonev_hssi_pma_rx_deser
-# 	cyclonev_hssi_pma_tx_buf
-# 	cyclonev_hssi_pma_tx_cgb
-# 	cyclonev_hssi_pma_tx_ser
-# 	cyclonev_hssi_pma_cdr_refclk_select_mux
-# 	cyclonev_hssi_rx_pcs_pma_interface
-# 	cyclonev_hssi_rx_pld_pcs_interface
-# 	cyclonev_hssi_tx_pcs_pma_interface
-# 	cyclonev_hssi_tx_pld_pcs_interface
-# 	cyclonev_hssi_refclk_divider
-# 	cyclonev_pll_aux
-# 	cyclonev_channel_pll
-# 	cyclonev_hssi_avmm_interface
-# 	cyclonev_hssi_pma_hi_pmaif
-# 	cyclonev_hssi_pma_hi_xcvrif
-# 	arriav_hssi_8g_pcs_aggregate
-# 	arriav_hssi_8g_rx_pcs
-# 	arriav_hssi_8g_tx_pcs
-# 	arriav_hssi_common_pcs_pma_interface
-# 	arriav_hssi_common_pld_pcs_interface
-# 	arriav_hssi_pipe_gen1_2
-# 	arriav_hssi_pma_aux
-# 	arriav_hssi_pma_int
-# 	arriav_hssi_pma_rx_buf
-# 	arriav_hssi_pma_rx_deser
-# 	arriav_hssi_pma_tx_buf
-# 	arriav_hssi_pma_tx_cgb
-# 	arriav_hssi_pma_tx_ser
-# 	arriav_hssi_pma_cdr_refclk_select_mux
-# 	arriav_hssi_rx_pcs_pma_interface
-# 	arriav_hssi_rx_pld_pcs_interface
-# 	arriav_hssi_tx_pcs_pma_interface
-# 	arriav_hssi_tx_pld_pcs_interface
-# 	arriav_hssi_refclk_divider
-# 	arriav_pll_aux
-# 	arriav_channel_pll
-# 	arriav_hssi_avmm_interface
-# 	arriav_hssi_pma_hi_pmaif
-# 	arriav_hssi_pma_hi_xcvrif
-# End time: 17:59:24 on Aug 28,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vlib verilog_libs/cyclonev_pcie_hip_ver
-# ** Warning: (vlib-34) Library already exists at "verilog_libs/cyclonev_pcie_hip_ver".
-# Errors: 0, Warnings: 1
-# vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver
-# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
-# vmap cyclonev_pcie_hip_ver ./verilog_libs/cyclonev_pcie_hip_ver 
-# Modifying modelsim.ini
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:24 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
-# 
-# Top level modules:
-# End time: 17:59:25 on Aug 28,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work cyclonev_pcie_hip_ver {/home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
-# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:25 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver /home/sam-admin/intelFPGA_lite/22.1std/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
-# -- Compiling module cyclonev_hd_altpe2_hip_top
-# -- Compiling module arriav_hd_altpe2_hip_top
-# 
-# Top level modules:
-# 	cyclonev_hd_altpe2_hip_top
-# End time: 17:59:25 on Aug 28,2023, Elapsed time: 0:00:00
+# 	cycloneive_dffe
+# 	cycloneive_and1
+# 	cycloneive_and16
+# 	cycloneive_bmux21
+# 	cycloneive_b17mux21
+# 	cycloneive_nmux21
+# 	cycloneive_b5mux21
+# 	cycloneive_pll_reg
+# 	cycloneive_pll
+# 	cycloneive_lcell_comb
+# 	cycloneive_ff
+# 	cycloneive_ram_block
+# 	cycloneive_mac_mult
+# 	cycloneive_mac_out
+# 	cycloneive_io_ibuf
+# 	cycloneive_io_obuf
+# 	cycloneive_ddio_out
+# 	cycloneive_ddio_oe
+# 	cycloneive_pseudo_diff_out
+# 	cycloneive_io_pad
+# 	cycloneive_asmiblock
+# 	cycloneive_clkctrl
+# 	cycloneive_rublock
+# 	cycloneive_apfcontroller
+# 	cycloneive_termination
+# 	cycloneive_jtag
+# 	cycloneive_crcblock
+# 	cycloneive_oscillator
+# End time: 11:28:49 on Oct 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is sam-admin@sampaths-lappie.
 # vlib rtl_work
-# ** Warning: (vlib-34) Library already exists at "rtl_work".
-# Errors: 0, Warnings: 1
 # vmap work rtl_work
 # Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/cli {/home/sam-admin/git/Training/Scripting/using_quartus/cli/blink.v}
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_pio_1.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:25 on Aug 28,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/cli" /home/sam-admin/git/Training/Scripting/using_quartus/cli/blink.v 
-# -- Compiling module blink
+# Start time: 11:28:50 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_pio_1.v 
+# -- Compiling module unsaved_pio_1
 # 
 # Top level modules:
-# 	blink
-# End time: 17:59:25 on Aug 28,2023, Elapsed time: 0:00:00
+# 	unsaved_pio_1
+# End time: 11:28:50 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_pio_0.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:50 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_pio_0.v 
+# -- Compiling module unsaved_pio_0
+# 
+# Top level modules:
+# 	unsaved_pio_0
+# End time: 11:28:50 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_onchip_memory2_0.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:50 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_onchip_memory2_0.v 
+# -- Compiling module unsaved_onchip_memory2_0
+# 
+# Top level modules:
+# 	unsaved_onchip_memory2_0
+# End time: 11:28:50 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_test_bench.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:50 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_test_bench.v 
+# -- Compiling module unsaved_nios2_gen2_0_cpu_test_bench
+# 
+# Top level modules:
+# 	unsaved_nios2_gen2_0_cpu_test_bench
+# End time: 11:28:50 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_debug_slave_wrapper.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:50 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_debug_slave_wrapper.v 
+# -- Compiling module unsaved_nios2_gen2_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	unsaved_nios2_gen2_0_cpu_debug_slave_wrapper
+# End time: 11:28:50 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_debug_slave_tck.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:50 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_debug_slave_tck.v 
+# -- Compiling module unsaved_nios2_gen2_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	unsaved_nios2_gen2_0_cpu_debug_slave_tck
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_debug_slave_sysclk.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu_debug_slave_sysclk.v 
+# -- Compiling module unsaved_nios2_gen2_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	unsaved_nios2_gen2_0_cpu_debug_slave_sysclk
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0_cpu.v 
+# -- Compiling module unsaved_nios2_gen2_0_cpu_register_bank_a_module
+# -- Compiling module unsaved_nios2_gen2_0_cpu_register_bank_b_module
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_debug
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_break
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_xbrk
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_dbrk
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_itrace
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_td_mode
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_dtrace
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_fifo
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_pib
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci_im
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_performance_monitors
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_avalon_reg
+# -- Compiling module unsaved_nios2_gen2_0_cpu_ociram_sp_ram_module
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_ocimem
+# -- Compiling module unsaved_nios2_gen2_0_cpu_nios2_oci
+# -- Compiling module unsaved_nios2_gen2_0_cpu
+# 
+# Top level modules:
+# 	unsaved_nios2_gen2_0_cpu_nios2_performance_monitors
+# 	unsaved_nios2_gen2_0_cpu
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_nios2_gen2_0.v 
+# -- Compiling module unsaved_nios2_gen2_0
+# 
+# Top level modules:
+# 	unsaved_nios2_gen2_0
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_avalon_st_adapter.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module unsaved_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_avalon_st_adapter
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0.v 
+# -- Compiling module unsaved_mm_interconnect_0
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_reset_synchronizer.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_reset_controller.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/unsaved.v}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/unsaved.v 
+# -- Compiling module unsaved
+# 
+# Top level modules:
+# 	unsaved
+# End time: 11:28:51 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_rsp_mux_001.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:51 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module unsaved_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_rsp_mux_001
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_rsp_mux.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module unsaved_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_rsp_mux
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_rsp_demux_002.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_rsp_demux_002.sv 
+# -- Compiling module unsaved_mm_interconnect_0_rsp_demux_002
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_rsp_demux_002
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router_004.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router_004.sv 
+# -- Compiling module unsaved_mm_interconnect_0_router_004_default_decode
+# -- Compiling module unsaved_mm_interconnect_0_router_004
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_router_004
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router_002.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router_002.sv 
+# -- Compiling module unsaved_mm_interconnect_0_router_002_default_decode
+# -- Compiling module unsaved_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_router_002
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router_001.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router_001.sv 
+# -- Compiling module unsaved_mm_interconnect_0_router_001_default_decode
+# -- Compiling module unsaved_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_router_001
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_router.sv 
+# -- Compiling module unsaved_mm_interconnect_0_router_default_decode
+# -- Compiling module unsaved_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_router
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_mux_002.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_mux_002.sv 
+# -- Compiling module unsaved_mm_interconnect_0_cmd_mux_002
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_cmd_mux_002
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_mux.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module unsaved_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_cmd_mux
+# End time: 11:28:52 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_demux_001.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:52 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module unsaved_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_cmd_demux_001
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_demux.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module unsaved_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_cmd_demux
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module unsaved_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	unsaved_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_irq_mapper.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/unsaved_irq_mapper.sv 
+# -- Compiling module unsaved_irq_mapper
+# 
+# Top level modules:
+# 	unsaved_irq_mapper
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# ** Warning: /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Extra checking for conflicts with always_comb and always_latch variables is done at vopt time.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_master_translator.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_master_agent.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules {/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:28:53 on Oct 10,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules" /home/sam-admin/git/Training/Scripting/using_quartus/gui/unsaved/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli {/home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli/blink_tb.v}
 # Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
-# Start time: 17:59:25 on Aug 28,2023
+# Start time: 11:28:53 on Oct 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli" /home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli/blink_tb.v 
+# ** Error: /home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli/blink_tb.v(2): Cannot find `include file "adder_hw.tcl" in directories:
+#     /home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli, /home/sam-admin/intelFPGA/22.1std/questa_fse/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /home/sam-admin/intelFPGA/22.1std/questa_fse/uvm-1.1d/../verilog_src/uvm-1.1d/src
 # -- Compiling module blink_tb
-# 
-# Top level modules:
-# 	blink_tb
-# End time: 17:59:25 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  blink_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" blink_tb 
-# Start time: 17:59:25 on Aug 28,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading work.blink_tb(fast)
-# Loading work.blink(fast)
-# 
-# add wave *
-# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
-# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
-# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
-# Cannot lock WLF file: "vsim.wlf"
-#           errno 11: Resource temporarily unavailable.
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: sam-admin  Hostname: sampaths-lappie  ProcessID: 38225
-#           Attempting to use alternate WLF file "./wlft0BlixD".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft0BlixD
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Note: $finish    : /home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli/blink_tb.v(26)
-#    Time: 1 us  Iteration: 0  Instance: /blink_tb
-# 1
-# Break in Module blink_tb at /home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli/blink_tb.v line 26
-# 
-# stdin: <EOF>
-view -new wave
-# .main_pane.wave1.interior.cs.body.pw.wf
-add wave -position insertpoint sim:/blink_tb/*
-# End time: 18:00:34 on Aug 28,2023, Elapsed time: 0:01:09
-# Errors: 0, Warnings: 2
+# End time: 11:28:53 on Oct 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/sam-admin/intelFPGA/22.1std/questa_fse/linux_x86_64/vlog failed.
+# Error in macro ./blink_run_msim_rtl_verilog.do line 71
+# /home/sam-admin/intelFPGA/22.1std/questa_fse/linux_x86_64/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+/home/sam-admin/git/Training/Scripting/using_quartus/gui/../cli {/home/sam-admin/git/Training/Scripting/using_qu..."
+# Load canceled
+vlib blink
+vmap blink /home/sam-admin/git/Training/Scripting/using_quartus/gui/simulation/questa/blink
+# Questa Intel Starter FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap blink /home/sam-admin/git/Training/Scripting/using_quartus/gui/simulation/questa/blink 
+# Modifying modelsim.ini

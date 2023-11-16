@@ -1,0 +1,57 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 592 120)
+	(text "unsaved" (rect 273 -1 307 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 104 20 116)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "blink_0_avalon_slave_0_beginbursttransfer" (rect 0 0 174 12)(font "Arial" (font_size 8)))
+		(text "blink_0_avalon_slave_0_beginbursttransfer" (rect 4 61 250 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 240 72)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(output)
+		(text "blink_0_avalon_slave_0_writeresponsevalid_n" (rect 0 0 185 12)(font "Arial" (font_size 8)))
+		(text "blink_0_avalon_slave_0_writeresponsevalid_n" (rect 4 77 262 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 240 88)(line_width 1))
+	)
+	(drawing
+		(text "blink_0_avalon_slave_0" (rect 101 43 334 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "beginbursttransfer" (rect 245 67 598 144)(font "Arial" (color 0 0 0)))
+		(text "writeresponsevalid_n" (rect 245 83 610 176)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 557 104 1162 218)(font "Arial" ))
+		(line (pt 240 32)(pt 352 32)(line_width 1))
+		(line (pt 352 32)(pt 352 104)(line_width 1))
+		(line (pt 240 104)(pt 352 104)(line_width 1))
+		(line (pt 240 32)(pt 240 104)(line_width 1))
+		(line (pt 241 52)(pt 241 92)(line_width 1))
+		(line (pt 242 52)(pt 242 92)(line_width 1))
+		(line (pt 0 0)(pt 592 0)(line_width 1))
+		(line (pt 592 0)(pt 592 120)(line_width 1))
+		(line (pt 0 120)(pt 592 120)(line_width 1))
+		(line (pt 0 0)(pt 0 120)(line_width 1))
+	)
+)

@@ -1,0 +1,147 @@
+# do /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/vunit/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_0_+_0_28d1ce02160a73b6a5f70f90303cf4bbdd8eb7ce/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_adder -L vunit_lib -L design_lib -L tb_lib -g/tb_adder/runner_cfg="active python runner : true,enabled_test_cases : Test 0 + 0,output path : /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_0_+_0_28d1ce02160a73b6a5f70f90303cf4bbdd8eb7ce/,tb path : /home/sam-admin/git/Training/Scripting/vunit/testbench/,use_color : true" 
+# Start time: 12:15:59 on Sep 11,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 4.
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 linux_x86_64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Running test case setup code
+# Testing 0 + 0: 0 + 0 = x with carry x at time                   10
+# ** Error: CHECK_EQUAL failed! Got s=x expected 0. Result should be 0
+#    Time: 10 ps  Scope: tb_adder File: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv Line: 26
+# Break at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 26
+# Stopped at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 26
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv 26 return [address 0x7feff03399e0]  
+# 
+# 
+# Surrounding code from 'see' command
+#   21 :     `TEST_CASE("Test 0 + 0") begin
+#   22 :       a = 0;
+#   23 :       b = 0;
+#   24 :       #10;
+#   25 :       $display("Testing 0 + 0: %b + %b = %b with carry %b at time %t", a, b, s, c, $time);
+# ->26 :       `CHECK_EQUAL(s, 0, "Result should be 0");
+#   27 :       `CHECK_EQUAL(c, 0, "Carry should be 0");
+#   28 :     end
+#   29 : 
+#   30 :     `TEST_CASE("Test 0 + 1") begin
+# 
+# End time: 12:16:04 on Sep 11,2023, Elapsed time: 0:00:05
+# Errors: 1, Warnings: 2
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/vunit/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_0_+_1_7ca23307a382717c32029d1af3bcdbbd8589fc38/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_adder -L vunit_lib -L design_lib -L tb_lib -g/tb_adder/runner_cfg="active python runner : true,enabled_test_cases : Test 0 + 1,output path : /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_0_+_1_7ca23307a382717c32029d1af3bcdbbd8589fc38/,tb path : /home/sam-admin/git/Training/Scripting/vunit/testbench/,use_color : true" 
+# Start time: 12:16:04 on Sep 11,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 4.
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Running test case setup code
+# Testing 0 + 1: 0 + 1 = x with carry x at time                   10
+# ** Error: CHECK_EQUAL failed! Got s=x expected 1. Result should be 1
+#    Time: 10 ps  Scope: tb_adder File: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv Line: 35
+# Break at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 35
+# Stopped at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 35
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv 35 return [address 0x7feff033a6ae]  
+# 
+# 
+# Surrounding code from 'see' command
+#   30 :     `TEST_CASE("Test 0 + 1") begin
+#   31 :       a = 0;
+#   32 :       b = 1;
+#   33 :       #10;
+#   34 :       $display("Testing 0 + 1: %b + %b = %b with carry %b at time %t", a, b, s, c, $time);
+# ->35 :       `CHECK_EQUAL(s, 1, "Result should be 1");
+#   36 :       `CHECK_EQUAL(c, 0, "Carry should be 0");
+#   37 :     end
+#   38 : 
+#   39 :     `TEST_CASE("Test 1 + 0") begin
+# 
+# End time: 12:16:04 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/vunit/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_1_+_0_fa3a0d538fa3527f91225706db8a92317b2acbf0/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_adder -L vunit_lib -L design_lib -L tb_lib -g/tb_adder/runner_cfg="active python runner : true,enabled_test_cases : Test 1 + 0,output path : /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_1_+_0_fa3a0d538fa3527f91225706db8a92317b2acbf0/,tb path : /home/sam-admin/git/Training/Scripting/vunit/testbench/,use_color : true" 
+# Start time: 12:16:04 on Sep 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 4.
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Running test case setup code
+# Testing 1 + 0: 1 + 0 = x with carry x at time                   10
+# ** Error: CHECK_EQUAL failed! Got s=x expected 1. Result should be 1
+#    Time: 10 ps  Scope: tb_adder File: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv Line: 44
+# Break at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 44
+# Stopped at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 44
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv 44 return [address 0x7feff033b39e]  
+# 
+# 
+# Surrounding code from 'see' command
+#   39 :     `TEST_CASE("Test 1 + 0") begin
+#   40 :       a = 1;
+#   41 :       b = 0;
+#   42 :       #10;
+#   43 :       $display("Testing 1 + 0: %b + %b = %b with carry %b at time %t", a, b, s, c, $time);
+# ->44 :       `CHECK_EQUAL(s, 1, "Result should be 1");
+#   45 :       `CHECK_EQUAL(c, 0, "Carry should be 0");
+#   46 :     end
+#   47 : 
+#   48 :     `TEST_CASE("Test 1 + 1") begin
+# 
+# End time: 12:16:05 on Sep 11,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/vunit/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_1_+_1_1134d2a9e92dbb0082b55a3df74d9637b76adf04/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_adder -L vunit_lib -L design_lib -L tb_lib -g/tb_adder/runner_cfg="active python runner : true,enabled_test_cases : Test 1 + 1,output path : /home/sam-admin/git/Training/Scripting/vunit/vunit_out/test_output/tb_lib.tb_adder.Test_1_+_1_1134d2a9e92dbb0082b55a3df74d9637b76adf04/,tb path : /home/sam-admin/git/Training/Scripting/vunit/testbench/,use_color : true" 
+# Start time: 12:16:05 on Sep 11,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 5, found 4.
+# ** Warning: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv(7): (vopt-2718) [TFMPC] - Missing connection for port 'clk'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Running test case setup code
+# Testing 1 + 1: 1 + 1 = x with carry x at time                   10
+# ** Error: CHECK_EQUAL failed! Got s=x expected 0. Result should be 0
+#    Time: 10 ps  Scope: tb_adder File: /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv Line: 53
+# Break at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 53
+# Stopped at /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv line 53
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/git/Training/Scripting/vunit/testbench/tb_adder.sv 53 return [address 0x7feff033c098]  
+# 
+# 
+# Surrounding code from 'see' command
+#   48 :     `TEST_CASE("Test 1 + 1") begin
+#   49 :       a = 1;
+#   50 :       b = 1;
+#   51 :       #10;
+#   52 :       $display("Testing 1 + 1: %b + %b = %b with carry %b at time %t", a, b, s, c, $time);
+# ->53 :       `CHECK_EQUAL(s, 0, "Result should be 0");
+#   54 :       `CHECK_EQUAL(c, 1, "Carry should be 1");
+#   55 :     end
+#   56 : 
+#   57 :     //`TEST_CASE_CLEANUP begin
+# 
+# End time: 12:16:05 on Sep 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2

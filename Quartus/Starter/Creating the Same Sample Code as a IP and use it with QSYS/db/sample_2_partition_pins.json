@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "counter_custom_ip_0_count_write[0]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_count_write[1]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_count_write[2]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_count_write[3]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_count_write[4]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_count_write[5]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_count_write[6]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_count_write[7]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[0]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_latch_read",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_dec_read",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_div_read",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[1]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[2]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[3]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[4]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[5]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[6]",
+					"strict" : false
+				},
+				{
+					"name" : "counter_custom_ip_0_in_read[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

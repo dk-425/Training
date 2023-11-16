@@ -1,0 +1,82 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/sam-admin/intelFPGA_lite/22.1std/questa_fse/linux_x86_64
+T_opt
+!s110 1696925330
+VGb3fAgfD<8>n;;SYLa1000
+Z2 04 8 4 work blink_tb fast 0
+=1-000ae431a4f1-65250692-529a2-349e
+Z3 !s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1696927116
+VG4YX>LMDJIWCAMb>1e5zF0
+R2
+=1-000ae431a4f1-65250d8c-ae2fa-3872
+R3
+o-quiet -auto_acc_if_foreign -work work
+R4
+n@_opt1
+R5
+vblink
+Z6 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z7 !s110 1696927102
+!i10b 1
+!s100 Z_BQFPVdPY[QCGSX;YmCo0
+I:ma_1n7JaTz3bWBdmF:@^1
+S1
+Z8 d/home/sam-admin/git/Training/Scripting
+w1693298717
+8blink.v
+Fblink.v
+!i122 5
+L0 1 23
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z11 !s108 1696927102.000000
+Z12 !s107 blink_tb.v|blink.v|
+Z13 !s90 -sv|blink.v|blink_tb.v|
+!i113 0
+Z14 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vblink_tb
+R6
+R7
+!i10b 1
+!s100 GBE?>3T=FCh=cA2MBE>>83
+I4H1W@I545eiZUJja:<]JA2
+S1
+R8
+w1696925304
+8blink_tb.v
+Fblink_tb.v
+!i122 5
+L0 3 28
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R4

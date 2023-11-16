@@ -1,0 +1,9 @@
+# vsim -c -do "run -all" work.blink_tb 
+# Start time: 14:07:59 on Oct 10,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): blink_tb.v(12): (vopt-2912) Port 'led' not found in module 'blink' (3rd connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 14:08:00 on Oct 10,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

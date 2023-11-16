@@ -1,0 +1,127 @@
+# do /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___0_0cb33d9d60577987e122169f4499bf6fbbd056f5/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 0 * 0,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___0_0cb33d9d60577987e122169f4499bf6fbbd056f5/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 15:38:46 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 linux_x86_64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Error: Timeout waiting finish after 1.000 ns
+#    Time: 1 ns  Scope: vunit_pkg.test_runner.watchdog.wait_or_timeout File: /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv Line: 221
+# Break in NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv 221 return [address 0x7feff0338369] NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout
+# 
+# 
+# Surrounding code from 'see' command
+#   216 : 
+#   217 :    task automatic watchdog(real timeout_in_ns);
+#   218 :       fork : wait_or_timeout
+#   219 :          begin
+#   220 :             #(timeout_in_ns * 1ns);
+# ->221 :             $error("Timeout waiting finish after %.3f ns", timeout_in_ns);
+#   222 :             disable wait_or_timeout;
+#   223 :          end
+#   224 :          begin
+#   225 :             @(posedge exit_without_errors);
+# 
+# End time: 15:38:50 on Sep 12,2023, Elapsed time: 0:00:04
+# Errors: 1, Warnings: 0
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___1_1085c4ca0d64b7b952ae8cf6de34972a22c3b8fb/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 0 * 1,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_0___1_1085c4ca0d64b7b952ae8cf6de34972a22c3b8fb/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 15:38:50 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: Timeout waiting finish after 1.000 ns
+#    Time: 1 ns  Scope: vunit_pkg.test_runner.watchdog.wait_or_timeout File: /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv Line: 221
+# Break in NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv 221 return [address 0x7feff0338369] NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout
+# 
+# 
+# Surrounding code from 'see' command
+#   216 : 
+#   217 :    task automatic watchdog(real timeout_in_ns);
+#   218 :       fork : wait_or_timeout
+#   219 :          begin
+#   220 :             #(timeout_in_ns * 1ns);
+# ->221 :             $error("Timeout waiting finish after %.3f ns", timeout_in_ns);
+#   222 :             disable wait_or_timeout;
+#   223 :          end
+#   224 :          begin
+#   225 :             @(posedge exit_without_errors);
+# 
+# End time: 15:38:50 on Sep 12,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___0_9ffa7d5a1d7b1b3b358321a84b3196eae3153f1c/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 1 * 0,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___0_9ffa7d5a1d7b1b3b358321a84b3196eae3153f1c/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 15:38:50 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: Timeout waiting finish after 1.000 ns
+#    Time: 1 ns  Scope: vunit_pkg.test_runner.watchdog.wait_or_timeout File: /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv Line: 221
+# Break in NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv 221 return [address 0x7feff0338369] NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout
+# 
+# 
+# Surrounding code from 'see' command
+#   216 : 
+#   217 :    task automatic watchdog(real timeout_in_ns);
+#   218 :       fork : wait_or_timeout
+#   219 :          begin
+#   220 :             #(timeout_in_ns * 1ns);
+# ->221 :             $error("Timeout waiting finish after %.3f ns", timeout_in_ns);
+#   222 :             disable wait_or_timeout;
+#   223 :          end
+#   224 :          begin
+#   225 :             @(posedge exit_without_errors);
+# 
+# End time: 15:38:51 on Sep 12,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# vsim -modelsimini /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/modelsim/modelsim.ini -wlf /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___1_d2c192e0767056751a7eb709f117f52b458c4231/modelsim/vsim.wlf -quiet -t ps -onfinish stop tb_lib.tb_mult -L vunit_lib -L design_lib -L tb_lib -g/tb_mult/runner_cfg="active python runner : true,enabled_test_cases : Test 1 * 1,output path : /home/sam-admin/git/Training/Scripting/Automation/pract/vunit_out/test_output/tb_lib.tb_mult.Test_1___1_d2c192e0767056751a7eb709f117f52b458c4231/,tb path : /home/sam-admin/git/Training/Scripting/Automation/pract/,use_color : true" 
+# Start time: 15:38:51 on Sep 12,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: Timeout waiting finish after 1.000 ns
+#    Time: 1 ns  Scope: vunit_pkg.test_runner.watchdog.wait_or_timeout File: /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv Line: 221
+# Break in NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# Stopped at /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv line 221
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/vunit_pkg.sv 221 return [address 0x7feff0338369] NamedForkStat vunit_pkg/test_runner::watchdog/wait_or_timeout
+# 
+# 
+# Surrounding code from 'see' command
+#   216 : 
+#   217 :    task automatic watchdog(real timeout_in_ns);
+#   218 :       fork : wait_or_timeout
+#   219 :          begin
+#   220 :             #(timeout_in_ns * 1ns);
+# ->221 :             $error("Timeout waiting finish after %.3f ns", timeout_in_ns);
+#   222 :             disable wait_or_timeout;
+#   223 :          end
+#   224 :          begin
+#   225 :             @(posedge exit_without_errors);
+# 
+# End time: 15:38:51 on Sep 12,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

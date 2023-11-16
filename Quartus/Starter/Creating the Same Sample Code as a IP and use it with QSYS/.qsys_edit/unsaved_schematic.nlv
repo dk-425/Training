@@ -1,0 +1,17 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst unsaved.counter_custom_ip_0 -pg 1 -lvl 2 -y 70
+preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.counter_custom_ip_0_zero,(SLAVE)counter_custom_ip_0.zero) 1 0 2 NJ 220 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.counter_custom_ip_0_dec,(SLAVE)counter_custom_ip_0.dec) 1 0 2 NJ 120 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>unsaved</net_container>(MASTER)clk_0.clk,(SLAVE)counter_custom_ip_0.clock) 1 1 1 400
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)counter_custom_ip_0.div,(SLAVE)unsaved.counter_custom_ip_0_div) 1 0 2 NJ 140 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.counter_custom_ip_0_latch,(SLAVE)counter_custom_ip_0.latch) 1 0 2 NJ 180 NJ
+preplace netloc POINT_TO_POINT<net_container>unsaved</net_container>(SLAVE)counter_custom_ip_0.reset,(MASTER)clk_0.clk_reset) 1 1 1 380
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.counter_custom_ip_0_in,(SLAVE)counter_custom_ip_0.in) 1 0 2 NJ 160 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)clk_0.clk_in,(SLAVE)unsaved.clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)counter_custom_ip_0.count,(SLAVE)unsaved.counter_custom_ip_0_count) 1 0 2 NJ 100 NJ
+levelinfo -pg 1 0 170 590
+levelinfo -hier unsaved 180 210 460 580

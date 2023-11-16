@@ -1,0 +1,7 @@
+	component unsaved is
+		port (
+			blink_0_avalon_slave_0_beginbursttransfer   : in  std_logic := 'X'; -- beginbursttransfer
+			blink_0_avalon_slave_0_writeresponsevalid_n : out std_logic         -- writeresponsevalid_n
+		);
+	end component unsaved;
+

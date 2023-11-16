@@ -1,0 +1,23 @@
+make: *** No targets specified and no makefile found.  Stop.
+
+Traceback (most recent call last):
+  File "/home/sam-admin/anaconda3/lib/python3.11/site-packages/edalize/edatool.py", line 463, in _run_tool
+    cp = run(
+         ^^^^
+  File "/home/sam-admin/anaconda3/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['make']' returned non-zero exit status 2.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sam-admin/git/Training/Scripting/edalize/idalize.py", line 35, in <module>
+    backend.build()
+  File "/home/sam-admin/anaconda3/lib/python3.11/site-packages/edalize/edatool.py", line 244, in build
+    self.build_main()
+  File "/home/sam-admin/anaconda3/lib/python3.11/site-packages/edalize/quartus.py", line 266, in build_main
+    self._run_tool("make", args, quiet=True)
+  File "/home/sam-admin/anaconda3/lib/python3.11/site-packages/edalize/edatool.py", line 486, in _run_tool
+    raise RuntimeError(_s)
+RuntimeError: '['make']' exited with an error: 2
+

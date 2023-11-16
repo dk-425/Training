@@ -1,9 +1,22 @@
 |blink
-clk => led~reg0.CLK
+clk => led.CLK
 clk => counter[0].CLK
 clk => counter[1].CLK
 clk => counter[2].CLK
 clk => counter[3].CLK
-led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+rst => counter.OUTPUTSELECT
+rst => counter.OUTPUTSELECT
+rst => counter.OUTPUTSELECT
+rst => counter.OUTPUTSELECT
+rst => counter.OUTPUTSELECT
+rst => counter.OUTPUTSELECT
+rst => counter.OUTPUTSELECT
+rst => counter.OUTPUTSELECT
+rst => led.OUTPUTSELECT
+q <= led.DB_MAX_OUTPUT_PORT_TYPE
 
 

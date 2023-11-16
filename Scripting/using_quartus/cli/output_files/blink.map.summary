@@ -1,17 +1,17 @@
-Analysis & Synthesis Status : Successful - Mon Aug 28 17:31:21 2023
+Analysis & Synthesis Status : Successful - Tue Nov 14 11:01:50 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : blink
 Top-level Entity Name : blink
 Family : Cyclone V
-Logic utilization (in ALMs) : N/A
-Total registers : 5
-Total pins : 2
-Total virtual pins : 0
-Total block memory bits : 0
-Total DSP Blocks : 0
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0
-Total DLLs : 0
+Logic utilization (in ALMs) : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+Total DSP Blocks : N/A until Partition Merge
+Total HSSI RX PCSs : N/A until Partition Merge
+Total HSSI PMA RX Deserializers : N/A until Partition Merge
+Total HSSI TX PCSs : N/A until Partition Merge
+Total HSSI PMA TX Serializers : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge

@@ -1,0 +1,47 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/simulation/questa
+T_opt
+!s110 1699962144
+VdW@V@X9^Ea?GWaU?:5gho2
+04 10 4 work counter_tb fast 0
+=1-000ae431a4f1-65535d1e-7b659-dd1d6
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L unsaved +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vcounter_tb
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1699962141
+!i10b 1
+!s100 EV7jOCV<Lcn0VGWA;oH6I1
+IWMFmW<l<HAT3feoA:31Yl2
+S1
+R0
+w1699962075
+8/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/counter_tb.sv
+F/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/counter_tb.sv
+!i122 0
+L0 3 29
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1699962141.000000
+!s107 /home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/counter_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS|/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/counter_tb.sv|
+!i113 0
+o-sv -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -sv -work work {+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

@@ -1,0 +1,35 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved.qsys" --block-symbol-file --output-directory="/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved" --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading Creating the Same Sample Code as a IP and use it with QSYS/unsaved.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding counter_custom_ip_0 [counter_custom_ip 1.0]
+Progress: Parameterizing module counter_custom_ip_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: unsaved.counter_custom_ip_0: Port in conflicts with a VHDL, verilog or system verilog reserved word
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved.qsys" --synthesis=VERILOG --output-directory="/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis" --family="Cyclone V" --part=5CGXFC7C7F23C8
+Progress: Loading Creating the Same Sample Code as a IP and use it with QSYS/unsaved.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 22.1]
+Progress: Parameterizing module clk_0
+Progress: Adding counter_custom_ip_0 [counter_custom_ip 1.0]
+Progress: Parameterizing module counter_custom_ip_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: unsaved.counter_custom_ip_0: Port in conflicts with a VHDL, verilog or system verilog reserved word
+Info: unsaved: Generating unsaved "unsaved" for QUARTUS_SYNTH
+Info: counter_custom_ip_0: "unsaved" instantiated counter_custom_ip "counter_custom_ip_0"
+Info: rst_controller: "unsaved" instantiated altera_reset_controller "rst_controller"
+Info: unsaved: Done "unsaved" with 3 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

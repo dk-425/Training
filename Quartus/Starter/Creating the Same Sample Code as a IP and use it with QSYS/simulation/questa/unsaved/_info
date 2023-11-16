@@ -1,0 +1,105 @@
+m255
+K4
+z2
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/simulation/questa
+valtera_reset_controller
+Z1 !s110 1699962141
+!i10b 1
+!s100 oA9lUzaO95KXSKU3fUHXM0
+IKHb>NXh`SQlO==adom?`S1
+R0
+Z2 w1699961924
+8/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_controller.v
+F/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_controller.v
+!i122 1
+L0 42 278
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z5 !s108 1699962140.000000
+!s107 /home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|unsaved|+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules|/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_controller.v|
+!i113 0
+Z6 o-vlog01compat -work unsaved -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work unsaved {+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 D^dgdIfBaVUo6:<:oWOdC3
+ITBR@D0LHBI=kWmflcLK:M0
+R0
+R2
+8/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_synchronizer.v
+F/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_synchronizer.v
+!i122 2
+L0 24 63
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1699962141.000000
+!s107 /home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|unsaved|+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules|/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 0
+R6
+R7
+R8
+vcounter
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 ?004VgJdJzPkW40]M]Ti<3
+INCLli=6cc<[_OK=J^H6I_2
+S1
+R0
+R2
+8/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/counter.sv
+F/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/counter.sv
+!i122 3
+L0 3 36
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 /home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/counter.sv|
+!s90 -reportprogress|300|-sv|-work|unsaved|+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules|/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules/counter.sv|
+!i113 0
+o-sv -work unsaved -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -sv -work unsaved {+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/submodules} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vunsaved
+!s110 1699962140
+!i10b 1
+!s100 @]UO=BkQLbO93HU;?Z=NG0
+IK6D0<gGBfnl78Cg2mgY_^2
+R0
+R2
+8/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/unsaved.v
+F/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/unsaved.v
+!i122 0
+L0 6 88
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/unsaved.v|
+!s90 -reportprogress|300|-vlog01compat|-work|unsaved|+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis|/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis/unsaved.v|
+!i113 0
+R6
+!s92 -vlog01compat -work unsaved {+incdir+/home/sam-admin/git/Training/Quartus/Creating the Same Sample Code as a IP and use it with QSYS/unsaved/synthesis} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
