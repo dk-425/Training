@@ -1,7 +1,7 @@
 Inital Intern Report:
            - Initally worked on Xilinx using Vivado and HLS.
-           
-           
+           - Matlab
+   
 Extended Intern Report:
 
            <P--1>:
@@ -49,16 +49,17 @@ Extended Intern Report:
            - My previous container has all envorinment variables inside itself. but my new container is different from it, envorinment variables is given from jenkins itself.
            
            <P--10>:
-           - Understanding vunit script.
+           - Understanding vunit testing script.
            - enabling virtual python envorinments.
            - Integrating jenkins with google chat (after build we get notifications and also we can trigger jobs using google chats).
            
            <P--11>:
-           - f and i series build fails for latest repo so made changes from scratch and f series working perfectly.  working on i series
+           - f and i series build fails for latest updates in repo so made changes from scratch and build working perfectly including hitek.
            
            <P--12>:
-           - learning c unit for c unit testing to integrate it with L1C team.
-           -
+           - implemented C/C++ unit testing framework to integrate it with L1C team.
+
+Internship Ends
            
            
            
