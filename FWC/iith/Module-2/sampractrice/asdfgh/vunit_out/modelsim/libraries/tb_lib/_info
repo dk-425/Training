@@ -1,0 +1,79 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh
+T_opt
+!s110 1694087980
+V]0HOcldoln3ZAUJACoA[J1
+Z2 04 8 4 work tb_adder fast 0
+=1-000ae431a4f1-64f9bb2c-a925d-8066
+Z3 !s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work tb_lib -L vunit_lib -L design_lib -L tb_lib -g {/tb_adder/runner_cfg="active python runner : true,enabled_test_cases : Test 0 + 0,output path : /home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/vunit_out/test_output/tb_lib.tb_adder.Test_0_+_0_28d1ce02160a73b6a5f70f90303cf4bbdd8eb7ce/,tb path : /home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/testbench/,use_color : true"}
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1694087972
+VR5?QYdo`Ef^a=2cjF_k_j1
+R2
+=1-000ae431a4f1-64f9bb24-594ea-802c
+R3
+o-quiet -auto_acc_if_foreign -work tb_lib -L vunit_lib -L design_lib -L tb_lib -g {/tb_adder/runner_cfg="active python runner : true,enabled_test_cases : Test 1 + 1,output path : /home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/vunit_out/test_output/tb_lib.tb_adder.Test_1_+_1_1134d2a9e92dbb0082b55a3df74d9637b76adf04/,tb path : /home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/testbench/,use_color : true"}
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1694087981
+VX>Q>W;PhAImd<S@XP1D]M1
+R2
+=1-000ae431a4f1-64f9bb2d-8bd5f-8088
+R3
+o-quiet -auto_acc_if_foreign -work tb_lib -L vunit_lib -L design_lib -L tb_lib -g {/tb_adder/runner_cfg="active python runner : true,enabled_test_cases : Test 1 + 0,output path : /home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/vunit_out/test_output/tb_lib.tb_adder.Test_1_+_0_fa3a0d538fa3527f91225706db8a92317b2acbf0/,tb path : /home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/testbench/,use_color : true"}
+R4
+n@_opt2
+R5
+vtb_adder
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+DXx9 vunit_lib 9 vunit_pkg 0 22 `lQ3D^_f@@49eM4>jW^cT1
+!s110 1694087958
+!i10b 1
+!s100 93BL>Q2lM=H_hYP:EFmQ30
+IXi_78R;UiV<bESZl_8CA[2
+S1
+R1
+w1694065216
+8/home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/testbench/tb_adder.sv
+F/home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/testbench/tb_adder.sv
+!i122 0
+L0 3 71
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1694087958.000000
+!s107 /home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/include/vunit_defines.svh|/home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/testbench/tb_adder.sv|
+!s90 -quiet|-modelsimini|/home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/vunit_out/modelsim/modelsim.ini|-sv|-work|tb_lib|/home/sam-admin/Desktop/iith/Module-2/sampractrice/asdfgh/testbench/tb_adder.sv|-L|vunit_lib|-L|design_lib|-L|tb_lib|+incdir+/home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/include|
+!i113 0
+o-quiet -sv -work tb_lib -L vunit_lib -L design_lib -L tb_lib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -quiet -sv -work tb_lib -L vunit_lib -L design_lib -L tb_lib +incdir+/home/sam-admin/anaconda3/lib/python3.11/site-packages/vunit/verilog/include -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4

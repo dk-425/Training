@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Nov 20 14:52:43 2023
+# Process ID: 72577
+# Current directory: /home/sam-admin/git/Training/Scripting/cunit/demos
+# Command line: vivado
+# Log file: /home/sam-admin/git/Training/Scripting/cunit/demos/vivado.log
+# Journal file: /home/sam-admin/git/Training/Scripting/cunit/demos/vivado.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 1600.033 MHz, CPU Physical cores: 4, Host memory: 8092 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/sam-admin/git/Training/demo/project_work/project_work.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top pn_gen_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source pn_gen_tb.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+relaunch_sim
+export_ip_user_files -of_objects  [get_files /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pract.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pract.sv
+file delete -force /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pract.sv
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+current_wave_config {Untitled 12}
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+current_wave_config {Untitled 13}
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+current_wave_config {Untitled 14}
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+current_wave_config {Untitled 16}
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 16}
+add_wave {{/pn_gen_tb/dut/c}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source pn_gen_tb.tcl
+close_sim

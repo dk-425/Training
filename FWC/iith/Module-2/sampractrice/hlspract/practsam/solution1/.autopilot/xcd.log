@@ -1,0 +1,25 @@
+Wed Jul  5 16:21:10 2023: Running xcd server. This server was NOT built by gradle, but presumably rdi.
+Wed Jul  5 16:21:10 2023: Server was asked to start on port: '39341'
+Wed Jul  5 16:21:10 2023: Server is using token UUID: '20b28c31-a348-4b13-82ad-811d3caf58e5'
+Wed Jul  5 16:21:10 2023: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Wed Jul  5 16:21:10 2023: Attempting to start server on port '39341'
+Wed Jul  5 16:21:10 2023: XCD main fifo: created main fifo '/tmp/xcdmain20b28c31-a348-4b13-82ad-811d3caf58e5', fd read = 13
+Wed Jul  5 16:21:10 2023: Running Dispatch Server
+Wed Jul  5 16:21:10 2023: Version 2.2.0
+Wed Jul  5 16:21:19 2023: Dispatch Server: Accepted socket connection from client
+Wed Jul  5 16:21:19 2023: Starting Socket connection
+Wed Jul  5 16:21:19 2023: EXCHANGE_TOKEN received, server token: 20b28c31-a348-4b13-82ad-811d3caf58e5, passed token: 20b28c31-a348-4b13-82ad-811d3caf58e5
+Wed Jul  5 16:21:19 2023: SESSION_MGR: creating session with session uuid: '29a31eb2-0786-4fd5-b394-91d17fceeea3' and name 'vitis_hls'
+Wed Jul  5 16:21:19 2023: KERNEL_SVC: creating session with uuid: '29a31eb2-0786-4fd5-b394-91d17fceeea3' and name 'vitis_hls'
+Wed Jul  5 16:21:19 2023: GUIDANCE_SMGR: creating guidance session with uuid: '29a31eb2-0786-4fd5-b394-91d17fceeea3' and name 'vitis_hls'
+Wed Jul  5 16:21:48 2023: STOP_SERVER received, server token: 20b28c31-a348-4b13-82ad-811d3caf58e5, passed token: 20b28c31-a348-4b13-82ad-811d3caf58e5
+Wed Jul  5 16:21:48 2023: Socket received request to stop server.
+Wed Jul  5 16:21:48 2023: Dispatch Server: do_await_stop
+Wed Jul  5 16:21:48 2023: Dispatch Server: stopping mainFifo_
+Wed Jul  5 16:21:48 2023: XCD main fifo: Stopping
+Wed Jul  5 16:21:48 2023: XCD main fifo: do_read error code: Operation canceled
+Wed Jul  5 16:21:48 2023: XCD main fifo: bytes_transferred: 0
+Wed Jul  5 16:21:48 2023: SERVER: destructor for server bound to port 39341
+Wed Jul  5 16:21:48 2023: XCD main fifo: Good unlink of /tmp/xcdmain20b28c31-a348-4b13-82ad-811d3caf58e5
+Wed Jul  5 16:21:48 2023: Server exiting with status 0.
+Wed Jul  5 16:21:48 2023: Closing log file.

@@ -1,0 +1,71 @@
+pipeline {
+    agent any
+    environment {
+        PATH = "/usr/local/questa/questasim/bin:/usr/local/intelFPGA_pro/21.3/quartus/bin:/usr/local/intelFPGA_pro/21.3/qsys/bin:/usr/local/intelFPGA_pro/21.3/quartus/sopc_builder/bin:${env.PATH}"
+        LM_LICENSE_FILE="28500@192.168.130.25"
+        MGLS_LICENSE_FILE="1717@192.168.130.25"
+        TERM="xterm"
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                sh 'echo setting up ...'
+                sh 'echo $PATH'
+                checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[credentialsId: '62cbb464-f08a-4eb4-ab61-6607c4be28d3', url: 'git@github.com:wisig-5gt-fpga/wnKyocera.git']])
+            }
+        }  
+        stage('qsys') {
+            steps {
+                dir('build') {
+                    sh 'make qsys'
+                }
+            }
+        }
+        stage('sof') {
+            steps {
+                dir('build') {
+                    sh 'make sof'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/agib027/*.sof', fingerprint: true 
+                }
+            }
+        }        
+        stage('build') {
+            steps {
+                dir('build') {
+                    sh 'make rbf'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/*.core.rbf, build/agib027/*_hps_auto.sof', fingerprint: true 
+                }
+            }
+        }
+        stage('Deploy') {
+            agent {
+                label 'wisig_local'
+            }
+            environment {
+                AGIB027_IP_ADDR="192.168.166.201"
+            }            
+            steps {
+                checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[credentialsId: '62cbb464-f08a-4eb4-ab61-6607c4be28d3', url: 'git@github.com:wisig-5gt-fpga/wnKyocera.git']])
+                dir('build') {
+                    copyArtifacts filter: 'build/ghrd.core.rbf', projectName: env.JOB_NAME, selector: specific(env.BUILD_NUMBER), flatten: true, fingerprintArtifacts: true
+                    sh 'make deploy'
+                }
+            }
+        }
+    }
+    post {
+        always {
+            dir('build') {
+                archiveArtifacts artifacts: '**/*.syn.rpt, **/*.fit.rpt', fingerprint: true 
+            }
+        }
+    }
+}

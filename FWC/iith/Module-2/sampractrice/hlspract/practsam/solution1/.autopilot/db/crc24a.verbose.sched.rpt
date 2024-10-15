@@ -1,0 +1,253 @@
+
+
+================================================================
+== Vitis HLS Report for 'crc24a'
+================================================================
+* Date:           Wed Jul  5 16:21:39 2023
+
+* Version:        2022.2.2 (Build 3779808 on Feb 17 2023)
+* Project:        practsam
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.291 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 10
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 7 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.67>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%u_loc = alloca i64 1"   --->   Operation 11 'alloca' 'u_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%last_V_loc = alloca i64 1"   --->   Operation 12 'alloca' 'last_V_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%crc_V = alloca i64 1" [pract.cpp:11]   --->   Operation 13 'alloca' 'crc_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 32> <RAM>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%crc_V_1 = alloca i64 1" [pract.cpp:11]   --->   Operation 14 'alloca' 'crc_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%crc_V_2 = alloca i64 1" [pract.cpp:11]   --->   Operation 15 'alloca' 'crc_V_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%crc_V_3 = alloca i64 1" [pract.cpp:11]   --->   Operation 16 'alloca' 'crc_V_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%crc_V_4 = alloca i64 1" [pract.cpp:11]   --->   Operation 17 'alloca' 'crc_V_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%crc_V_5 = alloca i64 1" [pract.cpp:11]   --->   Operation 18 'alloca' 'crc_V_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%crc_V_6 = alloca i64 1" [pract.cpp:11]   --->   Operation 19 'alloca' 'crc_V_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%crc_V_7 = alloca i64 1" [pract.cpp:11]   --->   Operation 20 'alloca' 'crc_V_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%crc_V_8 = alloca i64 1" [pract.cpp:11]   --->   Operation 21 'alloca' 'crc_V_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%crc_V_9 = alloca i64 1" [pract.cpp:11]   --->   Operation 22 'alloca' 'crc_V_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%crc_V_10 = alloca i64 1" [pract.cpp:11]   --->   Operation 23 'alloca' 'crc_V_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%crc_V_11 = alloca i64 1" [pract.cpp:11]   --->   Operation 24 'alloca' 'crc_V_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%crc_V_12 = alloca i64 1" [pract.cpp:11]   --->   Operation 25 'alloca' 'crc_V_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%crc_V_13 = alloca i64 1" [pract.cpp:11]   --->   Operation 26 'alloca' 'crc_V_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%crc_V_14 = alloca i64 1" [pract.cpp:11]   --->   Operation 27 'alloca' 'crc_V_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%crc_V_15 = alloca i64 1" [pract.cpp:11]   --->   Operation 28 'alloca' 'crc_V_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%crc_V_16 = alloca i64 1" [pract.cpp:11]   --->   Operation 29 'alloca' 'crc_V_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%crc_V_17 = alloca i64 1" [pract.cpp:11]   --->   Operation 30 'alloca' 'crc_V_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%crc_V_18 = alloca i64 1" [pract.cpp:11]   --->   Operation 31 'alloca' 'crc_V_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%crc_V_19 = alloca i64 1" [pract.cpp:11]   --->   Operation 32 'alloca' 'crc_V_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%crc_V_20 = alloca i64 1" [pract.cpp:11]   --->   Operation 33 'alloca' 'crc_V_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%crc_V_21 = alloca i64 1" [pract.cpp:11]   --->   Operation 34 'alloca' 'crc_V_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%crc_V_22 = alloca i64 1" [pract.cpp:11]   --->   Operation 35 'alloca' 'crc_V_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%crc_V_23 = alloca i64 1" [pract.cpp:11]   --->   Operation 36 'alloca' 'crc_V_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%crc_V_24 = alloca i64 1" [pract.cpp:11]   --->   Operation 37 'alloca' 'crc_V_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%rtc_V = alloca i64 1" [pract.cpp:12]   --->   Operation 38 'alloca' 'rtc_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 100> <RAM>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%rtc_V_1 = alloca i64 1" [pract.cpp:12]   --->   Operation 39 'alloca' 'rtc_V_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%rtc_V_2 = alloca i64 1" [pract.cpp:12]   --->   Operation 40 'alloca' 'rtc_V_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%rtc_V_3 = alloca i64 1" [pract.cpp:12]   --->   Operation 41 'alloca' 'rtc_V_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%rtc_V_4 = alloca i64 1" [pract.cpp:12]   --->   Operation 42 'alloca' 'rtc_V_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%rtc_V_5 = alloca i64 1" [pract.cpp:12]   --->   Operation 43 'alloca' 'rtc_V_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%rtc_V_6 = alloca i64 1" [pract.cpp:12]   --->   Operation 44 'alloca' 'rtc_V_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%rtc_V_7 = alloca i64 1" [pract.cpp:12]   --->   Operation 45 'alloca' 'rtc_V_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%crc_V_addr = getelementptr i1 %crc_V, i64 0, i64 0"   --->   Operation 46 'getelementptr' 'crc_V_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.67ns)   --->   "%store_ln214 = store i1 0, i5 %crc_V_addr"   --->   Operation 47 'store' 'store_ln214' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 32> <RAM>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%rtc_V_addr = getelementptr i1 %rtc_V, i64 0, i64 0"   --->   Operation 48 'getelementptr' 'rtc_V_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.67ns)   --->   "%store_ln214 = store i1 0, i7 %rtc_V_addr"   --->   Operation 49 'store' 'store_ln214' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 1> <Depth = 100> <RAM>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 50 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.27>
+ST_2 : Operation 51 [2/2] (1.27ns)   --->   "%call_ln0 = call void @crc24a_Pipeline_loop1, i8 %input_r, i1 %crc_V, i1 %crc_V_1, i1 %crc_V_2, i1 %crc_V_3, i1 %crc_V_4, i1 %crc_V_5, i1 %crc_V_6, i1 %crc_V_7, i1 %crc_V_8, i1 %crc_V_9, i1 %crc_V_10, i1 %crc_V_11, i1 %crc_V_12, i1 %crc_V_13, i1 %crc_V_14, i1 %crc_V_15, i1 %crc_V_16, i1 %crc_V_17, i1 %crc_V_18, i1 %crc_V_19, i1 %crc_V_20, i1 %crc_V_21, i1 %crc_V_22, i1 %crc_V_23, i1 %crc_V_24, i8 %last_V_loc, i32 %u_loc"   --->   Operation 51 'call' 'call_ln0' <Predicate = true> <Delay = 1.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 52 [1/2] (0.00ns)   --->   "%call_ln0 = call void @crc24a_Pipeline_loop1, i8 %input_r, i1 %crc_V, i1 %crc_V_1, i1 %crc_V_2, i1 %crc_V_3, i1 %crc_V_4, i1 %crc_V_5, i1 %crc_V_6, i1 %crc_V_7, i1 %crc_V_8, i1 %crc_V_9, i1 %crc_V_10, i1 %crc_V_11, i1 %crc_V_12, i1 %crc_V_13, i1 %crc_V_14, i1 %crc_V_15, i1 %crc_V_16, i1 %crc_V_17, i1 %crc_V_18, i1 %crc_V_19, i1 %crc_V_20, i1 %crc_V_21, i1 %crc_V_22, i1 %crc_V_23, i1 %crc_V_24, i8 %last_V_loc, i32 %u_loc"   --->   Operation 52 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 1.01>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%u_loc_load = load i32 %u_loc"   --->   Operation 53 'load' 'u_loc_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%empty_20 = wait i32 @_ssdm_op_Wait"   --->   Operation 54 'wait' 'empty_20' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 55 [1/1] (1.01ns)   --->   "%z = add i32 %u_loc_load, i32 24" [pract.cpp:32]   --->   Operation 55 'add' 'z' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln32 = call void @crc24a_Pipeline_loop3, i32 %z, i1 %rtc_V_7, i1 %rtc_V_6, i1 %rtc_V_5, i1 %rtc_V_4, i1 %rtc_V_3, i1 %rtc_V_2, i1 %rtc_V_1, i1 %rtc_V, i1 %crc_V_24, i1 %crc_V_23, i1 %crc_V_22, i1 %crc_V_21, i1 %crc_V_20, i1 %crc_V_19, i1 %crc_V_18, i1 %crc_V_17, i1 %crc_V_16, i1 %crc_V_15, i1 %crc_V_14, i1 %crc_V_13, i1 %crc_V_12, i1 %crc_V_11, i1 %crc_V_10, i1 %crc_V_9, i1 %crc_V_8, i1 %crc_V_7, i1 %crc_V_6, i1 %crc_V_5, i1 %crc_V_4, i1 %crc_V_3, i1 %crc_V_2, i1 %crc_V_1, i1 %crc_V, i32 %u_loc_load" [pract.cpp:32]   --->   Operation 56 'call' 'call_ln32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.99>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%spectopmodule_ln5 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [pract.cpp:5]   --->   Operation 57 'spectopmodule' 'spectopmodule_ln5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %input_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %input_r"   --->   Operation 59 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %output_r, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %output_r"   --->   Operation 61 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%last_V_loc_load = load i8 %last_V_loc"   --->   Operation 62 'load' 'last_V_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (0.00ns)   --->   "%sext_ln34 = sext i32 %z" [pract.cpp:34]   --->   Operation 63 'sext' 'sext_ln34' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 64 [1/2] (0.00ns)   --->   "%call_ln32 = call void @crc24a_Pipeline_loop3, i32 %z, i1 %rtc_V_7, i1 %rtc_V_6, i1 %rtc_V_5, i1 %rtc_V_4, i1 %rtc_V_3, i1 %rtc_V_2, i1 %rtc_V_1, i1 %rtc_V, i1 %crc_V_24, i1 %crc_V_23, i1 %crc_V_22, i1 %crc_V_21, i1 %crc_V_20, i1 %crc_V_19, i1 %crc_V_18, i1 %crc_V_17, i1 %crc_V_16, i1 %crc_V_15, i1 %crc_V_14, i1 %crc_V_13, i1 %crc_V_12, i1 %crc_V_11, i1 %crc_V_10, i1 %crc_V_9, i1 %crc_V_8, i1 %crc_V_7, i1 %crc_V_6, i1 %crc_V_5, i1 %crc_V_4, i1 %crc_V_3, i1 %crc_V_2, i1 %crc_V_1, i1 %crc_V, i32 %u_loc_load" [pract.cpp:32]   --->   Operation 64 'call' 'call_ln32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 65 [1/1] (0.99ns)   --->   "%icmp_ln40 = icmp_sgt  i32 %u_loc_load, i32 0" [pract.cpp:40]   --->   Operation 65 'icmp' 'icmp_ln40' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln40 = br i1 %icmp_ln40, void %loop6, void %for.body65.lr.ph" [pract.cpp:40]   --->   Operation 66 'br' 'br_ln40' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 67 [1/1] (0.84ns)   --->   "%cmp_i_i_not = icmp_eq  i8 %last_V_loc_load, i8 1"   --->   Operation 67 'icmp' 'cmp_i_i_not' <Predicate = (icmp_ln40)> <Delay = 0.84> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%trunc_ln40 = trunc i32 %u_loc_load" [pract.cpp:40]   --->   Operation 68 'trunc' 'trunc_ln40' <Predicate = (icmp_ln40)> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 69 [2/2] (0.00ns)   --->   "%call_ln40 = call void @crc24a_Pipeline_loop4, i31 %trunc_ln40, i1 %crc_V, i1 %crc_V_1, i1 %crc_V_2, i1 %crc_V_3, i1 %crc_V_4, i1 %crc_V_5, i1 %crc_V_6, i1 %crc_V_7, i1 %crc_V_8, i1 %crc_V_9, i1 %crc_V_10, i1 %crc_V_11, i1 %crc_V_12, i1 %crc_V_13, i1 %crc_V_14, i1 %crc_V_15, i1 %crc_V_16, i1 %crc_V_17, i1 %crc_V_18, i1 %crc_V_19, i1 %crc_V_20, i1 %crc_V_21, i1 %crc_V_22, i1 %crc_V_23, i1 %crc_V_24, i1 %cmp_i_i_not" [pract.cpp:40]   --->   Operation 69 'call' 'call_ln40' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 2.39>
+ST_7 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln40 = call void @crc24a_Pipeline_loop4, i31 %trunc_ln40, i1 %crc_V, i1 %crc_V_1, i1 %crc_V_2, i1 %crc_V_3, i1 %crc_V_4, i1 %crc_V_5, i1 %crc_V_6, i1 %crc_V_7, i1 %crc_V_8, i1 %crc_V_9, i1 %crc_V_10, i1 %crc_V_11, i1 %crc_V_12, i1 %crc_V_13, i1 %crc_V_14, i1 %crc_V_15, i1 %crc_V_16, i1 %crc_V_17, i1 %crc_V_18, i1 %crc_V_19, i1 %crc_V_20, i1 %crc_V_21, i1 %crc_V_22, i1 %crc_V_23, i1 %crc_V_24, i1 %cmp_i_i_not" [pract.cpp:40]   --->   Operation 70 'call' 'call_ln40' <Predicate = (icmp_ln40)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%br_ln0 = br void %loop6"   --->   Operation 71 'br' 'br_ln0' <Predicate = (icmp_ln40)> <Delay = 0.00>
+ST_7 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node select_ln54_1)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %z, i32 31" [pract.cpp:54]   --->   Operation 72 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 73 [1/1] (1.01ns)   --->   "%add_ln54 = add i33 %sext_ln34, i33 7" [pract.cpp:54]   --->   Operation 73 'add' 'add_ln54' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 74 [1/1] (0.00ns) (grouped into LUT with out node select_ln54_1)   --->   "%tmp_53 = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %add_ln54, i32 32" [pract.cpp:54]   --->   Operation 74 'bitselect' 'tmp_53' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 75 [1/1] (1.01ns)   --->   "%sub_ln54 = sub i33 8589934585, i33 %sext_ln34" [pract.cpp:54]   --->   Operation 75 'sub' 'sub_ln54' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 76 [1/1] (0.00ns)   --->   "%p_lshr = partselect i30 @_ssdm_op_PartSelect.i30.i33.i32.i32, i33 %sub_ln54, i32 3, i32 32" [pract.cpp:54]   --->   Operation 76 'partselect' 'p_lshr' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 77 [1/1] (0.99ns)   --->   "%sub_ln54_1 = sub i30 0, i30 %p_lshr" [pract.cpp:54]   --->   Operation 77 'sub' 'sub_ln54_1' <Predicate = true> <Delay = 0.99> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node select_ln54_1)   --->   "%tmp_54 = partselect i30 @_ssdm_op_PartSelect.i30.i33.i32.i32, i33 %add_ln54, i32 3, i32 32" [pract.cpp:54]   --->   Operation 78 'partselect' 'tmp_54' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node select_ln54_1)   --->   "%select_ln54 = select i1 %tmp_53, i30 %sub_ln54_1, i30 %tmp_54" [pract.cpp:54]   --->   Operation 79 'select' 'select_ln54' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 80 [1/1] (0.38ns) (out node of the LUT)   --->   "%select_ln54_1 = select i1 %tmp, i30 0, i30 %select_ln54" [pract.cpp:54]   --->   Operation 80 'select' 'select_ln54_1' <Predicate = true> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 81 [1/1] (0.00ns)   --->   "%empty_21 = wait i32 @_ssdm_op_Wait"   --->   Operation 81 'wait' 'empty_21' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_55 = bitconcatenate i33 @_ssdm_op_BitConcatenate.i33.i30.i3, i30 %select_ln54_1, i3 0" [pract.cpp:54]   --->   Operation 82 'bitconcatenate' 'tmp_55' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 83 [2/2] (0.00ns)   --->   "%call_ln54 = call void @crc24a_Pipeline_loop6, i33 %tmp_55, i1 %rtc_V_7, i1 %rtc_V_6, i1 %rtc_V_5, i1 %rtc_V_4, i1 %rtc_V_3, i1 %rtc_V_2, i1 %rtc_V_1, i1 %rtc_V, i1 %crc_V, i1 %crc_V_1, i1 %crc_V_2, i1 %crc_V_3, i1 %crc_V_4, i1 %crc_V_5, i1 %crc_V_6, i1 %crc_V_7, i1 %crc_V_8, i1 %crc_V_9, i1 %crc_V_10, i1 %crc_V_11, i1 %crc_V_12, i1 %crc_V_13, i1 %crc_V_14, i1 %crc_V_15, i1 %crc_V_16, i1 %crc_V_17, i1 %crc_V_18, i1 %crc_V_19, i1 %crc_V_20, i1 %crc_V_21, i1 %crc_V_22, i1 %crc_V_23, i1 %crc_V_24, i8 %output_r" [pract.cpp:54]   --->   Operation 83 'call' 'call_ln54' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 1.84>
+ST_9 : Operation 84 [1/2] (1.84ns)   --->   "%call_ln54 = call void @crc24a_Pipeline_loop6, i33 %tmp_55, i1 %rtc_V_7, i1 %rtc_V_6, i1 %rtc_V_5, i1 %rtc_V_4, i1 %rtc_V_3, i1 %rtc_V_2, i1 %rtc_V_1, i1 %rtc_V, i1 %crc_V, i1 %crc_V_1, i1 %crc_V_2, i1 %crc_V_3, i1 %crc_V_4, i1 %crc_V_5, i1 %crc_V_6, i1 %crc_V_7, i1 %crc_V_8, i1 %crc_V_9, i1 %crc_V_10, i1 %crc_V_11, i1 %crc_V_12, i1 %crc_V_13, i1 %crc_V_14, i1 %crc_V_15, i1 %crc_V_16, i1 %crc_V_17, i1 %crc_V_18, i1 %crc_V_19, i1 %crc_V_20, i1 %crc_V_21, i1 %crc_V_22, i1 %crc_V_23, i1 %crc_V_24, i8 %output_r" [pract.cpp:54]   --->   Operation 84 'call' 'call_ln54' <Predicate = true> <Delay = 1.84> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 85 [1/1] (0.00ns)   --->   "%ret_ln64 = ret" [pract.cpp:64]   --->   Operation 85 'ret' 'ret_ln64' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.677ns
+The critical path consists of the following:
+	'alloca' operation ('crc.V', pract.cpp:11) [10]  (0 ns)
+	'getelementptr' operation ('crc_V_addr') [43]  (0 ns)
+	'store' operation ('store_ln214') of constant 0 on array 'crc.V', pract.cpp:11 [44]  (0.677 ns)
+
+ <State 2>: 1.28ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'crc24a_Pipeline_loop1' [48]  (1.28 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 1.02ns
+The critical path consists of the following:
+	'load' operation ('u_loc_load') on local variable 'u_loc' [50]  (0 ns)
+	'add' operation ('z', pract.cpp:32) [52]  (1.02 ns)
+
+ <State 5>: 0.991ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln40', pract.cpp:40) [55]  (0.991 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 2.4ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln54', pract.cpp:54) [66]  (1.02 ns)
+	'sub' operation ('sub_ln54_1', pract.cpp:54) [68]  (0.996 ns)
+	'select' operation ('select_ln54', pract.cpp:54) [70]  (0 ns)
+	'select' operation ('select_ln54_1', pract.cpp:54) [71]  (0.387 ns)
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 1.84ns
+The critical path consists of the following:
+	'call' operation ('call_ln54', pract.cpp:54) to 'crc24a_Pipeline_loop6' [74]  (1.84 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

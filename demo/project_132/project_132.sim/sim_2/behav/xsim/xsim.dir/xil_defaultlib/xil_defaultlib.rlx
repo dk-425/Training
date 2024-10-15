@@ -1,0 +1,8 @@
+0.7
+2020.2
+Feb 21 2023
+20:06:57
+/home/sam-admin/git/Training/demo/project_132/project_132.sim/sim_2/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+/home/sam-admin/git/wisig-work/basic/fp_add.v,1701945226,verilog,,,,fp_add,,uvm,../../../../../../../wisig-work/basic,,,,,
+/home/sam-admin/git/wisig-work/basic/fp_add_tb.sv,1702021112,systemVerilog,,,/home/sam-admin/git/wisig-work/basic/util.svh,$unit_fp_add_tb_sv;fp_add_tb,,uvm,../../../../../../../wisig-work/basic,,,,,
+/home/sam-admin/git/wisig-work/basic/util.svh,1701855823,verilog,,,,,,,,,,,,

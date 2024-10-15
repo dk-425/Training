@@ -1,0 +1,69 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/sam-admin/Desktop/iith/Module-2/sampractrice/hlspract/practsam/solution1/csynth.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=crc24a" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/sam-admin/Desktop/iith/Module-2/sampractrice/hlspract/practsam/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=crc24a" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pract.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=input" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pract.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pract.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pract.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pract.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pract.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="pract.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="crc24a" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pract.cpp:56:9" msg_body="Loop 'loop7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="pract.cpp:43:10" msg_body="Loop 'loop5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pract.cpp:5:0" msg_body="Unrolling loop 'loop7' (pract.cpp:56:9) in function 'crc24a' completely with a factor of 8">
+        <args Factor="8" LoopLoc="pract.cpp:56:9" LoopName="loop7"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="pract.cpp:5:0" msg_body="Unrolling loop 'loop5' (pract.cpp:43:10) in function 'crc24a' completely with a factor of 25">
+        <args Factor="25" LoopLoc="pract.cpp:43:10" LoopName="loop5"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="pract.cpp:0:1" msg_body="array_partition dim=1 type=cyclic factor=25 variable=crc 1 crc24a pract.cpp:11:13 pract.cpp:55:9crc">
+        <args PragmaFunction="crc24a" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=25 variable=crc" PragmaSrcLoc="pract.cpp:55:9" PragmaType="array_partition" VarName="crc" varLoc="pract.cpp:11:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="pract.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=25 dim=1' for array 'crc' due to pipeline pragma">
+        <args Dim="1" Factor="25" Mode="cyclic" Name="crc" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="pract.cpp:0:2" msg_body="array_partition dim=1 type=cyclic factor=8 variable=rtc 1 crc24a pract.cpp:12:13 pract.cpp:55:9rtc">
+        <args PragmaFunction="crc24a" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=8 variable=rtc" PragmaSrcLoc="pract.cpp:55:9" PragmaType="array_partition" VarName="rtc" varLoc="pract.cpp:12:13"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="pract.cpp:55:9" msg_body="Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'rtc' due to pipeline pragma">
+        <args Dim="1" Factor="8" Mode="cyclic" Name="rtc" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="pract.cpp:11:13" msg_body="Applying array_partition to 'crc': Cyclic partitioning with factor 25 on dimension 1.">
+        <args Dim="1" Factor="25" Mode="Cyclic" UOName="crc"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="pract.cpp:12:13" msg_body="Applying array_partition to 'rtc': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="rtc"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

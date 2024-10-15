@@ -1,0 +1,4 @@
+Running: xsim.dir/BinaryDataReader_behav/xsimk -simmode gui -wdb BinaryDataReader_behav.wdb -simrunnum 0 -socket 37953
+Design successfully loaded
+Design Loading Memory Usage: 29112 KB (Peak: 29720 KB)
+Design Loading CPU Usage: 40 ms

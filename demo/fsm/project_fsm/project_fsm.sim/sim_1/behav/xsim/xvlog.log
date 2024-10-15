@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/demo/fsm/fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fsm_axi_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/demo/fsm/fsm_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fsm_axi_stream

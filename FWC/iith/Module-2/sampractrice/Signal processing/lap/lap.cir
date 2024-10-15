@@ -1,0 +1,7 @@
+lap
+R1 n1 n2 1
+R2 n2 n3 2
+V2 n3 gnd 2V
+V1 n1 gnd 1V
+C n2 gnd 1u
+.end

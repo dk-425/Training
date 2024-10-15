@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Wed Dec  6 15:15:57 2023
+# Process ID: 15045
+# Current directory: /home/sam-admin/git/Training/demo/project_132/project_132.runs/synth_1
+# Command line: vivado -log fp_add.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fp_add.tcl
+# Log file: /home/sam-admin/git/Training/demo/project_132/project_132.runs/synth_1/fp_add.vds
+# Journal file: /home/sam-admin/git/Training/demo/project_132/project_132.runs/synth_1/vivado.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 3400.052 MHz, CPU Physical cores: 4, Host memory: 8092 MB
+#-----------------------------------------------------------
+source fp_add.tcl -notrace

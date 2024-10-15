@@ -1,0 +1,3 @@
+| Inputs | Expected Output | Actual Output | File Error Line |
+
+| 1 1 | 10 | 0 | 1 |

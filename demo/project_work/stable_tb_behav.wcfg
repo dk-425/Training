@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="stable_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="stable_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,001.000001 us"></ZoomEndTime>
+      <Cursor1Time time="56.047032 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="154"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject type="logic" fp_name="/stable_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/in_data">
+      <obj_property name="ElementShortName">in_data[2:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/in_valid">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/in_ready">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/out_data">
+      <obj_property name="ElementShortName">out_data</obj_property>
+      <obj_property name="ObjectShortName">out_data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/out_valid">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/out_ready">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/file">
+      <obj_property name="ElementShortName">file[31:0]</obj_property>
+      <obj_property name="ObjectShortName">file[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/data">
+      <obj_property name="ElementShortName">data[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/data_counter">
+      <obj_property name="ElementShortName">data_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_counter[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/DATA_WIDTH">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/SEQ_LEN">
+      <obj_property name="ElementShortName">SEQ_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SEQ_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/stable_dut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/stable_dut/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/stable_dut/in_data">
+      <obj_property name="ElementShortName">in_data[2:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/stable_dut/in_valid">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/stable_dut/in_ready">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/stable_dut/out_data">
+      <obj_property name="ElementShortName">out_data</obj_property>
+      <obj_property name="ObjectShortName">out_data</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/stable_dut/out_valid">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/stable_tb/stable_dut/out_ready">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/stable_dut/data_in_reg">
+      <obj_property name="ElementShortName">data_in_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_reg[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/stable_dut/counter">
+      <obj_property name="ElementShortName">counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/stable_dut/prsnt_state">
+      <obj_property name="ElementShortName">prsnt_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">prsnt_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/stable_dut/nxt_state">
+      <obj_property name="ElementShortName">nxt_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">nxt_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/stable_dut/DATA_WIDTH">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/stable_tb/stable_dut/SEQ_LEN">
+      <obj_property name="ElementShortName">SEQ_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SEQ_LEN[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"axis_fifo_tb_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../project_work.srcs/sim_1/new/stable_tb.sv" \
+
+# Do not sort compile order
+nosort

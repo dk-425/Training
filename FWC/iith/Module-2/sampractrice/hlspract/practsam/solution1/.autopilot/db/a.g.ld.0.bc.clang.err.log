@@ -1,0 +1,11 @@
+remark: pract.cpp:56:9: Loop 'loop7' is marked as complete unroll implied by the pipeline pragma
+remark: pract.cpp:43:10: Loop 'loop5' is marked as complete unroll implied by the pipeline pragma
+remark: pract.cpp:5:0: Unrolling loop 'loop7' (pract.cpp:56:9) in function 'crc24a' completely with a factor of 8
+remark: pract.cpp:5:0: Unrolling loop 'loop5' (pract.cpp:43:10) in function 'crc24a' completely with a factor of 25
+remark: pract.cpp:18:8: Could not analyze the loop bounds _XLX_SEP_ loop1 pract.cpp:18:8 crc24a(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<8>, 0>&) 
+remark: pract.cpp:0:1: array_partition dim=1 type=cyclic factor=25 variable=crc 1 crc24a pract.cpp:11:13 pract.cpp:55:9crc 
+remark: pract.cpp:55:9: Inferring pragma 'array_partition type=cyclic factor=25 dim=1' for array 'crc' due to pipeline pragma
+remark: pract.cpp:0:2: array_partition dim=1 type=cyclic factor=8 variable=rtc 1 crc24a pract.cpp:12:13 pract.cpp:55:9rtc 
+remark: pract.cpp:55:9: Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'rtc' due to pipeline pragma
+remark: pract.cpp:11:13: Applying array_partition to 'crc': Cyclic partitioning with factor 25 on dimension 1.
+remark: pract.cpp:12:13: Applying array_partition to 'rtc': Cyclic partitioning with factor 8 on dimension 1.

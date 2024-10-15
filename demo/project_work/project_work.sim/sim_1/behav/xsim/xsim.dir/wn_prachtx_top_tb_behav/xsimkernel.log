@@ -1,0 +1,7 @@
+Running: xsim.dir/wn_prachtx_top_tb_behav/xsimk -simmode gui -wdb wn_prachtx_top_tb_behav.wdb -simrunnum 0 -socket 60651
+Design successfully loaded
+Design Loading Memory Usage: 29176 KB (Peak: 29760 KB)
+Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 119884 KB (Peak: 168444 KB)
+Simulation CPU Usage: 30 ms

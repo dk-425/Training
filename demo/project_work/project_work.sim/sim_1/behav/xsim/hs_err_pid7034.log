@@ -1,0 +1,17 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbefecb) [0x7f7b89defecb]
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(JVM_handle_linux_signal+0xd1) [0x7f7b89df6c81]
+/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/lib//server/libjvm.so(+0xbead23) [0x7f7b89dead23]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7f7bcd842520]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(+0x27aa1b) [0x7f7b9e07aa1b]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::findVisibleDataObj(SimBridge::BlockObj const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const+0xf0) [0x7f7b9e081840]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::getDataObj(SimBridge::BlockObj const*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int*) const+0x560) [0x7f7b9e089130]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataObjMgr::getDataObj(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int*) const+0x112) [0x7f7b9e089392]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SimBridge::DataReader::getDataObj(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int*) const+0x5e) [0x7f7b9e090c2e]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_simdata.so(RSDData::RSDCommonSimulationObject::getCodeTooltipValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, bool) const+0x6e) [0x7f7bc8d2acde]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_simdata.so(RSDExecutive::getCodeTooltipValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int, bool) const+0x7a) [0x7f7bc8d4917a]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_simdata.so(Java_ui_views_simulator_executive_simulationi_SimulationExecutive_1getCodeTooltipValue+0x1bb) [0x7f7bc8da10bb]
+[0x7f7b7960ca28]

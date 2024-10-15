@@ -1,0 +1,60 @@
+ \documentclass{common/iiththesis}
+%\documentclass[lof,lot,loa,department=ee,degree=mtech,backref=page]{common/iiththesis}
+\usepackage{amsmath}
+%\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{caption} 
+\captionsetup[table]{skip=10pt}
+\usepackage{lscape}
+\usepackage{float}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{courier}
+\lstset{
+%language=C,
+frame=single,
+basicstyle=\footnotesize\ttfamily, 
+breaklines=true,
+columns=fullflexible
+}
+
+\book{thesis}
+\title{Navigation and Communication for UGV/UAV}
+\degree{M.Tech. in Communication \& Signal Processing}
+\department{Electrical Engineering}
+\submitted{June 2022}
+\author{Sachinkumar Omprakash Dubey}
+\adviser{Dr. G V V Sharma}
+\addradviser{Dept. of Electrical Engineering\\ IIT Hyderabad}
+%\chair{---------}
+%\addrchair{Dept. of Mech Eng \\ IITH}
+\external{Dr. Bhuvanesh Ramakrishna}
+\addrexternal{Dept. of Engineering Science \\ IIT Hyderabad}
+\internal{Dr. Abhinav Kumar}
+\addrinternal{Dept. of Electrical Engineering\\ IIT Hyderabad}
+%\coguide{----------}
+%\addrcoguide{Dept. of Chem Eng \\ IITH}
+
+
+\input{acknowledgments/acks}
+%\dedication{.}
+\input{abstract/abstract}
+
+\renewcommand{\bibname}{References}
+\begin{document}
+\input{chapter-1/introduction}
+\input{chapter-2/chapter-2}
+\input{chapter-3/chapter-3}
+\input{chapter-4/chapter-4}
+\input{chapter-5/chapter-5}
+\input{chapter-6/chapter-6}
+\input{conclusion-chapter/conclusion}
+%
+\nocite{*}
+\clearpage
+\newpage
+\addcontentsline{toc}{chapter}{References} % Please do not remove this
+\bibliographystyle{common/iiththesis}
+\bibliography{common/references.bib}
+\end{document}

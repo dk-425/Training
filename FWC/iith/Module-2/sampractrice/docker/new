@@ -1,0 +1,206 @@
+pipeline {
+  agent none
+  stages {
+    stage('Build for 3 boards') {
+      parallel {
+        stage('agib027') {
+          agent {label 'verif-container-1'}
+              environment {
+        PATH = "/tools/questa/questasim/bin:/tools/intelFPGA_pro/22.4/quartus/bin:/tools/intelFPGA_pro/22.4/qsys/bin:/tools/intelFPGA_pro/22.4/quartus/sopc_builder/bin:${env.PATH}"
+        LM_LICENSE_FILE="28500@192.168.130.25"
+        MGLS_LICENSE_FILE="1717@192.168.130.25"
+        TERM="xterm"
+    }
+          stages {
+            stage('Setup agib027') {
+            steps {
+                sh 'echo setting up ...'
+                sh 'echo $PATH'
+                checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[credentialsId: '62cbb464-f08a-4eb4-ab61-6607c4be28d3', url: 'git@github.com:wisig-5gt-fpga/wnKyocera.git']])
+            }
+        }  
+        stage('qsys agib027') {
+            steps {
+                dir('build') {
+                    sh 'make qsys BOARD=agib027'
+                }
+            }
+        }
+        stage('sof agib027') {
+            steps {
+                dir('build') {
+                    sh 'make sof BOARD=agib027'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/agib027/*.sof', fingerprint: true 
+                }
+            }
+        }        
+        stage('build agib027') {
+            steps {
+                dir('build') {
+                    sh 'make rbf BOARD=agib027'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/*.core.rbf, build/agib027/*_hps_auto.sof', fingerprint: true 
+                }
+            }
+        }
+        stage('Deploy agib027') {
+           
+            steps {
+                sh 'echo deploy BOARD=agib027'
+                
+            }
+        }
+          }
+          post {
+        always {
+            dir('build') {
+                archiveArtifacts artifacts: '**/*.syn.rpt, **/*.fit.rpt', fingerprint: true 
+            }
+        }
+    }
+        }
+
+
+
+        stage('agfb014') {
+          agent {label 'verif-container-1'}
+              environment {
+        PATH = "/tools/questa/questasim/bin:/tools/intelFPGA_pro/22.4/quartus/bin:/tools/intelFPGA_pro/22.4/qsys/bin:/tools/intelFPGA_pro/22.4/quartus/sopc_builder/bin:${env.PATH}"
+        LM_LICENSE_FILE="28500@192.168.130.25"
+        MGLS_LICENSE_FILE="1717@192.168.130.25"
+        TERM="xterm"
+    }
+          stages {
+            stage('Setup agfb014') {
+            steps {
+                sh 'echo setting up ...'
+                sh 'echo $PATH'
+                checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[credentialsId: '62cbb464-f08a-4eb4-ab61-6607c4be28d3', url: 'git@github.com:wisig-5gt-fpga/wnKyocera.git']])
+            }
+        }  
+        stage('qsys agfb014') {
+            steps {
+                dir('build') {
+                    sh 'make qsys BOARD=agfb014'
+                }
+            }
+        }
+        stage('sof agfb014') {
+            steps {
+                dir('build') {
+                    sh 'make sof BOARD=agfb014'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/agfb014/*.sof', fingerprint: true 
+                }
+            }
+        }        
+        stage('build agfb014') {
+            steps {
+                dir('build') {
+                    sh 'make rbf BOARD=agfb014'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/*.core.rbf, build/agfb014/*_hps_auto.sof', fingerprint: true 
+                }
+            }
+        }
+        stage('Deploy agfb014') {
+           
+            steps {
+                sh 'echo deploy BOARD=agfb014'
+                
+            }
+        }
+            
+          }
+          post {
+        always {
+            dir('build') {
+                archiveArtifacts artifacts: '**/*.syn.rpt, **/*.fit.rpt', fingerprint: true 
+            }
+        }
+    }
+        }    
+
+
+
+
+        stage('hitek') {
+          agent {label 'verif-container-1'}
+              environment {
+        PATH = "/tools/questa/questasim/bin:/tools/intelFPGA_pro/22.4/quartus/bin:/tools/intelFPGA_pro/22.4/qsys/bin:/tools/intelFPGA_pro/22.4/quartus/sopc_builder/bin:${env.PATH}"
+        LM_LICENSE_FILE="28500@192.168.130.25"
+        MGLS_LICENSE_FILE="1717@192.168.130.25"
+        TERM="xterm"
+    }
+          stages {
+            stage('Setup hitek') {
+            steps {
+                sh 'echo setting up ...'
+                sh 'echo $PATH'
+                checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[credentialsId: '62cbb464-f08a-4eb4-ab61-6607c4be28d3', url: 'git@github.com:wisig-5gt-fpga/wnKyocera.git']])
+            }
+        }  
+        stage('qsys hitek') {
+            steps {
+                dir('build') {
+                    sh 'make qsys BOARD=hitek'
+                }
+            }
+        }
+        stage('sof hitek') {
+            steps {
+                dir('build') {
+                    sh 'make sof BOARD=hitek'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/hitek/*.sof', fingerprint: true 
+                }
+            }
+        }        
+        stage('build hitek') {
+            steps {
+                dir('build') {
+                    sh 'make rbf BOARD=hitek'
+                }
+            }
+            post {
+                success {
+                    archiveArtifacts artifacts: 'build/*.core.rbf, build/hitek/*_hps_auto.sof', fingerprint: true 
+                }
+            }
+        }
+        stage('Deploy hitek') {
+           
+            steps {
+                sh 'echo deploy BOARD=hitek'
+                
+            }
+        }
+          }
+          post {
+        always {
+            dir('build') {
+                archiveArtifacts artifacts: '**/*.syn.rpt, **/*.fit.rpt', fingerprint: true 
+            }
+        }
+    }
+        }      
+      }
+    }
+  }
+}

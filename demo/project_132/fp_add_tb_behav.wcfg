@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fp_add_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_fp_add_tb_sv " />
+            <top_module name="fp_add_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="995.005 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.999 ns"></ZoomEndTime>
+      <Cursor1Time time="995.886 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="144"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject type="array" fp_name="/fp_add_tb/A">
+      <obj_property name="ElementShortName">A[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/B">
+      <obj_property name="ElementShortName">B[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/C_add">
+      <obj_property name="ElementShortName">C_add[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C_add[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/C_mul">
+      <obj_property name="ElementShortName">C_mul[15:0]</obj_property>
+      <obj_property name="ObjectShortName">C_mul[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/rand_num">
+      <obj_property name="ElementShortName">rand_num</obj_property>
+      <obj_property name="ObjectShortName">rand_num</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/ref_A">
+      <obj_property name="ElementShortName">ref_A</obj_property>
+      <obj_property name="ObjectShortName">ref_A</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/ref_B">
+      <obj_property name="ElementShortName">ref_B</obj_property>
+      <obj_property name="ObjectShortName">ref_B</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/ref_C_add">
+      <obj_property name="ElementShortName">ref_C_add</obj_property>
+      <obj_property name="ObjectShortName">ref_C_add</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/ref_C_mul">
+      <obj_property name="ElementShortName">ref_C_mul</obj_property>
+      <obj_property name="ObjectShortName">ref_C_mul</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/error_add">
+      <obj_property name="ElementShortName">error_add</obj_property>
+      <obj_property name="ObjectShortName">error_add</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/error_mul">
+      <obj_property name="ElementShortName">error_mul</obj_property>
+      <obj_property name="ObjectShortName">error_mul</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/error_add_abs">
+      <obj_property name="ElementShortName">error_add_abs</obj_property>
+      <obj_property name="ObjectShortName">error_add_abs</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fp_add_tb/error_mul_abs">
+      <obj_property name="ElementShortName">error_mul_abs</obj_property>
+      <obj_property name="ObjectShortName">error_mul_abs</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/I1">
+      <obj_property name="ElementShortName">I1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/F1">
+      <obj_property name="ElementShortName">F1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">F1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/IS_SIGNED1">
+      <obj_property name="ElementShortName">IS_SIGNED1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IS_SIGNED1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/I2">
+      <obj_property name="ElementShortName">I2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/F2">
+      <obj_property name="ElementShortName">F2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">F2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/IS_SIGNED2">
+      <obj_property name="ElementShortName">IS_SIGNED2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IS_SIGNED2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/I3">
+      <obj_property name="ElementShortName">I3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">I3[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/F3">
+      <obj_property name="ElementShortName">F3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">F3[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/OVERFLOW_SAT">
+      <obj_property name="ElementShortName">OVERFLOW_SAT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OVERFLOW_SAT[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/W1">
+      <obj_property name="ElementShortName">W1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/W3">
+      <obj_property name="ElementShortName">W3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W3[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fp_add_tb/W2">
+      <obj_property name="ElementShortName">W2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">W2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fp_add_tb/IS_SIGNED_OP">
+      <obj_property name="ElementShortName">IS_SIGNED_OP</obj_property>
+      <obj_property name="ObjectShortName">IS_SIGNED_OP</obj_property>
+   </wvobject>
+</wave_config>

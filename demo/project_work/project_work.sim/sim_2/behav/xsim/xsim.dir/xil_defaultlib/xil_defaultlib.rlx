@@ -1,0 +1,10 @@
+0.7
+2020.2
+Feb 21 2023
+20:06:57
+/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_2/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_2/new/tb_axi_reg.v,1708943100,verilog,,,,tb_axi_reg,,uvm,,,,,,
+/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/axi_reg.v,1708943132,verilog,,/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/bram.v,,axi_reg,,uvm,,,,,,
+/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/bram.v,1708663970,verilog,,,,fifo,,uvm,,,,,,
+/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/fifo_top.sv,1708942643,systemVerilog,,,,mux_2_1,,uvm,,,,,,
+/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/stable.sv,1708681824,systemVerilog,,,,axis_fifo,,uvm,,,,,,

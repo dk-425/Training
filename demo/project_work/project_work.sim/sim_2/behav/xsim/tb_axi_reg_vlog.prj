@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../project_work.srcs/sources_1/new/stable.sv" \
+
+verilog xil_defaultlib  \
+"../../../../project_work.srcs/sources_1/new/axi_reg.v" \
+"../../../../project_work.srcs/sources_1/new/bram.v" \
+
+sv xil_defaultlib  \
+"../../../../project_work.srcs/sources_1/new/fifo_top.sv" \
+
+verilog xil_defaultlib  \
+"../../../../project_work.srcs/sim_2/new/tb_axi_reg.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -57,6 +57,7 @@ module wav_tb(
 
         if (m_axis_data_tvalid_0) begin
          $fwrite(file, "%h\n", m_axis_data_tdata_0);
+         $display("hello%h",m_axis_data_tdata_0);
         sample_counter = sample_counter + 1;
       end
     end

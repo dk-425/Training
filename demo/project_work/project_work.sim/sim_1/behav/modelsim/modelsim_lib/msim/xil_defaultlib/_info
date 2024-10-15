@@ -1,0 +1,163 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/modelsim
+vaxi_reg
+Z1 !s105 bs_sv_unit
+Z2 DXx4 work 10 bs_sv_unit 0 22 il@G;0<?;nJOX]e2U1Lc@2
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1707291450
+!i10b 1
+!s100 Un9GfA[P>FhYXDh^;M9hZ1
+I5H7mBYHX0E^Ih:0_3zR1P0
+S1
+R0
+Z5 w1707291399
+Z6 8../../../../project_work.srcs/sources_1/new/bs.sv
+Z7 F../../../../project_work.srcs/sources_1/new/bs.sv
+!i122 0
+L0 1 46
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z10 !s108 1707291450.000000
+Z11 !s107 ../../../../project_work.srcs/sim_1/new/stable_tb.sv|../../../../project_work.srcs/sources_1/new/stable.sv|../../../../project_work.srcs/sources_1/new/bs.sv|
+Z12 !s90 -64|-incr|-mfcu|-sv|-work|xil_defaultlib|../../../../project_work.srcs/sources_1/new/bs.sv|../../../../project_work.srcs/sources_1/new/stable.sv|../../../../project_work.srcs/sim_1/new/stable_tb.sv|
+!i113 0
+Z13 o-64 -mfcu -sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 tCvgOpt 0
+vaxi_reg_tb
+R4
+!i10b 1
+!s100 cL7QS4fIZGWdTK3?^F0g<3
+IaY13UJaeDYD9O;`E343jz2
+R0
+w1707290458
+8../../../../project_work.srcs/sim_1/new/tb_axis_reg.v
+F../../../../project_work.srcs/sim_1/new/tb_axis_reg.v
+!i122 1
+L0 2 84
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 ../../../../project_work.srcs/sim_1/new/tb_axis_reg.v|
+!s90 -64|-incr|-mfcu|-work|xil_defaultlib|../../../../project_work.srcs/sim_1/new/tb_axis_reg.v|
+!i113 0
+o-64 -mfcu -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R14
+Xbs_sv_unit
+R3
+R4
+Vil@G;0<?;nJOX]e2U1Lc@2
+r1
+!s85 0
+!i10b 1
+!s100 V__3DV4U=nY`kOAzDO:K:3
+Iil@G;0<?;nJOX]e2U1Lc@2
+!i103 1
+S1
+R0
+R5
+R6
+R7
+Z15 8../../../../project_work.srcs/sources_1/new/stable.sv
+Z16 F../../../../project_work.srcs/sources_1/new/stable.sv
+Z17 8../../../../project_work.srcs/sim_1/new/stable_tb.sv
+Z18 F../../../../project_work.srcs/sim_1/new/stable_tb.sv
+!i122 0
+L0 37 0
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vglbl
+R4
+!i10b 1
+!s100 ZHmTNm_h3dd`6mIQLzSUN3
+IhdBVXCILC99TF;U<AK;MM2
+R0
+w1665704903
+8glbl.v
+Fglbl.v
+!i122 2
+L0 6 78
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R14
+vwn_prachtx_subcarriermap
+R1
+R2
+R3
+R4
+!i10b 1
+!s100 GZIKe8j8fkRPoSPn7j^o;3
+I60FF?6b1>WUQ`cmRWli<K1
+S1
+R0
+w1707125155
+R15
+R16
+!i122 0
+L0 38 298
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vwn_prachtx_top_tb
+R3
+R2
+R4
+R8
+r1
+!s85 0
+!i10b 1
+!s100 VTXfUAEKo[3iYS8UL``MP2
+I31Qz6AkjngJYE@N4Wh3j11
+R1
+S1
+R0
+w1707136883
+R17
+R18
+!i122 0
+L0 39 372
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14

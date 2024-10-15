@@ -1,0 +1,450 @@
+/*
+
+Xilinx Vivado v2022.2.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3788238 on Tue Feb 21 19:59:23 MST 2023
+IP Build: 3783773 on Tue Feb 21 23:41:56 MST 2023
+
+Process ID (PID): 71793
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Nov 20 14:38:27 IST 2023
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 6.2.0-36-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9
+Java executable: 	/tools/Xilinx/Vivado/2022.2/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sam-admin
+User home directory: /home/sam-admin
+User working directory: /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2022.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: /home/sam-admin/.Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: /home/sam-admin/.Xilinx/Vivado/2022.2/
+Vivado layouts directory: /home/sam-admin/.Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/vivado.log
+Vivado journal file: 	/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-71793-sampaths-lappie
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: /tools/Xilinx/Vivado/2022.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: /tools/Xilinx/Vivado/2022.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2022.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/vivado
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2022.2/tps/lnx64
+RDI_USE_JDK11: True
+XILINX: /tools/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2022.2
+XILINX_VITIS: 
+XILINX_VIVADO: /tools/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2022.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,006 MB
+
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1305 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 60 MB. Current time: 11/20/23, 2:38:28 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,059 MB. GUI used memory: 59 MB. Current time: 11/20/23, 2:38:43 PM IST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/sam-admin/git/Training/demo/project_work/project_work.xpr", 0); // b.a
+// Opening Vivado Project: /home/sam-admin/git/Training/demo/project_work/project_work.xpr. Version: Vivado v2022.2.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/sam-admin/git/Training/demo/project_work/project_work.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/sam-admin/git/Training/demo/project_work/project_work.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 87 MB (+88377kb) [00:01:11]
+// [Engine Memory]: 1,162 MB (+1066949kb) [00:01:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  5276 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'. 
+// [GUI Memory]: 101 MB (+10983kb) [00:01:14]
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 6437.637 ; gain = 66.719 ; free physical = 1135 ; free virtual = 5385 
+// Project name: project_work; location: /home/sam-admin/git/Training/demo/project_work; part: xc7k70tfbv676-1
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 1,232 MB. GUI used memory: 65 MB. Current time: 11/20/23, 2:39:03 PM IST
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 111 MB (+4420kb) [00:01:21]
+// [Engine Memory]: 1,237 MB (+17507kb) [00:01:21]
+// Elapsed time: 90 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // D
+// PAPropertyPanels.initPanels (pract.sv) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, BinaryDataReader (pract.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, BinaryDataReader (pract.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,241 MB. GUI used memory: 67 MB. Current time: 11/20/23, 2:40:34 PM IST
+selectCodeEditor("pract.sv", 259, 329); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // f
+// HMemoryUtils.trashcanNow. Engine heap size: 1,269 MB. GUI used memory: 68 MB. Current time: 11/20/23, 2:40:53 PM IST
+// Elapsed time: 49 seconds
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ao
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'BinaryDataReader' 
+// Tcl Message: xvlog --incr --relax -L uvm -prj BinaryDataReader_vlog.prj 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pract.sv" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module BinaryDataReader Waiting for jobs to finish... No pending jobs, compilation finished. 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '4' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim' 
+// Tcl Message: xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot BinaryDataReader_behav xil_defaultlib.BinaryDataReader xil_defaultlib.glbl -log elaborate.log 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "BinaryDataReader_behav -key {Behavioral:sim_1:Functional:BinaryDataReader} -tclbatch {BinaryDataReader.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// PAPropertyPanels.initPanels (pract.sv) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1728 ms.
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: source BinaryDataReader.tcl 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,300 MB. GUI used memory: 72 MB. Current time: 11/20/23, 2:41:54 PM IST
+// [Engine Memory]: 1,301 MB (+2013kb) [00:04:10]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,303 MB. GUI used memory: 75 MB. Current time: 11/20/23, 2:41:54 PM IST
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 121 MB (+4448kb) [00:04:17]
+// [GUI Memory]: 129 MB (+2007kb) [00:04:17]
+// [GUI Memory]: 138 MB (+2630kb) [00:04:17]
+// [GUI Memory]: 146 MB (+1122kb) [00:04:17]
+// [Engine Memory]: 1,368 MB (+2830kb) [00:04:18]
+// [GUI Memory]: 155 MB (+2108kb) [00:04:18]
+// Tcl Message: # run 1000ns 
+// [GUI Memory]: 166 MB (+3077kb) [00:04:18]
+// [GUI Memory]: 181 MB (+7815kb) [00:04:18]
+// [GUI Memory]: 191 MB (+429kb) [00:04:18]
+// [GUI Memory]: 203 MB (+3217kb) [00:04:18]
+// [GUI Memory]: 220 MB (+6878kb) [00:04:18]
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  5959 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// [Engine Memory]: 1,612 MB (+183365kb) [00:04:24]
+// [Engine Memory]: 1,693 MB (+476kb) [00:04:26]
+// [GUI Memory]: 232 MB (+967kb) [00:04:26]
+// [Engine Memory]: 2,138 MB (+377642kb) [00:04:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  5124 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,794 MB. GUI used memory: 134 MB. Current time: 11/20/23, 2:42:13 PM IST
+// [Engine Memory]: 2,275 MB (+32421kb) [00:04:33]
+// [GUI Memory]: 247 MB (+2952kb) [00:04:33]
+// [GUI Memory]: 261 MB (+1894kb) [00:04:34]
+// [Engine Memory]: 2,433 MB (+45978kb) [00:04:34]
+// TclEventType: WAVEFORM_MODEL_EVENT
+// [Engine Memory]: 2,662 MB (+112756kb) [00:04:36]
+// [Engine Memory]: 3,030 MB (+246450kb) [00:04:36]
+// WARNING: HEventQueue.dispatchEvent() is taking  10867 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 277 MB (+3460kb) [00:04:43]
+// [GUI Memory]: 292 MB (+1585kb) [00:04:43]
+// [GUI Memory]: 309 MB (+1556kb) [00:04:43]
+// [GUI Memory]: 325 MB (+1001kb) [00:04:43]
+// [GUI Memory]: 345 MB (+4160kb) [00:04:44]
+// [GUI Memory]: 364 MB (+1593kb) [00:04:44]
+// [Engine Memory]: 3,284 MB (+107536kb) [00:04:44]
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// [GUI Memory]: 384 MB (+1427kb) [00:04:45]
+// [Engine Memory]: 3,488 MB (+41347kb) [00:04:45]
+// [Engine Memory]: 3,677 MB (+15521kb) [00:04:46]
+// WARNING: HEventQueue.dispatchEvent() is taking  12782 ms.
+// Elapsed time: 44 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// [GUI Memory]: 412 MB (+9602kb) [00:04:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,353 MB. GUI used memory: 250 MB. Current time: 11/20/23, 2:42:38 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  4979 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4497 ms.
+// [GUI Memory]: 434 MB (+1336kb) [00:05:03]
+// [GUI Memory]: 457 MB (+1556kb) [00:05:04]
+// [GUI Memory]: 483 MB (+2744kb) [00:05:04]
+// [GUI Memory]: 509 MB (+2116kb) [00:05:05]
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10621 ms.
+// [GUI Memory]: 538 MB (+3903kb) [00:05:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  4224 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 703 MB (+145032kb) [00:05:22]
+// [Engine Memory]: 4,086 MB (+235918kb) [00:05:22]
+// [GUI Memory]: 741 MB (+2802kb) [00:05:23]
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  10894 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,221 MB. GUI used memory: 437 MB. Current time: 11/20/23, 2:43:14 PM IST
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 944ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4604 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4323 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 496ms to process. Increasing delay to 3000 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10920 ms.
+// [Engine Memory]: 4,300 MB (+9677kb) [00:05:54]
+// WARNING: HEventQueue.dispatchEvent() is taking  4512 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 969 MB (+200457kb) [00:06:01]
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// [Engine Memory]: 4,558 MB (+45383kb) [00:06:02]
+// WARNING: HEventQueue.dispatchEvent() is taking  11226 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,316 MB. GUI used memory: 436 MB. Current time: 11/20/23, 2:43:52 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4969 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4330 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10591 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  4731 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  10777 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// [Engine Memory]: 4,786 MB (+109kb) [00:06:50]
+// WARNING: HEventQueue.dispatchEvent() is taking  4841 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,791 MB. GUI used memory: 251 MB. Current time: 11/20/23, 2:44:35 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  5689 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  9742 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  13211 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4910 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3860 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10414 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4410 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,876 MB. GUI used memory: 542 MB. Current time: 11/20/23, 2:45:29 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1149 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  11543 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4429 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4307 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10224 ms.
+// [GUI Memory]: 1,030 MB (+13170kb) [00:08:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  4405 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// [GUI Memory]: 1,298 MB (+226304kb) [00:08:26]
+// [Engine Memory]: 5,079 MB (+55623kb) [00:08:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  11166 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,790 MB. GUI used memory: 518 MB. Current time: 11/20/23, 2:46:17 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1205 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4792 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4440 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10672 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  4442 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  10688 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4683 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4218 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// [GUI Memory]: 1,364 MB (+1538kb) [00:09:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  11104 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,231 MB. GUI used memory: 306 MB. Current time: 11/20/23, 2:47:15 PM IST
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1674 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15457 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4751 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3811 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  11027 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  14014 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4954 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3915 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// [Engine Memory]: 5,341 MB (+8627kb) [00:10:34]
+// WARNING: HEventQueue.dispatchEvent() is taking  10213 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1186 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,145 MB. GUI used memory: 511 MB. Current time: 11/20/23, 2:48:26 PM IST
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 607ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4895 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  10659 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4501 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3689 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  11253 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  4711 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  10678 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  5007 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 1279ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1279 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 4,096 MB. GUI used memory: 497 MB. Current time: 11/20/23, 2:49:25 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  4635 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10329 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  3902 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  10329 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  4770 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4210 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  10150 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 1,439 MB (+6559kb) [00:12:36]
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// WARNING: HEventQueue.dispatchEvent() is taking  16726 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 3,787 MB. GUI used memory: 407 MB. Current time: 11/20/23, 2:50:33 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  5899 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3494 ms.
+// TclEventType: WAVEFORM_MODEL_EVENT
+// WARNING: HEventQueue.dispatchEvent() is taking  11859 ms.
+// Elapsed time: 497 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  4678 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME

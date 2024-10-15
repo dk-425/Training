@@ -1,0 +1,2419 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Nov 20 14:52:43 2023
+# Process ID: 72577
+# Current directory: /home/sam-admin/git/Training/Scripting/cunit/demos
+# Command line: vivado
+# Log file: /home/sam-admin/git/Training/Scripting/cunit/demos/vivado.log
+# Journal file: /home/sam-admin/git/Training/Scripting/cunit/demos/vivado.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 1600.033 MHz, CPU Physical cores: 4, Host memory: 8092 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/sam-admin/git/Training/demo/project_work/project_work.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/sam-admin/git/Training/demo/project_work/project_work.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:09 . Memory (MB): peak = 6425.926 ; gain = 93.883 ; free physical = 2493 ; free virtual = 5266
+update_compile_order -fileset sources_1
+set_property top pn_gen_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+execute_script: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 6508.102 ; gain = 0.000 ; free physical = 1817 ; free virtual = 5207
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 79. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+execute_script: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 6508.102 ; gain = 0.000 ; free physical = 1751 ; free virtual = 5209
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 000
+read data = 001
+read data = 010
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 112
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 6561.160 ; gain = 47.828 ; free physical = 1662 ; free virtual = 5145
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 6561.160 ; gain = 53.059 ; free physical = 1662 ; free virtual = 5145
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 000
+read data = 001
+read data = 010
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 112
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6566.160 ; gain = 0.000 ; free physical = 1690 ; free virtual = 5162
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 6576.168 ; gain = 0.000 ; free physical = 1707 ; free virtual = 5179
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 79. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 000
+read data = 001
+read data = 010
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 116
+relaunch_sim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 6576.168 ; gain = 0.000 ; free physical = 1698 ; free virtual = 5174
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 116
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6578.168 ; gain = 0.000 ; free physical = 1666 ; free virtual = 5152
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 65
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 6607.180 ; gain = 0.000 ; free physical = 1612 ; free virtual = 5135
+export_ip_user_files -of_objects  [get_files /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pract.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pract.sv
+file delete -force /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pract.sv
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [Common 17-344] 'execute_script' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 6620.199 ; gain = 0.000 ; free physical = 1613 ; free virtual = 5136
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 65
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 6620.199 ; gain = 0.000 ; free physical = 1573 ; free virtual = 5124
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 65
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 6651.211 ; gain = 0.000 ; free physical = 1534 ; free virtual = 5073
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 6651.211 ; gain = 0.000 ; free physical = 1585 ; free virtual = 5113
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+$finish called at time : 195 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 6704.238 ; gain = 0.000 ; free physical = 1500 ; free virtual = 5070
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 6711.246 ; gain = 0.000 ; free physical = 1500 ; free virtual = 5066
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+$finish called at time : 195 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 6711.246 ; gain = 0.000 ; free physical = 1496 ; free virtual = 5064
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+$finish called at time : 215 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6735.254 ; gain = 0.000 ; free physical = 1507 ; free virtual = 5086
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+$finish called at time : 215 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6756.262 ; gain = 0.000 ; free physical = 1486 ; free virtual = 5072
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+$finish called at time : 215 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6772.270 ; gain = 0.000 ; free physical = 1498 ; free virtual = 5073
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [Common 17-344] 'execute_script' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 195 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6804.285 ; gain = 0.000 ; free physical = 1468 ; free virtual = 5061
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 195 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6820.293 ; gain = 0.000 ; free physical = 1485 ; free virtual = 5070
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+$finish called at time : 215 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6837.301 ; gain = 0.000 ; free physical = 1463 ; free virtual = 5047
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 195 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6853.309 ; gain = 0.000 ; free physical = 1460 ; free virtual = 5044
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 6853.309 ; gain = 0.000 ; free physical = 1470 ; free virtual = 5034
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 6855.312 ; gain = 2.004 ; free physical = 1476 ; free virtual = 5043
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6879.328 ; gain = 0.000 ; free physical = 1451 ; free virtual = 5042
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 6879.328 ; gain = 0.000 ; free physical = 1469 ; free virtual = 5043
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 6881.332 ; gain = 0.000 ; free physical = 1463 ; free virtual = 5033
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+$finish called at time : 195 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 6889.328 ; gain = 7.996 ; free physical = 1468 ; free virtual = 5042
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 6913.344 ; gain = 0.000 ; free physical = 1472 ; free virtual = 5046
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 6929.348 ; gain = 0.000 ; free physical = 1463 ; free virtual = 5048
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 6929.348 ; gain = 0.000 ; free physical = 1445 ; free virtual = 5021
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 6948.359 ; gain = 3.000 ; free physical = 1457 ; free virtual = 5037
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6950.355 ; gain = 1.996 ; free physical = 1435 ; free virtual = 5034
+current_wave_config {Untitled 14}
+Untitled 14
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6953.359 ; gain = 3.004 ; free physical = 1451 ; free virtual = 5034
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 6977.371 ; gain = 0.000 ; free physical = 1418 ; free virtual = 5008
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 6998.379 ; gain = 0.000 ; free physical = 1422 ; free virtual = 5007
+current_wave_config {Untitled 16}
+Untitled 16
+add_wave {{/pn_gen_tb/dut/flag}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6998.379 ; gain = 0.000 ; free physical = 1443 ; free virtual = 5019
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7009.387 ; gain = 0.000 ; free physical = 1445 ; free virtual = 5020
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 7017.391 ; gain = 3.004 ; free physical = 1459 ; free virtual = 5035
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+$finish called at time : 195 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 7028.398 ; gain = 3.000 ; free physical = 1439 ; free virtual = 5017
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 7041.406 ; gain = 0.000 ; free physical = 1435 ; free virtual = 5011
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+$finish called at time : 200 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 7041.406 ; gain = 0.000 ; free physical = 1434 ; free virtual = 5012
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 7057.418 ; gain = 0.000 ; free physical = 1427 ; free virtual = 5004
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 7060.414 ; gain = 2.996 ; free physical = 1441 ; free virtual = 5018
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 7081.426 ; gain = 0.000 ; free physical = 1418 ; free virtual = 5003
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 7081.426 ; gain = 0.000 ; free physical = 1422 ; free virtual = 5008
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 7092.430 ; gain = 3.000 ; free physical = 1430 ; free virtual = 5022
+current_wave_config {Untitled 16}
+Untitled 16
+add_wave {{/pn_gen_tb/dut/c}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7092.434 ; gain = 0.000 ; free physical = 1415 ; free virtual = 5023
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 225 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 71
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7121.441 ; gain = 0.000 ; free physical = 1411 ; free virtual = 5019
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 7218.492 ; gain = 0.000 ; free physical = 717 ; free virtual = 4720
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+INFO: Reset done!!
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 240 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 82
+relaunch_sim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 7220.492 ; gain = 2.000 ; free physical = 717 ; free virtual = 4723
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 7254.512 ; gain = 0.000 ; free physical = 729 ; free virtual = 4735
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+INFO: Reset done!!
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 240 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 82
+relaunch_sim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 7257.508 ; gain = 2.996 ; free physical = 725 ; free virtual = 4735
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 7281.523 ; gain = 0.000 ; free physical = 733 ; free virtual = 4736
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Time resolution is 1 ps
+INFO: Reset done!!
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 240 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 82
+relaunch_sim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 7281.523 ; gain = 0.000 ; free physical = 730 ; free virtual = 4736
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'pn_gen_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'pn_gen_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/data.txt'
+INFO: [SIM-utils-43] Exported '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim/new.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj pn_gen_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sources_1/new/pn_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pn_gen_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pn_gen_tb_behav xil_defaultlib.pn_gen_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pn_gen
+Compiling module xil_defaultlib.pn_gen_tb
+WARNING: [XSIM 43-3373] "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 32. System function $fscanf is used as system task. This system function should have a LHS e.g. x=$fscanf().
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pn_gen_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sam-admin/git/Training/demo/project_work/project_work.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pn_gen_tb_behav -key {Behavioral:sim_1:Functional:pn_gen_tb} -tclbatch {pn_gen_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source pn_gen_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: Reset done!!
+read data = 100
+read data = 001
+read data = 111
+$finish called at time : 240 ns : File "/home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/pn_gen_tb.v" Line 82
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pn_gen_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 7286.520 ; gain = 4.996 ; free physical = 708 ; free virtual = 4726
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 20 18:22:44 2023...

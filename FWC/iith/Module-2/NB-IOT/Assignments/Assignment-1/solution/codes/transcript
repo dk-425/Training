@@ -1,0 +1,7 @@
+# vsim -c counter_tb.v 
+# Start time: 14:40:49 on Jan 30,2024
+# ** Error (suppressible): (vsim-19) Failed to access library 'counter_tb' at "counter_tb".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 14:40:51 on Jan 30,2024, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0

@@ -1,0 +1,47 @@
+`timescale 1ns / 1ps
+
+
+module jk_ff ( input [0:3] X, output [0:3] Y );  
+
+  assign Y[0]=X[0];
+  assign Y[1]=X[0]^X[1];
+  assign Y[2]=X[1]^X[2];
+  assign Y[3]=X[2]^X[3];
+endmodule  
+
+
+
+testbench::::::::::::::::::::::::::::::::::::::::::
+
+
+`timescale 1ns / 1ps
+
+module tb_jk;  
+  
+   reg [0:3] x;  
+   wire [0:3] y;  
+ 
+  
+   jk_ff    jk0 (  
+                  .X(x),
+                  .Y(y));  
+initial begin
+x<=0;
+#10
+x<=1;
+#10
+x<=2;
+#10
+x<=3;
+#10
+x<=4;
+#10
+x<=11;
+#10
+$stop;
+
+end
+
+  
+endmodule  
+

@@ -1,0 +1,22 @@
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520) [0x7f08bd042520]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c) [0x7f08bd0969fc]
+/lib/x86_64-linux-gnu/libc.so.6(raise+0x16) [0x7f08bd042476]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xd3) [0x7f08bd0287f3]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x8ba13) [0x7f08bd88ba13]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x91b86) [0x7f08bd891b86]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x91bc1) [0x7f08bd891bc1]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/Ubuntu/libstdc++.so.6(+0x928ff) [0x7f08bd8928ff]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(SG_Model::Model::getValue(SG_Model::WVDataObject const*, long long, SimBridge::Radix const&) const+0xd6) [0x7f088d932096]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::getCurrentValue[abi:cxx11](SG_Model::WVDataObject const*, long long, SimBridge::Radix) const+0xb1) [0x7f088d9ba6f1]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformTraverserValue::buildValueNodeItem(SG_Model::WVDataObject const*, WVValueNode*, WaveViewer::WVTreeWVObjectModel::ITraverseHandler::TraverseItem const&) const+0x82) [0x7f088d9db572]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVWaveformTraverserValue::handleItemSize(WaveViewer::WVTreeWVObjectModel::ITraverseHandler::TraverseItem const&)+0x8d) [0x7f088d9db7bd]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int, int&, int&) const+0x234) [0x7f088d9bcd24]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(SG_Model::WVDataObject const*, WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int, int&, int&) const+0x2be) [0x7f088d9bcdae]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WaveViewer::WVTreeWVObjectModel::traverseYRange(WaveViewer::WVTreeWVObjectModel::ITraverseHandler&, int, int) const+0x57) [0x7f088d9bcee7]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(WVExecutiveImp::getValueDataSize()+0xb7) [0x7f088d99d0f7]
+/tools/Xilinx/Vivado/2022.2/lib/lnx64.o/librdi_wavedata.so(Java_ui_views_waveform_waveformi_WVExecutive_1getValueDataSize+0x17) [0x7f088d9e1087]
+[0x7f0869548184]

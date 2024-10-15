@@ -1,0 +1,54 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst sm_transfer_system.J2A_master.timing_adt -pg 1
+preplace inst sm_transfer_system.J2A_master.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst sm_transfer_system.J2A_master.clk_src -pg 1
+preplace inst sm_transfer_system.reset_debounce -pg 1 -lvl 1 -y 80
+preplace inst sm_transfer_system.J2A_master -pg 1 -lvl 1 -y 190
+preplace inst sm_transfer_system.ext_mem_bus -pg 1 -lvl 6 -y 30
+preplace inst sm_transfer_system.dma_ssram_to_led -pg 1 -lvl 3 -y 150
+preplace inst sm_transfer_system.clk -pg 1 -lvl 1 -y 270
+preplace inst sm_transfer_system.button_switch -pg 1 -lvl 6 -y 310
+preplace inst sm_transfer_system.J2A_master.p2b -pg 1
+preplace inst sm_transfer_system.J2A_master.b2p -pg 1
+preplace inst sm_transfer_system.J2A_master.transacto -pg 1
+preplace inst sm_transfer_system.sram_controller.tda -pg 1
+preplace inst sm_transfer_system.led_fifo -pg 1 -lvl 2 -y 170
+preplace inst sm_transfer_system.J2A_master.fifo -pg 1
+preplace inst sm_transfer_system.sram_controller.clk -pg 1
+preplace inst sm_transfer_system.source -pg 1 -lvl 6 -y 130
+preplace inst sm_transfer_system.dma_source_to_ssram -pg 1 -lvl 4 -y 150
+preplace inst sm_transfer_system.J2A_master.clk_rst -pg 1
+preplace inst sm_transfer_system.sram_controller -pg 1 -lvl 5 -y 90
+preplace inst sm_transfer_system.pll -pg 1 -lvl 6 -y 230
+preplace inst sm_transfer_system.test_mem -pg 1 -lvl 6 -y 430
+preplace inst sm_transfer_system.sram_controller.tdt -pg 1
+preplace inst sm_transfer_system.sram_controller.reset -pg 1
+preplace inst sm_transfer_system.av_sm_master -pg 1 -lvl 3 -y 270
+preplace inst sm_transfer_system.sram_controller.slave_translator -pg 1
+preplace inst sm_transfer_system.led_out -pg 1 -lvl 3 -y 370
+preplace inst sm_transfer_system.J2A_master.p2b_adapter -pg 1
+preplace inst sm_transfer_system.J2A_master.b2p_adapter -pg 1
+preplace inst sm_transfer_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc INTERCONNECT<net_container>sm_transfer_system</net_container>(MASTER)av_sm_master.avalon_master,(SLAVE)led_fifo.in,(SLAVE)button_switch.buttonreg,(SLAVE)dma_ssram_to_led.control_port_slave,(MASTER)led_out.swpb,(MASTER)dma_ssram_to_led.write_master,(SLAVE)led_out.led,(SLAVE)dma_source_to_ssram.control_port_slave,(MASTER)J2A_master.master,(SLAVE)test_mem.s1) 1 1 5 480 140 650 140 940 340 NJ 340 1480
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(MASTER)pll.outclk1,(MASTER)sm_transfer_system.ssram) 1 6 1 N
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)led_out.hex0_out,(SLAVE)sm_transfer_system.hex0_out) 1 0 3 NJ 420 NJ 420 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)led_out.greenled_out,(SLAVE)sm_transfer_system.greenled_out) 1 0 3 NJ 400 NJ 400 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)clk.clk_in,(SLAVE)sm_transfer_system.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>sm_transfer_system</net_container>(SLAVE)dma_ssram_to_led.clk,(SLAVE)button_switch.clock,(SLAVE)J2A_master.clk,(SLAVE)reset_debounce.clock,(SLAVE)test_mem.clk1,(SLAVE)dma_source_to_ssram.clk,(SLAVE)led_fifo.clk_in,(SLAVE)ext_mem_bus.clk,(SLAVE)sram_controller.clk,(SLAVE)led_out.clock,(SLAVE)source.clk1,(MASTER)pll.outclk0,(SLAVE)av_sm_master.clock) 1 0 7 140 150 460 160 670 100 1000 100 1310 360 1500 220 1700
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)sm_transfer_system.switches,(SLAVE)button_switch.switch_conduit) 1 0 6 NJ 360 NJ 360 NJ 360 NJ 360 NJ 400 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)led_out.redled_out,(SLAVE)sm_transfer_system.redled_out) 1 0 3 NJ 540 NJ 540 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)led_out.hex1_out,(SLAVE)sm_transfer_system.hex1_out) 1 0 3 NJ 440 NJ 440 NJ
+preplace netloc INTERCONNECT<net_container>sm_transfer_system</net_container>(MASTER)J2A_master.master_reset,(MASTER)clk.clk_reset,(SLAVE)pll.reset,(SLAVE)ext_mem_bus.reset,(MASTER)reset_debounce.button_qual,(SLAVE)test_mem.reset1,(SLAVE)dma_source_to_ssram.reset,(SLAVE)button_switch.reset,(SLAVE)dma_ssram_to_led.reset,(SLAVE)reset_debounce.button_debounce_in,(SLAVE)led_fifo.reset_in,(SLAVE)led_out.reset,(SLAVE)sram_controller.reset,(SLAVE)av_sm_master.reset,(SLAVE)J2A_master.clk_reset,(SLAVE)source.reset1) 1 0 6 120 70 440 120 630 120 980 120 1290 380 1520
+preplace netloc POINT_TO_POINT<net_container>sm_transfer_system</net_container>(MASTER)led_fifo.out,(SLAVE)led_out.ledfifo) 1 2 1 610
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)clk.clk_in_reset,(SLAVE)sm_transfer_system.reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)sm_transfer_system.hex2_out,(SLAVE)led_out.hex2_out) 1 0 3 NJ 460 NJ 460 NJ
+preplace netloc POINT_TO_POINT<net_container>sm_transfer_system</net_container>(MASTER)clk.clk,(SLAVE)pll.refclk) 1 1 5 460 260 NJ 260 NJ 260 NJ 260 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)sm_transfer_system.hex3_out,(SLAVE)led_out.hex3_out) 1 0 3 NJ 480 NJ 480 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)ext_mem_bus.out,(SLAVE)sm_transfer_system.ext_mem_bus) 1 0 6 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc EXPORT<net_container>sm_transfer_system</net_container>(SLAVE)button_switch.button_conduit,(SLAVE)sm_transfer_system.buttons) 1 0 6 NJ 340 NJ 340 NJ 340 NJ 320 NJ 320 NJ
+preplace netloc POINT_TO_POINT<net_container>sm_transfer_system</net_container>(MASTER)sram_controller.tcm,(SLAVE)ext_mem_bus.tcs) 1 5 1 1480
+preplace netloc FAN_IN<net_container>sm_transfer_system</net_container>(MASTER)dma_ssram_to_led.read_master,(SLAVE)sram_controller.uas,(MASTER)dma_source_to_ssram.write_master) 1 3 2 960 140 1250
+preplace netloc POINT_TO_POINT<net_container>sm_transfer_system</net_container>(SLAVE)source.s1,(MASTER)dma_source_to_ssram.read_master) 1 4 2 NJ 190 1540
+levelinfo -pg 1 0 90 1790
+levelinfo -hier sm_transfer_system 100 220 510 700 1030 1370 1570 1720

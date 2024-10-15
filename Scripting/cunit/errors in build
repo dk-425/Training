@@ -1,0 +1,44 @@
+ Can't analyze file ../common/src/wn_fft_agc.sv - no such file exists                                                                                                                                                                                                        ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/wn_fft_agc.sv - no such file exists                                                                                                                                                                                                        ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/lzc_fft.sv - no such file exists                                                                                                                                                                                                           ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/wn_cpremoval.sv - no such file exists                                                                                                                                                                                                      ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/wn_fftscalingrx.sv - no such file exists                                                                                                                                                                                                   ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/wn_fftshiftrx.sv - no such file exists                                                                                                                                                                                                     ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/wn_rxcommon_ctrl.sv - no such file exists                                                                                                                                                                                                  ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/wn_rxcommon_top.sv - no such file exists                                                                                                                                                                                                   ;
+;     16124  ;          ;       ; Can't analyze file ../common/src/ppram_fftshiftrx.sv - no such file exists  crc_32                                                                                                                                                                                                ;
+;     16124  ;          ;       ; Can't analyze file ../common/crc/crc_32/src/wn_crc_16_check.sv - no such file exists                                                                                                                                                                                        ;
+;     16124  ;          ;       ; Can't analyze file ../common/crc/crc_32/src/wn_crc_24a_check.sv - no such file exists                                                                                                                                                                                       ;
+;     16124  ;          ;       ; Can't analyze file ../common/crc/crc_32/src/wn_crc_24b_check.sv - no such file exists                                                                                                                                                                                       ;
+;     16124  ;          ;       ; Can't analyze file ../common/crc/crc_32/src/wn_crc_top.sv - no such file exists  
+
+
+
+
+  File "/home/wisig/.local/lib/python3.8/site-packages/vunit/sim_if/modelsim.py", line 99, in __init__
+    self._create_modelsim_ini()
+  File "/home/wisig/.local/lib/python3.8/site-packages/vunit/sim_if/modelsim.py", line 110, in _create_modelsim_ini
+    with Path(original_modelsim_ini).open("rb") as fread:
+  File "/usr/lib/python3.8/pathlib.py", line 1222, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/usr/lib/python3.8/pathlib.py", line 1078, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/wisig/modelsim.ini'
+
+
+
+
+
+
+post{
+script{
+notifyhangoutschat chatToken: '', notifyBuildStart:'true', notifyBuildAborted, 
+Notify Build Failure Notify Build Success, Notify Build Not Built, 
+Notify Build Unstable, Notify Build Regression, 
+Notify Build Back to Normal
+
+}}
+
+
+
+

@@ -1,0 +1,45 @@
+`timescale 1ns / 1ps
+
+module sam(
+input x,
+input y, 
+input z, 
+output reg s,
+output reg c          
+    );
+   always @(x or y or z) begin
+   s <= ~x&~y&z|~x&y&~z|x&~y&~z|x&y&z;
+   c <= ~x&y&z|x&~y&z|x&y&~z|x&y&z;
+   end
+endmodule
+
+
+
+testbench:::::::::::::::::::::::::::::::::::::::::::::::
+
+
+`timescale 1ns / 1ps
+
+
+module sam_tb(
+
+    );
+    
+    reg x;
+    reg y;
+    reg z;
+    wire s;  
+    wire c;
+    reg [0:4] i;
+    sam uut(.x(x),.y(y),.z(z),.s(s),.c(c)); 
+    
+    initial begin
+    for (i=0;i<9;i=i+1) begin
+    #10
+    {x,y,z}=i;
+
+    end
+    $stop;
+    end
+endmodule
+

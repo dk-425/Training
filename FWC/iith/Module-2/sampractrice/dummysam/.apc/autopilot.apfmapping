@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="s.cpp" path="/home/sam-admin/Desktop/iith/Module-2/sampractrice/s.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb.cpp" path="/home/sam-admin/Desktop/iith/Module-2/sampractrice/tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

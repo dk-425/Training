@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:45.612+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop4' (loop 'loop4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_4_write_ln46', pract.cpp:46) of variable 'xor_ln1499' on array 'crc_V' and 'load' operation ('crc_V_load_1') on array 'crc_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:36.888+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop4' (loop 'loop4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_3_write_ln46', pract.cpp:46) of constant 0 on array 'crc_V' and 'load' operation ('crc_V_load_1') on array 'crc_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:35.579+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_21_write_ln23', pract.cpp:23) of variable 'tmp_49' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:32.437+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_18_write_ln23', pract.cpp:23) of variable 'tmp_37' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:31.987+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_17_write_ln23', pract.cpp:23) of variable 'tmp_33' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:31.760+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_16_write_ln23', pract.cpp:23) of variable 'tmp_29' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:31.744+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_write_ln23', pract.cpp:23) of variable 'tmp_25' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html" projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:31.721+0530" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:628: variable-indexed range selection may cause suboptimal QoR." projectName="practsam" solutionName="solution1" date="2023-07-05T16:21:28.651+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="axis_fifo_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axis_fifo_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="41,002.700 ns"></ZoomStartTime>
+      <ZoomEndTime time="41,106.501 ns"></ZoomEndTime>
+      <Cursor1Time time="41,033.100 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="129"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="71" />
+   <wvobject type="logic" fp_name="/axis_fifo_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/s_tdata">
+      <obj_property name="ElementShortName">s_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tdata[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/s_tvalid">
+      <obj_property name="ElementShortName">s_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/s_tlast">
+      <obj_property name="ElementShortName">s_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/s_tready">
+      <obj_property name="ElementShortName">s_tready</obj_property>
+      <obj_property name="ObjectShortName">s_tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/m_tdata">
+      <obj_property name="ElementShortName">m_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_tdata[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/m_tvalid">
+      <obj_property name="ElementShortName">m_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_tvalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/m_tlast">
+      <obj_property name="ElementShortName">m_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_tlast</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/m_tready">
+      <obj_property name="ElementShortName">m_tready</obj_property>
+      <obj_property name="ObjectShortName">m_tready</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/DW">
+      <obj_property name="ElementShortName">DW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DW[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/DD">
+      <obj_property name="ElementShortName">DD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DD[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/s_tdata">
+      <obj_property name="ElementShortName">s_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/s_tvalid">
+      <obj_property name="ElementShortName">s_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/s_tlast">
+      <obj_property name="ElementShortName">s_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/s_tready">
+      <obj_property name="ElementShortName">s_tready</obj_property>
+      <obj_property name="ObjectShortName">s_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/m_tdata">
+      <obj_property name="ElementShortName">m_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/m_tvalid">
+      <obj_property name="ElementShortName">m_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/m_tlast">
+      <obj_property name="ElementShortName">m_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/m_tready">
+      <obj_property name="ElementShortName">m_tready</obj_property>
+      <obj_property name="ObjectShortName">m_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/s_tdata_i">
+      <obj_property name="ElementShortName">s_tdata_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tdata_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/m_tdata_1">
+      <obj_property name="ElementShortName">m_tdata_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_tdata_1[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/m_tdata_2">
+      <obj_property name="ElementShortName">m_tdata_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_tdata_2[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/read_idx">
+      <obj_property name="ElementShortName">read_idx[12:0]</obj_property>
+      <obj_property name="ObjectShortName">read_idx[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/write_idx">
+      <obj_property name="ElementShortName">write_idx[12:0]</obj_property>
+      <obj_property name="ObjectShortName">write_idx[12:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo1_r_idx">
+      <obj_property name="ElementShortName">fifo1_r_idx[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo1_r_idx[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo1_w_idx">
+      <obj_property name="ElementShortName">fifo1_w_idx[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo1_w_idx[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo2_r_idx">
+      <obj_property name="ElementShortName">fifo2_r_idx[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo2_r_idx[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo2_w_idx">
+      <obj_property name="ElementShortName">fifo2_w_idx[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo2_w_idx[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/flag">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/enb1">
+      <obj_property name="ElementShortName">enb1</obj_property>
+      <obj_property name="ObjectShortName">enb1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/enb2">
+      <obj_property name="ElementShortName">enb2</obj_property>
+      <obj_property name="ObjectShortName">enb2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/wea1">
+      <obj_property name="ElementShortName">wea1</obj_property>
+      <obj_property name="ObjectShortName">wea1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/wea2">
+      <obj_property name="ElementShortName">wea2</obj_property>
+      <obj_property name="ObjectShortName">wea2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/m_tlast_i">
+      <obj_property name="ElementShortName">m_tlast_i</obj_property>
+      <obj_property name="ObjectShortName">m_tlast_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/s_tready_i">
+      <obj_property name="ElementShortName">s_tready_i</obj_property>
+      <obj_property name="ObjectShortName">s_tready_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo1_full">
+      <obj_property name="ElementShortName">fifo1_full</obj_property>
+      <obj_property name="ObjectShortName">fifo1_full</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo2_full">
+      <obj_property name="ElementShortName">fifo2_full</obj_property>
+      <obj_property name="ObjectShortName">fifo2_full</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/AW">
+      <obj_property name="ElementShortName">AW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/DW">
+      <obj_property name="ElementShortName">DW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DW[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/DD">
+      <obj_property name="ElementShortName">DD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/wea">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/addra">
+      <obj_property name="ElementShortName">addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/dina">
+      <obj_property name="ElementShortName">dina[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/enb">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/addrb">
+      <obj_property name="ElementShortName">addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/doutb">
+      <obj_property name="ElementShortName">doutb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/ram">
+      <obj_property name="ElementShortName">ram[2047:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[2047:0][15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/doutb_reg">
+      <obj_property name="ElementShortName">doutb_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb_reg[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/ADDR_WIDTH">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/DATA_WIDTH">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_1/DEPTH">
+      <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/wea">
+      <obj_property name="ElementShortName">wea</obj_property>
+      <obj_property name="ObjectShortName">wea</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/addra">
+      <obj_property name="ElementShortName">addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/dina">
+      <obj_property name="ElementShortName">dina[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/enb">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/addrb">
+      <obj_property name="ElementShortName">addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/doutb">
+      <obj_property name="ElementShortName">doutb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/ram">
+      <obj_property name="ElementShortName">ram[2047:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[2047:0][15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/doutb_reg">
+      <obj_property name="ElementShortName">doutb_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb_reg[15:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/ADDR_WIDTH">
+      <obj_property name="ElementShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/DATA_WIDTH">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/axis_fifo_tb/axis_fifo_inst/fifo_2/DEPTH">
+      <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

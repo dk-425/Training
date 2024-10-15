@@ -1,0 +1,4 @@
+Running: xsim.dir/FileReader_behav/xsimk -simmode gui -wdb FileReader_behav.wdb -simrunnum 0 -socket 42605
+Design successfully loaded
+Design Loading Memory Usage: 29112 KB (Peak: 29720 KB)
+Design Loading CPU Usage: 70 ms

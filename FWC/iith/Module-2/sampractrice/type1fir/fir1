@@ -1,0 +1,110 @@
+//design
+#define NUM_TAPS 16
+
+void block_fir(int input[256], int output[256], int taps[NUM_TAPS],
+							 int delay_line[NUM_TAPS]) {
+	int i, j;
+	for (j = 0; j < 256; j++) {
+		int result = 0;
+		for (i = NUM_TAPS - 1; i > 0; i--) {
+#pragma HLS unroll
+			delay_line[i] = delay_line[i - 1];
+		}
+		delay_line[0] = input[j];
+
+		for (i = 0; i < NUM_TAPS; i++) {
+#pragma HLS pipeline
+			result += delay_line[i] * taps[i];
+		}
+		output[j] = result;
+	}
+}
+
+//tb
+#include "stdio.h"
+
+#define NUM_TAPS 16
+
+void block_fir(int input[256], int output[256], int taps[NUM_TAPS],
+               int delay_line[NUM_TAPS]);
+
+const int SIZE = 256;
+
+int main() {
+  int taps[] = {1,2,0,-3,0,4,-5,0,1,-2,0,-3,0,4,-5,0};
+  int delay_line[NUM_TAPS];
+  int input[256], output[256];
+  for(int i = 0; i < SIZE; i++) {
+    input[i] = i;
+  }
+  block_fir(input, output, taps, delay_line);
+  for(int i = 0; i < SIZE; i++) {
+    printf("result = %d\n", output[i]);
+    if(output[i] == -1452) {
+      return 0;
+    } else {
+      return 1;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+meth2::::::::::
+
+#include <ap_int.h>
+
+#define N 8
+
+void fir_filter(ap_int<16> x, ap_int<16> &y) {
+
+  const ap_int<16> c[N] = {1, 2, 3, 4, 5, 4, 3, 2};
+
+  static ap_int<16> shift_reg[N] = {0};
+
+  ap_int<16> acc = 0;
+
+  shift_reg[0] = x;
+
+  for (int i = 0; i < N; i++) {
+    acc += c[i] * shift_reg[i];
+    shift_reg[N - i - 1] = shift_reg[N - i - 2];
+  }
+
+  y = acc;
+}
+
+
+tb:
+#include <ap_int.h>
+
+#define N 8
+
+void fir_filter(ap_int<16> x, ap_int<16> &y) {
+
+  const ap_int<16> c[N] = {1, 2, 3, 4, 5, 4, 3, 2};
+
+  static ap_int<16> shift_reg[N] = {0};
+
+  ap_int<16> acc = 0;
+
+  shift_reg[0] = x;
+
+  for (int i = 0; i < N; i++) {
+    acc += c[i] * shift_reg[i];
+    shift_reg[N - i - 1] = shift_reg[N - i - 2];
+  }
+
+  y = acc;
+}
+

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Mon Nov 20 14:51:21 2023
+# Process ID: 72483
+# Current directory: /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new
+# Command line: vivado
+# Log file: /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/vivado.log
+# Journal file: /home/sam-admin/git/Training/demo/project_work/project_work.srcs/sim_1/new/vivado.jou
+# Running On: sampaths-lappie, OS: Linux, CPU Frequency: 1599.986 MHz, CPU Physical cores: 4, Host memory: 8092 MB
+#-----------------------------------------------------------
+start_gui

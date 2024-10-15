@@ -1,0 +1,8 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_crc24a.cpp
+   Compiling apatb_crc24a_util.cpp
+   Compiling s.cpp_pre.cpp.tb.cpp
+   Compiling sgen.cpp_pre.cpp.tb.cpp
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_crc24a_ir.ll
+   Generating cosim.tv.exe

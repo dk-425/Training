@@ -1,0 +1,196 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'sam-admin' on host 'sampaths-lappie' (Linux_x86_64 version 5.19.0-46-generic) on Wed Jul 05 16:21:08 IST 2023
+INFO: [HLS 200-10] On os Ubuntu 22.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/sam-admin/Desktop/iith/Module-2/sampractrice/hlspract'
+Sourcing Tcl script '/home/sam-admin/Desktop/iith/Module-2/sampractrice/hlspract/practsam/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source /home/sam-admin/Desktop/iith/Module-2/sampractrice/hlspract/practsam/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project practsam 
+INFO: [HLS 200-10] Opening project '/home/sam-admin/Desktop/iith/Module-2/sampractrice/hlspract/practsam'.
+INFO: [HLS 200-1510] Running: set_top crc24a 
+INFO: [HLS 200-1510] Running: add_files pract.cpp 
+INFO: [HLS 200-10] Adding design file 'pract.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb pract_tb.cpp -cflags -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'pract_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/sam-admin/Desktop/iith/Module-2/sampractrice/hlspract/practsam/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/sam-admin/Desktop/iith/Module-2/sampractrice/dummysam
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/sam-admin/Desktop/iith/Module-2/sampractrice/dummysam -rtl verilog 
+INFO: [HLS 200-1510] Running: source ./practsam/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name crc24a crc24a 
+INFO: [HLS 200-1510] Running: csynth_design 
+Running Dispatch Server on port: 39341
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 10.05 seconds; current allocated memory: 213.793 MB.
+INFO: [HLS 200-10] Analyzing design file 'pract.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.49 seconds. CPU system time: 0.41 seconds. Elapsed time: 3.91 seconds; current allocated memory: 214.180 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'loop7' is marked as complete unroll implied by the pipeline pragma (pract.cpp:56:9)
+INFO: [HLS 214-291] Loop 'loop5' is marked as complete unroll implied by the pipeline pragma (pract.cpp:43:10)
+INFO: [HLS 214-186] Unrolling loop 'loop7' (pract.cpp:56:9) in function 'crc24a' completely with a factor of 8 (pract.cpp:5:0)
+INFO: [HLS 214-186] Unrolling loop 'loop5' (pract.cpp:43:10) in function 'crc24a' completely with a factor of 25 (pract.cpp:5:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=25 dim=1' for array 'crc' due to pipeline pragma (pract.cpp:55:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=cyclic factor=8 dim=1' for array 'rtc' due to pipeline pragma (pract.cpp:55:9)
+INFO: [HLS 214-248] Applying array_partition to 'crc': Cyclic partitioning with factor 25 on dimension 1. (pract.cpp:11:13)
+INFO: [HLS 214-248] Applying array_partition to 'rtc': Cyclic partitioning with factor 8 on dimension 1. (pract.cpp:12:13)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.52 seconds. CPU system time: 0.41 seconds. Elapsed time: 4.94 seconds; current allocated memory: 215.441 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 215.441 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 226.715 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:628: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 235.043 MB.
+INFO: [XFORM 203-510] Pipelining loop 'loop1' (pract.cpp:19) in function 'crc24a' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop1' (pract.cpp:19) in function 'crc24a' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'loop2' in function 'crc24a' completely with a factor of 8.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.64 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.66 seconds; current allocated memory: 275.953 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'crc.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'crc.V' (pract.cpp:23:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'crc.V' (pract.cpp:36:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'rtc.V' (pract.cpp:37:10)
+INFO: [HLS 200-472] Inferring partial write operation for 'crc.V.1' (pract.cpp:46:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'rtc.V' (pract.cpp:59:15)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.89 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.92 seconds; current allocated memory: 325.691 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'crc24a' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'crc24a_Pipeline_loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop1'.
+WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_write_ln23', pract.cpp:23) of variable 'tmp_25' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_16_write_ln23', pract.cpp:23) of variable 'tmp_29' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_17_write_ln23', pract.cpp:23) of variable 'tmp_33' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_18_write_ln23', pract.cpp:23) of variable 'tmp_37' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop1' (loop 'loop1'): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_21_write_ln23', pract.cpp:23) of variable 'tmp_49' on array 'crc_V' and 'store' operation ('crc_V_addr_2_write_ln23', pract.cpp:23) of variable 'trunc_ln628' on array 'crc_V'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 8, Depth = 76, loop 'loop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.09 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.32 seconds; current allocated memory: 362.957 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.07 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.1 seconds; current allocated memory: 364.633 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'crc24a_Pipeline_loop3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'loop3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.75 seconds. CPU system time: 0 seconds. Elapsed time: 0.77 seconds; current allocated memory: 367.742 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 367.742 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'crc24a_Pipeline_loop4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop4'.
+WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop4' (loop 'loop4'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_3_write_ln46', pract.cpp:46) of constant 0 on array 'crc_V' and 'load' operation ('crc_V_load_1') on array 'crc_V'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'crc24a_Pipeline_loop4' (loop 'loop4'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('crc_V_addr_4_write_ln46', pract.cpp:46) of variable 'xor_ln1499' on array 'crc_V' and 'load' operation ('crc_V_load_1') on array 'crc_V'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'loop4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.46 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.48 seconds; current allocated memory: 395.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.74 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.76 seconds; current allocated memory: 395.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'crc24a_Pipeline_loop6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 71, loop 'loop6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.37 seconds; current allocated memory: 395.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.47 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.49 seconds; current allocated memory: 395.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'crc24a' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.33 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.35 seconds; current allocated memory: 395.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 395.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'crc24a_Pipeline_loop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'crc24a_Pipeline_loop1' pipeline 'loop1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_64s_6ns_5_68_1': 8 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'crc24a_Pipeline_loop1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.67 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.68 seconds; current allocated memory: 395.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'crc24a_Pipeline_loop3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'crc24a_Pipeline_loop3' pipeline 'loop3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_255_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'crc24a_Pipeline_loop3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.23 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.27 seconds; current allocated memory: 406.688 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'crc24a_Pipeline_loop4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'crc24a_Pipeline_loop4' pipeline 'loop4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_33ns_63_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_64_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_255_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'crc24a_Pipeline_loop4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.55 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.76 seconds; current allocated memory: 415.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'crc24a_Pipeline_loop6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'crc24a_Pipeline_loop6' pipeline 'loop6' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_255_1_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_64ns_6ns_5_68_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'crc24a_Pipeline_loop6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.41 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.48 seconds; current allocated memory: 445.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'crc24a' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'crc24a/input_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'crc24a/output_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'crc24a' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'crc24a'.
+INFO: [RTMG 210-278] Implementing memory 'crc24a_crc_V_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'crc24a_rtc_V_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.27 seconds; current allocated memory: 454.586 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.45 seconds. CPU system time: 0.05 seconds. Elapsed time: 1.62 seconds; current allocated memory: 459.477 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.38 seconds; current allocated memory: 469.773 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for crc24a.
+INFO: [VLOG 209-307] Generating Verilog RTL for crc24a.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 189.01 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 26.36 seconds. CPU system time: 1.22 seconds. Elapsed time: 28.55 seconds; current allocated memory: 256.340 MB.
+INFO: [HLS 200-112] Total CPU user time: 27.98 seconds. Total CPU system time: 1.42 seconds. Total elapsed time: 40.38 seconds; peak allocated memory: 470.133 MB.
